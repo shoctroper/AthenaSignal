@@ -1,0 +1,118 @@
+{
+  "id": "1",
+  "name": "Athena Multi-Agent Pipeline (Gemini 2.5 + COLA.md)",
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "seconds",
+              "secondsInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "node-trigger-1",
+      "name": "Schedule Trigger (30s)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        200,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "filePath": "/Volumes/Medios/Repos/AthenaSignal/ciclo/COLA.md"
+      },
+      "id": "node-read-cola",
+      "name": "Read COLA.md",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        420,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const content = items[0].json.data || items[0].json.fileContent || '';\nconst lines = typeof content === 'string' ? content.split('\\n') : [];\nlet nextTask = null;\n\nfor (const line of lines) {\n  if (line.includes('[PENDIENTE]')) {\n    nextTask = { status: 'PENDIENTE', line };\n    break;\n  } else if (line.includes('[EN_VERIFICACION]')) {\n    nextTask = { status: 'EN_VERIFICACION', line };\n    break;\n  } else if (line.includes('[EN_DISCUSION]')) {\n    nextTask = { status: 'EN_DISCUSION', line };\n    break;\n  }\n}\n\nreturn [{ json: { task: nextTask, totalLines: lines.length } }];"
+      },
+      "id": "node-parse-cola",
+      "name": "Parse Task Queue",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        640,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + $env.GEMINI_API_KEY }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [{\n      \"text\": \"Eres un agente autónomo de Athena. Analiza la siguiente tarea de la cola y genera la solución requerida:\\n\\n\" + JSON.stringify($json.task)\n    }]\n  }]\n}",
+        "options": {}
+      },
+      "id": "node-gemini-worker",
+      "name": "Gemini 2.5 Worker Node",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        880,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Schedule Trigger (30s)": {
+      "main": [
+        [
+          {
+            "node": "Read COLA.md",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read COLA.md": {
+      "main": [
+        [
+          {
+            "node": "Parse Task Queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Task Queue": {
+      "main": [
+        [
+          {
+            "node": "Gemini 2.5 Worker Node",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
