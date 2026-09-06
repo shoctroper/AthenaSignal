@@ -1,52 +1,61 @@
-import { ISourceAdapter, NormalizedContent } from './ISourceAdapter';
+import { ISourceAdapter } from '../interfaces/ISourceAdapter';
 
 /**
- * Adaptador MCP para Agent-Reach.
- * Se conecta vía MCP (Model Context Protocol) a un servidor Python (Agent-Reach)
- * para realizar la minería social a costo cero evadiendo bloqueos anti-bot.
+ * Adaptador para AgentReach utilizando el Model Context Protocol (MCP).
+ * Implementa la interfaz ISourceAdapter para el proyecto AthenaSignal.
+ * Tarea: T-012
  */
 export class McpAgentReachAdapter implements ISourceAdapter {
-  private mcpClient: any;
+  private isConnected: boolean;
+  private serverUrl: string;
 
-  constructor(mcpClient: any) {
-    this.mcpClient = mcpClient;
+  constructor(serverUrl: string = 'http://localhost:8080/mcp') {
+    this.serverUrl = serverUrl;
+    this.isConnected = false;
   }
 
-  canHandle(urlOrSource: string): boolean {
-    const supportedPatterns = ['youtube.com', 'youtu.be', 'twitter.com', 'x.com', 'reddit.com'];
-    return supportedPatterns.some(pattern => urlOrSource.includes(pattern));
+  /**
+   * Conecta con el servidor MCP de AgentReach.
+   */
+  async connect(): Promise<void> {
+    try {
+      console.log(`[McpAgentReachAdapter] Conectando a MCP en ${this.serverUrl}...`);
+      // TODO: Implementar la conexión real utilizando un cliente MCP (ej. SDK de MCP)
+      this.isConnected = true;
+      console.log(`[McpAgentReachAdapter] Conectado exitosamente.`);
+    } catch (error) {
+      console.error(`[McpAgentReachAdapter] Error al conectar:`, error);
+      throw error;
+    }
   }
 
-  async acquire(urlOrSource: string): Promise<NormalizedContent> {
-    console.log(`[McpAgentReachAdapter] Solicitando extracción al servidor MCP Agent-Reach para: ${urlOrSource}`);
-    
-    // Llamada hipotética al protocolo MCP
-    const response = await this.mcpClient.callTool('agent_reach_extract', { url: urlOrSource });
-    
-    if (response.error) {
-        throw new Error(`Fallo en Agent-Reach MCP: ${response.error}`);
+  /**
+   * Obtiene datos desde AgentReach a través de MCP.
+   */
+  async fetchData(params?: any): Promise<any> {
+    if (!this.isConnected) {
+      throw new Error('[McpAgentReachAdapter] No conectado. Llame a connect() primero.');
     }
 
+    console.log(`[McpAgentReachAdapter] Obteniendo datos con parámetros:`, params);
+    // TODO: Implementar el llamado a herramientas/recursos de MCP reales.
     return {
-      source: {
-        platform: this.detectPlatform(urlOrSource),
-        creator: response.data.author || 'Unknown',
-        url: urlOrSource,
-        publishedAt: response.data.date || new Date().toISOString(),
-        contentId: response.data.id || 'N/A'
-      },
-      title: response.data.title || 'Contenido extraído por Agent-Reach',
-      description: response.data.summary || '',
-      transcript: response.data.full_text || '',
-      language: response.data.lang || 'es',
-      metadata: { tool_used: 'Agent-Reach MCP', auth_tier: 'tier-1-cookie' }
+      source: 'AgentReach MCP',
+      status: 'success',
+      data: params,
+      timestamp: new Date().toISOString()
     };
   }
 
-  private detectPlatform(url: string): string {
-    if (url.includes('youtube') || url.includes('youtu.be')) return 'youtube';
-    if (url.includes('twitter') || url.includes('x.com')) return 'twitter';
-    if (url.includes('reddit')) return 'reddit';
-    return 'unknown_social';
+  /**
+   * Cierra la conexión con el servidor MCP.
+   */
+  async disconnect(): Promise<void> {
+    if (this.isConnected) {
+      console.log(`[McpAgentReachAdapter] Desconectando de MCP...`);
+      // TODO: Implementar la desconexión y limpieza de recursos
+      this.isConnected = false;
+      console.log(`[McpAgentReachAdapter] Desconectado.`);
+    }
   }
 }

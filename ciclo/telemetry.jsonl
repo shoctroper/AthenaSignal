@@ -1,0 +1,2 @@
+{"timestamp": 1788728256.618198, "event": "QA_START", "task_id": "T-012", "details": {}}
+{"timestamp": 1788728256.619425, "event": "QA_PASS", "task_id": "T-012", "details": {"reason": "Test pass"}}

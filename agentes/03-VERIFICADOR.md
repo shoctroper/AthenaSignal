@@ -71,3 +71,9 @@ Una verificación está completa cuando cada afirmación del reporte del Impleme
 - Resultado observado y logs.
 - Veredicto explícito: `Verificado` / `Falla` / `No Verificable`.
 - En caso de falla, los ítems bloqueantes listados sin ambigüedad en el veredicto enviado a `./ciclo/veredictos/`.
+
+## Reglas Duras de Testeo (QA Dinámico)
+- **Ejecución Real:** Prohibido limitarse a leer el código. DEBES correr los tests y arrancar los servicios involucrados (E2E/Runtime checks) para no romper el sistema.
+- **Tolerancia Cero:** Cualquier test fallido devuelve la tarea a `[PENDIENTE]`.
+- **Escalada Automática:** Si la tarea falla 2 veces por alucinación, modifica COLA.md y escala el modelo del Ejecutor (ej. de Local a DeepSeek V4).
+- Si la instrucción es defectuosa, mándala a `[REVISAR_ESPEC]` para que la corrija el Arquitecto.

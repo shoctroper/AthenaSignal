@@ -1,0 +1,85 @@
+{
+  "name": "Athena Pipeline V3.4 (Auto-Router)",
+  "nodes": [
+    {
+      "parameters": { "rule": { "interval": [ { "field": "seconds", "secondsInterval": 30 } ] } },
+      "id": "1",
+      "name": "Cron Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": { "command": "python3 /Volumes/Medios/Repos/AthenaSignal/scripts/queue_manager.py" },
+      "id": "2",
+      "name": "Queue Manager",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [200, 0]
+    },
+    {
+      "parameters": { "jsCode": "return [JSON.parse(items[0].json.stdout)];" },
+      "id": "3",
+      "name": "Parse Action",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [400, 0]
+    },
+    {
+      "parameters": {
+        "dataType": "string",
+        "value1": "={{ $json.action }}",
+        "rules": {
+          "rules": [
+            { "value2": "QA", "outputKey": "QA" },
+            { "value2": "IMPLEMENT", "outputKey": "IMPLEMENT" },
+            { "value2": "AUDIT_BATCH", "outputKey": "AUDIT" }
+          ]
+        }
+      },
+      "id": "4",
+      "name": "Router Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 1,
+      "position": [600, 0]
+    },
+    {
+      "parameters": { "command": "={{ 'python3 /Volumes/Medios/Repos/AthenaSignal/scripts/qa_reviewer.py ' + $json.taskId }}" },
+      "id": "5",
+      "name": "Run QA",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [800, -200]
+    },
+    {
+      "parameters": { "command": "={{ 'python3 /Volumes/Medios/Repos/AthenaSignal/scripts/orchestrator_router.py ' + $json.taskId + ' \"' + $json.raw.replace(/\"/g, '\\\\\"') + '\"' }}" },
+      "id": "6",
+      "name": "Run Implement",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [800, 0]
+    },
+    {
+      "parameters": { "command": "python3 /Volumes/Medios/Repos/AthenaSignal/scripts/architect_auditor.py" },
+      "id": "7",
+      "name": "Run Audit",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [800, 200]
+    }
+  ],
+  "connections": {
+    "Cron Trigger": { "main": [ [ { "node": "Queue Manager", "type": "main", "index": 0 } ] ] },
+    "Queue Manager": { "main": [ [ { "node": "Parse Action", "type": "main", "index": 0 } ] ] },
+    "Parse Action": { "main": [ [ { "node": "Router Switch", "type": "main", "index": 0 } ] ] },
+    "Router Switch": {
+      "main": [
+        [ { "node": "Run QA", "type": "main", "index": 0 } ],
+        [ { "node": "Run Implement", "type": "main", "index": 0 } ],
+        [ { "node": "Run Audit", "type": "main", "index": 0 } ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}

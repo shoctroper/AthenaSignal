@@ -107,3 +107,14 @@ Un ítem de desarrollo está `Hecho` cuando:
 2. Los barridos demuestran que todos los sitios afectados fueron actualizados (encontrados = tocados).
 3. No existen regresiones en la suite de pruebas existente.
 4. El reporte pasó la validación del script `scripts/verify-report.sh`.
+
+## Reglas Duras de Calidad (Clean Code y SOLID)
+- **Cero Números/Strings Mágicos:** Usa Enums o variables de entorno.
+- **DRY:** Factoriza código duplicado en funciones independientes.
+- **Parámetros:** Evita listas largas. Agrupa en DTOs o interfaces.
+- **Boolean Flags:** Prohibido usar `doSomething(isTrue)`. Crea dos funciones.
+- **Pureza:** Escribe funciones testeables por sí solas (*Standalone testable functions*).
+- **Semántica:** Usa nombres descriptivos, evita variables vagas.
+- **Anidamiento:** Prohibido el Callback Hell y bucles/condicionales profundos. Usa *Guard Clauses* y Promesas/Async.
+- **Mantenimiento:** BORRA el código comentado. No uses *Mutable shared state* ni *string-keyed logic*.
+- **Arquitectura:** Aplica principios SOLID rigurosamente. Las modificaciones se hacen IN-PLACE. Si faltan detalles, envía a `[REVISAR_ESPEC]`.

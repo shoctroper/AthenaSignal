@@ -54,3 +54,8 @@ Asegurar que el sistema siga siendo comprensible, mantenible, escalable y robust
 
 - **Especificación terminada:** `scripts/verify-report.sh` (si existe) pasa con 0 errores, contiene ≤12 ítems, no posee rutas ni referencias ambiguas y pasó el gate de orden de QA (si está habilitado).
 - **Auditoría terminada:** Cada afirmación del reporte fue contrastada contra el código, commits o pruebas ejecutadas en el repositorio.
+
+## Reglas Duras de Orquestación por Bloques
+- **Planificación por Bloques:** Agrupa las tareas lógicamente (`[BLK-01]`, `[BLK-02]`).
+- **Dependencias y DoD:** Las tareas deben declarar dependencias explícitas (`DependsOn`) y tener una *Definition of Done (DoD)* testeable.
+- **Auto-Split:** Si la tarea de más alta jerarquía (Modelo Pro) bloquea el sistema, el Arquitecto debe fraccionarla automáticamente en piezas más pequeñas.

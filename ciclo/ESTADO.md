@@ -7,7 +7,7 @@
 ## Tareas Procesadas en Cola (`./ciclo/COLA.md`)
 - [x] T-001 a T-006: (`[PENDIENTE]`).
 - [-] T-007 a T-010: (`[CANCELADO]` por pivot arquitectónico a ORDEN-004).
-- [ ] T-011: Cliente MCP Base (`[PENDIENTE]`).
+- [x] T-011: Cliente MCP Base (`[HECHO]`).
 - [ ] T-012: Adaptador AgentReach MCP (`[PENDIENTE]`).
 - [ ] T-013: Adaptador Firecrawl Web (`[PENDIENTE]`).
 - [ ] T-014: Agente ClaimVerifier (`[PENDIENTE]`).
