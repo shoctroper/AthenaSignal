@@ -49,3 +49,25 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5
   -H "Content-Type: application/json" \
   -d '{"contents":[{"parts":[{"text":"Verificación de AthenaSignal Pipeline"}]}]}'
 ```
+
+---
+
+## 🧠 Topología Híbrida: Nube + Hardware Local
+
+Gracias a la disponibilidad de tus cuentas Cloud (Gemini, DeepSeek) y tu hardware local (Mac Mini M4 16GB + Servidor 4GB VRAM), hemos diseñado una distribución de carga eficiente:
+
+1. **Tareas de Arquitectura e Implementación Compleja (Cloud):**
+   - **Gemini 2.5 Pro / Flash:** Orquestación, análisis de contexto profundo y escritura de código base.
+   - **DeepSeek V3 / R1 (API):** Generación de código lógico pesado, revisión de bugs y refactorización intensiva. (Configurado vía `DEEPSEEK_API_KEY`).
+2. **Tareas de Verificación Rápidas y Triage (Local):**
+   - Modelos pequeños (ej. `Qwen-2.5-7B`, `Llama-3-8B`, `Phi-4`) ejecutándose en la **Mac Mini M4** o en el Servidor (vía `Ollama` o `LM Studio` en `http://localhost:11434`).
+   - Ideales para el **Cuestionador** o nodos de **QA** que solo deben aprobar (PASS/FAIL) o verificar formato, ahorrando costos de API y reduciendo latencia.
+
+### ¿Cómo finalizar el ciclo en n8n?
+El pipeline actual hace la petición a Gemini, pero para **cerrar el ciclo**, debes agregar un nodo **Execute Command** al final de tu flujo en n8n que llame al script generador:
+
+**Comando a ejecutar en el nodo final de n8n:**
+```bash
+echo '{{ $json.geminiResponseText }}' | ./scripts/advance-queue.sh '{{ $json.taskId }}' 'EN_VERIFICACION'
+```
+Esto guardará la respuesta del LLM en `ciclo/entregas/` y actualizará automáticamente la `COLA.md` al siguiente estado.
