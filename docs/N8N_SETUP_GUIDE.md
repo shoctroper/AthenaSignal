@@ -24,6 +24,29 @@ Ejecuta el script incluido:
 
 Esto levantará la instancia de n8n en `http://localhost:5678` cargando automáticamente `GEMINI_API_KEY`.
 
+### 💡 El "Navigator Agent" (Zero-API Workflow)
+Para evitar los costos asociados al uso intensivo de APIs (Gemini/DeepSeek), hemos migrado el flujo de n8n a un modelo **Zero-API** utilizando automatización de navegadores (Playwright).
+
+El flujo importado usa un nodo `Execute Command` para ejecutar un script local (`scripts/process_task_navigator.sh`). Este script:
+1. Toma la tarea pendiente de `COLA.md`.
+2. Se conecta a una sesión local de Google Chrome abierta (vía protocolo CDP) utilizando Playwright.
+3. Escribe el prompt directamente en la interfaz web de DeepSeek/Gemini.
+4. Extrae la respuesta y la guarda en `ciclo/entregas/`.
+5. Actualiza automáticamente `COLA.md` al estado `[EN_VERIFICACION]`.
+
+### Requisitos Previos para el Navigator Agent:
+Antes de correr n8n, asegúrate de instalar las dependencias en el servidor o Mac Mini:
+```bash
+pip install playwright
+playwright install chromium
+```
+
+Para mayor estabilidad y evitar captchas, inicia Google Chrome en tu máquina con el puerto de depuración abierto antes de activar n8n:
+```bash
+# Mac
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+```
+
 ### 3. Importar el Workflow de Athena en n8n
 1. Ingresa a `http://localhost:5678`.
 2. Menú `...` (arriba a la derecha) → **Import from File**.

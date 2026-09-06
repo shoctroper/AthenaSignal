@@ -1,6 +1,6 @@
 {
   "id": "1",
-  "name": "Athena Multi-Agent Pipeline (Gemini 2.5 + COLA.md)",
+  "name": "Athena Multi-Agent Pipeline (Navigator Agent Zero-API)",
   "active": true,
   "nodes": [
     {
@@ -42,37 +42,13 @@
     },
     {
       "parameters": {
-        "method": "POST",
-        "url": "={{ 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + $env.GEMINI_API_KEY }}",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "Content-Type",
-              "value": "application/json"
-            }
-          ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [{\n      \"text\": \"Eres un agente autónomo de Athena. Analiza la siguiente tarea de la cola y genera la solución requerida (solo código o markdown, sin saludos):\\n\\n\" + JSON.stringify($json.task)\n    }]\n  }]\n}",
-        "options": {}
+        "command": "={{ 'cat << \\'EOF\\' | /Volumes/Medios/Repos/AthenaSignal/scripts/process_task_navigator.sh ' + $json.taskId + '\\n' + JSON.stringify($json.task) + '\\nEOF' }}"
       },
-      "id": "node-gemini-worker",
-      "name": "Gemini 2.5 Worker Node",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [880, 300]
-    },
-    {
-      "parameters": {
-        "command": "={{ 'cat << \\'EOF\\' | /Volumes/Medios/Repos/AthenaSignal/scripts/advance-queue.sh ' + $('Parse Task Queue').item.json.taskId + ' EN_VERIFICACION\\n' + $json.candidates[0].content.parts[0].text + '\\nEOF' }}"
-      },
-      "id": "node-execute-script",
-      "name": "Execute Command",
+      "id": "node-navigator-worker",
+      "name": "Navigator LLM (Playwright)",
       "type": "n8n-nodes-base.executeCommand",
       "typeVersion": 1,
-      "position": [1100, 300]
+      "position": [880, 300]
     }
   ],
   "connections": {
@@ -102,18 +78,7 @@
       "main": [
         [
           {
-            "node": "Gemini 2.5 Worker Node",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Gemini 2.5 Worker Node": {
-      "main": [
-        [
-          {
-            "node": "Execute Command",
+            "node": "Navigator LLM (Playwright)",
             "type": "main",
             "index": 0
           }
