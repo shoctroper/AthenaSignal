@@ -20,9 +20,9 @@ echo "Entrega guardada en $DELIVERY_FILE"
 
 # Actualizar estado en COLA.md (Soporte para Mac OSX 'sed -i' y Linux)
 if sed --version 2>/dev/null | grep -q GNU; then
-  sed -i "s/| $TASK_ID | \(.*\) | \[PENDIENTE\]/| $TASK_ID | \1 | \[$NEW_STATUS\]/g" ciclo/COLA.md
+  sed -i "s/| $TASK_ID | \(.*\) | \`\[PENDIENTE\]\`/| $TASK_ID | \1 | \`\[$NEW_STATUS\]\`/g" ciclo/COLA.md
 else
-  sed -i '' "s/| $TASK_ID | \(.*\) | \[PENDIENTE\]/| $TASK_ID | \1 | \[$NEW_STATUS\]/g" ciclo/COLA.md
+  sed -i '' "s/| $TASK_ID | \(.*\) | \`\[PENDIENTE\]\`/| $TASK_ID | \1 | \`\[$NEW_STATUS\]\`/g" ciclo/COLA.md
 fi
 
 echo "COLA.md actualizada: $TASK_ID -> [$NEW_STATUS]"
