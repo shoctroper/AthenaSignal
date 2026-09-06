@@ -18,10 +18,7 @@
       "name": "Schedule Trigger (30s)",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.1,
-      "position": [
-        200,
-        300
-      ]
+      "position": [200, 300]
     },
     {
       "parameters": {
@@ -31,23 +28,17 @@
       "name": "Read COLA.md",
       "type": "n8n-nodes-base.readWriteFile",
       "typeVersion": 1,
-      "position": [
-        420,
-        300
-      ]
+      "position": [420, 300]
     },
     {
       "parameters": {
-        "jsCode": "const content = items[0].json.data || items[0].json.fileContent || '';\nconst lines = typeof content === 'string' ? content.split('\\n') : [];\nlet nextTask = null;\n\nfor (const line of lines) {\n  if (line.includes('[PENDIENTE]')) {\n    nextTask = { status: 'PENDIENTE', line };\n    break;\n  } else if (line.includes('[EN_VERIFICACION]')) {\n    nextTask = { status: 'EN_VERIFICACION', line };\n    break;\n  } else if (line.includes('[EN_DISCUSION]')) {\n    nextTask = { status: 'EN_DISCUSION', line };\n    break;\n  }\n}\n\nreturn [{ json: { task: nextTask, totalLines: lines.length } }];"
+        "jsCode": "const content = items[0].json.data || items[0].json.fileContent || '';\nconst lines = typeof content === 'string' ? content.split('\\n') : [];\nlet nextTask = null;\nlet taskId = null;\n\nfor (const line of lines) {\n  if (line.includes('[PENDIENTE]')) {\n    nextTask = { status: 'PENDIENTE', line };\n    const match = line.match(/T-\\d{3}/);\n    if(match) taskId = match[0];\n    break;\n  }\n}\n\nif (!taskId) return []; // Stop execution if no pending tasks\n\nreturn [{ json: { task: nextTask, taskId: taskId } }];"
       },
       "id": "node-parse-cola",
       "name": "Parse Task Queue",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [
-        640,
-        300
-      ]
+      "position": [640, 300]
     },
     {
       "parameters": {
@@ -64,17 +55,24 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [{\n      \"text\": \"Eres un agente autónomo de Athena. Analiza la siguiente tarea de la cola y genera la solución requerida:\\n\\n\" + JSON.stringify($json.task)\n    }]\n  }]\n}",
+        "jsonBody": "={\n  \"contents\": [{\n    \"parts\": [{\n      \"text\": \"Eres un agente autónomo de Athena. Analiza la siguiente tarea de la cola y genera la solución requerida (solo código o markdown, sin saludos):\\n\\n\" + JSON.stringify($json.task)\n    }]\n  }]\n}",
         "options": {}
       },
       "id": "node-gemini-worker",
       "name": "Gemini 2.5 Worker Node",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [
-        880,
-        300
-      ]
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "command": "={{ 'cat << \\'EOF\\' | /Volumes/Medios/Repos/AthenaSignal/scripts/advance-queue.sh ' + $('Parse Task Queue').item.json.taskId + ' EN_VERIFICACION\\n' + $json.candidates[0].content.parts[0].text + '\\nEOF' }}"
+      },
+      "id": "node-execute-script",
+      "name": "Execute Command",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1100, 300]
     }
   ],
   "connections": {
@@ -105,6 +103,17 @@
         [
           {
             "node": "Gemini 2.5 Worker Node",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini 2.5 Worker Node": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
             "type": "main",
             "index": 0
           }

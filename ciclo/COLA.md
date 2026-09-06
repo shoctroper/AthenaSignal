@@ -32,7 +32,7 @@
 - `[EN_DISCUSION]`: Evaluado por Cuestionador.
 - `[PENDIENTE]`: Listo para procesar por Implementador / n8n Pipeline.
 - `[EN_PROGRESO]`: En desarrollo.
-- `[EN_VERIFICACION]`: En pruebas por Hornet / QA (+ Rohan / Robin).
+- `[PENDIENTE]`: En pruebas por Hornet / QA (+ Rohan / Robin).
 - `[REVISAR_ESPEC]`: Marcado por QA para ajuste del Arquitecto.
 - `[COMPLETADO]`: Verificado y certificado.
 - `[CANCELADO]`: Deprecado por cambio de arquitectura.
