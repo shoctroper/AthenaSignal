@@ -20,19 +20,19 @@
 | T-008 | Implementación de `WebContentAdapter` para contenido HTML/Artículos | Edward | `[CANCELADO]` | Pivot a ORDEN-004 | N/A |
 | T-009 | Implementación de `PipelineOrchestrator` (Ingesta -> Extracción -> Scoring) | Edward | `[CANCELADO]` | Pivot a ORDEN-004 | N/A |
 | T-010 | Integración n8n Queue Runner (`scripts/queue-runner.js`) | Alphonse | `[CANCELADO]` | Pivot a ORDEN-004 | N/A |
-| T-011 | Cliente MCP Base (`McpClientService`) | Alphonse | `[COMPLETADO]` | RFC-006 | `src/services/McpClientService.ts` |
-| T-012 | Adaptador AgentReach MCP | Edward | `[COMPLETADO]` | T-011 | `src/adapters/McpAgentReachAdapter.ts` |
-| T-013 | Adaptador Firecrawl Web | Edward | `[COMPLETADO]` | T-004 | `src/adapters/FirecrawlAdapter.ts` |
-| T-014 | Agente `ClaimVerifier` (Bucle Odysseus) | Edward | `[COMPLETADO]` | T-012, T-013 | `src/services/ClaimVerifier.ts` |
-| T-015 | Actualización de `PipelineOrchestrator` | Alphonse | `[COMPLETADO]` | T-014 | `src/services/PipelineOrchestrator.ts` |
+| T-011 | Cliente MCP Base (`McpClientService`) | Alphonse | `[PENDIENTE]` | RFC-006 | `src/services/McpClientService.ts` |
+| T-012 | Adaptador AgentReach MCP | Edward | `[PENDIENTE]` | T-011 | `src/adapters/McpAgentReachAdapter.ts` |
+| T-013 | Adaptador Firecrawl Web | Edward | `[PENDIENTE]` | T-004 | `src/adapters/FirecrawlAdapter.ts` |
+| T-014 | Agente `ClaimVerifier` (Bucle Odysseus) | Edward | `[PENDIENTE]` | T-012, T-013 | `src/services/ClaimVerifier.ts` |
+| T-015 | Actualización de `PipelineOrchestrator` | Alphonse | `[PENDIENTE]` | T-014 | `src/services/PipelineOrchestrator.ts` |
 
 ---
 
 ## 📌 Leyenda de Estados
 - `[EN_DISCUSION]`: Evaluado por Cuestionador.
-- `[COMPLETADO]`: Listo para procesar por Implementador / n8n Pipeline.
+- `[PENDIENTE]`: Listo para procesar por Implementador / n8n Pipeline.
 - `[EN_PROGRESO]`: En desarrollo.
-- `[COMPLETADO]`: En pruebas por Hornet / QA (+ Rohan / Robin).
+- `[EN_VERIFICACION]`: En pruebas por Hornet / QA (+ Rohan / Robin).
 - `[REVISAR_ESPEC]`: Marcado por QA para ajuste del Arquitecto.
 - `[COMPLETADO]`: Verificado y certificado.
 - `[CANCELADO]`: Deprecado por cambio de arquitectura.

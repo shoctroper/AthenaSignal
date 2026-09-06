@@ -24,3 +24,4 @@ yarn-error.log*
 
 # n8n local data (if any)
 .n8n/
+perfil_navegador_llm/
