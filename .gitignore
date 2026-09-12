@@ -25,3 +25,13 @@ yarn-error.log*
 # n8n local data (if any)
 .n8n/
 perfil_navegador_llm/
+
+# Worker temporary working directories (M6/M7)
+.m3tmp/
+.m4tmp/
+.m5tmp/
+.m6tmp/
+.m7tmp/
+
+# External research clone (not vendored; see docs/research/ANALISIS-HERRAMIENTAS-DEEP-SEARCH.md)
+docs/research/agent-reach/
