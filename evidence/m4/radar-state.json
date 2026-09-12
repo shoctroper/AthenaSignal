@@ -1,0 +1,2328 @@
+{
+  "kind": "athenasignal.m4.radar_state.v1",
+  "updatedAt": "2026-09-12T06:00:00.000Z",
+  "cyclesProcessed": [
+    "m4-cycle-1",
+    "m4-cycle-2",
+    "m4-cycle-3",
+    "m4-cycle-4",
+    "m4-cycle-5",
+    "m4-cycle-6"
+  ],
+  "processedSources": {
+    "src-creatine-pmc": {
+      "firstCycle": "m4-cycle-1",
+      "contentHash": "8c6a5b1b0b41ee3b9799fa9794bafc93e3a9c9aec344662c0c0c704a44ebe8ff",
+      "timesSeen": 3
+    },
+    "src-creatine-harvard": {
+      "firstCycle": "m4-cycle-2",
+      "contentHash": "325bbb36a3380cb4af435b59e1b6048b4c6e67e5c4f6c54da2812d1b210e99ac",
+      "timesSeen": 1
+    },
+    "src-if-mayo": {
+      "firstCycle": "m4-cycle-3",
+      "contentHash": "d3fc932f12120793fb6a9550b941649fe34f52a206fd23bb1b9f5f7658b0cb10",
+      "timesSeen": 1
+    },
+    "src-if-cochrane": {
+      "firstCycle": "m4-cycle-4",
+      "contentHash": "7b2159bc4a373eddd0de2b63e46484dcc8405c9505134989d1a016995d897f03",
+      "timesSeen": 1
+    },
+    "src-airllm-claim": {
+      "firstCycle": "m4-cycle-5",
+      "contentHash": "28652d37abcbdc64cfb77a02db50748af913447f3f844293c3284fa7f8cc74a9",
+      "timesSeen": 1
+    },
+    "src-airllm-readme": {
+      "firstCycle": "m4-cycle-5",
+      "contentHash": "",
+      "timesSeen": 1
+    },
+    "src-miracle-weightloss": {
+      "firstCycle": "m4-cycle-5",
+      "contentHash": "9511fd4127c00abbd142deeeb9cd5ba0a503857a00fe140af984acf079a9b7df",
+      "timesSeen": 1
+    },
+    "src-python-freethreading": {
+      "firstCycle": "m4-cycle-6",
+      "contentHash": "4bb1026d357f63ea08f9bf479c082bb3722fea05a197f6c017ada4361d62b1df",
+      "timesSeen": 1
+    },
+    "src-kafka-vs-rabbitmq": {
+      "firstCycle": "m4-cycle-6",
+      "contentHash": "d04505fe14fccb5afba165c2806f3003178e23c03c5061126995de59ce773a56",
+      "timesSeen": 1
+    },
+    "src-cofepris-alert": {
+      "firstCycle": "m4-cycle-6",
+      "contentHash": "3e4d53aa69759f1a80b892214269259a96a34909d8d365fcb04a3c493765bb4e",
+      "timesSeen": 1
+    }
+  },
+  "signals": {
+    "sig-src-creatine-pmc-1": {
+      "signalId": "sig-src-creatine-pmc-1",
+      "corpusId": "src-creatine-pmc",
+      "topic": "diabetes",
+      "assertion": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+      "policy": "EVIDENCE",
+      "fingerprint": "17c5bbdf5a0d28e8",
+      "firstSeenCycle": "m4-cycle-1",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 3,
+      "clusterId": "cl-suplementacion-de-creatina",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "MEDIUM",
+      "editorialScore": 0.65,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+      ],
+      "contradiction": false
+    },
+    "sig-src-creatine-harvard-1": {
+      "signalId": "sig-src-creatine-harvard-1",
+      "corpusId": "src-creatine-harvard",
+      "topic": "efectos de la creatina en la recuperación muscular",
+      "assertion": "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso",
+      "policy": "SECONDARY",
+      "fingerprint": "b58fe32542f3f3df",
+      "firstSeenCycle": "m4-cycle-2",
+      "lastSeenCycle": "m4-cycle-2",
+      "seenCount": 1,
+      "clusterId": "cl-suplementacion-de-creatina",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "MEDIUM",
+      "editorialScore": 0.3,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+      ],
+      "contradiction": false
+    },
+    "sig-src-creatine-harvard-2": {
+      "signalId": "sig-src-creatine-harvard-2",
+      "corpusId": "src-creatine-harvard",
+      "topic": "efecto de la creatina en la sarcopenia",
+      "assertion": "suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores",
+      "policy": "SECONDARY",
+      "fingerprint": "66fe9081cfa81d9e",
+      "firstSeenCycle": "m4-cycle-2",
+      "lastSeenCycle": "m4-cycle-2",
+      "seenCount": 1,
+      "clusterId": "cl-suplementacion-de-creatina",
+      "assessment": "AMBIGUOUS",
+      "researchabilityLevel": "MEDIUM",
+      "editorialScore": 0.6,
+      "noiseLikelihood": 0,
+      "findingCount": 0,
+      "evidenceUrls": [
+        "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+      ],
+      "contradiction": false
+    },
+    "sig-src-if-mayo-1": {
+      "signalId": "sig-src-if-mayo-1",
+      "corpusId": "src-if-mayo",
+      "topic": "efectos del ayuno intermitente en el metabolismo",
+      "assertion": "El ayuno intermitente puede reducir la inflamación crónica.",
+      "policy": "SECONDARY",
+      "fingerprint": "cab2f7cfda2f6838",
+      "firstSeenCycle": "m4-cycle-3",
+      "lastSeenCycle": "m4-cycle-3",
+      "seenCount": 1,
+      "clusterId": "cl-ayuno-intermitente",
+      "assessment": "AMBIGUOUS",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.7,
+      "noiseLikelihood": 0,
+      "findingCount": 0,
+      "evidenceUrls": [
+        "https://www.mayoclinic.org/es/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/intermittent-fasting/faq-20441303"
+      ],
+      "contradiction": false
+    },
+    "sig-src-if-cochrane-1": {
+      "signalId": "sig-src-if-cochrane-1",
+      "corpusId": "src-if-cochrane",
+      "topic": "efectividad a largo plazo del ayuno intermitente",
+      "assertion": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+      "policy": "EVIDENCE",
+      "fingerprint": "b04246495bc1a349",
+      "firstSeenCycle": "m4-cycle-4",
+      "lastSeenCycle": "m4-cycle-4",
+      "seenCount": 1,
+      "clusterId": "cl-ayuno-intermitente",
+      "assessment": "SUPPORTED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.55,
+      "noiseLikelihood": 0,
+      "findingCount": 3,
+      "evidenceUrls": [
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+      ],
+      "contradiction": false
+    },
+    "sig-src-if-cochrane-2": {
+      "signalId": "sig-src-if-cochrane-2",
+      "corpusId": "src-if-cochrane",
+      "topic": "efectos secundarios del ayuno intermitente",
+      "assertion": "La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusiones firmes.",
+      "policy": "EVIDENCE",
+      "fingerprint": "bb67e7689e1515a1",
+      "firstSeenCycle": "m4-cycle-4",
+      "lastSeenCycle": "m4-cycle-4",
+      "seenCount": 1,
+      "clusterId": "cl-ayuno-intermitente",
+      "assessment": "SUPPORTED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.4,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+      ],
+      "contradiction": false
+    },
+    "sig-src-airllm-claim-1": {
+      "signalId": "sig-src-airllm-claim-1",
+      "corpusId": "src-airllm-claim",
+      "topic": "capacidad de ejecución de modelos de IA",
+      "assertion": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "policy": "DISCOVERY",
+      "fingerprint": "c8a95430d9161769",
+      "firstSeenCycle": "m4-cycle-5",
+      "lastSeenCycle": "m4-cycle-5",
+      "seenCount": 1,
+      "clusterId": "cl-airllm",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.7,
+      "noiseLikelihood": 0,
+      "findingCount": 0,
+      "evidenceUrls": [
+        "https://www.youtube.com/@legitalgorithmswithpeter"
+      ],
+      "contradiction": false
+    },
+    "sig-src-miracle-weightloss-1": {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "corpusId": "src-miracle-weightloss",
+      "topic": "pérdida de peso rápida",
+      "assertion": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+      "policy": "TERTIARY",
+      "fingerprint": "6a1babfb81df508e",
+      "firstSeenCycle": "m4-cycle-5",
+      "lastSeenCycle": "m4-cycle-5",
+      "seenCount": 1,
+      "clusterId": "cl-ketobig",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "MEDIUM",
+      "editorialScore": 0.2,
+      "noiseLikelihood": 0.8,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://k-state.com/plketobig"
+      ],
+      "contradiction": false
+    },
+    "sig-src-miracle-weightloss-2": {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "corpusId": "src-miracle-weightloss",
+      "topic": "descuento",
+      "assertion": "Bájalo ahora con descuento",
+      "policy": "TERTIARY",
+      "fingerprint": "e7ecaf7f657c9e8b",
+      "firstSeenCycle": "m4-cycle-5",
+      "lastSeenCycle": "m4-cycle-5",
+      "seenCount": 1,
+      "clusterId": "cl-ketobig",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "LOW",
+      "editorialScore": 0.15,
+      "noiseLikelihood": 0.9,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://k-state.com/plketobig"
+      ],
+      "contradiction": false
+    },
+    "sig-src-python-freethreading-1": {
+      "signalId": "sig-src-python-freethreading-1",
+      "corpusId": "src-python-freethreading",
+      "topic": "implementación de la GIL en Python 3.13",
+      "assertion": "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil",
+      "policy": "PRIMARY",
+      "fingerprint": "b3f54feb29202c90",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-python-3-13",
+      "assessment": "AMBIGUOUS",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.8,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://docs.python.org/3.13/howto/free-threading-python.html"
+      ],
+      "contradiction": false
+    },
+    "sig-src-python-freethreading-2": {
+      "signalId": "sig-src-python-freethreading-2",
+      "corpusId": "src-python-freethreading",
+      "topic": "compatibilidad de extensiones C con la GIL deshabilitada",
+      "assertion": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+      "policy": "PRIMARY",
+      "fingerprint": "7f28420e425dbf20",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-python-3-13",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.55,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://docs.python.org/3.13/howto/free-threading-python.html"
+      ],
+      "contradiction": false
+    },
+    "sig-src-kafka-vs-rabbitmq-1": {
+      "signalId": "sig-src-kafka-vs-rabbitmq-1",
+      "corpusId": "src-kafka-vs-rabbitmq",
+      "topic": "capacidades de RabbitMQ y Kafka",
+      "assertion": "RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordenado y paralelo particionado.",
+      "policy": "PRIMARY",
+      "fingerprint": "7e3ceb8345917ab8",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-rabbitmq-3-11",
+      "assessment": "AMBIGUOUS",
+      "researchabilityLevel": "MEDIUM",
+      "editorialScore": 0.6,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://www.rabbitmq.com/docs/compare/kafka"
+      ],
+      "contradiction": false
+    },
+    "sig-src-kafka-vs-rabbitmq-2": {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "corpusId": "src-kafka-vs-rabbitmq",
+      "topic": "capacidades de Kafka",
+      "assertion": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+      "policy": "PRIMARY",
+      "fingerprint": "393e02c787a7c646",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-rabbitmq-3-11",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.7,
+      "noiseLikelihood": 0,
+      "findingCount": 3,
+      "evidenceUrls": [
+        "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+        "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+        "https://www.conduktor.io/glossary/kafka-share-groups",
+        "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+        "https://www.rabbitmq.com/docs/compare/kafka"
+      ],
+      "contradiction": false
+    },
+    "sig-src-cofepris-alert-1": {
+      "signalId": "sig-src-cofepris-alert-1",
+      "corpusId": "src-cofepris-alert",
+      "topic": "anuncios publicitarios engañosos",
+      "assertion": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+      "policy": "EVIDENCE",
+      "fingerprint": "c91058882ab94d00",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-cofepris",
+      "assessment": "REFRAMED",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.7,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+      ],
+      "contradiction": false
+    },
+    "sig-src-cofepris-alert-2": {
+      "signalId": "sig-src-cofepris-alert-2",
+      "corpusId": "src-cofepris-alert",
+      "topic": "efectividad de métodos de pérdida de peso",
+      "assertion": "No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.",
+      "policy": "EVIDENCE",
+      "fingerprint": "946aed62b8ee32d8",
+      "firstSeenCycle": "m4-cycle-6",
+      "lastSeenCycle": "m4-cycle-6",
+      "seenCount": 1,
+      "clusterId": "cl-cofepris",
+      "assessment": "AMBIGUOUS",
+      "researchabilityLevel": "HIGH",
+      "editorialScore": 0.2,
+      "noiseLikelihood": 0,
+      "findingCount": 1,
+      "evidenceUrls": [
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+      ],
+      "contradiction": false
+    }
+  },
+  "clusters": {
+    "cl-suplementacion-de-creatina": {
+      "clusterId": "cl-suplementacion-de-creatina",
+      "label": "suplementación de creatina",
+      "tokens": [
+        "creati",
+        "diabet",
+        "dispon",
+        "intens",
+        "muscul",
+        "oxigen",
+        "recupe",
+        "sarcop"
+      ],
+      "signalIds": [
+        "sig-src-creatine-harvard-1",
+        "sig-src-creatine-harvard-2",
+        "sig-src-creatine-pmc-1"
+      ],
+      "sourceIds": [
+        "src-creatine-harvard",
+        "src-creatine-pmc"
+      ],
+      "authoritySourceIds": [
+        "src-creatine-pmc"
+      ],
+      "evidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+        "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "HIGH",
+      "priorityScore": 0.605,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-1",
+          "cycleNumber": 1,
+          "priority": "MEDIUM",
+          "score": 0.4175
+        },
+        {
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "priority": "HIGH",
+          "score": 0.605
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-1",
+          "cycleNumber": 1,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T01:00:00.000Z"
+        },
+        {
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "status": "PROMOTED",
+          "reason": "Promovido a AthenaOS con prioridad HIGH (Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.).",
+          "at": "2026-09-12T02:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.605 (researchability 0.5, evidencia 2, editorial 0.65, fuentes 2, contradicción 0).",
+        "Soporte: 2 fuentes independientes y 2 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-1",
+      "lastCycle": "m4-cycle-2",
+      "status": "PROMOTED",
+      "highSinceCycle": 2,
+      "promotedAt": "2026-09-12T02:00:00.000Z"
+    },
+    "cl-ayuno-intermitente": {
+      "clusterId": "cl-ayuno-intermitente",
+      "label": "ayuno intermitente",
+      "tokens": [
+        "alimen",
+        "ayuno",
+        "consej",
+        "cronic",
+        "inflam",
+        "interm",
+        "largo",
+        "plazo",
+        "secund"
+      ],
+      "signalIds": [
+        "sig-src-if-cochrane-1",
+        "sig-src-if-cochrane-2",
+        "sig-src-if-mayo-1"
+      ],
+      "sourceIds": [
+        "src-if-cochrane",
+        "src-if-mayo"
+      ],
+      "authoritySourceIds": [
+        "src-if-cochrane"
+      ],
+      "evidenceUrls": [
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://www.mayoclinic.org/es/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/intermittent-fasting/faq-20441303"
+      ],
+      "assessment": "SUPPORTED",
+      "priority": "HIGH",
+      "priorityScore": 0.94,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-3",
+          "cycleNumber": 3,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        },
+        {
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "priority": "HIGH",
+          "score": 0.94
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-3",
+          "cycleNumber": 3,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T03:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.94 (researchability 1, evidencia 5, editorial 0.7, fuentes 2, contradicción 1).",
+        "Soporte: 2 fuentes independientes y 5 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración.",
+        "Contradicción abierta (2): mantiene el cluster en HIGH pero bloquea la promoción a AthenaOS."
+      ],
+      "contradiction": true,
+      "contradictionDetails": [
+        "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+        "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo)."
+      ],
+      "resolutionNote": "El cluster coexiste con evaluación SUPPORTED y contradicción abierta: prevalece la evidencia de mayor tier (src-if-cochrane, src-if-cochrane) sobre las fuentes de menor peso (src-if-mayo); la tensión se conserva como contexto editorial y no se resuelve en un hecho.",
+      "firstCycle": "m4-cycle-3",
+      "lastCycle": "m4-cycle-4",
+      "status": "ACTIVE",
+      "highSinceCycle": null,
+      "promotedAt": null
+    },
+    "cl-airllm": {
+      "clusterId": "cl-airllm",
+      "label": "AirLLM",
+      "tokens": [
+        "airllm",
+        "deepse",
+        "ejecuc",
+        "memori",
+        "modelo"
+      ],
+      "signalIds": [
+        "sig-src-airllm-claim-1"
+      ],
+      "sourceIds": [
+        "src-airllm-claim"
+      ],
+      "authoritySourceIds": [],
+      "evidenceUrls": [
+        "https://www.youtube.com/@legitalgorithmswithpeter"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T05:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5275 (researchability 1, evidencia 1, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-5",
+      "lastCycle": "m4-cycle-5",
+      "status": "ACTIVE",
+      "highSinceCycle": null,
+      "promotedAt": null
+    },
+    "cl-ketobig": {
+      "clusterId": "cl-ketobig",
+      "label": "KetoBig",
+      "tokens": [
+        "descue",
+        "ketobi",
+        "promoc",
+        "rapida"
+      ],
+      "signalIds": [
+        "sig-src-miracle-weightloss-1",
+        "sig-src-miracle-weightloss-2"
+      ],
+      "sourceIds": [
+        "src-miracle-weightloss"
+      ],
+      "authoritySourceIds": [],
+      "evidenceUrls": [
+        "https://k-state.com/plketobig"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "DISCARD",
+      "priorityScore": 0.3275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "priority": "DISCARD",
+          "score": 0.3275
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T05:00:00.000Z"
+        },
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "DISCARDED",
+          "reason": "Descartado por ruido/no investigable (score 0.3275).",
+          "at": "2026-09-12T05:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.3275 (researchability 0.5, evidencia 1, editorial 0.2, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad DISCARD aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-5",
+      "lastCycle": "m4-cycle-5",
+      "status": "DISCARDED",
+      "highSinceCycle": null,
+      "promotedAt": null
+    },
+    "cl-python-3-13": {
+      "clusterId": "cl-python-3-13",
+      "label": "Python 3.13",
+      "tokens": [
+        "compat",
+        "compil",
+        "deshab",
+        "extens",
+        "python"
+      ],
+      "signalIds": [
+        "sig-src-python-freethreading-1",
+        "sig-src-python-freethreading-2"
+      ],
+      "sourceIds": [
+        "src-python-freethreading"
+      ],
+      "authoritySourceIds": [
+        "src-python-freethreading"
+      ],
+      "evidenceUrls": [
+        "https://docs.python.org/3.13/howto/free-threading-python.html"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5475,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.5475
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5475 (researchability 1, evidencia 1, editorial 0.8, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "status": "ACTIVE",
+      "highSinceCycle": null,
+      "promotedAt": null
+    },
+    "cl-rabbitmq-3-11": {
+      "clusterId": "cl-rabbitmq-3-11",
+      "label": "RabbitMQ 3.11",
+      "tokens": [
+        "active",
+        "consum",
+        "groups",
+        "kafka",
+        "rabbit",
+        "share",
+        "single",
+        "stream",
+        "super"
+      ],
+      "signalIds": [
+        "sig-src-kafka-vs-rabbitmq-1",
+        "sig-src-kafka-vs-rabbitmq-2"
+      ],
+      "sourceIds": [
+        "src-kafka-vs-rabbitmq"
+      ],
+      "authoritySourceIds": [
+        "src-kafka-vs-rabbitmq"
+      ],
+      "evidenceUrls": [
+        "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+        "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+        "https://www.conduktor.io/glossary/kafka-share-groups",
+        "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+        "https://www.rabbitmq.com/docs/compare/kafka"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.715,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.715
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.715 (researchability 1, evidencia 5, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 5 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "status": "ACTIVE",
+      "highSinceCycle": null,
+      "promotedAt": null
+    },
+    "cl-cofepris": {
+      "clusterId": "cl-cofepris",
+      "label": "COFEPRIS",
+      "tokens": [
+        "anunci",
+        "balanc",
+        "cofepr",
+        "diario",
+        "engano",
+        "metodo",
+        "portal",
+        "public",
+        "retira"
+      ],
+      "signalIds": [
+        "sig-src-cofepris-alert-1",
+        "sig-src-cofepris-alert-2"
+      ],
+      "sourceIds": [
+        "src-cofepris-alert"
+      ],
+      "authoritySourceIds": [
+        "src-cofepris-alert"
+      ],
+      "evidenceUrls": [
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        }
+      ],
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5275 (researchability 1, evidencia 1, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "contradiction": false,
+      "contradictionDetails": [],
+      "resolutionNote": null,
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "status": "ACTIVE",
+      "highSinceCycle": null,
+      "promotedAt": null
+    }
+  },
+  "candidates": {
+    "rc4-cl-suplementacion-de-creatina": {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "title": "diabetes",
+      "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "originSignalIds": [
+        "sig-src-creatine-harvard-1",
+        "sig-src-creatine-harvard-2",
+        "sig-src-creatine-pmc-1"
+      ],
+      "sourceIds": [
+        "src-creatine-harvard",
+        "src-creatine-pmc"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "HIGH",
+      "priorityScore": 0.605,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-1",
+          "cycleNumber": 1,
+          "priority": "MEDIUM",
+          "score": 0.4175
+        },
+        {
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "priority": "HIGH",
+          "score": 0.605
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.605 (researchability 0.5, evidencia 2, editorial 0.65, fuentes 2, contradicción 0).",
+        "Soporte: 2 fuentes independientes y 2 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "PROMOTED",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-1",
+          "cycleNumber": 1,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T01:00:00.000Z"
+        },
+        {
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "status": "PROMOTED",
+          "reason": "Promovido a AthenaOS con prioridad HIGH (Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.).",
+          "at": "2026-09-12T02:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-1",
+      "lastCycle": "m4-cycle-2",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+            "provenanceUrls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+          "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+          "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+          "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+          "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+            "refs": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-pmc-1",
+          "originalClaims": [
+            "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+        }
+      },
+      "promotionReason": "Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "promotionReasons": [
+        "Prioridad HIGH (score 0.605) con 2 fuentes (1 de autoridad) y 2 evidencias.",
+        "Evaluación agregada REFRAMED sin contradicción abierta.",
+        "Promovido a AthenaOS en 2026-09-12T02:00:00.000Z."
+      ]
+    },
+    "rc4-cl-ayuno-intermitente": {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "title": "efectividad a largo plazo del ayuno intermitente",
+      "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+      "originSignalIds": [
+        "sig-src-if-cochrane-1",
+        "sig-src-if-cochrane-2",
+        "sig-src-if-mayo-1"
+      ],
+      "sourceIds": [
+        "src-if-cochrane",
+        "src-if-mayo"
+      ],
+      "assessment": "SUPPORTED",
+      "priority": "HIGH",
+      "priorityScore": 0.94,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-3",
+          "cycleNumber": 3,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        },
+        {
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "priority": "HIGH",
+          "score": 0.94
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.94 (researchability 1, evidencia 5, editorial 0.7, fuentes 2, contradicción 1).",
+        "Soporte: 2 fuentes independientes y 5 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración.",
+        "Contradicción abierta (2): mantiene el cluster en HIGH pero bloquea la promoción a AthenaOS."
+      ],
+      "resolutionNote": "El cluster coexiste con evaluación SUPPORTED y contradicción abierta: prevalece la evidencia de mayor tier (src-if-cochrane, src-if-cochrane) sobre las fuentes de menor peso (src-if-mayo); la tensión se conserva como contexto editorial y no se resuelve en un hecho.",
+      "status": "ACTIVE",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-3",
+          "cycleNumber": 3,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T03:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-3",
+      "lastCycle": "m4-cycle-4",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 4
+        },
+        "proposedSources": [
+          {
+            "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+            "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+            "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          },
+          {
+            "statement": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          },
+          {
+            "statement": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Existen diferencias significativas entre los grupos de estudio?",
+          "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?",
+          "Evaluación no concluyente."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+            "refs": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+            "refs": [
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+            "refs": [
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ]
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-if-cochrane-1",
+          "originalClaims": [
+            "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada."
+          ],
+          "assessment": "SUPPORTED",
+          "reframingNote": null
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    },
+    "rc4-cl-airllm": {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "title": "capacidad de ejecución de modelos de IA",
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "originSignalIds": [
+        "sig-src-airllm-claim-1"
+      ],
+      "sourceIds": [
+        "src-airllm-claim"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5275 (researchability 1, evidencia 1, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "ACTIVE",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T05:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-5",
+      "lastCycle": "m4-cycle-5",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+            "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "language": "es",
+            "role": "DISCOVERY",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "discovery_only",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+          "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+          "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-airllm-claim-1",
+          "originalClaims": [
+            "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    },
+    "rc4-cl-ketobig": {
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "title": "pérdida de peso rápida",
+      "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+      "originSignalIds": [
+        "sig-src-miracle-weightloss-1",
+        "sig-src-miracle-weightloss-2"
+      ],
+      "sourceIds": [
+        "src-miracle-weightloss"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "DISCARD",
+      "priorityScore": 0.3275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "priority": "DISCARD",
+          "score": 0.3275
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.3275 (researchability 0.5, evidencia 1, editorial 0.2, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad DISCARD aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "DISCARDED",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T05:00:00.000Z"
+        },
+        {
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "status": "DISCARDED",
+          "reason": "Descartado por ruido/no investigable (score 0.3275).",
+          "at": "2026-09-12T05:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-5",
+      "lastCycle": "m4-cycle-5",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://k-state.com/plketobig",
+            "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+            "language": "es",
+            "role": "DISCOVERY",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "low_trust_tertiary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿La afirmación de perder 10 kilos en una semana es realista?",
+          "¿El suplemento KetoBig es efectivo para todas las personas?",
+          "¿Existen riesgos o efectos secundarios asociados con el uso de KetoBig?",
+          "Falta de estudios clínicos, datos de seguridad y eficacia, y ausencia de revisión por pares"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "KetoBig afirma que puede ayudar a perder 10 kilos en una semana sin dieta ni ejercicio.",
+            "refs": [
+              "https://k-state.com/plketobig"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable que puede ser evaluada mediante un estudio controlado. Pregunta investigable reformulada: ¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-miracle-weightloss-1",
+          "originalClaims": [
+            "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable que puede ser evaluada mediante un estudio controlado. Pregunta investigable reformulada: ¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?"
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    },
+    "rc4-cl-cofepris": {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "title": "anuncios publicitarios engañosos",
+      "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "originSignalIds": [
+        "sig-src-cofepris-alert-1",
+        "sig-src-cofepris-alert-2"
+      ],
+      "sourceIds": [
+        "src-cofepris-alert"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5275,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.5275
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5275 (researchability 1, evidencia 1, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "ACTIVE",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+            "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+          "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+            "refs": [
+              "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-cofepris-alert-1",
+          "originalClaims": [
+            "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    },
+    "rc4-cl-python-3-13": {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "title": "compatibilidad de extensiones C con la GIL deshabilitada",
+      "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+      "originSignalIds": [
+        "sig-src-python-freethreading-1",
+        "sig-src-python-freethreading-2"
+      ],
+      "sourceIds": [
+        "src-python-freethreading"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.5475,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.5475
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.5475 (researchability 1, evidencia 1, editorial 0.8, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "ACTIVE",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Está claro qué extensiones C necesitan modificaciones?",
+          "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+          "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+          "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-2",
+          "originalClaims": [
+            "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    },
+    "rc4-cl-rabbitmq-3-11": {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "title": "capacidades de Kafka",
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "originSignalIds": [
+        "sig-src-kafka-vs-rabbitmq-1",
+        "sig-src-kafka-vs-rabbitmq-2"
+      ],
+      "sourceIds": [
+        "src-kafka-vs-rabbitmq"
+      ],
+      "assessment": "REFRAMED",
+      "priority": "MEDIUM",
+      "priorityScore": 0.715,
+      "priorityHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "priority": "MEDIUM",
+          "score": 0.715
+        }
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.715 (researchability 1, evidencia 5, editorial 0.7, fuentes 1, contradicción 0).",
+        "Soporte: 1 fuentes independientes y 5 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "status": "ACTIVE",
+      "statusHistory": [
+        {
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "status": "ACTIVE",
+          "reason": "Cluster creado por el radar; arranca ACTIVE hasta acumular corroboración.",
+          "at": "2026-09-12T06:00:00.000Z"
+        }
+      ],
+      "firstCycle": "m4-cycle-6",
+      "lastCycle": "m4-cycle-6",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "promotionReason": null,
+      "promotionReasons": []
+    }
+  },
+  "events": [
+    {
+      "eventId": "evt-m4-cycle-1-1",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-1",
+      "cycleNumber": 1,
+      "occurredAt": "2026-09-12T01:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-pmc-1",
+      "message": "Nueva señal descubierta en src-creatine-pmc: \"La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diab\"",
+      "details": {
+        "clusterId": "cl-suplementacion-de-creatina",
+        "policy": "EVIDENCE"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-1",
+      "kind": "DUPLICATE",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SOURCE",
+      "subjectId": "src-creatine-pmc",
+      "message": "Fuente src-creatine-pmc ya procesada (hash 8c6a5b1b0b41); no se reprocesa ni duplica.",
+      "details": {
+        "contentHash": "8c6a5b1b0b41ee3b9799fa9794bafc93e3a9c9aec344662c0c0c704a44ebe8ff",
+        "timesSeen": 2
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-2",
+      "kind": "KNOWN",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-pmc-1",
+      "message": "Señal conocida que reaparece; identidad histórica preservada (vista 2 veces).",
+      "details": {
+        "fingerprint": "17c5bbdf5a0d28e8",
+        "seenCount": 2,
+        "clusterId": "cl-suplementacion-de-creatina"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-3",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-harvard-1",
+      "message": "Señal relacionada con el cluster cl-suplementacion-de-creatina; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-suplementacion-de-creatina",
+        "sharedStems": [
+          "creati"
+        ],
+        "sources": [
+          "src-creatine-pmc"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-4",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-harvard-1",
+      "message": "Nueva señal descubierta en src-creatine-harvard: \"creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso\"",
+      "details": {
+        "clusterId": "cl-suplementacion-de-creatina",
+        "policy": "SECONDARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-5",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-harvard-2",
+      "message": "Señal relacionada con el cluster cl-suplementacion-de-creatina; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-suplementacion-de-creatina",
+        "sharedStems": [
+          "creati"
+        ],
+        "sources": [
+          "src-creatine-harvard",
+          "src-creatine-pmc"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-6",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-harvard-2",
+      "message": "Nueva señal descubierta en src-creatine-harvard: \"suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores\"",
+      "details": {
+        "clusterId": "cl-suplementacion-de-creatina",
+        "policy": "SECONDARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-7",
+      "kind": "UPDATED",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-suplementacion-de-creatina",
+      "message": "Evidencia ampliada: 1 → 2 fuentes de evidencia.",
+      "details": {
+        "from": 1,
+        "to": 2
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-8",
+      "kind": "PRIORITY_CHANGED",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-suplementacion-de-creatina",
+      "message": "Prioridad MEDIUM → HIGH (score 0.605).",
+      "details": {
+        "from": "MEDIUM",
+        "to": "HIGH",
+        "score": 0.605
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-2-9",
+      "kind": "PROMOTED",
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-suplementacion-de-creatina",
+      "message": "Candidate promovido a AthenaOS con prioridad HIGH (promotionReason registrado).",
+      "details": {
+        "score": 0.605,
+        "sources": [
+          "src-creatine-harvard",
+          "src-creatine-pmc"
+        ],
+        "evidence": 2,
+        "assessment": "REFRAMED",
+        "promotionReason": "Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED."
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-3-1",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-3",
+      "cycleNumber": 3,
+      "occurredAt": "2026-09-12T03:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-if-mayo-1",
+      "message": "Nueva señal descubierta en src-if-mayo: \"El ayuno intermitente puede reducir la inflamación crónica.\"",
+      "details": {
+        "clusterId": "cl-ayuno-intermitente",
+        "policy": "SECONDARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-1",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-if-cochrane-1",
+      "message": "Señal relacionada con el cluster cl-ayuno-intermitente; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-ayuno-intermitente",
+        "sharedStems": [
+          "ayuno",
+          "interm"
+        ],
+        "sources": [
+          "src-if-mayo"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-2",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-if-cochrane-1",
+      "message": "Nueva señal descubierta en src-if-cochrane: \"El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con \"",
+      "details": {
+        "clusterId": "cl-ayuno-intermitente",
+        "policy": "EVIDENCE"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-3",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-if-cochrane-2",
+      "message": "Señal relacionada con el cluster cl-ayuno-intermitente; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-ayuno-intermitente",
+        "sharedStems": [
+          "ayuno",
+          "interm"
+        ],
+        "sources": [
+          "src-if-cochrane",
+          "src-if-mayo"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-4",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-if-cochrane-2",
+      "message": "Nueva señal descubierta en src-if-cochrane: \"La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusio\"",
+      "details": {
+        "clusterId": "cl-ayuno-intermitente",
+        "policy": "EVIDENCE"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-5",
+      "kind": "CONTRADICTED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-ayuno-intermitente",
+      "message": "Evidencia contradictoria detectada en cl-ayuno-intermitente.",
+      "details": {
+        "details": [
+          "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+          "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo)."
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-6",
+      "kind": "REASSESSED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-ayuno-intermitente",
+      "message": "Reevaluación: AMBIGUOUS → SUPPORTED.",
+      "details": {
+        "from": "AMBIGUOUS",
+        "to": "SUPPORTED"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-7",
+      "kind": "UPDATED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-ayuno-intermitente",
+      "message": "Evidencia ampliada: 1 → 5 fuentes de evidencia.",
+      "details": {
+        "from": 1,
+        "to": 5
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-4-8",
+      "kind": "PRIORITY_CHANGED",
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-ayuno-intermitente",
+      "message": "Prioridad MEDIUM → HIGH (score 0.94).",
+      "details": {
+        "from": "MEDIUM",
+        "to": "HIGH",
+        "score": 0.94
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-5-1",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-airllm-claim-1",
+      "message": "Nueva señal descubierta en src-airllm-claim: \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\"",
+      "details": {
+        "clusterId": "cl-airllm",
+        "policy": "DISCOVERY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-5-2",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-miracle-weightloss-1",
+      "message": "Nueva señal descubierta en src-miracle-weightloss: \"KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio\"",
+      "details": {
+        "clusterId": "cl-ketobig",
+        "policy": "TERTIARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-5-3",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-miracle-weightloss-2",
+      "message": "Señal relacionada con el cluster cl-ketobig; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-ketobig",
+        "sharedStems": [],
+        "sources": [
+          "src-miracle-weightloss"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-5-4",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-miracle-weightloss-2",
+      "message": "Nueva señal descubierta en src-miracle-weightloss: \"Bájalo ahora con descuento\"",
+      "details": {
+        "clusterId": "cl-ketobig",
+        "policy": "TERTIARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-5-5",
+      "kind": "DISCARDED",
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "subjectType": "CLUSTER",
+      "subjectId": "cl-ketobig",
+      "message": "Descartado: ruido/no investigable (score 0.3275).",
+      "details": {
+        "reasons": [
+          "Todas las fuentes del cluster son terciarias/bloqueadas con alta probabilidad de ruido."
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-1",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-python-freethreading-1",
+      "message": "Nueva señal descubierta en src-python-freethreading: \"La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil\"",
+      "details": {
+        "clusterId": "cl-python-3-13",
+        "policy": "PRIMARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-2",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-python-freethreading-2",
+      "message": "Señal relacionada con el cluster cl-python-3-13; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-python-3-13",
+        "sharedStems": [],
+        "sources": [
+          "src-python-freethreading"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-3",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-python-freethreading-2",
+      "message": "Nueva señal descubierta en src-python-freethreading: \"Las extensiones C deben ser modificadas para soportar la GIL deshabilitada\"",
+      "details": {
+        "clusterId": "cl-python-3-13",
+        "policy": "PRIMARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-4",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-kafka-vs-rabbitmq-1",
+      "message": "Nueva señal descubierta en src-kafka-vs-rabbitmq: \"RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordena\"",
+      "details": {
+        "clusterId": "cl-rabbitmq-3-11",
+        "policy": "PRIMARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-5",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-kafka-vs-rabbitmq-2",
+      "message": "Señal relacionada con el cluster cl-rabbitmq-3-11; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-rabbitmq-3-11",
+        "sharedStems": [
+          "kafka"
+        ],
+        "sources": [
+          "src-kafka-vs-rabbitmq"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-6",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-kafka-vs-rabbitmq-2",
+      "message": "Nueva señal descubierta en src-kafka-vs-rabbitmq: \"Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo tempora\"",
+      "details": {
+        "clusterId": "cl-rabbitmq-3-11",
+        "policy": "PRIMARY"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-7",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-cofepris-alert-1",
+      "message": "Nueva señal descubierta en src-cofepris-alert: \"La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por vi\"",
+      "details": {
+        "clusterId": "cl-cofepris",
+        "policy": "EVIDENCE"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-8",
+      "kind": "RELATED",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-cofepris-alert-2",
+      "message": "Señal relacionada con el cluster cl-cofepris; se vincula a fuentes ya conocidas.",
+      "details": {
+        "clusterId": "cl-cofepris",
+        "sharedStems": [],
+        "sources": [
+          "src-cofepris-alert"
+        ]
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-9",
+      "kind": "NEW",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-cofepris-alert-2",
+      "message": "Nueva señal descubierta en src-cofepris-alert: \"No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.\"",
+      "details": {
+        "clusterId": "cl-cofepris",
+        "policy": "EVIDENCE"
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-10",
+      "kind": "DUPLICATE",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SOURCE",
+      "subjectId": "src-creatine-pmc",
+      "message": "Fuente src-creatine-pmc ya procesada (hash 8c6a5b1b0b41); no se reprocesa ni duplica.",
+      "details": {
+        "contentHash": "8c6a5b1b0b41ee3b9799fa9794bafc93e3a9c9aec344662c0c0c704a44ebe8ff",
+        "timesSeen": 3
+      }
+    },
+    {
+      "eventId": "evt-m4-cycle-6-11",
+      "kind": "KNOWN",
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "subjectType": "SIGNAL",
+      "subjectId": "sig-src-creatine-pmc-1",
+      "message": "Señal conocida que reaparece; identidad histórica preservada (vista 3 veces).",
+      "details": {
+        "fingerprint": "17c5bbdf5a0d28e8",
+        "seenCount": 3,
+        "clusterId": "cl-suplementacion-de-creatina"
+      }
+    }
+  ],
+  "eventCounts": {
+    "NEW": 15,
+    "KNOWN": 2,
+    "DUPLICATE": 2,
+    "RELATED": 8,
+    "UPDATED": 2,
+    "PRIORITY_CHANGED": 2,
+    "PROMOTED": 1,
+    "CONTRADICTED": 1,
+    "REASSESSED": 1,
+    "DISCARDED": 1
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+  "candidateId": "rc4-cl-ayuno-intermitente",
+  "clusterId": "cl-ayuno-intermitente",
+  "contentHash": "20d5d241d06353a923eccb9bb69573c8be25470fbb9c540ffe4374a90723b637",
+  "publishedAt": "2026-09-12T02:03:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 4
+    },
+    "proposedSources": [
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "official_documentation",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "secondary_press",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "secondary_press",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "secondary_press",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+        "provenanceUrls": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+          "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+        ],
+        "statusHint": "UNVERIFIED"
+      },
+      {
+        "statement": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+        "provenanceUrls": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+          "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+        ],
+        "statusHint": "UNVERIFIED"
+      },
+      {
+        "statement": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+        "provenanceUrls": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+          "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿Existen diferencias significativas entre los grupos de estudio?",
+      "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?",
+      "Evaluación no concluyente."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+        "refs": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+        ]
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+        "refs": [
+          "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html"
+        ]
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+        "refs": [
+          "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+        ]
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-if-cochrane-1",
+      "originalClaims": [
+        "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada."
+      ],
+      "assessment": "SUPPORTED",
+      "reframingNote": null
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/akp-live/inbox/rc4-cl-ayuno-intermitente.json"
+}

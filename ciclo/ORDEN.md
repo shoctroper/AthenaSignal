@@ -1,5 +1,8 @@
 # ORDEN-004 — Implementación de Adquisición MCP y Research Agent
 
+> **SUPERSEDIDA EN EJECUCIÓN POR ORDEN-005** (Milestone M1 "Deep Search Vertical Slice").
+> El trabajo de T-012 a T-015 se ejecuta ahora bajo `./ciclo/ORDEN-005.md` vía Governance.
+
 - **Fecha:** 2026-09-06
 - **Emite:** Arquitecto
 - **Estado:** VIGENTE

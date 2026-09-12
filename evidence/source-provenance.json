@@ -1,0 +1,66 @@
+{
+  "kind": "athenasignal.source_provenance.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "sources": [
+    {
+      "sourceId": "athenasignal-src-kafka-intro",
+      "url": "https://kafka.apache.org/intro",
+      "platform": "blog",
+      "language": "en",
+      "title": "Apache Kafka — Introduction",
+      "role": "EVIDENCE",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "59fa903ed0de4fd75fdba522b40f992f2ea72d269fda2b3920398c656c7c4f58"
+    },
+    {
+      "sourceId": "prop-kafka-apache-org-intro",
+      "url": "https://kafka.apache.org/intro",
+      "platform": "web",
+      "language": "en",
+      "title": "Apache Kafka — Introduction",
+      "role": "EVIDENCE",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "870ce79bdcb75c431b7858521808552b73dfdccf30fc0015c5730da297493602"
+    },
+    {
+      "sourceId": "prop-www-rabbitmq-com-tutorials-amqp-concepts",
+      "url": "https://www.rabbitmq.com/tutorials/amqp-concepts",
+      "platform": "web",
+      "language": "en",
+      "title": "RabbitMQ — AMQP 0-9-1 Model Explained",
+      "role": "EVIDENCE",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "4e3fa89eae5b4b23528b9983d4be92e9f9f21b4502c14e14237e89e4dce0f5fc"
+    },
+    {
+      "sourceId": "athenasignal-src-airllm-claim",
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "platform": "youtube",
+      "language": "es",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "DISCOVERY",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "a3f93678067fbabed828c3d263a7878a077d11c3ceeaa3756b167fbee911d41a"
+    },
+    {
+      "sourceId": "prop-pypi-org-project-airllm",
+      "url": "https://pypi.org/project/airllm/",
+      "platform": "web",
+      "language": "en",
+      "title": "airllm — PyPI (v4.0.0)",
+      "role": "EVIDENCE",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "e829aeff15a9ca6a9edc46542dadc7fea125040e90d92839fbe958aaa32f7361"
+    },
+    {
+      "sourceId": "prop-github-com-lyogavin-airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "platform": "web",
+      "language": "en",
+      "title": "lyogavin/airllm — GitHub",
+      "role": "EVIDENCE",
+      "capturedAt": "2026-09-11T00:00:00.000Z",
+      "contentHash": "3c385686d924d52c5e2b6077dff6c6ff9f49f005e08a9c3864f4463c5b7b1106"
+    }
+  ]
+}

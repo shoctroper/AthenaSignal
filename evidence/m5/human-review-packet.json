@@ -1,0 +1,195 @@
+{
+  "kind": "athenasignal.m5.human_review_packet.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "rubric": [
+    {
+      "id": "P1",
+      "question": "¿El radar continuó aprendiendo entre procesos y reinicios sin reiniciar el universo?"
+    },
+    {
+      "id": "P2",
+      "question": "¿Reconoció material conocido conservando la misma identidad histórica?"
+    },
+    {
+      "id": "P3",
+      "question": "¿Encontró material nuevo y lo distinguió de lo conocido?"
+    },
+    {
+      "id": "P4",
+      "question": "¿Evitó duplicar fuentes, señales y handoffs (idempotencia)?"
+    },
+    {
+      "id": "P5",
+      "question": "¿Relacionó fuentes equivalentes en varios idiomas?"
+    },
+    {
+      "id": "P6",
+      "question": "¿Actualizó decisiones y prioridades con razones auditables?"
+    },
+    {
+      "id": "P7",
+      "question": "¿Mantuvo las contradicciones sin convertirlas en hechos?"
+    },
+    {
+      "id": "P8",
+      "question": "¿Se recuperó de fallos de nodo/proceso sin fabricar evidencia?"
+    },
+    {
+      "id": "P9",
+      "question": "¿Entregó a AKP un candidate investigable y validado?"
+    },
+    {
+      "id": "P10",
+      "question": "¿Evitó saturar a AthenaOS con handoffs duplicados o ruido?"
+    }
+  ],
+  "longitudinalStory": [
+    "El estado persistido se importó desde evidence/m4/radar-state.json sin reiniciar el universo.",
+    "Se procesaron 48 ciclos (236 eventos en ciclos M5).",
+    "Sobrevivieron 1 muerte(s) de proceso y 15 evento(s) de recuperación.",
+    "Se descubrieron 25 señales, se reconocieron 99 y se descartaron 1 como ruido.",
+    "Se promovieron 4 candidate(s) con handoff validado; el consumidor AKP local ingirió 4 handoff(s) (AthenaOS no expone endpoint vivo: limitación documentada)."
+  ],
+  "bestCandidate": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "title": "efectividad a largo plazo del ayuno intermitente",
+    "priority": "HIGH",
+    "assessment": "SUPPORTED",
+    "firstCycle": "m4-cycle-3",
+    "lastCycle": "m5-cycle-9",
+    "cyclesSeen": 2,
+    "sources": 3,
+    "why": "3 fuentes y score 0.94; memoria desde m4-cycle-3 hasta m5-cycle-9."
+  },
+  "newestDiscovery": {
+    "candidateId": "rc4-cl-cofepris",
+    "firstCycle": "m4-cycle-6",
+    "why": "Descubierto en m4-cycle-6 y reevaluado hasta m5-cycle-14."
+  },
+  "priorityEvolution": [
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "from": "MEDIUM",
+      "to": "HIGH",
+      "cycles": [
+        "m4-cycle-3",
+        "m4-cycle-4"
+      ]
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "from": "MEDIUM",
+      "to": "HIGH",
+      "cycles": [
+        "m4-cycle-6",
+        "m5-cycle-14"
+      ]
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "from": "MEDIUM",
+      "to": "HIGH",
+      "cycles": [
+        "m4-cycle-6",
+        "m5-cycle-12"
+      ]
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "from": "MEDIUM",
+      "to": "HIGH",
+      "cycles": [
+        "m4-cycle-6",
+        "m5-cycle-13"
+      ]
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "from": "MEDIUM",
+      "to": "HIGH",
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2",
+        "m5-cycle-7"
+      ]
+    }
+  ],
+  "recovered": [
+    {
+      "recoveryId": "rec-m5-pipeline-001",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa signal_discovery no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde ubuntu-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-002",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa assertion_decomposition no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde ubuntu-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-003",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa evidence_interpretation no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde ubuntu-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-004",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa claim_assessment no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde macmini-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-005",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa researchability no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde macmini-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-006",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa editorial_relevance no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde macmini-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-pipeline-007",
+      "kind": "LLM_FALLBACK",
+      "runId": "m5-pipeline",
+      "why": "La etapa prioritization no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde macmini-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-drill-nodedown-001",
+      "kind": "NODE_DOWN",
+      "runId": "m5-drill-nodedown",
+      "why": "Nodo macmini-ollama (LOCAL_ALT) no saludable; se omite en claim_assessment."
+    }
+  ],
+  "akpConsumption": {
+    "delivered": 4,
+    "consumed": 4,
+    "consumer": "akp-local-ingestor-v1",
+    "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local."
+  },
+  "promoted": [
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "promotionReason": "Promovido: HIGH con score 0.6675 >= 0.6, 3 fuentes independientes (1 de autoridad) y 3 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "validationValid": true
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "promotionReason": "Promovido: HIGH con score 0.715 >= 0.6, 2 fuentes independientes (2 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "validationValid": true
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "promotionReason": "Promovido: HIGH con score 0.735 >= 0.6, 2 fuentes independientes (2 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "validationValid": true
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "promotionReason": "Promovido: HIGH con score 0.84 >= 0.6, 2 fuentes independientes (2 de autoridad) y 6 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "validationValid": true
+    }
+  ]
+}

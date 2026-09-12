@@ -1,0 +1,387 @@
+{
+  "kind": "athenasignal.m7.human_review_packet.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "rubric": [
+    {
+      "id": "Q1",
+      "question": "¿El closed loop AthenaSignal→AKP→AthenaOS→AKP→AthenaSignal es trazable extremo a extremo?"
+    },
+    {
+      "id": "Q2",
+      "question": "¿Existe al menos un caso CONFIRMED basado en evidencia?"
+    },
+    {
+      "id": "Q3",
+      "question": "¿Existe al menos un caso REFUTED basado en evidencia?"
+    },
+    {
+      "id": "Q4",
+      "question": "¿Cada transición epistémica está justificada por evidencia/provenance?"
+    },
+    {
+      "id": "Q5",
+      "question": "¿Nueva evidencia cambia materialmente el estado de un candidate?"
+    },
+    {
+      "id": "Q6",
+      "question": "¿Se conserva el historial completo sin sobrescribir el pasado?"
+    },
+    {
+      "id": "Q7",
+      "question": "¿Las contradicciones están representadas y resueltas o conservadas?"
+    },
+    {
+      "id": "Q8",
+      "question": "¿El sistema es recuperable y idempotente sin corromper memoria?"
+    },
+    {
+      "id": "Q9",
+      "question": "¿El universo creció por encima de M6 (>= 400 fuentes) sin degradación catastrófica?"
+    },
+    {
+      "id": "Q10",
+      "question": "¿Un editor humano confirmaría que el radar quedó mejor informado?"
+    }
+  ],
+  "bestClosedLoopStory": "rc4-cl-ayuno-intermitente: AthenaSignal → AKP → AthenaOS → AKP → AthenaSignal. Investigación con evidencia y provenance; el estado epistémico pasó por CONFIRMED → CLOSED_CONFIRMED y terminó en CLOSED_CONFIRMED.",
+  "worstClosedLoopStory": "rc4-cl-ketobig: la investigación refutó la afirmación (CLOSED_REFUTED); la evidencia contradictoria quedó registrada y bloqueó la promoción.",
+  "confirmedCase": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación.",
+    "evidenceRefs": [
+      "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+      "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+      "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+      "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "https://scielo.isciii.es/scielo.php?pid=S0212-16112024000100026&script=sci_arttext"
+    ]
+  },
+  "refutedCase": {
+    "candidateId": "rc4-cl-ketobig",
+    "why": "AthenaOS aos-w2-rc4-cl-ketobig (UNSUPPORTED, postura REFUTE): evidencia autoritativa (4 refs) contradice la afirmación; cierre por refutación.",
+    "evidenceRefs": [
+      "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "https://k-state.com/plketobig",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/"
+    ]
+  },
+  "mostImportantFeedback": {
+    "candidateId": "rc4-cl-cofepris",
+    "changes": [
+      "EVIDENCE_ADDED",
+      "ASSESSMENT_CHANGED",
+      "INTERPRETATION_UPDATED",
+      "REOPENED",
+      "PRIORITY_CHANGED"
+    ],
+    "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+  },
+  "evidenceDrivenTransition": {
+    "candidateId": "rc4-cl-airllm",
+    "from": "INCONCLUSIVE",
+    "to": "CONFIRMED",
+    "why": "AthenaOS aos-w2-rc4-cl-airllm (REFRAMED, postura SUPPORT): evidencia suficiente sostiene la afirmación."
+  },
+  "contradictionHandling": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "kind": "CONSERVED",
+    "why": "Conservada explícitamente: la tensión editorial permanece y bloquea promociones."
+  },
+  "majorPromotion": {
+    "candidateId": "rc4-cl-cofepris",
+    "why": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: interpretation updated, promoted"
+  },
+  "majorDemotion": {
+    "candidateId": "rc4-cl-airllm",
+    "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated"
+  },
+  "majorClosure": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "status": "CLOSED_CONFIRMED",
+    "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación."
+  },
+  "majorReopening": {
+    "candidateId": "rc4-cl-ketobig",
+    "why": "Nueva evidencia (aos-w2-rc4-cl-ketobig) reabre el candidate descartado: la decisión previa se revisa a la luz de la investigación."
+  },
+  "failureAndRecovery": {
+    "recoveryId": "rec-m6-proc-a-run-1-001",
+    "kind": "PARTIAL_RUN",
+    "why": "El proceso murió tras m6-cycle-56; el radar quedó persistido y una corrida posterior debe reanudar sin duplicar ni perder provenance."
+  },
+  "distributedExample": "Nodos no disponibles: macmini-cognitive; el loop degradó a las rutas restantes sin detener la operación.",
+  "longRunningTimeline": [
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 70: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 71: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 72: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[WAVE 0] Continuidad M7: 32/32 ciclos observados sobre 500 fuentes sin intervención manual.",
+    "[WAVE 1] Onda 1: se re-ingiere la investigación M6 (6 resultados) y se formaliza el estado epistémico inicial con provenance.",
+    "[WAVE 2] Onda 2: nueva evidencia cross-source (corpus real enlazado) investigada por el worker; los resultados pueden confirmar, refutar, cerrar o reabrir candidates.",
+    "[WAVE 3] Onda 3: re-evaluación longitudinal con la evidencia acumulada; consolida el historial epistémico sin sobrescribir el pasado."
+  ],
+  "akpToAthenaOsToAkpTrace": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-airllm",
+      "contentHash": "bc4f02d9767a772f4e059f063d76055ddf936efdaf0a985360fc219bc7dc4e38",
+      "deliveredAt": "2026-09-12T02:11:00.000Z",
+      "consumedAt": "2026-09-12T02:11:00.000Z",
+      "researchResultId": "aos-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+      "contentHash": "20d5d241d06353a923eccb9bb69573c8be25470fbb9c540ffe4374a90723b637",
+      "deliveredAt": "2026-09-12T02:15:00.000Z",
+      "consumedAt": "2026-09-12T02:15:00.000Z",
+      "researchResultId": "aos-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-cofepris",
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "deliveredAt": "2026-09-12T02:19:00.000Z",
+      "consumedAt": "2026-09-12T02:19:00.000Z",
+      "researchResultId": "aos-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-python-3-13",
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "deliveredAt": "2026-09-12T02:55:00.000Z",
+      "consumedAt": "2026-09-12T02:55:00.000Z",
+      "researchResultId": "aos-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "deliveredAt": "2026-09-12T02:59:00.000Z",
+      "consumedAt": "2026-09-12T02:59:00.000Z",
+      "researchResultId": "aos-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "deliveredAt": "2026-09-12T03:03:00.000Z",
+      "consumedAt": "2026-09-12T03:03:00.000Z",
+      "researchResultId": "aos-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-airllm",
+      "contentHash": "74605b5c7d2ef4a039070be0113a4cd3d59227bbe204be1a6bace555b90651b9",
+      "deliveredAt": "2026-09-21T03:00:00.000Z",
+      "consumedAt": "2026-09-21T03:00:00.000Z",
+      "researchResultId": "aos-w2-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-ayuno-intermitente",
+      "contentHash": "6e85bee2563f79d075b3c0a3e9c9305ace7cb364270d42cdbcdaef8c348363d1",
+      "deliveredAt": "2026-09-21T03:00:45.000Z",
+      "consumedAt": "2026-09-21T03:00:45.000Z",
+      "researchResultId": "aos-w2-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-cofepris",
+      "contentHash": "7a93098580678f9ef5a0345d0c993cff5e05358fc86072d133cd0ed3ae332c48",
+      "deliveredAt": "2026-09-21T03:01:30.000Z",
+      "consumedAt": "2026-09-21T03:01:30.000Z",
+      "researchResultId": "aos-w2-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-ketobig",
+      "contentHash": "526503d65aa1eaa4cf2936b7f7ac0d5cffa968a6c8f147e5b84584a994a28bee",
+      "deliveredAt": "2026-09-21T03:02:15.000Z",
+      "consumedAt": "2026-09-21T03:02:15.000Z",
+      "researchResultId": "aos-w2-rc4-cl-ketobig",
+      "researchStatus": "RESEARCHED_REFUTED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-ketobig",
+      "epistemicStatus": "CLOSED_REFUTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-python-3-13",
+      "contentHash": "b34fcac7b0ba7803bb729c86757ad0f455033df9e0bcb67c9f841a8ec6e828e5",
+      "deliveredAt": "2026-09-21T03:03:00.000Z",
+      "consumedAt": "2026-09-21T03:03:00.000Z",
+      "researchResultId": "aos-w2-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-rabbitmq-3-11",
+      "contentHash": "aea020f862c8f75de469b758020282cfaee7769c1ba438e8296e8beaaff277ac",
+      "deliveredAt": "2026-09-21T03:03:45.000Z",
+      "consumedAt": "2026-09-21T03:03:45.000Z",
+      "researchResultId": "aos-w2-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "3b1772b3c06405674d06514b4a59c2618aecf6df23e7ef58bfe9846e1cd56e1b",
+      "deliveredAt": "2026-09-21T03:04:30.000Z",
+      "consumedAt": "2026-09-21T03:04:30.000Z",
+      "researchResultId": "aos-w2-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-airllm",
+      "contentHash": "e7e0baa8ae8f78c0c892e3a07d00d377fd8ccd70a7e19a30f617b64e866976b5",
+      "deliveredAt": "2026-09-21T04:00:00.000Z",
+      "consumedAt": "2026-09-21T04:00:00.000Z",
+      "researchResultId": "aos-w3-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-ayuno-intermitente",
+      "contentHash": "ceb957fa545e70e3b3ce6568e65f758fa344a3f41108c0525f77efcb29ff74a7",
+      "deliveredAt": "2026-09-21T04:00:45.000Z",
+      "consumedAt": "2026-09-21T04:00:45.000Z",
+      "researchResultId": "aos-w3-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-cofepris",
+      "contentHash": "f9d63e7f803edd79a5e1a8c34b961df161b4492f6ce0deba1b93b30e13cd1e9d",
+      "deliveredAt": "2026-09-21T04:01:30.000Z",
+      "consumedAt": "2026-09-21T04:01:30.000Z",
+      "researchResultId": "aos-w3-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-python-3-13",
+      "contentHash": "114baf7a43fc04b88cd1e0a26e2fef0ef5861bad10da1b553eaa27823d3f4b39",
+      "deliveredAt": "2026-09-21T04:02:15.000Z",
+      "consumedAt": "2026-09-21T04:02:15.000Z",
+      "researchResultId": "aos-w3-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-rabbitmq-3-11",
+      "contentHash": "4d7b917396b515bf55c01e7f40f799543d339990bfe455ebeef46c7d7e1fb41f",
+      "deliveredAt": "2026-09-21T04:03:00.000Z",
+      "consumedAt": "2026-09-21T04:03:00.000Z",
+      "researchResultId": "aos-w3-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "25cc661e39bb5ddf1c5b57a53320ec423fa9ae7d3007fcdf36e21ca0673a9e41",
+      "deliveredAt": "2026-09-21T04:03:45.000Z",
+      "consumedAt": "2026-09-21T04:03:45.000Z",
+      "researchResultId": "aos-w3-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    }
+  ]
+}

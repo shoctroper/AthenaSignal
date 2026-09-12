@@ -1,0 +1,190 @@
+{
+  "kind": "athenasignal.m3.human_review_packet.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "rubric": [
+    {
+      "id": "R1",
+      "question": "¿Encontró una idea real y concreta en el material de entrada?"
+    },
+    {
+      "id": "R2",
+      "question": "¿La interpretación corresponde al material de la fuente?"
+    },
+    {
+      "id": "R3",
+      "question": "¿Separó observación de afirmación (y de evidencia)?"
+    },
+    {
+      "id": "R4",
+      "question": "¿Evitó convertir el contenido de la fuente en verdad?"
+    },
+    {
+      "id": "R5",
+      "question": "¿Encontró evidencia inicial útil y de autoridad?"
+    },
+    {
+      "id": "R6",
+      "question": "¿Descartó lo inviable o ruidoso?"
+    },
+    {
+      "id": "R7",
+      "question": "¿Reformuló correctamente cuando el claim era incorrecto?"
+    },
+    {
+      "id": "R8",
+      "question": "¿Son preguntas investigables por AthenaOS/AKP?"
+    },
+    {
+      "id": "R9",
+      "question": "¿La priorización es explicable y tiene sentido?"
+    },
+    {
+      "id": "R10",
+      "question": "¿El handoff da contexto suficiente para iniciar la investigación?"
+    }
+  ],
+  "discovered": 15,
+  "discarded": 9,
+  "sample": [
+    {
+      "candidateId": "rc-sig-src-if-cochrane-1",
+      "title": "efectividad a largo plazo del ayuno intermitente",
+      "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+      "priority": "HIGH",
+      "assessment": "SUPPORTED",
+      "reasonForSelection": "La afirmación central está sustentada por evidencia de autoridad y abre una comparación editorialmente relevante.",
+      "priorityReasons": [
+        "Evidencia inicial suficiente (4 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Base de evidencia fuerte (4 fuentes) y researchability HIGH: cumple el umbral HIGH.",
+        "Score compuesto 0.82 = 0.30·researchability(0.8) + 0.25·evidencia(1) + 0.20·editorial(0.55) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Systematic review, high evidence, supported claim"
+      ],
+      "handoffKind": "athenasignal.research_candidate.handoff.v1",
+      "coverage": {
+        "hasOriginSignals": true,
+        "hasSourceProvenance": true,
+        "hasOriginalAssertions": true,
+        "hasEvidence": true,
+        "hasUncertainties": true,
+        "hasReframing": true,
+        "hasResearchability": true,
+        "hasEditorialRelevance": true,
+        "hasPriority": true
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-kafka-vs-rabbitmq-2",
+      "title": "capacidades de Kafka",
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "priority": "HIGH",
+      "assessment": "REFRAMED",
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?\".",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial suficiente (5 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Base de evidencia fuerte (5 fuentes) y researchability HIGH: cumple el umbral HIGH.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.835 = 0.30·researchability(0.75) + 0.25·evidencia(1) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Technical claim, multiple evidence, supported"
+      ],
+      "handoffKind": "athenasignal.research_candidate.handoff.v1",
+      "coverage": {
+        "hasOriginSignals": true,
+        "hasSourceProvenance": true,
+        "hasOriginalAssertions": true,
+        "hasEvidence": true,
+        "hasUncertainties": true,
+        "hasReframing": true,
+        "hasResearchability": true,
+        "hasEditorialRelevance": true,
+        "hasPriority": true
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-airllm-claim-1",
+      "title": "capacidad de ejecución de modelos de IA",
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "priority": "MEDIUM",
+      "assessment": "REFRAMED",
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?\".",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.64 = 0.30·researchability(0.725) + 0.25·evidencia(0.25) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere MEDIUM: Claim technical, single evidence, investigable"
+      ],
+      "handoffKind": "athenasignal.research_candidate.handoff.v1",
+      "coverage": {
+        "hasOriginSignals": true,
+        "hasSourceProvenance": true,
+        "hasOriginalAssertions": true,
+        "hasEvidence": true,
+        "hasUncertainties": true,
+        "hasReframing": true,
+        "hasResearchability": true,
+        "hasEditorialRelevance": true,
+        "hasPriority": true
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-cofepris-alert-1",
+      "title": "anuncios publicitarios engañosos",
+      "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "priority": "MEDIUM",
+      "assessment": "REFRAMED",
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?\".",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.61 = 0.30·researchability(0.625) + 0.25·evidencia(0.25) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Regulatory claim, high evidence, supported",
+        "Sugerencia HIGH del modelo no aplicada: base de evidencia o researchability insuficiente."
+      ],
+      "handoffKind": "athenasignal.research_candidate.handoff.v1",
+      "coverage": {
+        "hasOriginSignals": true,
+        "hasSourceProvenance": true,
+        "hasOriginalAssertions": true,
+        "hasEvidence": true,
+        "hasUncertainties": true,
+        "hasReframing": true,
+        "hasResearchability": true,
+        "hasEditorialRelevance": true,
+        "hasPriority": true
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-creatine-harvard-1",
+      "title": "efectos de la creatina en la recuperación muscular",
+      "researchQuestion": "¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+      "priority": "MEDIUM",
+      "assessment": "REFRAMED",
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?\".",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Score compuesto 0.5375 = 0.30·researchability(0.65) + 0.25·evidencia(0.25) + 0.20·editorial(0.3) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere MEDIUM: Well-known claim, single evidence, investigable"
+      ],
+      "handoffKind": "athenasignal.research_candidate.handoff.v1",
+      "coverage": {
+        "hasOriginSignals": true,
+        "hasSourceProvenance": true,
+        "hasOriginalAssertions": true,
+        "hasEvidence": true,
+        "hasUncertainties": true,
+        "hasReframing": true,
+        "hasResearchability": true,
+        "hasEditorialRelevance": true,
+        "hasPriority": true
+      }
+    }
+  ],
+  "falsePositiveObservations": []
+}

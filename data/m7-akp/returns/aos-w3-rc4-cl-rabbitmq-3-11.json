@@ -1,0 +1,330 @@
+{
+  "kind": "athenasignal.m6.athenaos_result.v1",
+  "resultId": "aos-w3-rc4-cl-rabbitmq-3-11",
+  "candidateId": "rc4-cl-rabbitmq-3-11",
+  "clusterId": "cl-rabbitmq-3-11",
+  "handoffId": "m7-akp-w3-rc4-cl-rabbitmq-3-11",
+  "handoffContentHash": "4d7b917396b515bf55c01e7f40f799543d339990bfe455ebeef46c7d7e1fb41f",
+  "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+  "worker": "athenaos-research-stand-in-m7",
+  "executionMode": "replay",
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "deterministic": false,
+  "status": "RESEARCHED_INCONCLUSIVE",
+  "steps": [
+    {
+      "id": "plan",
+      "step": "Decomposición del problema de investigación",
+      "detail": "Sub-preguntas derivadas: 4"
+    },
+    {
+      "id": "gather",
+      "step": "Recuperación y provenance de evidencia",
+      "detail": "18 referencias (18 del handoff, 0 de búsqueda)."
+    },
+    {
+      "id": "interpret",
+      "step": "Interpretación y evaluación de claims",
+      "detail": "2 hallazgos, 1 claims evaluados."
+    },
+    {
+      "id": "synthesize",
+      "step": "Síntesis estructurada y evaluación final",
+      "detail": "Evaluación final AMBIGUOUS (confianza 0.7)."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "EVIDENCE",
+      "text": "Se ha encontrado información sobre share groups en Kafka, pero no se especifica la versión exacta en la que se introdujeron.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "Los share groups son una característica que permite compartir consumidores entre múltiples grupos, pero no se proporciona información sobre cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor.",
+      "refs": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "cl-1",
+      "statement": "Kafka introdujo share groups",
+      "verdict": "UNCERTAIN",
+      "confidence": 0.3,
+      "evidenceRefs": [
+        "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+        "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+        "https://arxiv.org/abs/1709.00333",
+        "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+      "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+      "title": "Kafka vs RabbitMQ: Bróker de mensajería 2026 - Aprender BIG DATA",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://arxiv.org/abs/1709.00333",
+      "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/",
+      "title": "What's the Difference Between Kafka and RabbitMQ?",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://aws.amazon.com/es/compare/the-difference-between-rabbitmq-and-kafka/",
+      "title": "¿Cuál es la diferencia entre Kafka y RabbitMQ? - AWS",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+      "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+      "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://profile.es/blog/rabbitmq-o-kafka/",
+      "title": "RabbitMQ o Kafka: ¿Cuál es la mejor opción?",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lyogavin/airllm/main/README.md",
+      "title": "lyogavin/airllm — README",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+      "title": "Kafka Queues: Share Groups Explained | Conduktor",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+      "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?channel=health-portal",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/compare/kafka",
+      "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+      "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+      "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+      "title": "Kafka vs RabbitMQ: Bróker de mensajería 2026 - Aprender BIG DATA",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/1709.00333",
+      "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/",
+      "title": "What's the Difference Between Kafka and RabbitMQ?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://aws.amazon.com/es/compare/the-difference-between-rabbitmq-and-kafka/",
+      "title": "¿Cuál es la diferencia entre Kafka y RabbitMQ? - AWS",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+      "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+      "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://profile.es/blog/rabbitmq-o-kafka/",
+      "title": "RabbitMQ o Kafka: ¿Cuál es la mejor opción?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lyogavin/airllm/main/README.md",
+      "title": "lyogavin/airllm — README",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+      "title": "Kafka Queues: Share Groups Explained | Conduktor",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+      "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?channel=health-portal",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/compare/kafka",
+      "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+      "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:03:00.000Z"
+    }
+  ],
+  "uncertainties": [
+    "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+    "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+    "Fecha exacta de lanzamiento de Kafka 4.2.",
+    "¿La versión 4.2 de Kafka se lanzará en 2026?"
+  ],
+  "finalAssessment": "AMBIGUOUS",
+  "confidence": 0.7,
+  "layers": {
+    "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+    "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+    "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proporcionada no es suficiente para determinar con certeza la versión exacta en la que se introdujeron los share groups, ni cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor.",
+    "newEvidence": [],
+    "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proporcionada no es suficiente para determinar con certeza la versión exacta en la que se introdujeron los share groups, ni cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor."
+  },
+  "createdAt": "2026-09-21T04:03:00.000Z",
+  "runId": "m7-proc-w3-run",
+  "limitations": [
+    "Sin resultados de búsqueda en este entorno; el análisis se apoya en la evidencia del handoff.",
+    "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+  ],
+  "wave": 3,
+  "evidenceBalance": {
+    "supporting": 0,
+    "contradicting": 0,
+    "uncertain": 1,
+    "authoritative": 12
+  },
+  "returnPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/returns/aos-w3-rc4-cl-rabbitmq-3-11.json"
+}

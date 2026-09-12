@@ -1,0 +1,86 @@
+# AthenaSignal M4 — Continuous Editorial Radar (STRICT verification run).
+# Executed directly after the worker builds, to obtain deterministic
+# red->green evidence for ciclo/ORDEN-008.md. Fails today (M4 test, replay
+# script and evidence/m4/*.json do not exist yet).
+id: athenasignal-m4-continuous-editorial-radar-verify
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: false
+  required: false
+
+scope:
+  baseline: governance/specs/athenasignal-m4.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+
+acceptance:
+  tests:
+    command: 'test -f tests/editorial-radar-e2e.test.ts && test -f scripts/m4-replay.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts'
+    required: true
+    junit: false
+    timeout: 420.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m4.regressions.json
+
+  artifacts:
+    required:
+      - path: evidence/m4/corpus.json
+        kind: json_object
+      - path: evidence/m4/benchmark.json
+        kind: json_object
+      - path: evidence/m4/radar-timeline.json
+        kind: json_object
+      - path: evidence/m4/radar-state.json
+        kind: json_object
+      - path: evidence/m4/metrics.json
+        kind: json_object
+      - path: evidence/m4/handoff-athenaos.json
+        kind: json_object
+      - path: evidence/m4/human-review-packet.json
+        kind: json_object
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node --experimental-strip-types scripts/m4-replay.ts
+  reproducible_timeout: 240.0
+
+escalate_when:
+  - required_data_missing

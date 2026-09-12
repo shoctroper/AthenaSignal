@@ -1,0 +1,114 @@
+# AthenaSignal M7 — Epistemically Resolutive Closed Loop (STRICT verify run).
+# Executed directly after the worker builds, to obtain deterministic
+# red->green evidence for ciclo/ORDEN-011.md. Fails today (M7 test, loop
+# script and evidence/m7/*.json do not exist yet).
+id: athenasignal-m7-epistemically-resolutive-closed-loop-verify
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: false
+  required: false
+
+scope:
+  baseline: governance/specs/athenasignal-m7.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - opencode.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+    - .m7tmp
+    - .m6tmp
+    - .m5tmp
+    - .m4tmp
+    - .m3tmp
+
+acceptance:
+  tests:
+    command: 'test -f tests/epistemic-resolution-e2e.test.ts && test -f scripts/m7-loop.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts'
+    required: true
+    junit: false
+    timeout: 900.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m7.regressions.json
+
+  artifacts:
+    required:
+      - path: evidence/m7/corpus.json
+        kind: json_object
+      - path: evidence/m7/benchmark.json
+        kind: json_object
+      - path: evidence/m7/loop-timeline.json
+        kind: json_object
+      - path: evidence/m7/radar-state.json
+        kind: json_object
+      - path: evidence/m7/akp-live.json
+        kind: json_object
+      - path: evidence/m7/athenaos-results.json
+        kind: json_object
+      - path: evidence/m7/feedback-updates.json
+        kind: json_object
+      - path: evidence/m7/epistemic-resolutions.json
+        kind: json_object
+      - path: evidence/m7/contradictions.json
+        kind: json_object
+      - path: evidence/m7/provenance.json
+        kind: json_object
+      - path: evidence/m7/handoff-trace.json
+        kind: json_object
+      - path: evidence/m7/metrics.json
+        kind: json_object
+      - path: evidence/m7/cognitive-routing.json
+        kind: json_object
+      - path: evidence/m7/observability.json
+        kind: json_object
+      - path: evidence/m7/recovery-events.json
+        kind: json_object
+      - path: evidence/m7/idempotency.json
+        kind: json_object
+      - path: evidence/m7/distributed.json
+        kind: json_object
+      - path: evidence/m7/human-review-packet.json
+        kind: json_object
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node --experimental-strip-types scripts/m7-loop.ts
+  reproducible_timeout: 420.0
+
+escalate_when:
+  - required_data_missing

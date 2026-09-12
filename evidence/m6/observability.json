@@ -1,0 +1,229 @@
+{
+  "kind": "athenasignal.m6.observability.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "discovered": {
+    "sources": 250,
+    "uniqueSources": 250,
+    "signals": 25,
+    "clusters": 7,
+    "candidates": 7
+  },
+  "discarded": [
+    "rc4-cl-ketobig"
+  ],
+  "sentToAthenaOs": [
+    "rc4-cl-airllm",
+    "rc4-cl-ayuno-intermitente",
+    "rc4-cl-cofepris",
+    "rc4-cl-python-3-13",
+    "rc4-cl-rabbitmq-3-11",
+    "rc4-cl-suplementacion-de-creatina"
+  ],
+  "researching": [],
+  "returned": [
+    "aos-rc4-cl-airllm",
+    "aos-rc4-cl-ayuno-intermitente",
+    "aos-rc4-cl-cofepris",
+    "aos-rc4-cl-python-3-13",
+    "aos-rc4-cl-rabbitmq-3-11",
+    "aos-rc4-cl-suplementacion-de-creatina"
+  ],
+  "changed": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "from": {
+        "assessment": "REFRAMED",
+        "priority": "MEDIUM",
+        "score": 0.5275,
+        "status": "ACTIVE",
+        "evidence": 1,
+        "contradiction": false
+      },
+      "to": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.715,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      }
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "from": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 0.94,
+        "status": "ACTIVE",
+        "evidence": 6,
+        "contradiction": true
+      },
+      "to": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      }
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "from": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.715,
+        "status": "PROMOTED",
+        "evidence": 2,
+        "contradiction": false
+      },
+      "to": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 5,
+        "contradiction": false
+      }
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "from": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.735,
+        "status": "PROMOTED",
+        "evidence": 2,
+        "contradiction": false
+      },
+      "to": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      }
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "from": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.84,
+        "status": "PROMOTED",
+        "evidence": 6,
+        "contradiction": false
+      },
+      "to": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      }
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "from": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.6675,
+        "status": "PROMOTED",
+        "evidence": 3,
+        "contradiction": false
+      },
+      "to": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      }
+    }
+  ],
+  "why": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    }
+  ],
+  "failures": {
+    "recoveryEvents": 10,
+    "byKind": {
+      "INVALID_RESPONSE": 1,
+      "LLM_FALLBACK": 3,
+      "NODE_DOWN": 3,
+      "PARTIAL_RUN": 1,
+      "PROCESS_RESTART": 1,
+      "TIMEOUT": 1
+    }
+  },
+  "pending": [],
+  "cost": {
+    "llmCalls": 8,
+    "localCalls": 5,
+    "remoteCalls": 3,
+    "deterministicCalls": 0,
+    "estimatedCostUnits": 17
+  }
+}

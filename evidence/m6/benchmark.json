@@ -1,0 +1,98 @@
+{
+  "kind": "athenasignal.m6.benchmark.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "NEW_SIGNAL",
+      "description": "El loop descubre señales nuevas sobre el universo ampliado.",
+      "observed": true,
+      "evidence": "radar NEW > 0"
+    },
+    {
+      "id": "KNOWN",
+      "description": "Material conocido reaparece preservando identidad histórica.",
+      "observed": true,
+      "evidence": "radar KNOWN > 0"
+    },
+    {
+      "id": "DUPLICATE",
+      "description": "Fuentes repetidas no se reprocesan ni duplican.",
+      "observed": true,
+      "evidence": "radar DUPLICATE > 0"
+    },
+    {
+      "id": "RELATED",
+      "description": "Fuentes/señales relacionadas se vinculan cross-source.",
+      "observed": true,
+      "evidence": "radar RELATED > 0"
+    },
+    {
+      "id": "REASSESSMENT",
+      "description": "El conocimiento que regresa reevalúa candidates existentes.",
+      "observed": true,
+      "evidence": "feedback ASSESSMENT_CHANGED o REASSESSED > 0"
+    },
+    {
+      "id": "PROMOTION",
+      "description": "Un candidate confirmado se promueve con handoff válido.",
+      "observed": true,
+      "evidence": "candidate PROMOTED y feedback PROMOTED >= 0"
+    },
+    {
+      "id": "CONTRADICTION",
+      "description": "Evidencia contradictoria se conserva explícitamente.",
+      "observed": true,
+      "evidence": "contradicción en radar o feedback CONTRADICTION_ADDED"
+    },
+    {
+      "id": "RESEARCH_RESULT",
+      "description": "AthenaOS devuelve un resultado estructurado real.",
+      "observed": true,
+      "evidence": "researchResults > 0"
+    },
+    {
+      "id": "FEEDBACK_UPDATE",
+      "description": "El resultado muta el radar conservando las capas separadas.",
+      "observed": true,
+      "evidence": "feedbackUpdates > 0 y layers completas"
+    },
+    {
+      "id": "NODE_FAILURE",
+      "description": "El loop degrada correctamente ante un nodo caído.",
+      "observed": true,
+      "evidence": "recovery NODE_DOWN o distributed nodesDown"
+    },
+    {
+      "id": "PROCESS_RESTART",
+      "description": "El loop sobrevive a un reinicio de proceso.",
+      "observed": true,
+      "evidence": "recovery PROCESS_RESTART > 0"
+    },
+    {
+      "id": "LLM_FAILURE",
+      "description": "Un fallo de LLM/timeout degrada sin fabricar evidencia.",
+      "observed": true,
+      "evidence": "recovery LLM_FALLBACK/TIMEOUT/INVALID_RESPONSE > 0"
+    },
+    {
+      "id": "AKP_RETRY",
+      "description": "Reintentos/idempotencia no corrompen el conocimiento compartido.",
+      "observed": true,
+      "evidence": "idempotency noOps > 0"
+    },
+    {
+      "id": "SCALE",
+      "description": "M6 procesa un universo materialmente mayor que M5.",
+      "observed": true,
+      "evidence": "sources > baseM5Sources"
+    },
+    {
+      "id": "CONTINUOUS",
+      "description": "El loop corre repetidamente sin intervención manual.",
+      "observed": true,
+      "evidence": "loop cycles >= ciclos del corpus M6"
+    }
+  ],
+  "coverage": 1,
+  "falsePositiveObservations": []
+}

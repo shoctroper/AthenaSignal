@@ -1,0 +1,541 @@
+{
+  "source": {
+    "source": {
+      "platform": "youtube",
+      "creator": "TechArchitectureLab (offline fixture)",
+      "url": "https://youtube.com/watch?v=athena-m1-rabbitmq-vs-kafka",
+      "publishedAt": "2026-09-11T00:00:00.000Z",
+      "contentId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+    },
+    "title": "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+    "description": "Analisis profundo entre RabbitMQ y Apache Kafka. Cual es la mejor opcion para sistemas distribuidos?",
+    "transcript": "En este episodio analizo RabbitMQ vs Kafka.\nRabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.\nKafka es una plataforma de streaming distribuido basada en un commit log apendizado.\nRabbitMQ garantiza baja latencia y entrega individual de mensajes.\nKafka ofrece alto throughput para el procesamiento de eventos masivos.\nKafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.\nRabbitMQ es la mejor opcion para sistemas distribuidos.\nCuando deberias usar RabbitMQ en lugar de Kafka?\nAsumimos que el consumo de almacenamiento en disco no es la limitante principal.\nRabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.\nExiste una contradiccion entre la latencia instantanea de RabbitMQ y el throughput masivo de Kafka.",
+    "language": "es",
+    "metadata": {
+      "crawler": "Agent-Reach MCP (offline deterministic fixture)",
+      "transport": "fixture"
+    }
+  },
+  "signal": {
+    "sourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+    "topic": "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+    "topics": [
+      "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+      "RabbitMQ vs Kafka",
+      "RabbitMQ",
+      "Kafka",
+      "Analisis profundo entre RabbitMQ y Apache Kafka"
+    ],
+    "concepts": [
+      "RabbitMQ",
+      "Kafka",
+      "Apache Kafka",
+      "AMQP",
+      "Commit Log",
+      "Event Sourcing",
+      "Streaming",
+      "Throughput",
+      "Comparativa",
+      "Arquitectura",
+      "Analisis",
+      "Apache",
+      "Cual",
+      "Cuando",
+      "Asumimos",
+      "Existe"
+    ],
+    "claimsToInvestigate": [
+      {
+        "statement": "RabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "Kafka es una plataforma de streaming distribuido basada en un commit log apendizado.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "RabbitMQ garantiza baja latencia y entrega individual de mensajes.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "Kafka ofrece alto throughput para el procesamiento de eventos masivos.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "Kafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "RabbitMQ es la mejor opcion para sistemas distribuidos.",
+        "status": "UNVERIFIED_AMBIGUOUS",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "Asumimos que el consumo de almacenamiento en disco no es la limitante principal.",
+        "status": "UNVERIFIED_AMBIGUOUS",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      },
+      {
+        "statement": "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.",
+        "status": "VERIFIED",
+        "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+      }
+    ],
+    "questions": [
+      "Cual es la mejor opcion para sistemas distribuidos?",
+      "Cuando deberias usar RabbitMQ en lugar de Kafka?"
+    ],
+    "arguments": [
+      "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing."
+    ],
+    "assumptions": [
+      "Asumimos que el consumo de almacenamiento en disco no es la limitante principal."
+    ],
+    "contradictions": [
+      "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+      "En este episodio analizo RabbitMQ vs Kafka.",
+      "Existe una contradiccion entre la latencia instantanea de RabbitMQ y el throughput masivo de Kafka."
+    ],
+    "potentialAngles": [
+      "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
+      "Análisis comparativo de RabbitMQ vs Kafka vs Apache Kafka"
+    ],
+    "createdAt": "2026-09-12T20:25:24.527Z",
+    "verification": {
+      "signalId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+      "maxIterations": 3,
+      "claims": [
+        {
+          "statement": "RabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.",
+          "verdict": "VERIFIED",
+          "iterations": 2,
+          "confidence": 1,
+          "evidence": [
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+          ],
+          "contradictions": []
+        },
+        {
+          "statement": "Kafka es una plataforma de streaming distribuido basada en un commit log apendizado.",
+          "verdict": "VERIFIED",
+          "iterations": 2,
+          "confidence": 1,
+          "evidence": [
+            "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+            "Apache Kafka documenta el commit log apendizado y el orden por particion."
+          ],
+          "contradictions": []
+        },
+        {
+          "statement": "RabbitMQ garantiza baja latencia y entrega individual de mensajes.",
+          "verdict": "VERIFIED",
+          "iterations": 1,
+          "confidence": 1,
+          "evidence": [
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+          ],
+          "contradictions": []
+        },
+        {
+          "statement": "Kafka ofrece alto throughput para el procesamiento de eventos masivos.",
+          "verdict": "VERIFIED",
+          "iterations": 1,
+          "confidence": 1,
+          "evidence": [
+            "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+            "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+          ],
+          "contradictions": []
+        },
+        {
+          "statement": "Kafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.",
+          "verdict": "VERIFIED",
+          "iterations": 2,
+          "confidence": 1,
+          "evidence": [
+            "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+            "Apache Kafka documenta el commit log apendizado y el orden por particion."
+          ],
+          "contradictions": []
+        },
+        {
+          "statement": "RabbitMQ es la mejor opcion para sistemas distribuidos.",
+          "verdict": "UNVERIFIED_AMBIGUOUS",
+          "iterations": 3,
+          "confidence": 0.5,
+          "evidence": [
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+          ],
+          "contradictions": [
+            "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+            "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+            "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+          ]
+        },
+        {
+          "statement": "Asumimos que el consumo de almacenamiento en disco no es la limitante principal.",
+          "verdict": "UNVERIFIED_AMBIGUOUS",
+          "iterations": 3,
+          "confidence": 0.5,
+          "evidence": [],
+          "contradictions": []
+        },
+        {
+          "statement": "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.",
+          "verdict": "VERIFIED",
+          "iterations": 2,
+          "confidence": 1,
+          "evidence": [
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+            "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+            "Apache Kafka documenta el commit log apendizado y el orden por particion."
+          ],
+          "contradictions": [
+            "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+            "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+          ]
+        }
+      ],
+      "verdictCounts": {
+        "VERIFIED": 6,
+        "REFUTED": 0,
+        "UNVERIFIED_AMBIGUOUS": 2
+      },
+      "overallConfidence": 0.875,
+      "penalty": 0.3
+    }
+  },
+  "verification": {
+    "signalId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+    "maxIterations": 3,
+    "claims": [
+      {
+        "statement": "RabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.",
+        "verdict": "VERIFIED",
+        "iterations": 2,
+        "confidence": 1,
+        "evidence": [
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+        ],
+        "contradictions": []
+      },
+      {
+        "statement": "Kafka es una plataforma de streaming distribuido basada en un commit log apendizado.",
+        "verdict": "VERIFIED",
+        "iterations": 2,
+        "confidence": 1,
+        "evidence": [
+          "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+          "Apache Kafka documenta el commit log apendizado y el orden por particion."
+        ],
+        "contradictions": []
+      },
+      {
+        "statement": "RabbitMQ garantiza baja latencia y entrega individual de mensajes.",
+        "verdict": "VERIFIED",
+        "iterations": 1,
+        "confidence": 1,
+        "evidence": [
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+        ],
+        "contradictions": []
+      },
+      {
+        "statement": "Kafka ofrece alto throughput para el procesamiento de eventos masivos.",
+        "verdict": "VERIFIED",
+        "iterations": 1,
+        "confidence": 1,
+        "evidence": [
+          "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+          "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+        ],
+        "contradictions": []
+      },
+      {
+        "statement": "Kafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.",
+        "verdict": "VERIFIED",
+        "iterations": 2,
+        "confidence": 1,
+        "evidence": [
+          "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+          "Apache Kafka documenta el commit log apendizado y el orden por particion."
+        ],
+        "contradictions": []
+      },
+      {
+        "statement": "RabbitMQ es la mejor opcion para sistemas distribuidos.",
+        "verdict": "UNVERIFIED_AMBIGUOUS",
+        "iterations": 3,
+        "confidence": 0.5,
+        "evidence": [
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+        ],
+        "contradictions": [
+          "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+          "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+          "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+        ]
+      },
+      {
+        "statement": "Asumimos que el consumo de almacenamiento en disco no es la limitante principal.",
+        "verdict": "UNVERIFIED_AMBIGUOUS",
+        "iterations": 3,
+        "confidence": 0.5,
+        "evidence": [],
+        "contradictions": []
+      },
+      {
+        "statement": "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.",
+        "verdict": "VERIFIED",
+        "iterations": 2,
+        "confidence": 1,
+        "evidence": [
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+          "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+          "Apache Kafka documenta el commit log apendizado y el orden por particion."
+        ],
+        "contradictions": [
+          "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+          "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+        ]
+      }
+    ],
+    "verdictCounts": {
+      "VERIFIED": 6,
+      "REFUTED": 0,
+      "UNVERIFIED_AMBIGUOUS": 2
+    },
+    "overallConfidence": 0.875,
+    "penalty": 0.3
+  },
+  "opportunity": {
+    "id": "opp-fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+    "topic": "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+    "score": 0.68,
+    "metrics": {
+      "novelty": 1,
+      "researchability": 1,
+      "audienceRelevance": 0.8,
+      "contradictionTension": 1,
+      "evidenceDensity": 1,
+      "athenaPotential": 1,
+      "timeliness": 1
+    },
+    "candidate": {
+      "sourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+      "topic": "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+      "topics": [
+        "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+        "RabbitMQ vs Kafka",
+        "RabbitMQ",
+        "Kafka",
+        "Analisis profundo entre RabbitMQ y Apache Kafka"
+      ],
+      "concepts": [
+        "RabbitMQ",
+        "Kafka",
+        "Apache Kafka",
+        "AMQP",
+        "Commit Log",
+        "Event Sourcing",
+        "Streaming",
+        "Throughput",
+        "Comparativa",
+        "Arquitectura",
+        "Analisis",
+        "Apache",
+        "Cual",
+        "Cuando",
+        "Asumimos",
+        "Existe"
+      ],
+      "claimsToInvestigate": [
+        {
+          "statement": "RabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "Kafka es una plataforma de streaming distribuido basada en un commit log apendizado.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "RabbitMQ garantiza baja latencia y entrega individual de mensajes.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "Kafka ofrece alto throughput para el procesamiento de eventos masivos.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "Kafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "RabbitMQ es la mejor opcion para sistemas distribuidos.",
+          "status": "UNVERIFIED_AMBIGUOUS",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "Asumimos que el consumo de almacenamiento en disco no es la limitante principal.",
+          "status": "UNVERIFIED_AMBIGUOUS",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        },
+        {
+          "statement": "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.",
+          "status": "VERIFIED",
+          "provenanceSourceId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka"
+        }
+      ],
+      "questions": [
+        "Cual es la mejor opcion para sistemas distribuidos?",
+        "Cuando deberias usar RabbitMQ en lugar de Kafka?"
+      ],
+      "arguments": [
+        "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing."
+      ],
+      "assumptions": [
+        "Asumimos que el consumo de almacenamiento en disco no es la limitante principal."
+      ],
+      "contradictions": [
+        "RabbitMQ vs Kafka: Comparativa de Arquitectura",
+        "En este episodio analizo RabbitMQ vs Kafka.",
+        "Existe una contradiccion entre la latencia instantanea de RabbitMQ y el throughput masivo de Kafka."
+      ],
+      "potentialAngles": [
+        "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
+        "Análisis comparativo de RabbitMQ vs Kafka vs Apache Kafka"
+      ],
+      "createdAt": "2026-09-12T20:25:24.527Z",
+      "verification": {
+        "signalId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
+        "maxIterations": 3,
+        "claims": [
+          {
+            "statement": "RabbitMQ es un broker de mensajes basado en AMQP que ofrece enrutamiento complejo mediante exchanges.",
+            "verdict": "VERIFIED",
+            "iterations": 2,
+            "confidence": 1,
+            "evidence": [
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+            ],
+            "contradictions": []
+          },
+          {
+            "statement": "Kafka es una plataforma de streaming distribuido basada en un commit log apendizado.",
+            "verdict": "VERIFIED",
+            "iterations": 2,
+            "confidence": 1,
+            "evidence": [
+              "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+              "Apache Kafka documenta el commit log apendizado y el orden por particion."
+            ],
+            "contradictions": []
+          },
+          {
+            "statement": "RabbitMQ garantiza baja latencia y entrega individual de mensajes.",
+            "verdict": "VERIFIED",
+            "iterations": 1,
+            "confidence": 1,
+            "evidence": [
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+            ],
+            "contradictions": []
+          },
+          {
+            "statement": "Kafka ofrece alto throughput para el procesamiento de eventos masivos.",
+            "verdict": "VERIFIED",
+            "iterations": 1,
+            "confidence": 1,
+            "evidence": [
+              "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+              "Mediciones reproducibles confirman los perfiles de latencia y throughput descritos."
+            ],
+            "contradictions": []
+          },
+          {
+            "statement": "Kafka garantiza el ordenamiento estricto de los mensajes dentro de cada particion.",
+            "verdict": "VERIFIED",
+            "iterations": 2,
+            "confidence": 1,
+            "evidence": [
+              "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+              "Apache Kafka documenta el commit log apendizado y el orden por particion."
+            ],
+            "contradictions": []
+          },
+          {
+            "statement": "RabbitMQ es la mejor opcion para sistemas distribuidos.",
+            "verdict": "UNVERIFIED_AMBIGUOUS",
+            "iterations": 3,
+            "confidence": 0.5,
+            "evidence": [
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia."
+            ],
+            "contradictions": [
+              "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+              "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+              "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+            ]
+          },
+          {
+            "statement": "Asumimos que el consumo de almacenamiento en disco no es la limitante principal.",
+            "verdict": "UNVERIFIED_AMBIGUOUS",
+            "iterations": 3,
+            "confidence": 0.5,
+            "evidence": [],
+            "contradictions": []
+          },
+          {
+            "statement": "RabbitMQ destaca en arquitectura de colas tradicionales mientras que Kafka sobresale en event sourcing.",
+            "verdict": "VERIFIED",
+            "iterations": 2,
+            "confidence": 1,
+            "evidence": [
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "Apache Kafka documenta el commit log apendizado y el orden por particion.",
+              "La documentacion oficial de RabbitMQ confirma su enrutamiento AMQP y su baja latencia.",
+              "Apache Kafka documenta el commit log apendizado y el orden por particion."
+            ],
+            "contradictions": [
+              "Benchmarks independientes no respaldan una superioridad general entre ambos brokers.",
+              "Benchmarks independientes no respaldan una superioridad general entre ambos brokers."
+            ]
+          }
+        ],
+        "verdictCounts": {
+          "VERIFIED": 6,
+          "REFUTED": 0,
+          "UNVERIFIED_AMBIGUOUS": 2
+        },
+        "overallConfidence": 0.875,
+        "penalty": 0.3
+      }
+    },
+    "narrativeAngle": "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
+    "createdAt": "2026-09-12T20:25:24.527Z"
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "aggregation": {
+    "escalated_required_skipped": [],
+    "final_status": "PASS",
+    "optional_gates": [],
+    "precedence": "FAIL > ESCALATE > PASS; SKIPPED is not a decision state",
+    "required_gates": [
+      "scope",
+      "tests",
+      "artifacts",
+      "regressions",
+      "reproducibility"
+    ],
+    "rule": "any required gate SKIPPED -> ESCALATE; then any FAIL -> FAIL; elif any ESCALATE -> ESCALATE; elif no required gate -> ESCALATE; else (all required PASS, optional SKIPPED policy-valid) -> PASS",
+    "statuses_seen": {
+      "artifacts": "PASS",
+      "regressions": "PASS",
+      "reproducibility": "PASS",
+      "scope": "PASS",
+      "tests": "PASS"
+    }
+  },
+  "final_status": "PASS",
+  "gate_policy": {
+    "artifacts": {
+      "required": true
+    },
+    "regressions": {
+      "required": true
+    },
+    "reproducibility": {
+      "required": true
+    },
+    "scope": {
+      "required": true
+    },
+    "tests": {
+      "required": true
+    }
+  },
+  "gates": {
+    "artifacts": {
+      "duration_ms": 1.3,
+      "gate": "artifacts",
+      "observations": {
+        "required": [
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/corpus.json",
+            "size": 57154,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/benchmark.json",
+            "size": 3821,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/signals.json",
+            "size": 107123,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/candidates.json",
+            "size": 104808,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/metrics.json",
+            "size": 1172,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/handoff-athenaos.json",
+            "size": 32163,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m3/human-review-packet.json",
+            "size": 8605,
+            "status": "PASS"
+          }
+        ],
+        "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "regressions": {
+      "duration_ms": 0.3,
+      "gate": "regressions",
+      "observations": {
+        "baseline": "governance/specs/athenasignal-m3.regressions.json",
+        "checks": [
+          {
+            "baseline_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "current_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "path": "tests/domain.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "current_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "path": "tests/adapters.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "current_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "path": "tests/signal-extractor.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "current_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "path": "tests/editorial-scorer.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "current_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "path": "tests/pipeline-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "current_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "path": "tests/research-candidate-e2e.test.ts",
+            "state": "unchanged"
+          }
+        ],
+        "max_regressions": 0,
+        "regressions": [],
+        "rule": "regressions>max -> FAIL; baseline unavailable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "reproducibility": {
+      "duration_ms": 152.5,
+      "gate": "reproducibility",
+      "observations": {
+        "command": "node --experimental-strip-types scripts/m3-replay.ts",
+        "rule": "all runs identical (exit_code+output_sha256) -> PASS; else FAIL",
+        "run_evidence": [
+          {
+            "duration_ms": 75.2,
+            "exit_code": 0,
+            "output_sha256": "b6638d151d12174b4574798078b81e77a935928838e69c626a942ddf6b67677f",
+            "run": 1,
+            "timed_out": false
+          },
+          {
+            "duration_ms": 77.1,
+            "exit_code": 0,
+            "output_sha256": "b6638d151d12174b4574798078b81e77a935928838e69c626a942ddf6b67677f",
+            "run": 2,
+            "timed_out": false
+          }
+        ],
+        "runs": 2,
+        "uniform": true
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "scope": {
+      "duration_ms": 24.1,
+      "gate": "scope",
+      "observations": {
+        "added_files": [
+          "evidence/m3/benchmark.json",
+          "evidence/m3/candidates.json",
+          "evidence/m3/corpus.json",
+          "evidence/m3/handoff-athenaos.json",
+          "evidence/m3/human-review-packet.json",
+          "evidence/m3/metrics.json",
+          "evidence/m3/raw/searx_AirLLM_DeepSeek_local_VRAM.json",
+          "evidence/m3/raw/searx_Apache_Kafka_vs_RabbitMQ.json",
+          "evidence/m3/raw/searx_Python_free-threading_GIL_3.13.json",
+          "evidence/m3/raw/searx_ayuno_intermitente_beneficios_evidencia.json",
+          "evidence/m3/raw/searx_creatine_supplementation_evidence.json",
+          "evidence/m3/raw/searx_electric_vehicle_battery_degradation_study.json",
+          "evidence/m3/recordings/llm.json",
+          "evidence/m3/recordings/tools.json",
+          "evidence/m3/signals.json",
+          "scripts/m3-record.ts",
+          "scripts/m3-refill-recordings.ts",
+          "scripts/m3-replay.ts",
+          "src/autonomous/benchmark.ts",
+          "src/autonomous/candidateBuilder.ts",
+          "src/autonomous/cognitive.ts",
+          "src/autonomous/corpus.ts",
+          "src/autonomous/epistemic.ts",
+          "src/autonomous/humanReview.ts",
+          "src/autonomous/index.ts",
+          "src/autonomous/metrics.ts",
+          "src/autonomous/offline.ts",
+          "src/autonomous/pipeline.ts",
+          "src/autonomous/prioritizer.ts",
+          "src/autonomous/prompts.ts",
+          "src/autonomous/research.ts",
+          "src/autonomous/types.ts",
+          "src/llm/DeepSeekProvider.ts",
+          "src/llm/DeterministicLLMProvider.ts",
+          "src/llm/OllamaProvider.ts",
+          "src/llm/OpenAiCompatibleProvider.ts",
+          "src/llm/RecordReplay.ts",
+          "src/llm/ResilientLLMProvider.ts",
+          "src/llm/StageRoutingProvider.ts",
+          "src/llm/index.ts",
+          "src/llm/parse.ts",
+          "src/llm/types.ts",
+          "src/research/tools/HttpFetchTool.ts",
+          "src/research/tools/RecordReplay.ts",
+          "src/research/tools/SearchTool.ts",
+          "src/research/tools/SearxngSearchTool.ts",
+          "src/research/tools/index.ts",
+          "tests/autonomous-intelligence-e2e.test.ts"
+        ],
+        "baseline": "governance/specs/athenasignal-m3.baseline.json",
+        "baseline_file_count": 228,
+        "changed_files": [
+          "ciclo/ORDEN-007.md",
+          "docs/llm-provider-env.md",
+          "evidence/deep-search-e2e.json",
+          "evidence/m3/benchmark.json",
+          "evidence/m3/candidates.json",
+          "evidence/m3/corpus.json",
+          "evidence/m3/handoff-athenaos.json",
+          "evidence/m3/human-review-packet.json",
+          "evidence/m3/metrics.json",
+          "evidence/m3/raw/searx_AirLLM_DeepSeek_local_VRAM.json",
+          "evidence/m3/raw/searx_Apache_Kafka_vs_RabbitMQ.json",
+          "evidence/m3/raw/searx_Python_free-threading_GIL_3.13.json",
+          "evidence/m3/raw/searx_ayuno_intermitente_beneficios_evidencia.json",
+          "evidence/m3/raw/searx_creatine_supplementation_evidence.json",
+          "evidence/m3/raw/searx_electric_vehicle_battery_degradation_study.json",
+          "evidence/m3/recordings/llm.json",
+          "evidence/m3/recordings/tools.json",
+          "evidence/m3/signals.json",
+          "scripts/m3-record.ts",
+          "scripts/m3-refill-recordings.ts",
+          "scripts/m3-replay.ts",
+          "src/autonomous/benchmark.ts",
+          "src/autonomous/candidateBuilder.ts",
+          "src/autonomous/cognitive.ts",
+          "src/autonomous/corpus.ts",
+          "src/autonomous/epistemic.ts",
+          "src/autonomous/humanReview.ts",
+          "src/autonomous/index.ts",
+          "src/autonomous/metrics.ts",
+          "src/autonomous/offline.ts",
+          "src/autonomous/pipeline.ts",
+          "src/autonomous/prioritizer.ts",
+          "src/autonomous/prompts.ts",
+          "src/autonomous/research.ts",
+          "src/autonomous/types.ts",
+          "src/llm/DeepSeekProvider.ts",
+          "src/llm/DeterministicLLMProvider.ts",
+          "src/llm/OllamaProvider.ts",
+          "src/llm/OpenAiCompatibleProvider.ts",
+          "src/llm/RecordReplay.ts",
+          "src/llm/ResilientLLMProvider.ts",
+          "src/llm/StageRoutingProvider.ts",
+          "src/llm/index.ts",
+          "src/llm/parse.ts",
+          "src/llm/types.ts",
+          "src/research/tools/HttpFetchTool.ts",
+          "src/research/tools/RecordReplay.ts",
+          "src/research/tools/SearchTool.ts",
+          "src/research/tools/SearxngSearchTool.ts",
+          "src/research/tools/index.ts",
+          "tests/autonomous-intelligence-e2e.test.ts"
+        ],
+        "current_file_count": 276,
+        "deleted_files": [],
+        "forbidden_files": [],
+        "modified_files": [
+          "ciclo/ORDEN-007.md",
+          "docs/llm-provider-env.md",
+          "evidence/deep-search-e2e.json"
+        ],
+        "rule": "deny=['decisiones/', '.env', 'perfil_navegador_llm/'] allow=['src/', 'tests/', 'scripts/', 'ciclo/', 'docs/', 'evidence/', 'governance/', 'package.json', 'package-lock.json', 'tsconfig.json', 'AGENTS.md', 'README.md']; forbidden or unexpected -> FAIL",
+        "unexpected_files": []
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "tests": {
+      "duration_ms": 232.2,
+      "gate": "tests",
+      "observations": {
+        "command": "test -f tests/autonomous-intelligence-e2e.test.ts && test -f scripts/m3-replay.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts",
+        "decision_reason": "exit_zero",
+        "duration_ms": 232.0,
+        "error": null,
+        "exit_code": 0,
+        "output_sha256": "4b534a34ec6088980f2e04d26e7a3b3588bce4f3b46993e2000d44f64ec638f3",
+        "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+        "stderr_tail": "",
+        "stdout_tail": "...[truncated]...\nson with source, signal, verification and opportunity\n      ---\n      duration_ms: 3.443791\n      type: 'test'\n      ...\n    # Subtest: exposes processUrl returning an EditorialOpportunity\n    ok 10 - exposes processUrl returning an EditorialOpportunity\n      ---\n      duration_ms: 0.58825\n      type: 'test'\n      ...\n    1..10\nok 5 - Pipeline E2E - Deep Search Vertical Slice (offline)\n  ---\n  duration_ms: 14.00525\n  type: 'suite'\n  ...\n# Subtest: Research Candidate E2E - Signal-to-Research-Candidate (offline)\n    # Subtest: runs both minimum cases deterministically without network\n    ok 1 - runs both minimum cases deterministically without network\n      ---\n      duration_ms: 7.537208\n      type: 'test'\n      ...\n    # Subtest: persists real source provenance with url, language, capture date and hash\n    ok 2 - persists real source provenance with url, language, capture date and hash\n      ---\n      duration_ms: 1.017208\n      type: 'test'\n      ...\n    # Subtest: produces >= 2 research candidates including at least one REFRAMED\n    ok 3 - produces >= 2 research candidates including at least one REFRAMED\n      ---\n      duration_ms: 0.9475\n      type: 'test'\n      ...\n    # Subtest: builds each candidate with the full ORDEN-006 structure\n    ok 4 - builds each candidate with the full ORDEN-006 structure\n      ---\n      duration_ms: 1.029625\n      type: 'test'\n      ...\n    # Subtest: does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n    ok 5 - does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n      ---\n      duration_ms: 0.636125\n      type: 'test'\n      ...\n    # Subtest: validates every AKP handoff against the vendored contract\n    ok 6 - validates every AKP handoff against the vendored contract\n      ---\n      duration_ms: 0.571333\n      type: 'test'\n      ...\n    # Subtest: rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n    ok 7 - rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n      ---\n      duration_ms: 0.162167\n      type: 'test'\n      ...\n    # Subtest: separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n    ok 8 - separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n      ---\n      duration_ms: 0.600083\n      type: 'test'\n      ...\n    # Subtest: classifies the investigable Kafka case as researchable (HIGH) and supported\n    ok 9 - classifies the investigable Kafka case as researchable (HIGH) and supported\n      ---\n      duration_ms: 0.819291\n      type: 'test'\n      ...\n    # Subtest: writes evidence files that match the returned evidence\n    ok 10 - writes evidence files that match the returned evidence\n      ---\n      duration_ms: 1.434084\n      type: 'test'\n      ...\n    # Subtest: produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n    ok 11 - produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n      ---\n      duration_ms: 0.11675\n      type: 'test'\n      ...\n    1..11\nok 6 - Research Candidate E2E - Signal-to-Research-Candidate (offline)\n  ---\n  duration_ms: 15.563708\n  type: 'suite'\n  ...\n# Subtest: SignalExtractor Service - AthenaSignal\n    # Subtest: implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n    ok 1 - implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n      ---\n      duration_ms: 7.167333\n      type: 'test'\n      ...\n    # Subtest: supports custom extractor engine and guarantees UNVERIFIED status on all claims\n    ok 2 - supports custom extractor engine and guarantees UNVERIFIED status on all claims\n      ---\n      duration_ms: 0.339125\n      type: 'test'\n      ...\n    1..2\nok 7 - SignalExtractor Service - AthenaSignal\n  ---\n  duration_ms: 8.158916\n  type: 'suite'\n  ...\n1..7\n# tests 54\n# suites 7\n# pass 54\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 200.547\n",
+        "test_counts": null,
+        "test_counts_source": "unavailable",
+        "timed_out": false
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    }
+  },
+  "policy": null,
+  "review": {
+    "artifact": null,
+    "enabled": false,
+    "required": false,
+    "status": "NOT_REQUESTED"
+  },
+  "run_id": "gov-athenasignal-m3-autonomous-signal-intelligence-verify-af972f37",
+  "spec": {
+    "path": "/Volumes/Medios/Repos/AthenaSignal/governance/specs/athenasignal-m3-verify.spec.yaml",
+    "sha256": "c3aab179ed5f0d006c40618aa77a2a9707dd7c8b3c5874423b5929be55f85a98"
+  },
+  "spec_id": "athenasignal-m3-autonomous-signal-intelligence-verify",
+  "spec_version": 1,
+  "status": "PASS"
+}

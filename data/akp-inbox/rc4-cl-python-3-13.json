@@ -1,0 +1,68 @@
+{
+  "kind": "athenasignal.akp.inbox_entry.v1",
+  "consumer": "akp-local-ingestor-v1",
+  "consumedAt": "2026-09-12T00:00:00.000Z",
+  "candidateId": "rc4-cl-python-3-13",
+  "clusterId": "cl-python-3-13",
+  "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+        "title": "Python experimental support for free threading — Python 3.13 docs",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "primary_source",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [],
+    "knownUncertainties": [
+      "¿Está claro qué extensiones C necesitan modificaciones?",
+      "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+      "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+      "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+        "refs": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-python-freethreading-2",
+      "originalClaims": [
+        "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+    }
+  }
+}

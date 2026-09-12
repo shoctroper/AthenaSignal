@@ -1,0 +1,51 @@
+{
+  "kind": "athenasignal.m3.metrics.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "sourcesProcessed": 10,
+  "signalsExtracted": 15,
+  "candidatesGenerated": 6,
+  "candidatesDiscarded": 9,
+  "highPriority": 2,
+  "mediumPriority": 4,
+  "lowPriority": 0,
+  "reframed": 8,
+  "unsupported": 0,
+  "supported": 2,
+  "ambiguous": 5,
+  "evidenceSourcesPerCandidate": {
+    "rc-sig-src-if-cochrane-1": 4,
+    "rc-sig-src-kafka-vs-rabbitmq-2": 5,
+    "rc-sig-src-airllm-claim-1": 1,
+    "rc-sig-src-cofepris-alert-1": 1,
+    "rc-sig-src-creatine-harvard-1": 1,
+    "rc-sig-src-python-freethreading-1": 1
+  },
+  "duplicateRate": 0,
+  "nearDuplicateRate": 0,
+  "falsePositiveObservations": [],
+  "humanAcceptanceRate": null,
+  "priorityDistribution": {
+    "HIGH": 2,
+    "MEDIUM": 4,
+    "LOW": 0,
+    "DISCARD": 9
+  },
+  "assessmentDistribution": {
+    "SUPPORTED": 2,
+    "UNSUPPORTED": 0,
+    "AMBIGUOUS": 5,
+    "REFRAMED": 8,
+    "DISCARDED": 9
+  },
+  "llm": {
+    "providerChain": "replay",
+    "realResponses": 94,
+    "deterministicResponses": 0,
+    "replayMisses": []
+  },
+  "research": {
+    "queries": 34,
+    "evidenceItems": 25,
+    "missingRecordings": []
+  }
+}

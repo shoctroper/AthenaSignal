@@ -1,0 +1,61 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m6-akp-rc4-cl-airllm",
+  "candidateId": "rc4-cl-airllm",
+  "clusterId": "cl-airllm",
+  "contentHash": "bc4f02d9767a772f4e059f063d76055ddf936efdaf0a985360fc219bc7dc4e38",
+  "publishedAt": "2026-09-12T02:02:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+        "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "language": "es",
+        "role": "DISCOVERY",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "discovery_only",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [],
+    "knownUncertainties": [
+      "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+      "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+      "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-airllm-claim-1",
+      "originalClaims": [
+        "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/akp-live/inbox/rc4-cl-airllm.json"
+}

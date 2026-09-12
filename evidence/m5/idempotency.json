@@ -1,0 +1,386 @@
+{
+  "kind": "athenasignal.m5.idempotency.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "records": [
+    {
+      "key": "m5-cycle-7",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:02:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-7 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-8",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:03:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-8 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-9",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:04:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-9 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-10",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:12:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-10 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-11",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:13:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-11 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-12",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:14:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-12 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-13",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:15:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-13 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-14",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:16:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-14 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-15",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:17:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-15 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-16",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:18:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-16 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-17",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:19:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-17 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-18",
+      "kind": "CYCLE",
+      "runId": "m5-proc-c-run-3",
+      "appliedAt": "2026-09-12T01:20:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m5-cycle-18 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-19",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:41:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-19 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-20",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:42:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-20 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-21",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:43:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-21 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-22",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:44:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-22 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-23",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:45:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-23 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-24",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:46:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-24 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-25",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:47:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-25 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-26",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:48:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-26 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-27",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:49:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-27 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-28",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:50:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-28 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-29",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:51:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-29 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-30",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:52:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-30 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-31",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:53:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-31 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-32",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:54:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-32 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-33",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:55:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-33 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-34",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:56:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-34 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-35",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:57:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-35 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-36",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:58:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-36 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-37",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T01:59:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-37 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-38",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:00:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-38 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-39",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:01:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-39 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-40",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:02:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-40 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-41",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:03:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-41 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-42",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:04:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-42 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-43",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:05:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-43 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-44",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:06:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-44 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-45",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:07:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-45 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-46",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:08:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-46 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-47",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:09:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-47 aplicado una sola vez."
+    },
+    {
+      "key": "m5-cycle-48",
+      "kind": "CYCLE",
+      "runId": "m5-proc-d-run-4",
+      "appliedAt": "2026-09-12T02:10:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Ciclo m5-cycle-48 aplicado una sola vez."
+    }
+  ],
+  "noOps": 12,
+  "attempted": 54
+}

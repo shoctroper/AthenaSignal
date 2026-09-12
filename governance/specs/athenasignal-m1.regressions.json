@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "path": "tests/domain.test.ts",
+      "sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12"
+    },
+    {
+      "path": "tests/adapters.test.ts",
+      "sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac"
+    },
+    {
+      "path": "tests/signal-extractor.test.ts",
+      "sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c"
+    },
+    {
+      "path": "tests/editorial-scorer.test.ts",
+      "sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef"
+    }
+  ]
+}

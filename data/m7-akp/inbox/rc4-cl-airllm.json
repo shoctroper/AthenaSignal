@@ -1,0 +1,219 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m7-akp-w3-rc4-cl-airllm",
+  "candidateId": "rc4-cl-airllm",
+  "clusterId": "cl-airllm",
+  "contentHash": "e7e0baa8ae8f78c0c892e3a07d00d377fd8ccd70a7e19a30f617b64e866976b5",
+  "publishedAt": "2026-09-12T00:00:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+        "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "language": "es",
+        "role": "DISCOVERY",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "discovery_only",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+        "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+        "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+        "title": "AirLLM vs Colibrì: ejecutando modelos de IA gigantes usando poca ...",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://roadmapia.org/modelos-locales/",
+        "title": "Modelos IA descargables · Corre LLMs gratis local - RoadmapIA",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.instagram.com/reel/DaIcV67jdDV/",
+        "title": "Correr Llama 3 o Mistral en una GPU de 4 GB era ... - Instagram",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+        "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+        "title": "The Complete AirLLM Guide: Run 70B LLMs on a 4GB GPU",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://dev.to/arshtechpro/airllm-runs-a-70b-model-on-a-4gb-gpu-its-true-and-thats-not-the-interesting-part-hha",
+        "title": "AirLLM Runs a 70B Model on a 4GB GPU. It's True, and That's Not ...",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+        "title": "Python experimental support for free threading — Python 3.13 docs",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=-6I52TK654g",
+        "title": "This AI can run massive models with just 4 GB of RAM - YouTube",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T02:11:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "provenanceUrls": [
+          "https://www.youtube.com/@legitalgorithmswithpeter",
+          "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+          "https://roadmapia.org/modelos-locales/",
+          "https://www.instagram.com/reel/DaIcV67jdDV/",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+          "https://dev.to/arshtechpro/airllm-runs-a-70b-model-on-a-4gb-gpu-its-true-and-thats-not-the-interesting-part-hha",
+          "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "https://www.youtube.com/watch?v=-6I52TK654g"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+      "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+      "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-airllm-claim-1",
+      "originalClaims": [
+        "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/inbox/rc4-cl-airllm.json"
+}

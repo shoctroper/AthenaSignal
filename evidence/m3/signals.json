@@ -1,0 +1,1456 @@
+{
+  "kind": "athenasignal.m3.signals.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "signals": [
+    {
+      "signalId": "sig-src-airllm-claim-1",
+      "corpusId": "src-airllm-claim",
+      "topic": "capacidad de ejecución de modelos de IA",
+      "assertion": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "concepts": [
+        "AirLLM",
+        "DeepSeek V4",
+        "capacidad de memoria RAM"
+      ],
+      "questions": [
+        "¿Cuáles son los requisitos mínimos de memoria RAM para ejecutar DeepSeek V4 localmente con AirLLM?",
+        "¿Cuáles son las limitaciones de ejecución de modelos de IA con 12 GB de RAM?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación presenta una capacidad específica de ejecución que puede ser verificada y tiene implicaciones para la implementación de modelos de IA en dispositivos con limitaciones de hardware.",
+      "policy": "DISCOVERY"
+    },
+    {
+      "signalId": "sig-src-creatine-pmc-1",
+      "corpusId": "src-creatine-pmc",
+      "topic": "diabetes",
+      "assertion": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+      "concepts": [
+        "suplementación de creatina",
+        "metabolismo celular",
+        "diabetes",
+        "disponibilidad de oxígeno"
+      ],
+      "questions": [
+        "¿Cuál es el efecto de la suplementación de creatina en la metabolización celular en individuos con diabetes y baja disponibilidad de oxígeno?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación se basa en evidencia científica y plantea una pregunta investigable sobre la relación entre la suplementación de creatina y la diabetes, considerando factores ambientales.",
+      "policy": "EVIDENCE"
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-1",
+      "corpusId": "src-creatine-harvard",
+      "topic": "efectos de la creatina en la recuperación muscular",
+      "assertion": "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso",
+      "concepts": [
+        "creatinina",
+        "recuperación muscular",
+        "ejercicio intenso"
+      ],
+      "questions": [
+        "¿Cuáles son los mecanismos exactos por los cuales la creatina puede acelerar la recuperación muscular después del ejercicio intenso?",
+        "¿Cuáles son los límites de este efecto en diferentes tipos de ejercicios y en diferentes grupos de personas?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación sugiere un efecto potencialmente beneficioso de la creatina que merece ser investigado para comprender mejor sus mecanismos y aplicaciones.",
+      "policy": "SECONDARY"
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-2",
+      "corpusId": "src-creatine-harvard",
+      "topic": "efecto de la creatina en la sarcopenia",
+      "assertion": "suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores",
+      "concepts": [
+        "creatinina",
+        "sarcopenia",
+        "personas mayores"
+      ],
+      "questions": [
+        "¿Cuáles son los mecanismos exactos por los cuales la creatina puede ayudar a contrarrestar la sarcopenia en personas mayores?",
+        "¿Cuáles son los límites de este efecto en diferentes grupos etarios y condiciones de salud?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación sugiere un potencial beneficio de la creatina en una condición común en la vejez que merece ser investigado para confirmar su efectividad y comprender mejor sus mecanismos.",
+      "policy": "SECONDARY"
+    },
+    {
+      "signalId": "sig-src-if-mayo-1",
+      "corpusId": "src-if-mayo",
+      "topic": "efectos del ayuno intermitente en el metabolismo",
+      "assertion": "El ayuno intermitente puede reducir la inflamación crónica.",
+      "concepts": [
+        "ayuno intermitente",
+        "inflamación crónica"
+      ],
+      "questions": [
+        "¿Cuáles son los mecanismos que explican la reducción de la inflamación crónica con el ayuno intermitente?",
+        "¿Cuáles son los efectos a largo plazo de la reducción de la inflamación crónica por ayuno intermitente?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación es verificable y tiene un impacto significativo en la salud, mereciendo una investigación más profunda.",
+      "policy": "SECONDARY"
+    },
+    {
+      "signalId": "sig-src-if-cochrane-1",
+      "corpusId": "src-if-cochrane",
+      "topic": "efectividad a largo plazo del ayuno intermitente",
+      "assertion": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+      "concepts": [
+        "ayuno intermitente",
+        "pérdida de peso",
+        "consejos alimentarios tradicionales"
+      ],
+      "questions": [
+        "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "¿Existen diferencias en la efectividad del ayuno intermitente entre diferentes grupos demográficos?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "La afirmación sugiere que la evidencia actual no respalda los beneficios del ayuno intermitente en la pérdida de peso, lo que merece una investigación más profunda para confirmar o refutar esta conclusión.",
+      "policy": "EVIDENCE"
+    },
+    {
+      "signalId": "sig-src-if-cochrane-2",
+      "corpusId": "src-if-cochrane",
+      "topic": "efectos secundarios del ayuno intermitente",
+      "assertion": "La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusiones firmes.",
+      "concepts": [
+        "ayuno intermitente",
+        "efectos secundarios"
+      ],
+      "questions": [
+        "¿Cuáles son los efectos secundarios más comunes del ayuno intermitente?",
+        "¿Cómo varían los efectos secundarios del ayuno intermitente según la forma de ayuno?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "La falta de concordancia en los efectos secundarios entre los ensayos sugiere la necesidad de investigación adicional para entender mejor los posibles riesgos asociados.",
+      "policy": "EVIDENCE"
+    },
+    {
+      "signalId": "sig-src-python-freethreading-1",
+      "corpusId": "src-python-freethreading",
+      "topic": "implementación de la GIL en Python 3.13",
+      "assertion": "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil",
+      "concepts": [
+        "Python 3.13",
+        "GIL",
+        "compilación"
+      ],
+      "questions": [
+        "¿Cuáles son las implicaciones de deshabilitar la GIL en Python 3.13?",
+        "¿Cómo afecta la deshabilitación de la GIL a la performance en entornos multihilo?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación es verificable y tiene un alto potencial de investigación ya que aborda una característica experimental importante en Python 3.13.",
+      "policy": "PRIMARY"
+    },
+    {
+      "signalId": "sig-src-python-freethreading-2",
+      "corpusId": "src-python-freethreading",
+      "topic": "compatibilidad de extensiones C con la GIL deshabilitada",
+      "assertion": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+      "concepts": [
+        "extensiones C",
+        "GIL deshabilitado"
+      ],
+      "questions": [
+        "¿Qué cambios son necesarios en las extensiones C para soportar la GIL deshabilitada?",
+        "¿Existen herramientas o guías para facilitar la adaptación de extensiones C a la GIL deshabilitada?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación es específica y tiene un alto potencial de investigación ya que aborda un aspecto crucial para el desarrollo de software que utiliza extensiones C en Python 3.13.",
+      "policy": "PRIMARY"
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-1",
+      "corpusId": "src-kafka-vs-rabbitmq",
+      "topic": "capacidades de RabbitMQ y Kafka",
+      "assertion": "RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordenado y paralelo particionado.",
+      "concepts": [
+        "RabbitMQ 3.11",
+        "super streams",
+        "single active consumer"
+      ],
+      "questions": [
+        "¿Cómo afectan estas nuevas capacidades de RabbitMQ a su rendimiento y funcionalidad en comparación con Kafka?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación presenta una novedad tecnológica específica que merece ser investigada para entender su impacto real en la funcionalidad y rendimiento de RabbitMQ.",
+      "policy": "PRIMARY"
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "corpusId": "src-kafka-vs-rabbitmq",
+      "topic": "capacidades de Kafka",
+      "assertion": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+      "concepts": [
+        "Kafka 4.2",
+        "share groups"
+      ],
+      "questions": [
+        "¿Cómo cambian las share groups la forma en que se manejan los consumidores en Kafka y qué impacto tienen en la funcionalidad y rendimiento del sistema?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación introduce una característica nueva y relevante de Kafka que merece ser investigada para comprender su impacto en la operación del sistema.",
+      "policy": "PRIMARY"
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "corpusId": "src-miracle-weightloss",
+      "topic": "pérdida de peso rápida",
+      "assertion": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+      "concepts": [
+        "KetoBig",
+        "pérdida de peso rápida",
+        "suplemento",
+        "dieta",
+        "ejercicio"
+      ],
+      "questions": [
+        "¿Cuáles son los ingredientes de KetoBig y cómo afectan a la pérdida de peso?",
+        "¿Hay estudios científicos que respalden la afirmación de que KetoBig causa una pérdida de 10 kilos en una semana sin dieta ni ejercicio?"
+      ],
+      "noiseLikelihood": 0.8,
+      "rationale": "La afirmación es específica y verificable, pero la fuente es de bajo nivel de credibilidad y no proporciona evidencia.",
+      "policy": "TERTIARY"
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "corpusId": "src-miracle-weightloss",
+      "topic": "descuento",
+      "assertion": "Bájalo ahora con descuento",
+      "concepts": [
+        "descuento",
+        "promoción"
+      ],
+      "questions": [
+        "¿Cuáles son las condiciones del descuento ofrecido?",
+        "¿Cuánto tiempo durará la promoción?"
+      ],
+      "noiseLikelihood": 0.9,
+      "rationale": "Esta afirmación no contiene información investigable y parece ser promocional.",
+      "policy": "TERTIARY"
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-1",
+      "corpusId": "src-cofepris-alert",
+      "topic": "anuncios publicitarios engañosos",
+      "assertion": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+      "concepts": [
+        "COFEPRIS",
+        "anuncios publicitarios engañosos",
+        "retirada de portales"
+      ],
+      "questions": [
+        "¿Cuáles son los criterios específicos para retirar estos portales y cómo se implementan?",
+        "¿Cuáles son las consecuencias para los responsables de estos anuncios?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación es concreta y verificable, ya que se proporciona un número específico y se menciona la violación de reglas publicitarias, lo que sugiere un tema investigable.",
+      "policy": "EVIDENCE"
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-2",
+      "corpusId": "src-cofepris-alert",
+      "topic": "efectividad de métodos de pérdida de peso",
+      "assertion": "No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.",
+      "concepts": [
+        "efectividad de métodos de pérdida de peso",
+        "ejercicio diario",
+        "dieta balanceada"
+      ],
+      "questions": [
+        "¿Cuáles son los estudios científicos que respaldan esta afirmación?",
+        "¿Existen alternativas efectivas a la dieta y el ejercicio para la pérdida de peso?"
+      ],
+      "noiseLikelihood": 0,
+      "rationale": "Esta afirmación es una interpretación del modelo basada en evidencia, pero plantea un tema investigable sobre la efectividad de los métodos de pérdida de peso.",
+      "policy": "EVIDENCE"
+    }
+  ],
+  "decompositions": [
+    {
+      "signalId": "sig-src-airllm-claim-1",
+      "originalAssertion": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "entities": [
+        "AirLLM",
+        "DeepSeek V4"
+      ],
+      "context": [
+        "permite ejecutar localmente con 12 GB de RAM"
+      ],
+      "implicitQuestions": [
+        "¿Cuál es el rendimiento de AirLLM con DeepSeek V4 en 12 GB de RAM?",
+        "¿Existen limitaciones en el uso de AirLLM con DeepSeek V4 con 12 GB de RAM?"
+      ],
+      "hypotheses": [
+        "AirLLM puede ejecutar DeepSeek V4 localmente con 12 GB de RAM sin problemas",
+        "El rendimiento de AirLLM con DeepSeek V4 en 12 GB de RAM es óptimo"
+      ],
+      "uncertainties": [
+        "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+        "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?"
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-pmc-1",
+      "originalAssertion": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+      "entities": [
+        "suplementación de creatina",
+        "metabolización celular",
+        "diabetes",
+        "disminución de severidad",
+        "baja disponibilidad de oxígeno"
+      ],
+      "context": [
+        "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno. Contexto de la fuente: Creatine in Health and Disease — PMC7910963"
+      ],
+      "implicitQuestions": [
+        "¿Cuál es la relación entre la suplementación de creatina y la metabolización celular?",
+        "¿En qué medida puede disminuir la severidad de la diabetes la suplementación de creatina?",
+        "¿En qué condiciones específicas puede ser más efectiva la suplementación de creatina para la diabetes?"
+      ],
+      "hypotheses": [
+        "La suplementación de creatina podría mejorar la metabolización celular en personas con diabetes.",
+        "La suplementación de creatina podría ser más efectiva en personas con diabetes que tienen baja disponibilidad de oxígeno.",
+        "La suplementación de creatina podría disminuir la severidad de la diabetes."
+      ],
+      "uncertainties": [
+        "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+        "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+        "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?"
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-1",
+      "originalAssertion": "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso",
+      "entities": [
+        "creatinina suplemento",
+        "recuperación muscular",
+        "ejercicio intenso"
+      ],
+      "context": [
+        "What is creatine? Potential benefits and risks — Harvard Health (https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement)"
+      ],
+      "implicitQuestions": [
+        "¿Cuáles son los posibles beneficios del suplemento de creatina para la recuperación muscular?",
+        "¿Qué tipo de ejercicio intenso podría beneficiarse de la suplementación de creatina?"
+      ],
+      "hypotheses": [
+        "El suplemento de creatina podría ayudar a acelerar la recuperación muscular después del ejercicio intenso.",
+        "La recuperación muscular después del ejercicio intenso podría verse mejorada con la suplementación de creatina."
+      ],
+      "uncertainties": [
+        "¿Existe evidencia científica suficiente para afirmar que la suplementación de creatina acelera la recuperación muscular después del ejercicio intenso?",
+        "¿Cuáles son los límites y riesgos asociados con la suplementación de creatina para la recuperación muscular?"
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-2",
+      "originalAssertion": "suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores",
+      "entities": [
+        "suplementación de creatina",
+        "sarcopenia",
+        "personas mayores"
+      ],
+      "context": [
+        "What is creatine? Potential benefits and risks — Harvard Health (https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement)"
+      ],
+      "implicitQuestions": [
+        "¿Cuáles son los posibles beneficios de la suplementación de creatina en personas mayores?",
+        "¿La suplementación de creatina puede ser efectiva en la prevención o contrarrestación de la sarcopenia?"
+      ],
+      "hypotheses": [
+        "La suplementación de creatina podría tener un efecto positivo en la musculatura de las personas mayores.",
+        "La sarcopenia podría ser influenciada por la suplementación de creatina."
+      ],
+      "uncertainties": [
+        "¿Existe evidencia suficiente para afirmar que la suplementación de creatina contrarresta la sarcopenia en personas mayores?",
+        "¿La suplementación de creatina es segura y efectiva para todas las personas mayores?"
+      ]
+    },
+    {
+      "signalId": "sig-src-if-mayo-1",
+      "originalAssertion": "El ayuno intermitente puede reducir la inflamación crónica.",
+      "entities": [
+        "ayuno intermitente",
+        "reducción",
+        "inflamación crónica"
+      ],
+      "context": [
+        "El artículo de la Mayo Clinic menciona posibles beneficios del ayuno intermitente, pero no afirma directamente que reduzca la inflamación crónica."
+      ],
+      "implicitQuestions": [
+        "¿Cuáles son los posibles beneficios del ayuno intermitente según la Mayo Clinic?",
+        "¿La inflamación crónica es un efecto secundario del ayuno intermitente?"
+      ],
+      "hypotheses": [
+        "El ayuno intermitente podría tener un efecto en la inflamación crónica, pero no se ha confirmado definitivamente.",
+        "La reducción de la inflamación crónica es una de las posibles ventajas del ayuno intermitente, pero necesita más investigación."
+      ],
+      "uncertainties": [
+        "¿Cuáles son los mecanismos exactos por los cuales el ayuno intermitente podría afectar la inflamación crónica?",
+        "¿Existen estudios clínicos que demuestren la relación entre el ayuno intermitente y la reducción de la inflamación crónica?"
+      ]
+    },
+    {
+      "signalId": "sig-src-if-cochrane-1",
+      "originalAssertion": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+      "entities": [
+        "ayuno intermitente",
+        "pérdida de peso",
+        "consejos alimentarios habituales",
+        "no hacer nada"
+      ],
+      "context": [
+        "La afirmación se refiere a la eficacia del ayuno intermitente en comparación con otros métodos de pérdida de peso en estudios clínicos o revisiones de evidencia"
+      ],
+      "implicitQuestions": [
+        "¿Cuál fue el método de medición de la pérdida de peso en los estudios?",
+        "¿Cuál era el período de tiempo de los estudios?",
+        "¿Qué tipo de ayuno intermitente se utilizó?"
+      ],
+      "hypotheses": [
+        "El ayuno intermitente podría ser igual de efectivo que otros métodos en la pérdida de peso",
+        "Los métodos de pérdida de peso alternativos podrían ser más efectivos que el ayuno intermitente"
+      ],
+      "uncertainties": [
+        "¿Existen diferencias significativas entre los grupos de estudio?",
+        "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?"
+      ]
+    },
+    {
+      "signalId": "sig-src-if-cochrane-2",
+      "originalAssertion": "La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusiones firmes.",
+      "entities": [
+        "ensayos",
+        "efectos secundarios"
+      ],
+      "context": [
+        "La evidencia científica sobre el ayuno intermitente — Cochrane"
+      ],
+      "implicitQuestions": [
+        "¿Cuáles fueron los resultados específicos de los ensayos sobre los efectos secundarios del ayuno intermitente?",
+        "¿Qué tipo de efectos secundarios se registraron en los ensayos?",
+        "¿Cuál fue la metodología utilizada en los ensayos para evaluar los efectos secundarios?"
+      ],
+      "hypotheses": [
+        "Los ensayos podrían haber utilizado diferentes métodos para evaluar los efectos secundarios.",
+        "Los ensayos podrían haber tenido diferentes periodos de seguimiento para los efectos secundarios.",
+        "Los ensayos podrían haber incluido diferentes grupos de participantes con características distintas."
+      ],
+      "uncertainties": [
+        "¿Existen discrepancias en la definición de los efectos secundarios entre los ensayos?",
+        "¿Hay inconsistencias en la forma en que se reportaron los efectos secundarios entre los ensayos?",
+        "¿Los ensayos tuvieron suficiente poder estadístico para detectar efectos secundarios relevantes?"
+      ]
+    },
+    {
+      "signalId": "sig-src-python-freethreading-1",
+      "originalAssertion": "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil",
+      "entities": [
+        "Python 3.13",
+        "GIL",
+        "--disable-gil"
+      ],
+      "context": [
+        "Python experimental support for free threading — Python 3.13 docs"
+      ],
+      "implicitQuestions": [
+        "¿Cuál es el propósito del GIL en Python 3.13?",
+        "¿Qué significa la opción de compilación --disable-gil en Python 3.13?"
+      ],
+      "hypotheses": [
+        "La deshabilitación del GIL en Python 3.13 es experimental",
+        "La deshabilitación del GIL en Python 3.13 puede afectar el rendimiento"
+      ],
+      "uncertainties": [
+        "¿La deshabilitación del GIL está disponible en todas las implementaciones de Python 3.13?",
+        "¿Cómo se implementa la deshabilitación del GIL en Python 3.13?"
+      ]
+    },
+    {
+      "signalId": "sig-src-python-freethreading-2",
+      "originalAssertion": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+      "entities": [
+        "extensiones C",
+        "GIL deshabilitada"
+      ],
+      "context": [
+        "Python experimental support for free threading — Python 3.13 docs"
+      ],
+      "implicitQuestions": [
+        "¿Cuáles son las extensiones C que necesitan modificaciones?",
+        "¿Qué es el GIL y por qué puede ser deshabilitado?",
+        "¿Cuál es el propósito de soportar la GIL deshabilitada en Python?"
+      ],
+      "hypotheses": [
+        "Las extensiones C podrían no estar diseñadas para funcionar correctamente con la GIL deshabilitada.",
+        "La deshabilitación del GIL podría introducir nuevos desafíos en el desarrollo de extensiones C."
+      ],
+      "uncertainties": [
+        "¿Está claro qué extensiones C necesitan modificaciones?",
+        "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+        "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?"
+      ]
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-1",
+      "originalAssertion": "RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordenado y paralelo particionado.",
+      "entities": [
+        "RabbitMQ 3.11 (2022)",
+        "super streams",
+        "partitioned streams",
+        "single active consumer",
+        "consumo ordenado",
+        "consumo paralelo particionado"
+      ],
+      "context": [
+        "RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka)"
+      ],
+      "implicitQuestions": [
+        "¿Qué características específicas añadió RabbitMQ 3.11 (2022)?",
+        "¿Cómo se relacionan super streams y partitioned streams?",
+        "¿Qué es un single active consumer en RabbitMQ?",
+        "¿El consumo ordenado y paralelo particionado son beneficios de la implementación de super streams y partitioned streams?"
+      ],
+      "hypotheses": [
+        "RabbitMQ 3.11 (2022) introdujo características nuevas.",
+        "Super streams y partitioned streams son términos técnicos relacionados.",
+        "El single active consumer es una característica que mejora el rendimiento del sistema.",
+        "El consumo ordenado y paralelo particionado son beneficios directos de la implementación de super streams y partitioned streams."
+      ],
+      "uncertainties": [
+        "¿La información proporcionada es precisa y actualizada?",
+        "¿Existen otros aspectos de la implementación de super streams y partitioned streams que no se mencionan en la fuente?"
+      ]
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "originalAssertion": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+      "entities": [
+        "Kafka 4.2 (2026)",
+        "share groups",
+        "consumidores individuales",
+        "bloqueo temporal",
+        "mensajes",
+        "reconocimiento uno a la vez"
+      ],
+      "context": [
+        "RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka)"
+      ],
+      "implicitQuestions": [
+        "¿Qué es RabbitMQ y cómo se compara con Apache Kafka?",
+        "¿Cuándo se espera la versión 4.2 de Kafka?",
+        "¿Qué son los share groups en Kafka?",
+        "¿Cómo funcionan los consumidores individuales en Kafka con share groups?",
+        "¿Qué significa reconocer mensajes uno a la vez?"
+      ],
+      "hypotheses": [
+        "Kafka 4.2 (2026) introducirá características nuevas.",
+        "Los share groups permitirán a los consumidores adquirir mensajes bajo un bloqueo temporal.",
+        "El reconocimiento uno a la vez de mensajes es una característica de Kafka 4.2 (2026)."
+      ],
+      "uncertainties": [
+        "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+        "¿La versión 4.2 de Kafka se lanzará en 2026?",
+        "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?"
+      ]
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "originalAssertion": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+      "entities": [
+        "KetoBig",
+        "10 kilos",
+        "una semana",
+        "dieta",
+        "ejercicio"
+      ],
+      "context": [
+        "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio (https://k-state.com/plketobig)"
+      ],
+      "implicitQuestions": [
+        "¿Cuál es la composición del suplemento KetoBig?",
+        "¿Cómo se logra la pérdida de peso sin dieta ni ejercicio?",
+        "¿Es seguro usar KetoBig para perder peso?",
+        "¿Hay estudios o pruebas que respalden estas afirmaciones?"
+      ],
+      "hypotheses": [
+        "KetoBig contiene ingredientes que activan procesos metabólicos que permiten la pérdida de peso rápidamente",
+        "El suplemento podría interferir con el metabolismo normal",
+        "Los efectos de KetoBig pueden variar entre individuos"
+      ],
+      "uncertainties": [
+        "¿La afirmación de perder 10 kilos en una semana es realista?",
+        "¿El suplemento KetoBig es efectivo para todas las personas?",
+        "¿Existen riesgos o efectos secundarios asociados con el uso de KetoBig?"
+      ]
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "originalAssertion": "Bájalo ahora con descuento",
+      "entities": [
+        "descuento"
+      ],
+      "context": [
+        "Bájalo ahora con descuento"
+      ],
+      "implicitQuestions": [
+        "¿Qué se está ofreciendo con descuento?",
+        "¿Este descuento es temporal o permanente?"
+      ],
+      "hypotheses": [
+        "Se está ofreciendo un descuento en un producto o servicio relacionado con KetoBig."
+      ],
+      "uncertainties": [
+        "No se especifica qué se está ofreciendo con descuento."
+      ]
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-1",
+      "originalAssertion": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+      "entities": [
+        "COFEPRIS",
+        "3,432 portales",
+        "productos 'milagro'",
+        "administración federal",
+        "reglas publicitarias"
+      ],
+      "context": [
+        "Alerta por la proliferación de anuncios de productos 'milagro' — COFEPRIS"
+      ],
+      "implicitQuestions": [
+        "¿Cuántos productos 'milagro' han sido retirados hasta ahora?",
+        "¿Qué tipo de productos 'milagro' son los que han sido retirados?",
+        "¿En qué periodo se han retirado estos productos 'milagro'?",
+        "¿Qué reglas publicitarias han sido violadas por estos productos 'milagro'?"
+      ],
+      "hypotheses": [
+        "La COFEPRIS ha sido activa en la retirada de productos 'milagro'",
+        "Los productos 'milagro' son una preocupación reguladora actual",
+        "La retirada de estos productos 'milagro' es parte de una estrategia más amplia de regulación"
+      ],
+      "uncertainties": [
+        "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+        "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+        "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?"
+      ]
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-2",
+      "originalAssertion": "No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.",
+      "entities": [
+        "recetas mágicas",
+        "bajar de peso",
+        "ejercicio diario",
+        "dieta balanceada"
+      ],
+      "context": [
+        "Alerta por la proliferación de anuncios de productos 'milagro' — COFEPRIS"
+      ],
+      "implicitQuestions": [
+        "¿Cuáles son los productos 'milagro' que la COFEPRIS alerta?",
+        "¿Por qué la COFEPRIS emite esta alerta?"
+      ],
+      "hypotheses": [
+        "La afirmación sugiere que no existen métodos rápidos o fáciles para bajar de peso.",
+        "La COFEPRIS considera que los anuncios de productos 'milagro' son engañosos."
+      ],
+      "uncertainties": [
+        "¿La afirmación es absoluta o existen excepciones no mencionadas?",
+        "¿La COFEPRIS tiene evidencia específica sobre la eficacia de los métodos mencionados (ejercicio diario y dieta balanceada)?"
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "signalId": "sig-src-airllm-claim-1",
+      "assessment": "REFRAMED",
+      "confidence": 0.3,
+      "reasoning": "No se dispone de evidencia independiente que confirme que AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM. La única referencia es una fuente inconclusa que no constituye prueba concluyente.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-pmc-1",
+      "assessment": "REFRAMED",
+      "confidence": 0.3,
+      "reasoning": "El único estudio citado es inconcluso y solo sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, sin demostrar una reducción directa de la severidad de la diabetes ni especificar condiciones de baja disponibilidad de oxígeno. No existe evidencia primaria o secundaria que respalde directamente la afirmación de que la suplementación de creatina disminuye la severidad de la diabetes.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+        "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-1",
+      "assessment": "REFRAMED",
+      "confidence": 0.8,
+      "reasoning": "La evidencia proporcionada indica que la creatinina mejora la fuerza y la masa muscular en personas que realizan ejercicio intenso, pero no menciona ni sugiere que acelera la recuperación muscular. No existe evidencia directa que respalde la afirmación de que la creatinina acelera la recuperación muscular después del ejercicio intenso.",
+      "contradictions": [],
+      "uncertainties": [
+        "Posibles estudios que no se citan aquí podrían abordar la recuperación muscular, pero sin evidencia directa no se puede afirmar el claim."
+      ]
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-2",
+      "assessment": "AMBIGUOUS",
+      "confidence": 0.5,
+      "reasoning": "La evidencia disponible indica que la suplementación de creatina podría mejorar la fuerza y la masa muscular en personas mayores, lo que sugiere un posible beneficio en el contexto de la sarcopenia. Sin embargo, la evidencia se marca como inconclusa y no constituye un respaldo definitivo. Por lo tanto, la afirmación no puede considerarse plenamente respaldada ni totalmente refutada, sino que permanece en un estado de ambigüedad.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta evidencia concluyente de estudios independientes y rigurosos que demuestren la eficacia de la creatina para contrarrestar la sarcopenia en la población mayor."
+      ]
+    },
+    {
+      "signalId": "sig-src-if-mayo-1",
+      "assessment": "AMBIGUOUS",
+      "confidence": 0.5,
+      "reasoning": "El artículo de la Mayo Clinic menciona que el ayuno intermitente puede tener beneficios para la salud, incluyendo la reducción de la inflamación crónica, pero no ofrece detalles específicos ni evidencia directa de estudios primarios que confirmen este efecto. Por lo tanto, la afirmación no puede considerarse respaldada de manera concluyente ni refutada, quedando en un estado de ambigüedad.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de evidencia primaria o secundaria específica que demuestre la reducción de la inflamación crónica con el ayuno intermitente."
+      ]
+    },
+    {
+      "signalId": "sig-src-if-cochrane-1",
+      "assessment": "SUPPORTED",
+      "confidence": 0.95,
+      "reasoning": "Las tres piezas de evidencia citadas respaldan directamente la afirmación de que el ayuno intermitente no produce una pérdida de peso clínicamente significativa superior a la de los consejos alimentarios habituales o a no hacer nada. No se presentan datos que contradigan la afirmación ni se indica falta de evidencia suficiente.",
+      "contradictions": [],
+      "uncertainties": [
+        "Evaluación no concluyente."
+      ]
+    },
+    {
+      "signalId": "sig-src-if-cochrane-2",
+      "assessment": "SUPPORTED",
+      "confidence": 0.7,
+      "reasoning": "El fragmento de evidencia indica que la evidencia científica sobre el ayuno intermitente no es suficiente para establecer conclusiones firmes sobre sus efectos secundarios, lo que implica que la información no es concordante entre los ensayos.",
+      "contradictions": [],
+      "uncertainties": [
+        "No se proporcionan datos específicos de los ensayos ni tipos de efectos secundarios registrados."
+      ]
+    },
+    {
+      "signalId": "sig-src-python-freethreading-1",
+      "assessment": "AMBIGUOUS",
+      "confidence": 0.5,
+      "reasoning": "La evidencia proporcionada indica que la documentación de Python 3.13 menciona soporte experimental para hilos libres, lo que sugiere la posibilidad de una opción de compilación para deshabilitar el GIL, pero no confirma explícitamente la existencia de la opción --disable-gil. No se dispone de evidencia primaria o secundaria que confirme o niegue la afirmación.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta evidencia directa de la presencia de la opción --disable-gil en Python 3.13"
+      ]
+    },
+    {
+      "signalId": "sig-src-python-freethreading-2",
+      "assessment": "REFRAMED",
+      "confidence": 0.6,
+      "reasoning": "La evidencia proporcionada indica que la documentación experimental de Python 3.13 menciona soporte para hilos libres pero no especifica la necesidad de modificar extensiones C para soportar la GIL deshabilitada. No existe evidencia directa que respalde la afirmación de que dichas extensiones deben modificarse.",
+      "contradictions": [
+        "Evidencia indica ausencia de mención sobre la necesidad de modificar extensiones C"
+      ],
+      "uncertainties": [
+        "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+      ]
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-1",
+      "assessment": "AMBIGUOUS",
+      "confidence": 0.4,
+      "reasoning": "No evidencia concluyente que confirme que RabbitMQ 3.11 (2022) añadió super streams (streams particionados) ni que incluya un consumidor activo único para este modelo. La página oficial no menciona explícitamente estas características en la versión 3.11, y no se dispone de fuentes primarias o secundarias que lo respalden. Por lo tanto, la afirmación no puede ser confirmada ni refutada con la información disponible.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de documentación oficial que detalle la introducción de super streams y single active consumer en RabbitMQ 3.11.",
+        "No se dispone de pruebas de que el consumo ordenado y paralelo particionado sea un beneficio directo de super streams en esa versión."
+      ]
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "assessment": "REFRAMED",
+      "confidence": 0.6,
+      "reasoning": "La evidencia respalda la introducción de share groups y reconocimiento por mensaje en Kafka 4.2, pero no confirma la fecha 2026; la fecha es incorrecta o especulativa.",
+      "contradictions": [
+        "La evidencia no menciona el año 2026 como fecha de lanzamiento de Kafka 4.2."
+      ],
+      "uncertainties": [
+        "Fecha exacta de lanzamiento de Kafka 4.2."
+      ]
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "assessment": "REFRAMED",
+      "confidence": 0.9,
+      "reasoning": "No se presenta evidencia independiente, primaria o secundaria que respalde la afirmación de que KetoBig permite perder 10 kilos en una semana sin dieta ni ejercicio. La única referencia es la propia declaración del producto, lo cual no constituye prueba. Por lo tanto, la afirmación no está respaldada.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de estudios clínicos, datos de seguridad y eficacia, y ausencia de revisión por pares"
+      ]
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "assessment": "REFRAMED",
+      "confidence": 0.2,
+      "reasoning": "No se presenta evidencia que confirme la existencia de un descuento ni su naturaleza (temporal o permanente). La única evidencia disponible se refiere a la eficacia del producto, no a su precio o promociones. Por lo tanto, la afirmación no puede ser respaldada.",
+      "contradictions": [],
+      "uncertainties": [
+        "¿Existe realmente un descuento? ¿Es temporal o permanente?"
+      ]
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-1",
+      "assessment": "REFRAMED",
+      "confidence": 0.3,
+      "reasoning": "No se dispone de evidencia directa que confirme que la COFEPRIS haya retirado exactamente 3,432 portales de productos ‘milagro’. La única evidencia proporcionada indica una alerta general sobre la proliferación de anuncios de dichos productos, sin especificar la cantidad de retiradas ni los tipos de productos afectados. Por lo tanto, la afirmación no puede ser respaldada por la evidencia disponible.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+      ]
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-2",
+      "assessment": "AMBIGUOUS",
+      "confidence": 0.4,
+      "reasoning": "La evidencia citada (alerta de COFEPRIS sobre productos ‘milagro’) respalda la idea de que no existen métodos rápidos o fáciles para bajar de peso, pero no proporciona evidencia directa de que el único camino efectivo sea el ejercicio diario y una dieta balanceada. Por lo tanto, la afirmación completa no está respaldada de manera concluyente por la evidencia disponible.",
+      "contradictions": [],
+      "uncertainties": [
+        "Falta evidencia que confirme que el ejercicio diario y la dieta balanceada son los únicos medios efectivos para bajar de peso."
+      ]
+    }
+  ],
+  "researchability": {
+    "sig-src-airllm-claim-1": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.5,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.7,
+      "resolvableUncertainty": 0.8,
+      "reason": "La pregunta es específica y comprensible, lo que facilita la formulación de una investigación. Existe al menos una fuente que menciona la afirmación, pero la fiabilidad y la profundidad de la evidencia son inciertas, por lo que la disponibilidad de evidencia se califica como media. El tema es relevante para la comunidad de IA y la optimización de modelos, lo que le confiere una relevancia editorial moderada. La incertidumbre es resoluble mediante pruebas experimentales concretas (ejecutar AirLLM con DeepSeek V4 en un entorno con 12 GB de RAM), por lo que se considera alta investigabilidad.}"
+    },
+    "sig-src-creatine-pmc-1": {
+      "level": "MEDIUM",
+      "evidenceAvailability": 0.4,
+      "questionClarity": 0.8,
+      "editorialRelevance": 0.6,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta es específica y comprensible, pero la evidencia actual sobre creatina en diabetes es limitada, lo que reduce la disponibilidad de datos. La incertidumbre es resoluble mediante ensayos clínicos controlados, y el tema es editorialmente relevante dada la prevalencia de la diabetes y el bajo costo de la creatina. El nivel de investigabilidad se considera medio."
+    },
+    "sig-src-creatine-harvard-1": {
+      "level": "MEDIUM",
+      "evidenceAvailability": 0.6,
+      "questionClarity": 0.7,
+      "editorialRelevance": 0.5,
+      "resolvableUncertainty": 0.8,
+      "reason": "La pregunta es específica pero contiene una posible ambigüedad terminológica (creatinina vs creatina). Existe literatura sobre suplementos de creatina y recuperación muscular, lo que sugiere disponibilidad moderada de evidencia. La incertidumbre es resoluble mediante ensayos controlados aleatorizados. La relevancia editorial es moderada, ya que el tema es de interés para atletas y nutricionistas, pero no es de alta prioridad científica. El coste razonable de la investigación es moderado, considerando la necesidad de un diseño clínico controlado."
+    },
+    "sig-src-creatine-harvard-2": {
+      "level": "MEDIUM",
+      "evidenceAvailability": 0.55,
+      "questionClarity": 0.6,
+      "editorialRelevance": 0.8,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta es comprensible pero ambigua respecto a los parámetros de intervención (dosis, duración, población específica). Existe literatura limitada sobre creatina en sarcopenia, lo que sugiere disponibilidad moderada de evidencia. La incertidumbre sobre eficacia y mecanismos es resoluble mediante ensayos controlados aleatorizados. La temática es relevante para la geriatría y la nutrición clínica, lo que aumenta su relevancia editorial. El coste de investigación es razonable, considerando estudios clínicos ya existentes como referencia."
+    },
+    "sig-src-if-mayo-1": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.4,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.6,
+      "resolvableUncertainty": 0.8,
+      "reason": "La pregunta es clara y específica, pero la evidencia disponible es limitada (solo una fuente recuperada). La incertidumbre es resoluble mediante estudios controlados, y el tema es editorialmente relevante para la salud pública, aunque el coste de investigación es moderado."
+    },
+    "sig-src-if-cochrane-1": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.8,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.8,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta sobre la eficacia clínica del ayuno intermitente en la pérdida de peso es clara y directa, con un marco comparativo bien definido (consejos alimentarios habituales o no intervención). Existe una cantidad sustancial de estudios clínicos y metaanálisis disponibles, lo que indica una alta disponibilidad de evidencia. La incertidumbre sobre el efecto clínico es resoluble mediante análisis estadísticos adicionales, aunque la heterogeneidad entre estudios puede introducir cierta complejidad. El tema es de alta relevancia editorial, dado el interés público en estrategias de pérdida de peso. El coste razonable de investigación (revisión sistemática y metaanálisis) es moderado, lo que hace que la investigación sea factible.}"
+    },
+    "sig-src-if-cochrane-2": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.5,
+      "questionClarity": 0.6,
+      "editorialRelevance": 0.7,
+      "resolvableUncertainty": 0.8,
+      "reason": "La afirmación plantea una incertidumbre sobre la consistencia de los datos de efectos secundarios entre ensayos, lo que es claro y específico. Se dispone de al menos cuatro fuentes iniciales, aunque la cobertura completa requerirá búsqueda adicional, por lo que la disponibilidad de evidencia es moderada. El tema es editorialmente relevante, ya que la seguridad de los tratamientos es de interés público. La incertidumbre es resoluble mediante métodos sistemáticos (revisión sistemática, meta‑análisis) que pueden identificar fuentes de heterogeneidad. Por lo tanto, la investigabilidad se considera alta."
+    },
+    "sig-src-python-freethreading-1": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.4,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.5,
+      "resolvableUncertainty": 0.8,
+      "reason": "La pregunta es específica y clara sobre la posibilidad de deshabilitar el GIL en Python 3.13 mediante una opción de compilación. Existe al menos una fuente que menciona la opción, pero su fiabilidad y cobertura no están garantizadas, por lo que la disponibilidad de evidencia es moderada. El tema es relevante para desarrolladores que buscan rendimiento multihilo, pero su interés editorial es moderado. La incertidumbre es resoluble mediante pruebas de compilación y revisión de la documentación oficial, lo que justifica un nivel de investigabilidad alto."
+    },
+    "sig-src-python-freethreading-2": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.3,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.5,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta es específica y clara sobre la necesidad de modificar extensiones C para soportar la desactivación del GIL. La evidencia disponible es limitada (solo una fuente), lo que reduce la disponibilidad de evidencia pero no impide la investigación. La relevancia editorial es moderada, ya que afecta a desarrolladores de extensiones y a la comunidad de Python. La incertidumbre es resoluble mediante pruebas, revisión de documentación y análisis de código, por lo que el nivel de investigabilidad se considera alto."
+    },
+    "sig-src-kafka-vs-rabbitmq-1": {
+      "level": "MEDIUM",
+      "evidenceAvailability": 0.4,
+      "questionClarity": 0.3,
+      "editorialRelevance": 0.5,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta es específica pero su formulación ambigua y la evidencia inicial limitada (solo una fuente) reducen la claridad y disponibilidad de pruebas. Sin embargo, la incertidumbre es resoluble mediante revisión de documentación oficial y notas de lanzamiento de RabbitMQ 3.11, lo que sugiere un nivel de investigabilidad moderado. La relevancia editorial para audiencias técnicas es razonable, pero no excepcional."
+    },
+    "sig-src-kafka-vs-rabbitmq-2": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.7,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.6,
+      "resolvableUncertainty": 0.8,
+      "reason": "La pregunta es específica y clara sobre una característica de Kafka 4.2, lo que facilita la formulación de una investigación. Se dispone de cinco fuentes iniciales, lo que indica disponibilidad moderada de evidencia, aunque la calidad y fiabilidad de las mismas deben verificarse. La incertidumbre es resoluble mediante la revisión de documentación oficial, notas de lanzamiento y foros de la comunidad. La relevancia editorial es moderada, ya que los avances en Kafka son de interés para la audiencia de AthenaSignal, pero no son de máxima prioridad. El coste razonable de la investigación es bajo, pues se requiere principalmente acceso a documentación y foros.}"
+    },
+    "sig-src-miracle-weightloss-1": {
+      "level": "MEDIUM",
+      "evidenceAvailability": 0.2,
+      "questionClarity": 0.9,
+      "editorialRelevance": 0.8,
+      "resolvableUncertainty": 0.7,
+      "reason": "La pregunta es clara y aborda un efecto extraordinario que puede ser evaluado mediante ensayos controlados, pero la evidencia disponible es escasa (solo una fuente). La incertidumbre es resoluble con estudios adecuados, y el tema es editorialmente relevante para la audiencia interesada en suplementos de pérdida de peso."
+    },
+    "sig-src-miracle-weightloss-2": {
+      "level": "LOW",
+      "evidenceAvailability": 0.2,
+      "questionClarity": 0.1,
+      "editorialRelevance": 0.1,
+      "resolvableUncertainty": 0.5,
+      "reason": "La frase \"Bájalo ahora con descuento\" carece de contexto específico (producto, fuente, ubicación), lo que reduce la claridad de la pregunta y la disponibilidad de evidencia directa. Sin embargo, la incertidumbre sobre la existencia de un descuento real es resoluble mediante investigación de precios y ofertas en la fuente indicada, lo que implica un coste razonable y una viabilidad moderada de investigación. La relevancia editorial es baja, ya que se trata de una afirmación de marketing genérica sin implicaciones más amplias."
+    },
+    "sig-src-cofepris-alert-1": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.4,
+      "questionClarity": 0.7,
+      "editorialRelevance": 0.6,
+      "resolvableUncertainty": 0.8,
+      "reason": "La afirmación es específica y cuantitativa, lo que facilita la formulación de una pregunta investigable. La disponibilidad de evidencia es limitada (solo una fuente), pero se pueden acceder a registros oficiales de COFEPRIS, comunicados de prensa y bases de datos de sanciones para corroborar o refutar el número de portales retirados. La incertidumbre es resoluble mediante la búsqueda de documentos públicos y entrevistas con funcionarios. La relevancia editorial es moderada, ya que la regulación de productos ‘milagro’ afecta la salud pública y la confianza del consumidor. El coste razonable de la investigación es bajo, pues la información se encuentra en fuentes accesibles en línea y en archivos gubernamentales.}"
+    },
+    "sig-src-cofepris-alert-2": {
+      "level": "HIGH",
+      "evidenceAvailability": 0.9,
+      "questionClarity": 0.6,
+      "editorialRelevance": 0.8,
+      "resolvableUncertainty": 0.8,
+      "reason": "La afirmación plantea una hipótesis sobre la eficacia de intervenciones de pérdida de peso. La pregunta es suficientemente clara para diseñar estudios comparativos, existe abundante literatura sobre dietas, ejercicio y suplementos, y la incertidumbre puede resolverse mediante ensayos controlados. El tema es de gran interés editorial y el coste de investigación es razonable."
+    }
+  },
+  "reframings": [
+    {
+      "signalId": "sig-src-airllm-claim-1",
+      "required": true,
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "candidateFact": null
+    },
+    {
+      "signalId": "sig-src-creatine-pmc-1",
+      "required": true,
+      "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "candidateFact": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular."
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-1",
+      "required": true,
+      "researchQuestion": "¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+      "reframingNote": "La afirmación «creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Segunda fuente independiente sobre creatina: permite cruzar evidencia (MULTI_SOURCE). Se reformula la afirmación original en una pregunta investigable que no asume el resultado, y se propone un hecho conservador basado en evidencia existente sobre fuerza y masa muscular. Pregunta investigable reformulada: ¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+      "candidateFact": "La suplementación con creatinina mejora la fuerza y la masa muscular en personas que realizan ejercicio intenso."
+    },
+    {
+      "signalId": "sig-src-python-freethreading-2",
+      "required": true,
+      "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+      "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+      "candidateFact": null
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "required": true,
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "candidateFact": "Kafka introdujo share groups"
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "required": true,
+      "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+      "reframingNote": "La afirmación «KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable que puede ser evaluada mediante un estudio controlado. Pregunta investigable reformulada: ¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+      "candidateFact": null
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "required": true,
+      "researchQuestion": "¿Existe alguna promoción vigente que permita adquirir el producto a un precio reducido en este momento?",
+      "reframingNote": "La afirmación «Bájalo ahora con descuento» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable sobre la existencia de descuentos o promociones actuales. No se presenta la afirmación como hecho. Pregunta investigable reformulada: ¿Existe alguna promoción vigente que permita adquirir el producto a un precio reducido en este momento?",
+      "candidateFact": null
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-1",
+      "required": true,
+      "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "candidateFact": null
+    }
+  ],
+  "evidence": {
+    "sig-src-airllm-claim-1": [
+      {
+        "sourceUrl": "https://www.youtube.com/@legitalgorithmswithpeter",
+        "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM (fuente de origen)",
+        "excerpt": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM. Es la forma definitiva de correr modelos gigantes en tu portátil sin GPU cara. Nadie más lo logra con tan poca memoria.",
+        "policy": "DISCOVERY",
+        "role": "DISCOVERY",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-creatine-pmc-1": [
+      {
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+        "title": "Creatine in Health and Disease — PMC7910963 (fuente de origen)",
+        "excerpt": "Creatine in Health and Disease - PMC Skip to main content An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Search Log in Dashboard Publications Account settings Log out Search… Search NCBI Primary site navigation Search Logged in as: Dashboard Publications Account settings Log in Search PMC Full-Text Archive Search in PMC Journal List User Guide PERMALINK Copy As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health. Learn more: PMC Disclaimer | PMC Copyright Notice Nutrients . 2021 Jan 29;13(2):447. doi: 10.3390/nu13020447 Search in PMC Search in PubMed View in NLM Catalog Add to search Creatine in Health and Disease Richard B Kreider Richard B Kreider 1 Human Clinical Research Facility, Exercise & Sport Nutrition Lab, Department of Health & Kinesiology, Texas A&M University, College Station, TX 77843, USA Find articles by Richard B Kreider 1, * , Jeffery R Stout Jeffery R Stout 2 Physiology of Work and Exercise Response (POWER) Laboratory, Institute of Exercise Physiology and Rehabilitation Science, School of Kinesiology and Physical Therapy, University of Central Florida, 12494 University Blvd.",
+        "policy": "EVIDENCE",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-creatine-harvard-1": [
+      {
+        "sourceUrl": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+        "title": "What is creatine? Potential benefits and risks — Harvard Health (fuente de origen)",
+        "excerpt": "What is creatine? Potential benefits and risks of this popular supplement - Harvard Health Skip to main content = 400\" > Harvard Health Publishing Harvard Health Publishing HarvardHealthOnline+ Search Customer Service Content Licensing About Us Log In { $refs.menuCloseButton.focus(); $refs.slideOverNav.classList.remove('opacity-0'); $refs.slideOverNav.classList.add('opacity-100') });\" x-ref=\"mobileMenuToggle\" > Open mobile menu Subscriptions Special Health Reports Online Courses Pay My Bill Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup { $refs.mobileMenuToggle.focus() })\" x-ref=\"menuCloseButton\" > Close menu HarvardHealthOnline+ Main Content Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup Helpful Links Customer Service About Us Content Licensing Subscriptions Special Health Reports Online Courses Pay My Bill { document.querySelector('#search-dropdown-input').focus(); });\" x-on:close-search-dropdown.window=\"$nextTick(() => { document.querySelector('#search-open-button').focus(); });\" x-on:keydown.escape=\"searchOpen = false\" x-on:click.away=\"searchOpen = false\" x-transition:enter=\"transform duration-200\" x-transition:enter-start=\"-translate-y-full\" x-transition:enter-end=\"translate-y-0\" x-transition:leave=\"transform duration-250\" x-transition:leave-start=\"translate-y-0\" x-transition:leave-end=\"-translate-y-full\" x-cloak> Search Search Close Recent Articles Fatty liver disease: Should you be tested? Weight-loss drug may lower risk of heart attacks and infections Testosterone therapy without evidence of def",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-creatine-harvard-2": [
+      {
+        "sourceUrl": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+        "title": "What is creatine? Potential benefits and risks — Harvard Health (fuente de origen)",
+        "excerpt": "What is creatine? Potential benefits and risks of this popular supplement - Harvard Health Skip to main content = 400\" > Harvard Health Publishing Harvard Health Publishing HarvardHealthOnline+ Search Customer Service Content Licensing About Us Log In { $refs.menuCloseButton.focus(); $refs.slideOverNav.classList.remove('opacity-0'); $refs.slideOverNav.classList.add('opacity-100') });\" x-ref=\"mobileMenuToggle\" > Open mobile menu Subscriptions Special Health Reports Online Courses Pay My Bill Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup { $refs.mobileMenuToggle.focus() })\" x-ref=\"menuCloseButton\" > Close menu HarvardHealthOnline+ Main Content Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup Helpful Links Customer Service About Us Content Licensing Subscriptions Special Health Reports Online Courses Pay My Bill { document.querySelector('#search-dropdown-input').focus(); });\" x-on:close-search-dropdown.window=\"$nextTick(() => { document.querySelector('#search-open-button').focus(); });\" x-on:keydown.escape=\"searchOpen = false\" x-on:click.away=\"searchOpen = false\" x-transition:enter=\"transform duration-200\" x-transition:enter-start=\"-translate-y-full\" x-transition:enter-end=\"translate-y-0\" x-transition:leave=\"transform duration-250\" x-transition:leave-start=\"translate-y-0\" x-transition:leave-end=\"-translate-y-full\" x-cloak> Search Search Close Recent Articles Fatty liver disease: Should you be tested? Weight-loss drug may lower risk of heart attacks and infections Testosterone therapy without evidence of def",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-if-mayo-1": [
+      {
+        "sourceUrl": "https://www.mayoclinic.org/es/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/intermittent-fasting/faq-20441303",
+        "title": "Ayuno intermitente: los beneficios — Mayo Clinic (fuente de origen)",
+        "excerpt": "Ayuno intermitente: los beneficios - Mayo Clinic .cmp-button__inner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:start;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start;-webkit-text-decoration:none;text-decoration:none;}.cmp-button__inner--width-full{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}.cmp-button__inner:hover{-webkit-text-decoration:none;text-decoration:none;}.cmp-button__inner .icon__chevron-right{display:none;}.cmp-button__inner-main{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.cmp-button__inner-main .cmp-icon.left-aligned{margin-inline-end:var(--mc-spacing-1-5x);}.cmp-button__inner-main .cmp-icon.right-aligned{margin-inline-start:var(--mc-spacing-1-5x);}.cmp-button__inner-main .cmp-icon{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.cmp-button__inner.cmp-button__inner{text-align:start;}.cmp-button__inner.cmp-button__inner.cmp-print{--text-color:var(--mc-color-text-secondary);}.cmp-button__inner.cmp-button__inner--justify-content-start{-webkit-box-pack:start;-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start;}html[dir=rtl] .cmp-button__inner.cmp-button__inner--justify-content-start{-webkit-box-pack:end;-webkit-justify-content:end;-ms-flex-pack:end;justify-content:end;}.cmp-button__inner.cmp-button__inner--justify-content-en",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-if-cochrane-1": [
+      {
+        "sourceUrl": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane (fuente de origen)",
+        "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane México Skip to main content Top menu Biblioteca Cochrane Cochrane.org Admin Cochrane México Evidencia fiable. Decisiones informadas. Mejor salud. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de estas tenían sobrepeso, de las cuales 890 millones tenían obesidad. En los últimos años, la popularidad del ayuno intermitente ha ido creciendo, impulsado por las redes sociales, influencers y mensajes sobre su rápida pérdida de peso y sus beneficios metabólicos. Sin diferencia significativa en la pérdida de peso El equipo investigador analizó la evidencia de 22 ensayos clínicos aleatorizados con 1995 personas adultas de Norteaméric",
+        "policy": "EVIDENCE",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      },
+      {
+        "sourceUrl": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+        "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica Skip to main content English Español Top menu Inicio Biblioteca Cochrane Cochrane.org Admin Cochrane Iberoamérica Trusted evidence. Informed decisions. Better health. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de es",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      },
+      {
+        "sourceUrl": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+        "excerpt": "Pero la mayor revisión sistemática ... de horas, llega a una conclusión que modera el entusiasmo: el ayuno intermitente funciona para adelgazar, sí, pero no es mejor que una dieta hipocalórica convencional....",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      },
+      {
+        "sourceUrl": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+        "excerpt": "La dieta hipocalórica es saludable y se adelgaza, pero se pierde más peso con el ayuno intermitente, el alterno o la dieta cetogénica cuando la persona que sigue la dieta tiene obesidad.",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      }
+    ],
+    "sig-src-if-cochrane-2": [
+      {
+        "sourceUrl": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane (fuente de origen)",
+        "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane México Skip to main content Top menu Biblioteca Cochrane Cochrane.org Admin Cochrane México Evidencia fiable. Decisiones informadas. Mejor salud. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de estas tenían sobrepeso, de las cuales 890 millones tenían obesidad. En los últimos años, la popularidad del ayuno intermitente ha ido creciendo, impulsado por las redes sociales, influencers y mensajes sobre su rápida pérdida de peso y sus beneficios metabólicos. Sin diferencia significativa en la pérdida de peso El equipo investigador analizó la evidencia de 22 ensayos clínicos aleatorizados con 1995 personas adultas de Norteaméric",
+        "policy": "EVIDENCE",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      },
+      {
+        "sourceUrl": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+        "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica Skip to main content English Español Top menu Inicio Biblioteca Cochrane Cochrane.org Admin Cochrane Iberoamérica Trusted evidence. Informed decisions. Better health. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de es",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      },
+      {
+        "sourceUrl": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+        "excerpt": "Pero la mayor revisión sistemática ... de horas, llega a una conclusión que modera el entusiasmo: el ayuno intermitente funciona para adelgazar, sí, pero no es mejor que una dieta hipocalórica convencional....",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      },
+      {
+        "sourceUrl": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+        "excerpt": "La dieta hipocalórica es saludable y se adelgaza, pero se pierde más peso con el ayuno intermitente, el alterno o la dieta cetogénica cuando la persona que sigue la dieta tiene obesidad.",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "ayuno intermitente evidencia científica adelgazar"
+      }
+    ],
+    "sig-src-python-freethreading-1": [
+      {
+        "sourceUrl": "https://docs.python.org/3.13/howto/free-threading-python.html",
+        "title": "Python experimental support for free threading — Python 3.13 docs (fuente de origen)",
+        "excerpt": "Python experimental support for free threading &#8212; Python 3.13.15 documentation Theme Auto Light Dark Table of Contents Python experimental support for free threading Installation Identifying free-threaded Python The global interpreter lock in free-threaded Python Thread safety Known limitations Immortalization Frame objects Iterators Single-threaded performance Previous topic The Python 2.3 Method Resolution Order Next topic C API Extension Support for Free Threading This page Report a bug Show source Navigation index modules | next | previous | Python &#187; 3.13.15 Documentation &#187; Python HOWTOs &#187; Python experimental support for free threading | Theme Auto Light Dark | Python experimental support for free threading ¶ Starting with the 3.13 release, CPython has experimental support for a build of Python called free threading where the global interpreter lock (GIL) is disabled. Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. This document describes the implications of free threading for Python code. See C API Extension Support for Free Threading for information on how to write C extensions that support the free-threaded build. See also PEP 703 – Making the Global Interpreter Lock Optional i",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-python-freethreading-2": [
+      {
+        "sourceUrl": "https://docs.python.org/3.13/howto/free-threading-python.html",
+        "title": "Python experimental support for free threading — Python 3.13 docs (fuente de origen)",
+        "excerpt": "Python experimental support for free threading &#8212; Python 3.13.15 documentation Theme Auto Light Dark Table of Contents Python experimental support for free threading Installation Identifying free-threaded Python The global interpreter lock in free-threaded Python Thread safety Known limitations Immortalization Frame objects Iterators Single-threaded performance Previous topic The Python 2.3 Method Resolution Order Next topic C API Extension Support for Free Threading This page Report a bug Show source Navigation index modules | next | previous | Python &#187; 3.13.15 Documentation &#187; Python HOWTOs &#187; Python experimental support for free threading | Theme Auto Light Dark | Python experimental support for free threading ¶ Starting with the 3.13 release, CPython has experimental support for a build of Python called free threading where the global interpreter lock (GIL) is disabled. Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. This document describes the implications of free threading for Python code. See C API Extension Support for Free Threading for information on how to write C extensions that support the free-threaded build. See also PEP 703 – Making the Global Interpreter Lock Optional i",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-kafka-vs-rabbitmq-1": [
+      {
+        "sourceUrl": "https://www.rabbitmq.com/docs/compare/kafka",
+        "title": "RabbitMQ vs. Apache Kafka — RabbitMQ (fuente de origen)",
+        "excerpt": "RabbitMQ vs. Apache Kafka | RabbitMQ Skip to main content Getting Started Docs Blog Support Security Commercial Features 4.3 Release series Next 4.3 4.2 4.1 4.0 3.13 GitHub Search Introduction Release Information Getting Started Install and Upgrade How to Use RabbitMQ How to Manage RabbitMQ How to Monitor RabbitMQ Compare with Other Brokers Apache Kafka Compare with Other Brokers Apache Kafka Version: 4.3 On this page RabbitMQ vs. Apache Kafka® Most existing comparisons of these two systems were written years ago by someone who sells one of them. This one is written by the team that builds RabbitMQ, so bear that in mind — but we have tried hard to describe Kafka the way its own documentation describes it, and we are explicit about the things Kafka does that RabbitMQ does not. If anything here reads as unfair to you, we would genuinely like to know — tell us . The short version: the two systems started from opposite ends of the problem and have been growing towards each other for years. RabbitMQ built its reputation as the default choice for messaging and task queueing; Kafka built its reputation as the default choice for event streaming. RabbitMQ then gained a durable, replicated log in 2021, and Kafka gained queue semantics in 2026. Their high-level capabilities now overlap substantially. If you are looking for a high-level summary and want to skip the technical details, you can jump directly to the use cases . The line that used to divide them ​ For a long time the advice was easy to give: RabbitMQ for messaging and queueing, Kafka for streaming. It was good advice. It is",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-kafka-vs-rabbitmq-2": [
+      {
+        "sourceUrl": "https://www.rabbitmq.com/docs/compare/kafka",
+        "title": "RabbitMQ vs. Apache Kafka — RabbitMQ (fuente de origen)",
+        "excerpt": "RabbitMQ vs. Apache Kafka | RabbitMQ Skip to main content Getting Started Docs Blog Support Security Commercial Features 4.3 Release series Next 4.3 4.2 4.1 4.0 3.13 GitHub Search Introduction Release Information Getting Started Install and Upgrade How to Use RabbitMQ How to Manage RabbitMQ How to Monitor RabbitMQ Compare with Other Brokers Apache Kafka Compare with Other Brokers Apache Kafka Version: 4.3 On this page RabbitMQ vs. Apache Kafka® Most existing comparisons of these two systems were written years ago by someone who sells one of them. This one is written by the team that builds RabbitMQ, so bear that in mind — but we have tried hard to describe Kafka the way its own documentation describes it, and we are explicit about the things Kafka does that RabbitMQ does not. If anything here reads as unfair to you, we would genuinely like to know — tell us . The short version: the two systems started from opposite ends of the problem and have been growing towards each other for years. RabbitMQ built its reputation as the default choice for messaging and task queueing; Kafka built its reputation as the default choice for event streaming. RabbitMQ then gained a durable, replicated log in 2021, and Kafka gained queue semantics in 2026. Their high-level capabilities now overlap substantially. If you are looking for a high-level summary and want to skip the technical details, you can jump directly to the use cases . The line that used to divide them ​ For a long time the advice was easy to give: RabbitMQ for messaging and queueing, Kafka for streaming. It was good advice. It is",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      },
+      {
+        "sourceUrl": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+        "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+        "excerpt": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka Get Started Introduction Quickstart Use Cases Books and Papers Videos Podcasts Docs Key Concepts APIs Configuration Design Implementation Operations Security Clients Kafka Connect Kafka Streams Powered By Community Blog Kafka Summit Project Info Trademark Ecosystem Events Contact Us Apache Apache.org License Donate Sponsors Security Privacy Releases 4.3 4.2 4.1 4.0 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.8 2.7 2.6 2.5 2.4 2.3 2.2 2.1 2.0 1.1 1.0 0.11.0 0.10.2 0.10.1 0.10.0 0.9.0 0.8.2 0.8.1 0.8.0 0.7 DOWNLOAD KAFKA Blog Release Announcements AK 4.3.1 AK 4.2.1 AK 4.3.0 AK 4.1.2 AK 4.0.2 AK 3.9.2 AK 4.2.0 AK 4.1.1 AK 4.0.1 AK 4.1.0 AK 3.9.1 AK 4.0.0 AK 3.7.2 AK 3.9.0 AK 3.8.1 AK 3.8.0 AK 3.7.1 AK 3.6.2 AK 3.7.0 AK 3.5.2 AK 3.6.1 AK 3.6.0 AK 3.5.1 AK 3.5.0 View page source Edit this page Create child page Create documentation issue Print entire section Deprecation Notices Kafka Broker, Controller, Producer, Consumer and Admin Client Kafka Streams Kafka Connect Summary Tag Cloud Apis 1 Configuration 34 Connect 34 Design 34 Developer-Guide 34 Docs 2106 Getting-Started 34 Implementation 34 Kafka 2106 Ops 34 Security 34 Streams 68 B",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+      },
+      {
+        "sourceUrl": "https://www.conduktor.io/glossary/kafka-share-groups",
+        "title": "Kafka Queues: Share Groups Explained | Conduktor",
+        "excerpt": "Instead of committing an offset, a share consumer resolves each record individually.",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+      },
+      {
+        "sourceUrl": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+        "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+        "excerpt": "Kafka now supports native queue semantics with share groups and per-message acknowledgment. Learn how elastic consumers scale beyond partitions in Confluent.",
+        "policy": "SECONDARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+      },
+      {
+        "sourceUrl": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+        "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+        "excerpt": "The consumer can do nothing, in which case the lock is automatically released when the lock duration has elapsed The cluster limits the number of records acquired for consumers for each topic-partition in a share group. Once the limit is reached, fetching records will temporarily yield no further records until the number of acquired records reduces, as naturally happens when the locks time out.",
+        "policy": "PRIMARY",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+      }
+    ],
+    "sig-src-miracle-weightloss-1": [
+      {
+        "sourceUrl": "https://k-state.com/plketobig",
+        "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio (fuente de origen)",
+        "excerpt": "KetoBig es el suplemento milagro que te hace bajar 10 kilos en una semana sin dieta ni ejercicio. Miles de personas ya lo usan y los resultados son increíbles. Bájalo ahora con descuento.",
+        "policy": "TERTIARY",
+        "role": "DISCOVERY",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-miracle-weightloss-2": [
+      {
+        "sourceUrl": "https://k-state.com/plketobig",
+        "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio (fuente de origen)",
+        "excerpt": "KetoBig es el suplemento milagro que te hace bajar 10 kilos en una semana sin dieta ni ejercicio. Miles de personas ya lo usan y los resultados son increíbles. Bájalo ahora con descuento.",
+        "policy": "TERTIARY",
+        "role": "DISCOVERY",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-cofepris-alert-1": [
+      {
+        "sourceUrl": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (fuente de origen)",
+        "excerpt": "Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales | Comisión Federal para la Protección contra Riesgos Sanitarios | Gobierno | gob.mx Interruptor de Navegación Trámites Gobierno English Interruptor de Navegación COFEPRIS Prensa Datos Personales Transparencia Inicio Comisión Federal para la Protección contra Riesgos Sanitarios Prensa Publicaciones Recientes Nuevo 2026-09-07 12:00:00 -0600 COFEPRIS fortalece acciones de coordinación para atender emergencias sanitarias en temporada de lluvias y huracanes 2026 Nuevo 2026-08-20 14:29:00 -0600 COFEPRIS publica Visor de Registros Sanitarios de Dispositivos Médicos Nuevo 2026-08-06 21:14:00 -0600 COFEPRIS realiza investigación en la planta empacadora de chiles jalapeños en Nuevo León Nuevo 2026-07-24 17:27:00 -0600 En la investigación por Cyclospora cayetanensis, ni México ni EE.UU. han encontrado el parásito en lechugas de origen mexicano Nuevo 2026-07-24 12:52:00 -0600 COFEPRIS y CONBIOÉTICA realizaron capacitación para agilizar el ingreso, evaluación y autorización de protocolos de investigación clínica Aa+ Aa- Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales Comunicado 05 - Con motivo del inicio del nuevo año, se multiplican en Facebook, Twitter, YouTube e Instagram anuncios publicitarios de suplementos “para recuperar la figura” los cuales carecen de evidencia científica y aval sanitario. La COFEPRIS envía oficio a la policía cibernética para que den de baja decenas de páginas que promueven estos pro",
+        "policy": "EVIDENCE",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ],
+    "sig-src-cofepris-alert-2": [
+      {
+        "sourceUrl": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (fuente de origen)",
+        "excerpt": "Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales | Comisión Federal para la Protección contra Riesgos Sanitarios | Gobierno | gob.mx Interruptor de Navegación Trámites Gobierno English Interruptor de Navegación COFEPRIS Prensa Datos Personales Transparencia Inicio Comisión Federal para la Protección contra Riesgos Sanitarios Prensa Publicaciones Recientes Nuevo 2026-09-07 12:00:00 -0600 COFEPRIS fortalece acciones de coordinación para atender emergencias sanitarias en temporada de lluvias y huracanes 2026 Nuevo 2026-08-20 14:29:00 -0600 COFEPRIS publica Visor de Registros Sanitarios de Dispositivos Médicos Nuevo 2026-08-06 21:14:00 -0600 COFEPRIS realiza investigación en la planta empacadora de chiles jalapeños en Nuevo León Nuevo 2026-07-24 17:27:00 -0600 En la investigación por Cyclospora cayetanensis, ni México ni EE.UU. han encontrado el parásito en lechugas de origen mexicano Nuevo 2026-07-24 12:52:00 -0600 COFEPRIS y CONBIOÉTICA realizaron capacitación para agilizar el ingreso, evaluación y autorización de protocolos de investigación clínica Aa+ Aa- Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales Comunicado 05 - Con motivo del inicio del nuevo año, se multiplican en Facebook, Twitter, YouTube e Instagram anuncios publicitarios de suplementos “para recuperar la figura” los cuales carecen de evidencia científica y aval sanitario. La COFEPRIS envía oficio a la policía cibernética para que den de baja decenas de páginas que promueven estos pro",
+        "policy": "EVIDENCE",
+        "role": "EVIDENCE",
+        "supports": null,
+        "query": "fuente de origen"
+      }
+    ]
+  },
+  "findings": {
+    "sig-src-airllm-claim-1": [],
+    "sig-src-creatine-pmc-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+        "refs": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-creatine-harvard-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "El suplemento de creatinina puede mejorar la fuerza y la masa muscular en personas que realizan ejercicio intenso, pero no se menciona específicamente la recuperación muscular.",
+        "refs": [
+          "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-creatine-harvard-2": [],
+    "sig-src-if-mayo-1": [],
+    "sig-src-if-cochrane-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+        "refs": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+        ],
+        "supports": true
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+        "refs": [
+          "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html"
+        ],
+        "supports": true
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+        "refs": [
+          "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+        ],
+        "supports": true
+      }
+    ],
+    "sig-src-if-cochrane-2": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La evidencia científica no está a la altura de la fama del ayuno intermitente para adelgazar, lo que dificulta establecer conclusiones firmes sobre sus efectos secundarios.",
+        "refs": [
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+        ],
+        "supports": true
+      }
+    ],
+    "sig-src-python-freethreading-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La documentación de Python 3.13 menciona el soporte experimental para hilos libres, lo que sugiere que la opción --disable-gil podría estar disponible.",
+        "refs": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-python-freethreading-2": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+        "refs": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-kafka-vs-rabbitmq-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La página de RabbitMQ no menciona explícitamente la adición de super streams o partitioned streams en la versión 3.11 (2022).",
+        "refs": [
+          "https://www.rabbitmq.com/docs/compare/kafka"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-kafka-vs-rabbitmq-2": [
+      {
+        "kind": "EVIDENCE",
+        "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+        "refs": [
+          "https://www.conduktor.io/glossary/kafka-share-groups"
+        ],
+        "supports": true
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+        "refs": [
+          "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+        ],
+        "supports": true
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+        "refs": [
+          "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+        ],
+        "supports": true
+      }
+    ],
+    "sig-src-miracle-weightloss-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "KetoBig afirma que puede ayudar a perder 10 kilos en una semana sin dieta ni ejercicio.",
+        "refs": [
+          "https://k-state.com/plketobig"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-miracle-weightloss-2": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La página web de KetoBig afirma que su producto puede ayudar a perder 10 kilos en una semana sin necesidad de dieta ni ejercicio.",
+        "refs": [
+          "https://k-state.com/plketobig"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-cofepris-alert-1": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+        "refs": [
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+        ],
+        "supports": null
+      }
+    ],
+    "sig-src-cofepris-alert-2": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para bajar de peso en redes sociales, lo que sugiere que no existen métodos rápidos o fáciles para perder peso.",
+        "refs": [
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+        ],
+        "supports": true
+      }
+    ]
+  },
+  "queries": [
+    "AirLLM DeepSeek V4 VRAM requirements",
+    "AirLLM layer-wise inference RAM",
+    "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+    "Bájalo ahora con descuento",
+    "COFEPRIS evidencia",
+    "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos aliment",
+    "El ayuno intermitente puede reducir la inflamación crónica.",
+    "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno",
+    "Kafka vs RabbitMQ when to use",
+    "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+    "KetoBig evidencia",
+    "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publ",
+    "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil",
+    "La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusiones firmes.",
+    "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente",
+    "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+    "No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.",
+    "Python 3.13 free-threaded limitations",
+    "Python free-threading GIL performance",
+    "RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordenado y paralelo partic",
+    "RabbitMQ vs Kafka official comparison",
+    "ayuno intermitente beneficios evidencia",
+    "ayuno intermitente evidencia",
+    "ayuno intermitente evidencia científica adelgazar",
+    "creatine benefits risks adults",
+    "creatine kidney safety myth",
+    "creatine supplementation efficacy safety",
+    "creatinina evidencia",
+    "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso",
+    "descuento evidencia",
+    "efectividad de métodos de pérdida de peso evidencia",
+    "productos milagro bajar de peso alerta",
+    "productos milagro bajar de peso alerta COFEPRIS",
+    "suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores"
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "kind": "athenasignal.research_candidates.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "candidates": [
+    {
+      "candidateId": "rc-athenasignal-src-kafka-intro",
+      "title": "Kafka frente a RabbitMQ: cuándo usar cada broker",
+      "researchQuestion": "¿En qué escenarios conviene Apache Kafka frente a RabbitMQ para mensajería y event streaming, y con qué evidencia se puede sostener?",
+      "originSignalId": "athenasignal-src-kafka-intro",
+      "originalClaims": [
+        "Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.",
+        "Events with the same event key are written to the same partition, and Kafka guarantees that any consumer of a given topic-partition will always read that partition events in exactly the same order as they were written."
+      ],
+      "context": [
+        "Apache Kafka — Introduction",
+        "Arquitecturas event-driven",
+        "Mensajería distribuida y streaming",
+        "Comparación de brokers (Kafka vs RabbitMQ)"
+      ],
+      "assessment": "SUPPORTED",
+      "assertionAnalysis": {
+        "originalClaim": "Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.",
+        "context": [
+          "Apache Kafka — Introduction"
+        ],
+        "entities": [
+          "Kafka",
+          "Apache Kafka",
+          "Streaming",
+          "Partition",
+          "Consumer",
+          "Apache",
+          "Introduction",
+          "Event",
+          "Topics",
+          "Events",
+          "Unlike"
+        ],
+        "implicitQuestions": [
+          "¿Qué evidencia sostiene la afirmación \"Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.\"?",
+          "¿Bajo qué condiciones es válida la afirmación \"Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.\"?"
+        ],
+        "hypotheses": [
+          "La afirmación \"Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.\" puede ser cierta solo parcialmente y depender de condiciones no explicitadas por la fuente."
+        ],
+        "uncertainties": [
+          "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras."
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 1,
+        "questionClarity": 0.9,
+        "editorialRelevance": 1,
+        "resolvableUncertainty": 0.6,
+        "reason": "Nivel HIGH: evidencia potencial=1, claridad de pregunta=0.9, relevancia editorial=1, incertidumbre resoluble=0.6."
+      },
+      "knownUncertainties": [
+        "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras.",
+        "La fuente es documentación del propio proyecto: describe capacidades pero no compara con RabbitMQ; la comparación requiere evidencia adicional e independiente."
+      ],
+      "initialFindings": [
+        {
+          "kind": "FACT",
+          "text": "Apache Kafka es una plataforma distribuida de event streaming que combina publish/subscribe, almacenamiento durable y procesamiento de streams.",
+          "refs": [
+            "https://kafka.apache.org/intro"
+          ]
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La documentación oficial describe topics particionados, replicación y garantía de orden por partición, lo que sostiene las propiedades de escalabilidad y durabilidad.",
+          "refs": [
+            "https://kafka.apache.org/documentation/"
+          ]
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La fuente es documentación del propio proyecto: describe capacidades pero no compara con RabbitMQ; la comparación requiere evidencia adicional e independiente.",
+          "refs": [
+            "https://kafka.apache.org/intro"
+          ]
+        }
+      ],
+      "reasonForSelection": "La afirmación central está sustentada por fuentes de autoridad y abre una comparación editorialmente relevante.",
+      "sourceProvenance": [
+        {
+          "sourceId": "athenasignal-src-kafka-intro",
+          "url": "https://kafka.apache.org/intro",
+          "platform": "blog",
+          "language": "en",
+          "title": "Apache Kafka — Introduction",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "59fa903ed0de4fd75fdba522b40f992f2ea72d269fda2b3920398c656c7c4f58"
+        },
+        {
+          "sourceId": "prop-kafka-apache-org-intro",
+          "url": "https://kafka.apache.org/intro",
+          "platform": "web",
+          "language": "en",
+          "title": "Apache Kafka — Introduction",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "870ce79bdcb75c431b7858521808552b73dfdccf30fc0015c5730da297493602"
+        },
+        {
+          "sourceId": "prop-www-rabbitmq-com-tutorials-amqp-concepts",
+          "url": "https://www.rabbitmq.com/tutorials/amqp-concepts",
+          "platform": "web",
+          "language": "en",
+          "title": "RabbitMQ — AMQP 0-9-1 Model Explained",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "4e3fa89eae5b4b23528b9983d4be92e9f9f21b4502c14e14237e89e4dce0f5fc"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué escenarios conviene Apache Kafka frente a RabbitMQ para mensajería y event streaming, y con qué evidencia se puede sostener?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 2
+        },
+        "proposedSources": [
+          {
+            "url": "https://kafka.apache.org/intro",
+            "title": "Apache Kafka — Introduction",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.rabbitmq.com/tutorials/amqp-concepts",
+            "title": "RabbitMQ — AMQP 0-9-1 Model Explained",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.",
+            "provenanceUrls": [
+              "https://kafka.apache.org/intro",
+              "https://kafka.apache.org/documentation/"
+            ],
+            "statusHint": "UNVERIFIED"
+          },
+          {
+            "statement": "Events with the same event key are written to the same partition, and Kafka guarantees that any consumer of a given topic-partition will always read that partition events in exactly the same order as they were written.",
+            "provenanceUrls": [
+              "https://kafka.apache.org/intro",
+              "https://kafka.apache.org/documentation/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras.",
+          "La fuente es documentación del propio proyecto: describe capacidades pero no compara con RabbitMQ; la comparación requiere evidencia adicional e independiente."
+        ],
+        "initialFindings": [
+          {
+            "kind": "FACT",
+            "text": "Apache Kafka es una plataforma distribuida de event streaming que combina publish/subscribe, almacenamiento durable y procesamiento de streams.",
+            "refs": [
+              "https://kafka.apache.org/intro"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación oficial describe topics particionados, replicación y garantía de orden por partición, lo que sostiene las propiedades de escalabilidad y durabilidad.",
+            "refs": [
+              "https://kafka.apache.org/documentation/"
+            ]
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La fuente es documentación del propio proyecto: describe capacidades pero no compara con RabbitMQ; la comparación requiere evidencia adicional e independiente.",
+            "refs": [
+              "https://kafka.apache.org/intro"
+            ]
+          }
+        ],
+        "origin": {
+          "signalId": "athenasignal-src-kafka-intro",
+          "originalClaims": [
+            "Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.",
+            "Events with the same event key are written to the same partition, and Kafka guarantees that any consumer of a given topic-partition will always read that partition events in exactly the same order as they were written."
+          ],
+          "assessment": "SUPPORTED",
+          "reframingNote": null
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-athenasignal-src-kafka-intro",
+      "signalId": "athenasignal-src-kafka-intro",
+      "hypothesis": "¿En qué escenarios conviene Apache Kafka frente a RabbitMQ para mensajería y event streaming, y con qué evidencia se puede sostener?",
+      "score": 0.875,
+      "claims": [
+        {
+          "statement": "Apache Kafka is an event streaming platform that combines publish/subscribe, durable storage, and stream processing.",
+          "status": "UNVERIFIED",
+          "provenanceSourceId": "athenasignal-src-kafka-intro"
+        },
+        {
+          "statement": "Events with the same event key are written to the same partition, and Kafka guarantees that any consumer of a given topic-partition will always read that partition events in exactly the same order as they were written.",
+          "status": "UNVERIFIED",
+          "provenanceSourceId": "athenasignal-src-kafka-intro"
+        }
+      ],
+      "primarySourcesToCheck": [
+        "https://kafka.apache.org/intro",
+        "https://www.rabbitmq.com/tutorials/amqp-concepts"
+      ]
+    },
+    {
+      "candidateId": "rc-athenasignal-src-airllm-claim",
+      "title": "AirLLM y modelos MoE de gran escala en hardware de consumo",
+      "researchQuestion": "¿Puede AirLLM ejecutar modelos MoE de gran escala como DeepSeek-V3 (671B) en hardware de consumo con ~12 GB de VRAM, y cuáles son los requisitos reales de RAM/disco y los límites de latencia?",
+      "originSignalId": "athenasignal-src-airllm-claim",
+      "originalClaims": [
+        "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+      ],
+      "context": [
+        "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "Inferencia local de LLM en hardware de consumo",
+        "Distinción VRAM (GPU) vs RAM (sistema)",
+        "Modelos MoE y streaming de capas"
+      ],
+      "assessment": "REFRAMED",
+      "assertionAnalysis": {
+        "originalClaim": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "context": [
+          "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+        ],
+        "entities": [
+          "AirLLM",
+          "DeepSeek V4",
+          "RAM",
+          "Inferencia local"
+        ],
+        "implicitQuestions": [
+          "¿Es cierto que AirLLM ejecuta DeepSeek V4 con 12 GB de RAM?",
+          "¿Qué evidencia sostiene la afirmación \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\"?",
+          "¿Bajo qué condiciones es válida la afirmación \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\"?"
+        ],
+        "hypotheses": [
+          "Hipótesis: La cifra de 12 GB se refiere a memoria del sistema (RAM) y no a VRAM de GPU.",
+          "La afirmación \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\" puede ser cierta solo parcialmente y depender de condiciones no explicitadas por la fuente."
+        ],
+        "uncertainties": [
+          "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras."
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 1,
+        "questionClarity": 0.9,
+        "editorialRelevance": 0.75,
+        "resolvableUncertainty": 0.7,
+        "reason": "Nivel HIGH: evidencia potencial=1, claridad de pregunta=0.9, relevancia editorial=0.75, incertidumbre resoluble=0.7."
+      },
+      "knownUncertainties": [
+        "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras.",
+        "La afirmación original confunde VRAM con RAM del sistema y atribuye a una versión (V4) no documentada una capacidad medida sobre DeepSeek-V3."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La documentación de AirLLM (PyPI v4.0.0, 2026) afirma ejecutar DeepSeek-V3 (671B) con ~12 GB de VRAM; no menciona DeepSeek V4.",
+          "refs": [
+            "https://pypi.org/project/airllm/"
+          ]
+        },
+        {
+          "kind": "FACT",
+          "text": "AirLLM mantiene solo una capa del modelo en la GPU a la vez; la memoria requerida depende del tamaño de capa, no del tamaño total del modelo.",
+          "refs": [
+            "https://github.com/lyogavin/airllm"
+          ]
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La afirmación original confunde VRAM con RAM del sistema y atribuye a una versión (V4) no documentada una capacidad medida sobre DeepSeek-V3.",
+          "refs": [
+            "https://pypi.org/project/airllm/"
+          ]
+        }
+      ],
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿Puede AirLLM ejecutar modelos MoE de gran escala como DeepSeek-V3 (671B) en hardware de consumo con ~12 GB de VRAM, y cuáles son los requisitos reales de RAM/disco y los límites de latencia?\".",
+      "sourceProvenance": [
+        {
+          "sourceId": "athenasignal-src-airllm-claim",
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "platform": "youtube",
+          "language": "es",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "DISCOVERY",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "a3f93678067fbabed828c3d263a7878a077d11c3ceeaa3756b167fbee911d41a"
+        },
+        {
+          "sourceId": "prop-pypi-org-project-airllm",
+          "url": "https://pypi.org/project/airllm/",
+          "platform": "web",
+          "language": "en",
+          "title": "airllm — PyPI (v4.0.0)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "e829aeff15a9ca6a9edc46542dadc7fea125040e90d92839fbe958aaa32f7361"
+        },
+        {
+          "sourceId": "prop-github-com-lyogavin-airllm",
+          "url": "https://github.com/lyogavin/airllm",
+          "platform": "web",
+          "language": "en",
+          "title": "lyogavin/airllm — GitHub",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "3c385686d924d52c5e2b6077dff6c6ff9f49f005e08a9c3864f4463c5b7b1106"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Puede AirLLM ejecutar modelos MoE de gran escala como DeepSeek-V3 (671B) en hardware de consumo con ~12 GB de VRAM, y cuáles son los requisitos reales de RAM/disco y los límites de latencia?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 2
+        },
+        "proposedSources": [
+          {
+            "url": "https://pypi.org/project/airllm/",
+            "title": "airllm — PyPI (v4.0.0)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_package_registry",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://github.com/lyogavin/airllm",
+            "title": "lyogavin/airllm — GitHub",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source_repository",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "AirLLM puede ejecutar modelos MoE de gran escala (p. ej. DeepSeek-V3 671B) con ~12 GB de VRAM, sujeto a requisitos reales de RAM del sistema, disco y latencia.",
+            "provenanceUrls": [
+              "https://pypi.org/project/airllm/",
+              "https://github.com/lyogavin/airllm",
+              "https://www.youtube.com/@legitalgorithmswithpeter"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "La fuente original puede ser parcial, promocional o imprecisa respecto a sus propias cifras.",
+          "La afirmación original confunde VRAM con RAM del sistema y atribuye a una versión (V4) no documentada una capacidad medida sobre DeepSeek-V3."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación de AirLLM (PyPI v4.0.0, 2026) afirma ejecutar DeepSeek-V3 (671B) con ~12 GB de VRAM; no menciona DeepSeek V4.",
+            "refs": [
+              "https://pypi.org/project/airllm/"
+            ]
+          },
+          {
+            "kind": "FACT",
+            "text": "AirLLM mantiene solo una capa del modelo en la GPU a la vez; la memoria requerida depende del tamaño de capa, no del tamaño total del modelo.",
+            "refs": [
+              "https://github.com/lyogavin/airllm"
+            ]
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La afirmación original confunde VRAM con RAM del sistema y atribuye a una versión (V4) no documentada una capacidad medida sobre DeepSeek-V3.",
+            "refs": [
+              "https://pypi.org/project/airllm/"
+            ]
+          }
+        ],
+        "origin": {
+          "signalId": "athenasignal-src-airllm-claim",
+          "originalClaims": [
+            "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación original \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\" no se acepta como hecho: confunde VRAM con RAM del sistema y menciona una versión (V4) no documentada. Se conserva la idea subyacente como pregunta investigable."
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-athenasignal-src-airllm-claim",
+      "signalId": "athenasignal-src-airllm-claim",
+      "hypothesis": "¿Puede AirLLM ejecutar modelos MoE de gran escala como DeepSeek-V3 (671B) en hardware de consumo con ~12 GB de VRAM, y cuáles son los requisitos reales de RAM/disco y los límites de latencia?",
+      "score": 0.8375,
+      "claims": [
+        {
+          "id": "claim-airllm-deepseek-12gb",
+          "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "status": "UNVERIFIED",
+          "provenanceSourceId": "athenasignal-src-airllm-claim"
+        }
+      ],
+      "primarySourcesToCheck": [
+        "https://pypi.org/project/airllm/",
+        "https://github.com/lyogavin/airllm"
+      ]
+    }
+  ]
+}

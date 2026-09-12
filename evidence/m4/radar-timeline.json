@@ -1,0 +1,659 @@
+{
+  "kind": "athenasignal.m4.radar_timeline.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "cycles": [
+    {
+      "cycleId": "m4-cycle-1",
+      "cycleNumber": 1,
+      "occurredAt": "2026-09-12T01:00:00.000Z",
+      "sourceIds": [
+        "src-creatine-pmc"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-1-1",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-1",
+          "cycleNumber": 1,
+          "occurredAt": "2026-09-12T01:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-pmc-1",
+          "message": "Nueva señal descubierta en src-creatine-pmc: \"La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diab\"",
+          "details": {
+            "clusterId": "cl-suplementacion-de-creatina",
+            "policy": "EVIDENCE"
+          }
+        }
+      ],
+      "eventCounts": {
+        "NEW": 1
+      }
+    },
+    {
+      "cycleId": "m4-cycle-2",
+      "cycleNumber": 2,
+      "occurredAt": "2026-09-12T02:00:00.000Z",
+      "sourceIds": [
+        "src-creatine-pmc",
+        "src-creatine-harvard"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-2-1",
+          "kind": "DUPLICATE",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SOURCE",
+          "subjectId": "src-creatine-pmc",
+          "message": "Fuente src-creatine-pmc ya procesada (hash 8c6a5b1b0b41); no se reprocesa ni duplica.",
+          "details": {
+            "contentHash": "8c6a5b1b0b41ee3b9799fa9794bafc93e3a9c9aec344662c0c0c704a44ebe8ff",
+            "timesSeen": 2
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-2",
+          "kind": "KNOWN",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-pmc-1",
+          "message": "Señal conocida que reaparece; identidad histórica preservada (vista 2 veces).",
+          "details": {
+            "fingerprint": "17c5bbdf5a0d28e8",
+            "seenCount": 2,
+            "clusterId": "cl-suplementacion-de-creatina"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-3",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-harvard-1",
+          "message": "Señal relacionada con el cluster cl-suplementacion-de-creatina; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-suplementacion-de-creatina",
+            "sharedStems": [
+              "creati"
+            ],
+            "sources": [
+              "src-creatine-pmc"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-4",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-harvard-1",
+          "message": "Nueva señal descubierta en src-creatine-harvard: \"creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso\"",
+          "details": {
+            "clusterId": "cl-suplementacion-de-creatina",
+            "policy": "SECONDARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-5",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-harvard-2",
+          "message": "Señal relacionada con el cluster cl-suplementacion-de-creatina; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-suplementacion-de-creatina",
+            "sharedStems": [
+              "creati"
+            ],
+            "sources": [
+              "src-creatine-harvard",
+              "src-creatine-pmc"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-6",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-harvard-2",
+          "message": "Nueva señal descubierta en src-creatine-harvard: \"suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores\"",
+          "details": {
+            "clusterId": "cl-suplementacion-de-creatina",
+            "policy": "SECONDARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-7",
+          "kind": "UPDATED",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-suplementacion-de-creatina",
+          "message": "Evidencia ampliada: 1 → 2 fuentes de evidencia.",
+          "details": {
+            "from": 1,
+            "to": 2
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-8",
+          "kind": "PRIORITY_CHANGED",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-suplementacion-de-creatina",
+          "message": "Prioridad MEDIUM → HIGH (score 0.605).",
+          "details": {
+            "from": "MEDIUM",
+            "to": "HIGH",
+            "score": 0.605
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-2-9",
+          "kind": "PROMOTED",
+          "cycleId": "m4-cycle-2",
+          "cycleNumber": 2,
+          "occurredAt": "2026-09-12T02:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-suplementacion-de-creatina",
+          "message": "Candidate promovido a AthenaOS con prioridad HIGH (promotionReason registrado).",
+          "details": {
+            "score": 0.605,
+            "sources": [
+              "src-creatine-harvard",
+              "src-creatine-pmc"
+            ],
+            "evidence": 2,
+            "assessment": "REFRAMED",
+            "promotionReason": "Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED."
+          }
+        }
+      ],
+      "eventCounts": {
+        "DUPLICATE": 1,
+        "KNOWN": 1,
+        "RELATED": 2,
+        "NEW": 2,
+        "UPDATED": 1,
+        "PRIORITY_CHANGED": 1,
+        "PROMOTED": 1
+      }
+    },
+    {
+      "cycleId": "m4-cycle-3",
+      "cycleNumber": 3,
+      "occurredAt": "2026-09-12T03:00:00.000Z",
+      "sourceIds": [
+        "src-if-mayo"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-3-1",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-3",
+          "cycleNumber": 3,
+          "occurredAt": "2026-09-12T03:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-if-mayo-1",
+          "message": "Nueva señal descubierta en src-if-mayo: \"El ayuno intermitente puede reducir la inflamación crónica.\"",
+          "details": {
+            "clusterId": "cl-ayuno-intermitente",
+            "policy": "SECONDARY"
+          }
+        }
+      ],
+      "eventCounts": {
+        "NEW": 1
+      }
+    },
+    {
+      "cycleId": "m4-cycle-4",
+      "cycleNumber": 4,
+      "occurredAt": "2026-09-12T04:00:00.000Z",
+      "sourceIds": [
+        "src-if-cochrane"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-4-1",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-if-cochrane-1",
+          "message": "Señal relacionada con el cluster cl-ayuno-intermitente; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-ayuno-intermitente",
+            "sharedStems": [
+              "ayuno",
+              "interm"
+            ],
+            "sources": [
+              "src-if-mayo"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-2",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-if-cochrane-1",
+          "message": "Nueva señal descubierta en src-if-cochrane: \"El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con \"",
+          "details": {
+            "clusterId": "cl-ayuno-intermitente",
+            "policy": "EVIDENCE"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-3",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-if-cochrane-2",
+          "message": "Señal relacionada con el cluster cl-ayuno-intermitente; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-ayuno-intermitente",
+            "sharedStems": [
+              "ayuno",
+              "interm"
+            ],
+            "sources": [
+              "src-if-cochrane",
+              "src-if-mayo"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-4",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-if-cochrane-2",
+          "message": "Nueva señal descubierta en src-if-cochrane: \"La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusio\"",
+          "details": {
+            "clusterId": "cl-ayuno-intermitente",
+            "policy": "EVIDENCE"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-5",
+          "kind": "CONTRADICTED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-ayuno-intermitente",
+          "message": "Evidencia contradictoria detectada en cl-ayuno-intermitente.",
+          "details": {
+            "details": [
+              "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+              "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo)."
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-6",
+          "kind": "REASSESSED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-ayuno-intermitente",
+          "message": "Reevaluación: AMBIGUOUS → SUPPORTED.",
+          "details": {
+            "from": "AMBIGUOUS",
+            "to": "SUPPORTED"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-7",
+          "kind": "UPDATED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-ayuno-intermitente",
+          "message": "Evidencia ampliada: 1 → 5 fuentes de evidencia.",
+          "details": {
+            "from": 1,
+            "to": 5
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-4-8",
+          "kind": "PRIORITY_CHANGED",
+          "cycleId": "m4-cycle-4",
+          "cycleNumber": 4,
+          "occurredAt": "2026-09-12T04:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-ayuno-intermitente",
+          "message": "Prioridad MEDIUM → HIGH (score 0.94).",
+          "details": {
+            "from": "MEDIUM",
+            "to": "HIGH",
+            "score": 0.94
+          }
+        }
+      ],
+      "eventCounts": {
+        "RELATED": 2,
+        "NEW": 2,
+        "CONTRADICTED": 1,
+        "REASSESSED": 1,
+        "UPDATED": 1,
+        "PRIORITY_CHANGED": 1
+      }
+    },
+    {
+      "cycleId": "m4-cycle-5",
+      "cycleNumber": 5,
+      "occurredAt": "2026-09-12T05:00:00.000Z",
+      "sourceIds": [
+        "src-airllm-claim",
+        "src-airllm-readme",
+        "src-miracle-weightloss"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-5-1",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "occurredAt": "2026-09-12T05:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-airllm-claim-1",
+          "message": "Nueva señal descubierta en src-airllm-claim: \"AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM\"",
+          "details": {
+            "clusterId": "cl-airllm",
+            "policy": "DISCOVERY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-5-2",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "occurredAt": "2026-09-12T05:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-miracle-weightloss-1",
+          "message": "Nueva señal descubierta en src-miracle-weightloss: \"KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio\"",
+          "details": {
+            "clusterId": "cl-ketobig",
+            "policy": "TERTIARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-5-3",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "occurredAt": "2026-09-12T05:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-miracle-weightloss-2",
+          "message": "Señal relacionada con el cluster cl-ketobig; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-ketobig",
+            "sharedStems": [],
+            "sources": [
+              "src-miracle-weightloss"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-5-4",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "occurredAt": "2026-09-12T05:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-miracle-weightloss-2",
+          "message": "Nueva señal descubierta en src-miracle-weightloss: \"Bájalo ahora con descuento\"",
+          "details": {
+            "clusterId": "cl-ketobig",
+            "policy": "TERTIARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-5-5",
+          "kind": "DISCARDED",
+          "cycleId": "m4-cycle-5",
+          "cycleNumber": 5,
+          "occurredAt": "2026-09-12T05:00:00.000Z",
+          "subjectType": "CLUSTER",
+          "subjectId": "cl-ketobig",
+          "message": "Descartado: ruido/no investigable (score 0.3275).",
+          "details": {
+            "reasons": [
+              "Todas las fuentes del cluster son terciarias/bloqueadas con alta probabilidad de ruido."
+            ]
+          }
+        }
+      ],
+      "eventCounts": {
+        "NEW": 3,
+        "RELATED": 1,
+        "DISCARDED": 1
+      }
+    },
+    {
+      "cycleId": "m4-cycle-6",
+      "cycleNumber": 6,
+      "occurredAt": "2026-09-12T06:00:00.000Z",
+      "sourceIds": [
+        "src-python-freethreading",
+        "src-kafka-vs-rabbitmq",
+        "src-cofepris-alert",
+        "src-creatine-pmc"
+      ],
+      "events": [
+        {
+          "eventId": "evt-m4-cycle-6-1",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-python-freethreading-1",
+          "message": "Nueva señal descubierta en src-python-freethreading: \"La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil\"",
+          "details": {
+            "clusterId": "cl-python-3-13",
+            "policy": "PRIMARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-2",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-python-freethreading-2",
+          "message": "Señal relacionada con el cluster cl-python-3-13; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-python-3-13",
+            "sharedStems": [],
+            "sources": [
+              "src-python-freethreading"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-3",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-python-freethreading-2",
+          "message": "Nueva señal descubierta en src-python-freethreading: \"Las extensiones C deben ser modificadas para soportar la GIL deshabilitada\"",
+          "details": {
+            "clusterId": "cl-python-3-13",
+            "policy": "PRIMARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-4",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-kafka-vs-rabbitmq-1",
+          "message": "Nueva señal descubierta en src-kafka-vs-rabbitmq: \"RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordena\"",
+          "details": {
+            "clusterId": "cl-rabbitmq-3-11",
+            "policy": "PRIMARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-5",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-kafka-vs-rabbitmq-2",
+          "message": "Señal relacionada con el cluster cl-rabbitmq-3-11; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-rabbitmq-3-11",
+            "sharedStems": [
+              "kafka"
+            ],
+            "sources": [
+              "src-kafka-vs-rabbitmq"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-6",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-kafka-vs-rabbitmq-2",
+          "message": "Nueva señal descubierta en src-kafka-vs-rabbitmq: \"Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo tempora\"",
+          "details": {
+            "clusterId": "cl-rabbitmq-3-11",
+            "policy": "PRIMARY"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-7",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-cofepris-alert-1",
+          "message": "Nueva señal descubierta en src-cofepris-alert: \"La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por vi\"",
+          "details": {
+            "clusterId": "cl-cofepris",
+            "policy": "EVIDENCE"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-8",
+          "kind": "RELATED",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-cofepris-alert-2",
+          "message": "Señal relacionada con el cluster cl-cofepris; se vincula a fuentes ya conocidas.",
+          "details": {
+            "clusterId": "cl-cofepris",
+            "sharedStems": [],
+            "sources": [
+              "src-cofepris-alert"
+            ]
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-9",
+          "kind": "NEW",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-cofepris-alert-2",
+          "message": "Nueva señal descubierta en src-cofepris-alert: \"No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.\"",
+          "details": {
+            "clusterId": "cl-cofepris",
+            "policy": "EVIDENCE"
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-10",
+          "kind": "DUPLICATE",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SOURCE",
+          "subjectId": "src-creatine-pmc",
+          "message": "Fuente src-creatine-pmc ya procesada (hash 8c6a5b1b0b41); no se reprocesa ni duplica.",
+          "details": {
+            "contentHash": "8c6a5b1b0b41ee3b9799fa9794bafc93e3a9c9aec344662c0c0c704a44ebe8ff",
+            "timesSeen": 3
+          }
+        },
+        {
+          "eventId": "evt-m4-cycle-6-11",
+          "kind": "KNOWN",
+          "cycleId": "m4-cycle-6",
+          "cycleNumber": 6,
+          "occurredAt": "2026-09-12T06:00:00.000Z",
+          "subjectType": "SIGNAL",
+          "subjectId": "sig-src-creatine-pmc-1",
+          "message": "Señal conocida que reaparece; identidad histórica preservada (vista 3 veces).",
+          "details": {
+            "fingerprint": "17c5bbdf5a0d28e8",
+            "seenCount": 3,
+            "clusterId": "cl-suplementacion-de-creatina"
+          }
+        }
+      ],
+      "eventCounts": {
+        "NEW": 6,
+        "RELATED": 3,
+        "DUPLICATE": 1,
+        "KNOWN": 1
+      }
+    }
+  ],
+  "eventTotals": {
+    "NEW": 15,
+    "KNOWN": 2,
+    "DUPLICATE": 2,
+    "RELATED": 8,
+    "UPDATED": 2,
+    "CONTRADICTED": 1,
+    "REASSESSED": 1,
+    "PRIORITY_CHANGED": 2,
+    "DISCARDED": 1,
+    "PROMOTED": 1
+  }
+}

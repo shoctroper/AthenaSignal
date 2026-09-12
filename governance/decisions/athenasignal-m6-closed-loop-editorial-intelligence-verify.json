@@ -1,0 +1,460 @@
+{
+  "aggregation": {
+    "escalated_required_skipped": [],
+    "final_status": "PASS",
+    "optional_gates": [],
+    "precedence": "FAIL > ESCALATE > PASS; SKIPPED is not a decision state",
+    "required_gates": [
+      "scope",
+      "tests",
+      "artifacts",
+      "regressions",
+      "reproducibility"
+    ],
+    "rule": "any required gate SKIPPED -> ESCALATE; then any FAIL -> FAIL; elif any ESCALATE -> ESCALATE; elif no required gate -> ESCALATE; else (all required PASS, optional SKIPPED policy-valid) -> PASS",
+    "statuses_seen": {
+      "artifacts": "PASS",
+      "regressions": "PASS",
+      "reproducibility": "PASS",
+      "scope": "PASS",
+      "tests": "PASS"
+    }
+  },
+  "final_status": "PASS",
+  "gate_policy": {
+    "artifacts": {
+      "required": true
+    },
+    "regressions": {
+      "required": true
+    },
+    "reproducibility": {
+      "required": true
+    },
+    "scope": {
+      "required": true
+    },
+    "tests": {
+      "required": true
+    }
+  },
+  "gates": {
+    "artifacts": {
+      "duration_ms": 5.2,
+      "gate": "artifacts",
+      "observations": {
+        "required": [
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/corpus.json",
+            "size": 472647,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/benchmark.json",
+            "size": 3079,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/loop-timeline.json",
+            "size": 45826,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/radar-state.json",
+            "size": 403558,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/akp-live.json",
+            "size": 2599,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/athenaos-results.json",
+            "size": 66764,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/feedback-updates.json",
+            "size": 18811,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/metrics.json",
+            "size": 2248,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/cognitive-routing.json",
+            "size": 3924,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/observability.json",
+            "size": 6014,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/recovery-events.json",
+            "size": 3923,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/idempotency.json",
+            "size": 9521,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/distributed.json",
+            "size": 1510,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m6/human-review-packet.json",
+            "size": 6844,
+            "status": "PASS"
+          }
+        ],
+        "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "regressions": {
+      "duration_ms": 0.6,
+      "gate": "regressions",
+      "observations": {
+        "baseline": "governance/specs/athenasignal-m6.regressions.json",
+        "checks": [
+          {
+            "baseline_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "current_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "path": "tests/domain.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "current_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "path": "tests/adapters.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "current_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "path": "tests/signal-extractor.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "current_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "path": "tests/editorial-scorer.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "current_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "path": "tests/pipeline-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "current_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "path": "tests/research-candidate-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "54a2dfa12389d065fd704d37a029d41505895e36810d996a3adb1b6423dc2646",
+            "current_sha256": "54a2dfa12389d065fd704d37a029d41505895e36810d996a3adb1b6423dc2646",
+            "path": "tests/autonomous-intelligence-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "84abd1ce9b00d5b2691e9582f0e27dba9bd4c9303230d663f5100b4b592f8e43",
+            "current_sha256": "84abd1ce9b00d5b2691e9582f0e27dba9bd4c9303230d663f5100b4b592f8e43",
+            "path": "tests/editorial-radar-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "0e5f977defadcd1f8c8e6dbd792026c332515c54e77dcd6671084bdba5b6e04e",
+            "current_sha256": "0e5f977defadcd1f8c8e6dbd792026c332515c54e77dcd6671084bdba5b6e04e",
+            "path": "tests/platform-e2e.test.ts",
+            "state": "unchanged"
+          }
+        ],
+        "max_regressions": 0,
+        "regressions": [],
+        "rule": "regressions>max -> FAIL; baseline unavailable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "reproducibility": {
+      "duration_ms": 4445.4,
+      "gate": "reproducibility",
+      "observations": {
+        "command": "node --experimental-strip-types scripts/m6-loop.ts",
+        "rule": "all runs identical (exit_code+output_sha256) -> PASS; else FAIL",
+        "run_evidence": [
+          {
+            "duration_ms": 2223.3,
+            "exit_code": 0,
+            "output_sha256": "80a119d223bccafd20d17485efe0fda34b2d68af683c43d1a7ce16f156379841",
+            "run": 1,
+            "timed_out": false
+          },
+          {
+            "duration_ms": 2221.9,
+            "exit_code": 0,
+            "output_sha256": "80a119d223bccafd20d17485efe0fda34b2d68af683c43d1a7ce16f156379841",
+            "run": 2,
+            "timed_out": false
+          }
+        ],
+        "runs": 2,
+        "uniform": true
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "scope": {
+      "duration_ms": 32.8,
+      "gate": "scope",
+      "observations": {
+        "added_files": [
+          "ciclo/entregas/athenasignal-m6-implementador.md",
+          "data/akp-live/akp-live-state.json",
+          "data/akp-live/inbox/rc4-cl-airllm.json",
+          "data/akp-live/inbox/rc4-cl-ayuno-intermitente.json",
+          "data/akp-live/inbox/rc4-cl-cofepris.json",
+          "data/akp-live/inbox/rc4-cl-python-3-13.json",
+          "data/akp-live/inbox/rc4-cl-rabbitmq-3-11.json",
+          "data/akp-live/inbox/rc4-cl-suplementacion-de-creatina.json",
+          "data/akp-live/node/evidence-index.json",
+          "data/akp-live/node/mac-mini.heartbeat.json",
+          "data/akp-live/returns/aos-rc4-cl-airllm.json",
+          "data/akp-live/returns/aos-rc4-cl-ayuno-intermitente.json",
+          "data/akp-live/returns/aos-rc4-cl-cofepris.json",
+          "data/akp-live/returns/aos-rc4-cl-python-3-13.json",
+          "data/akp-live/returns/aos-rc4-cl-rabbitmq-3-11.json",
+          "data/akp-live/returns/aos-rc4-cl-suplementacion-de-creatina.json",
+          "docs/M6-CLOSED-LOOP.md",
+          "evidence/m6/akp-live.json",
+          "evidence/m6/athenaos-results.json",
+          "evidence/m6/benchmark.json",
+          "evidence/m6/cognitive-routing.json",
+          "evidence/m6/corpus.json",
+          "evidence/m6/distributed.json",
+          "evidence/m6/feedback-updates.json",
+          "evidence/m6/human-review-packet.json",
+          "evidence/m6/idempotency.json",
+          "evidence/m6/loop-timeline.json",
+          "evidence/m6/metrics.json",
+          "evidence/m6/observability.json",
+          "evidence/m6/radar-state.json",
+          "evidence/m6/recordings/llm.json",
+          "evidence/m6/recovery-events.json",
+          "scripts/m6-loop.ts",
+          "scripts/m6-node.ts",
+          "scripts/m6-record.ts",
+          "src/closedloop/artifacts.ts",
+          "src/closedloop/athenaosWorker.ts",
+          "src/closedloop/corpus.ts",
+          "src/closedloop/corpusSearch.ts",
+          "src/closedloop/engine.ts",
+          "src/closedloop/feedback.ts",
+          "src/closedloop/index.ts",
+          "src/closedloop/nodeProcess.ts",
+          "src/closedloop/offline.ts",
+          "src/closedloop/transport.ts",
+          "src/closedloop/types.ts",
+          "tests/closed-loop-e2e.test.ts"
+        ],
+        "baseline": "governance/specs/athenasignal-m6.baseline.json",
+        "baseline_file_count": 337,
+        "changed_files": [
+          "ciclo/ORDEN-010.md",
+          "ciclo/entregas/athenasignal-m6-implementador.md",
+          "data/akp-live/akp-live-state.json",
+          "data/akp-live/inbox/rc4-cl-airllm.json",
+          "data/akp-live/inbox/rc4-cl-ayuno-intermitente.json",
+          "data/akp-live/inbox/rc4-cl-cofepris.json",
+          "data/akp-live/inbox/rc4-cl-python-3-13.json",
+          "data/akp-live/inbox/rc4-cl-rabbitmq-3-11.json",
+          "data/akp-live/inbox/rc4-cl-suplementacion-de-creatina.json",
+          "data/akp-live/node/evidence-index.json",
+          "data/akp-live/node/mac-mini.heartbeat.json",
+          "data/akp-live/returns/aos-rc4-cl-airllm.json",
+          "data/akp-live/returns/aos-rc4-cl-ayuno-intermitente.json",
+          "data/akp-live/returns/aos-rc4-cl-cofepris.json",
+          "data/akp-live/returns/aos-rc4-cl-python-3-13.json",
+          "data/akp-live/returns/aos-rc4-cl-rabbitmq-3-11.json",
+          "data/akp-live/returns/aos-rc4-cl-suplementacion-de-creatina.json",
+          "docs/M6-CLOSED-LOOP.md",
+          "evidence/deep-search-e2e.json",
+          "evidence/m4/radar-state.json",
+          "evidence/m5/radar-state.json",
+          "evidence/m6/akp-live.json",
+          "evidence/m6/athenaos-results.json",
+          "evidence/m6/benchmark.json",
+          "evidence/m6/cognitive-routing.json",
+          "evidence/m6/corpus.json",
+          "evidence/m6/distributed.json",
+          "evidence/m6/feedback-updates.json",
+          "evidence/m6/human-review-packet.json",
+          "evidence/m6/idempotency.json",
+          "evidence/m6/loop-timeline.json",
+          "evidence/m6/metrics.json",
+          "evidence/m6/observability.json",
+          "evidence/m6/radar-state.json",
+          "evidence/m6/recordings/llm.json",
+          "evidence/m6/recovery-events.json",
+          "package.json",
+          "scripts/m6-loop.ts",
+          "scripts/m6-node.ts",
+          "scripts/m6-record.ts",
+          "src/closedloop/artifacts.ts",
+          "src/closedloop/athenaosWorker.ts",
+          "src/closedloop/corpus.ts",
+          "src/closedloop/corpusSearch.ts",
+          "src/closedloop/engine.ts",
+          "src/closedloop/feedback.ts",
+          "src/closedloop/index.ts",
+          "src/closedloop/nodeProcess.ts",
+          "src/closedloop/offline.ts",
+          "src/closedloop/transport.ts",
+          "src/closedloop/types.ts",
+          "src/llm/DeterministicLLMProvider.ts",
+          "src/llm/types.ts",
+          "src/platform/routing.ts",
+          "src/radar/engine.ts",
+          "src/radar/index.ts",
+          "src/radar/store.ts",
+          "src/radar/types.ts",
+          "tests/closed-loop-e2e.test.ts"
+        ],
+        "current_file_count": 384,
+        "deleted_files": [],
+        "forbidden_files": [],
+        "modified_files": [
+          "ciclo/ORDEN-010.md",
+          "evidence/deep-search-e2e.json",
+          "evidence/m4/radar-state.json",
+          "evidence/m5/radar-state.json",
+          "package.json",
+          "src/llm/DeterministicLLMProvider.ts",
+          "src/llm/types.ts",
+          "src/platform/routing.ts",
+          "src/radar/engine.ts",
+          "src/radar/index.ts",
+          "src/radar/store.ts",
+          "src/radar/types.ts"
+        ],
+        "rule": "deny=['decisiones/', '.env', 'perfil_navegador_llm/'] allow=['src/', 'tests/', 'scripts/', 'ciclo/', 'docs/', 'evidence/', 'data/', 'governance/', 'package.json', 'package-lock.json', 'tsconfig.json', 'AGENTS.md', 'README.md']; forbidden or unexpected -> FAIL",
+        "unexpected_files": []
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "tests": {
+      "duration_ms": 2869.3,
+      "gate": "tests",
+      "observations": {
+        "command": "test -f tests/closed-loop-e2e.test.ts && test -f scripts/m6-loop.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts",
+        "decision_reason": "exit_zero",
+        "duration_ms": 2868.8,
+        "error": null,
+        "exit_code": 0,
+        "output_sha256": "dcf00f78bb60efda97bdbab93101c11e33f314c10b1fde898cb1dc8b6b9dbedf",
+        "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+        "stderr_tail": "",
+        "stdout_tail": "...[truncated]...\n duration_ms: 0.027167\n      type: 'test'\n      ...\n    # Subtest: writes all acceptance artifacts that match the in-memory run\n    ok 18 - writes all acceptance artifacts that match the in-memory run\n      ---\n      duration_ms: 46.070833\n      type: 'test'\n      ...\n    1..18\nok 8 - Autonomous Editorial Intelligence Platform E2E - M5 (offline, longitudinal, multi-process)\n  ---\n  duration_ms: 191.560292\n  type: 'suite'\n  ...\n# Subtest: Research Candidate E2E - Signal-to-Research-Candidate (offline)\n    # Subtest: runs both minimum cases deterministically without network\n    ok 1 - runs both minimum cases deterministically without network\n      ---\n      duration_ms: 9.136667\n      type: 'test'\n      ...\n    # Subtest: persists real source provenance with url, language, capture date and hash\n    ok 2 - persists real source provenance with url, language, capture date and hash\n      ---\n      duration_ms: 2.157625\n      type: 'test'\n      ...\n    # Subtest: produces >= 2 research candidates including at least one REFRAMED\n    ok 3 - produces >= 2 research candidates including at least one REFRAMED\n      ---\n      duration_ms: 1.015041\n      type: 'test'\n      ...\n    # Subtest: builds each candidate with the full ORDEN-006 structure\n    ok 4 - builds each candidate with the full ORDEN-006 structure\n      ---\n      duration_ms: 0.73925\n      type: 'test'\n      ...\n    # Subtest: does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n    ok 5 - does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n      ---\n      duration_ms: 0.765833\n      type: 'test'\n      ...\n    # Subtest: validates every AKP handoff against the vendored contract\n    ok 6 - validates every AKP handoff against the vendored contract\n      ---\n      duration_ms: 0.547833\n      type: 'test'\n      ...\n    # Subtest: rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n    ok 7 - rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n      ---\n      duration_ms: 0.152417\n      type: 'test'\n      ...\n    # Subtest: separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n    ok 8 - separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n      ---\n      duration_ms: 0.658125\n      type: 'test'\n      ...\n    # Subtest: classifies the investigable Kafka case as researchable (HIGH) and supported\n    ok 9 - classifies the investigable Kafka case as researchable (HIGH) and supported\n      ---\n      duration_ms: 0.619625\n      type: 'test'\n      ...\n    # Subtest: writes evidence files that match the returned evidence\n    ok 10 - writes evidence files that match the returned evidence\n      ---\n      duration_ms: 2.315375\n      type: 'test'\n      ...\n    # Subtest: produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n    ok 11 - produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n      ---\n      duration_ms: 0.13625\n      type: 'test'\n      ...\n    1..11\nok 9 - Research Candidate E2E - Signal-to-Research-Candidate (offline)\n  ---\n  duration_ms: 19.200875\n  type: 'suite'\n  ...\n# Subtest: SignalExtractor Service - AthenaSignal\n    # Subtest: implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n    ok 1 - implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n      ---\n      duration_ms: 6.465209\n      type: 'test'\n      ...\n    # Subtest: supports custom extractor engine and guarantees UNVERIFIED status on all claims\n    ok 2 - supports custom extractor engine and guarantees UNVERIFIED status on all claims\n      ---\n      duration_ms: 0.933417\n      type: 'test'\n      ...\n    1..2\nok 10 - SignalExtractor Service - AthenaSignal\n  ---\n  duration_ms: 7.923083\n  type: 'suite'\n  ...\n1..10\n# tests 105\n# suites 10\n# pass 105\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2831.354833\n",
+        "test_counts": null,
+        "test_counts_source": "unavailable",
+        "timed_out": false
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    }
+  },
+  "policy": null,
+  "review": {
+    "artifact": null,
+    "enabled": false,
+    "required": false,
+    "status": "NOT_REQUESTED"
+  },
+  "run_id": "gov-athenasignal-m6-closed-loop-editorial-intelligence-verify-d25f993b",
+  "spec": {
+    "path": "/Volumes/Medios/Repos/AthenaSignal/governance/specs/athenasignal-m6-verify.spec.yaml",
+    "sha256": "82924ec1d8cac9947278a53476fce54d10132761ba9efb0ce60b6b054a6f0b05"
+  },
+  "spec_id": "athenasignal-m6-closed-loop-editorial-intelligence-verify",
+  "spec_version": 1,
+  "status": "PASS"
+}

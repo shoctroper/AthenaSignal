@@ -90,7 +90,9 @@ export class EditorialScorer implements IEditorialScorer {
    */
   evaluateOpportunity(signal: Signal, id?: string): EditorialOpportunity {
     const metrics = this.score(signal);
-    const score = this.calculateGlobalScore(metrics);
+    // Penalización por claims que el ClaimVerifier dejó como UNVERIFIED_AMBIGUOUS.
+    const penalty = signal.verification?.penalty ?? 0;
+    const score = Number(this.clamp(this.calculateGlobalScore(metrics) - penalty).toFixed(4));
     const opportunityId = id || `opp-${signal.sourceId || 'signal'}-${Date.now()}`;
     const narrativeAngle =
       signal.potentialAngles && signal.potentialAngles.length > 0

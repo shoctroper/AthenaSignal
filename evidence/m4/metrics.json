@@ -1,0 +1,44 @@
+{
+  "kind": "athenasignal.m4.metrics.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "cycles": 6,
+  "sourcesIngested": 10,
+  "signalsTracked": 15,
+  "clusters": 7,
+  "candidates": 7,
+  "promoted": 1,
+  "discarded": 1,
+  "eventCounts": {
+    "NEW": 15,
+    "KNOWN": 2,
+    "DUPLICATE": 2,
+    "RELATED": 8,
+    "UPDATED": 2,
+    "PRIORITY_CHANGED": 2,
+    "PROMOTED": 1,
+    "CONTRADICTED": 1,
+    "REASSESSED": 1,
+    "DISCARDED": 1
+  },
+  "eventTotals": 35,
+  "dedup": {
+    "repeatedSources": 1,
+    "knownSignals": 2,
+    "uniqueSignals": 15
+  },
+  "contradictions": 1,
+  "reassessments": 1,
+  "priorityChanges": 2,
+  "llm": {
+    "providerChain": "replay",
+    "realResponses": 94,
+    "deterministicResponses": 0,
+    "replayMisses": []
+  },
+  "research": {
+    "queries": 34,
+    "evidenceItems": 25,
+    "missingRecordings": []
+  },
+  "falsePositiveObservations": []
+}

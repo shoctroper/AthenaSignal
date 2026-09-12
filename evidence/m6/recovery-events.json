@@ -1,0 +1,104 @@
+{
+  "kind": "athenasignal.m6.recovery_events.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "events": [
+    {
+      "recoveryId": "rec-m6-proc-a-run-1-001",
+      "runId": "m6-proc-a-run-1",
+      "at": "2026-09-12T02:50:00.000Z",
+      "kind": "PARTIAL_RUN",
+      "subject": "m6-cycle-56",
+      "action": "DEGRADED",
+      "detail": "El proceso murió tras m6-cycle-56; el radar quedó persistido y una corrida posterior debe reanudar sin duplicar ni perder provenance."
+    },
+    {
+      "recoveryId": "rec-m6-proc-b-run-2-002",
+      "runId": "m6-proc-b-run-2",
+      "at": "2026-09-12T02:53:00.000Z",
+      "kind": "PROCESS_RESTART",
+      "subject": "m6-proc-a-run-1",
+      "action": "RESUMED",
+      "detail": "El proceso m6-proc-b (mac-mini) reanudó desde m6-proc-a-run-1 usando el radar persistido; no reinicia el universo ni duplica señales."
+    },
+    {
+      "recoveryId": "rec-m6-research-001",
+      "runId": "m6-research",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "NODE_DOWN",
+      "subject": "macmini-cognitive:mac-mini",
+      "action": "FALLBACK",
+      "detail": "El health-check del nodo macmini-cognitive (mac-mini) lo reportó muerto (PID sin vida). El loop hace failover a la ruta remota/local restante sin detener la operación."
+    },
+    {
+      "recoveryId": "rec-m6-research-002",
+      "runId": "m6-research",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "NODE_DOWN",
+      "subject": "macmini-ollama:deep_research",
+      "action": "SKIPPED",
+      "detail": "Nodo macmini-ollama (LOCAL_ALT) no saludable; se omite en deep_research."
+    },
+    {
+      "recoveryId": "rec-m5-drill-nodedown-001",
+      "runId": "m5-drill-nodedown",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "NODE_DOWN",
+      "subject": "macmini-ollama:claim_assessment",
+      "action": "SKIPPED",
+      "detail": "Nodo macmini-ollama (LOCAL_ALT) no saludable; se omite en claim_assessment."
+    },
+    {
+      "recoveryId": "rec-m5-drill-nodedown-002",
+      "runId": "m5-drill-nodedown",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "LLM_FALLBACK",
+      "subject": "claim_assessment",
+      "action": "FALLBACK",
+      "detail": "La etapa claim_assessment no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde remote-deepseek."
+    },
+    {
+      "recoveryId": "rec-m5-drill-timeout-001",
+      "runId": "m5-drill-timeout",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "TIMEOUT",
+      "subject": "ubuntu-ollama:signal_discovery",
+      "action": "FALLBACK",
+      "detail": "Nodo ubuntu-ollama excedió el timeout de 2 ms en signal_discovery."
+    },
+    {
+      "recoveryId": "rec-m5-drill-timeout-002",
+      "runId": "m5-drill-timeout",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "LLM_FALLBACK",
+      "subject": "signal_discovery",
+      "action": "FALLBACK",
+      "detail": "La etapa signal_discovery no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde macmini-ollama."
+    },
+    {
+      "recoveryId": "rec-m5-drill-invalid-001",
+      "runId": "m5-drill-invalid",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "INVALID_RESPONSE",
+      "subject": "macmini-ollama:claim_assessment",
+      "action": "FALLBACK",
+      "detail": "Nodo macmini-ollama falló en claim_assessment: invalid JSON response from model"
+    },
+    {
+      "recoveryId": "rec-m5-drill-invalid-002",
+      "runId": "m5-drill-invalid",
+      "at": "2026-09-12T00:00:00.000Z",
+      "kind": "LLM_FALLBACK",
+      "subject": "claim_assessment",
+      "action": "FALLBACK",
+      "detail": "La etapa claim_assessment no pudo resolverse con cognición real; se degradó al fallback determinista seguro desde ubuntu-ollama."
+    }
+  ],
+  "byKind": {
+    "INVALID_RESPONSE": 1,
+    "LLM_FALLBACK": 3,
+    "NODE_DOWN": 3,
+    "PARTIAL_RUN": 1,
+    "PROCESS_RESTART": 1,
+    "TIMEOUT": 1
+  }
+}

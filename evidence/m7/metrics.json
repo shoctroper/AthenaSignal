@@ -1,0 +1,129 @@
+{
+  "kind": "athenasignal.m7.metrics.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "scale": {
+    "sources": 500,
+    "uniqueSources": 500,
+    "baseM6Sources": 250,
+    "m7Sources": 250,
+    "cycles": 104,
+    "cyclesProcessed": 104,
+    "inputsObserved": 800,
+    "signalsTracked": 25,
+    "clusters": 7,
+    "candidates": 7
+  },
+  "epistemic": {
+    "resolutions": 7,
+    "confirmed": 0,
+    "refuted": 0,
+    "inconclusive": 3,
+    "closedConfirmed": 1,
+    "closedRefuted": 1,
+    "reopened": 1,
+    "demoted": 1,
+    "promoted": 1,
+    "discarded": 0,
+    "researchable": 0,
+    "transitions": 14,
+    "evidenceDriven": 13,
+    "byStatus": {
+      "CLOSED_CONFIRMED": 1,
+      "CLOSED_REFUTED": 1,
+      "DEMOTED": 1,
+      "INCONCLUSIVE": 3,
+      "PROMOTED": 1
+    },
+    "byVerdict": {
+      "CONFIRMED": 2,
+      "REFUTED": 1,
+      "INCONCLUSIVE": 4
+    },
+    "byTransition": [
+      "CONFIRMED→CLOSED_CONFIRMED",
+      "CONFIRMED→DEMOTED",
+      "CONFIRMED→PROMOTED",
+      "DISCARDED→REOPENED",
+      "INCONCLUSIVE→CONFIRMED",
+      "REOPENED→CLOSED_REFUTED",
+      "RESEARCHABLE→CONFIRMED",
+      "RESEARCHABLE→DISCARDED",
+      "RESEARCHABLE→INCONCLUSIVE"
+    ]
+  },
+  "loop": {
+    "waves": 4,
+    "runs": 7,
+    "processes": 7,
+    "hosts": 2,
+    "handoffs": 19,
+    "researchResults": 19,
+    "feedbackUpdates": 19
+  },
+  "research": {
+    "results": 19,
+    "m6Results": 6,
+    "m7Results": 13,
+    "confirmed": 6,
+    "refuted": 1,
+    "inconclusive": 12,
+    "realResponses": 19,
+    "deterministicResponses": 0,
+    "replayMisses": 0,
+    "claims": 22,
+    "supportedClaims": 0,
+    "contradictedClaims": 0,
+    "evidenceRefs": 206,
+    "newEvidence": 35,
+    "providers": [
+      "ollama"
+    ]
+  },
+  "contradictions": {
+    "total": 2,
+    "resolved": 1,
+    "conserved": 1
+  },
+  "provenance": {
+    "edges": 113,
+    "completeChains": 7,
+    "missingChains": 0
+  },
+  "distributed": {
+    "nodesUp": 3,
+    "nodesDown": 1,
+    "degraded": true,
+    "remoteEscalations": 3,
+    "realNodeParticipation": true
+  },
+  "recovery": {
+    "events": 11,
+    "byKind": {
+      "INVALID_RESPONSE": 2,
+      "LLM_FALLBACK": 3,
+      "NODE_DOWN": 3,
+      "PARTIAL_RUN": 1,
+      "PROCESS_RESTART": 1,
+      "TIMEOUT": 1
+    }
+  },
+  "idempotency": {
+    "noOps": 37,
+    "attempted": 43
+  },
+  "performance": {
+    "costUnits": 17,
+    "localCalls": 5,
+    "remoteCalls": 3,
+    "deterministicCalls": 0,
+    "inputsPerCycle": 7.692
+  },
+  "quality": {
+    "resolutionCoverage": 1,
+    "evidenceDrivenRate": 0.929,
+    "provenanceCoverage": 1,
+    "positiveAssessmentRate": 0.316,
+    "contradictionRate": 0
+  },
+  "falsePositiveObservations": []
+}

@@ -1,0 +1,246 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m7-akp-w3-rc4-cl-suplementacion-de-creatina",
+  "candidateId": "rc4-cl-suplementacion-de-creatina",
+  "clusterId": "cl-suplementacion-de-creatina",
+  "contentHash": "25cc661e39bb5ddf1c5b57a53320ec423fa9ae7d3007fcdf36e21ca0673a9e41",
+  "publishedAt": "2026-09-12T00:00:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+        "title": "Creatine in Health and Disease — PMC7910963",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "official_documentation",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+        "title": "What is creatine? Potential benefits and risks — Harvard Health",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?channel=health-portal",
+        "title": "What is creatine? Potential benefits and risks — Harvard Health",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://k-state.com/plketobig",
+        "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://wavect.io/blog/airllm-layer-wise-inference-low-vram/",
+        "title": "AirLLM on 4 GB VRAM: How Layer-Wise Inference Really Works",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+        "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+        "title": "Ayuno intermitente: efectos en diversos escenarios clínicos",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T03:03:00.000Z"
+      },
+      {
+        "url": "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+        "title": "Evidencias científicas del ayuno intermitente",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T03:03:00.000Z"
+      },
+      {
+        "url": "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm",
+        "title": "AYUNO INTERMITENTE | Endocrinología y Nutrición ... - ENDOCS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T03:03:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+        "provenanceUrls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+      "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+      "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+      "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+      "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+        "refs": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-creatine-pmc-1",
+      "originalClaims": [
+        "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/inbox/rc4-cl-suplementacion-de-creatina.json"
+}

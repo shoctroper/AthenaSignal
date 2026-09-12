@@ -1,0 +1,307 @@
+{
+  "aggregation": {
+    "escalated_required_skipped": [],
+    "final_status": "PASS",
+    "optional_gates": [],
+    "precedence": "FAIL > ESCALATE > PASS; SKIPPED is not a decision state",
+    "required_gates": [
+      "scope",
+      "tests",
+      "artifacts",
+      "regressions",
+      "reproducibility"
+    ],
+    "rule": "any required gate SKIPPED -> ESCALATE; then any FAIL -> FAIL; elif any ESCALATE -> ESCALATE; elif no required gate -> ESCALATE; else (all required PASS, optional SKIPPED policy-valid) -> PASS",
+    "statuses_seen": {
+      "artifacts": "PASS",
+      "regressions": "PASS",
+      "reproducibility": "PASS",
+      "scope": "PASS",
+      "tests": "PASS"
+    }
+  },
+  "final_status": "PASS",
+  "gate_policy": {
+    "artifacts": {
+      "required": true
+    },
+    "regressions": {
+      "required": true
+    },
+    "reproducibility": {
+      "required": true
+    },
+    "scope": {
+      "required": true
+    },
+    "tests": {
+      "required": true
+    }
+  },
+  "gates": {
+    "artifacts": {
+      "duration_ms": 1.0,
+      "gate": "artifacts",
+      "observations": {
+        "required": [
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/corpus.json",
+            "size": 59123,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/benchmark.json",
+            "size": 2317,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/radar-timeline.json",
+            "size": 22674,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/radar-state.json",
+            "size": 91959,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/metrics.json",
+            "size": 880,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/handoff-athenaos.json",
+            "size": 5543,
+            "status": "PASS"
+          },
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/m4/human-review-packet.json",
+            "size": 7213,
+            "status": "PASS"
+          }
+        ],
+        "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "regressions": {
+      "duration_ms": 0.4,
+      "gate": "regressions",
+      "observations": {
+        "baseline": "governance/specs/athenasignal-m4.regressions.json",
+        "checks": [
+          {
+            "baseline_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "current_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "path": "tests/domain.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "current_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "path": "tests/adapters.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "current_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "path": "tests/signal-extractor.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "current_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "path": "tests/editorial-scorer.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "current_sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb",
+            "path": "tests/pipeline-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "current_sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b",
+            "path": "tests/research-candidate-e2e.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "54a2dfa12389d065fd704d37a029d41505895e36810d996a3adb1b6423dc2646",
+            "current_sha256": "54a2dfa12389d065fd704d37a029d41505895e36810d996a3adb1b6423dc2646",
+            "path": "tests/autonomous-intelligence-e2e.test.ts",
+            "state": "unchanged"
+          }
+        ],
+        "max_regressions": 0,
+        "regressions": [],
+        "rule": "regressions>max -> FAIL; baseline unavailable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "reproducibility": {
+      "duration_ms": 210.4,
+      "gate": "reproducibility",
+      "observations": {
+        "command": "node --experimental-strip-types scripts/m4-replay.ts",
+        "rule": "all runs identical (exit_code+output_sha256) -> PASS; else FAIL",
+        "run_evidence": [
+          {
+            "duration_ms": 121.4,
+            "exit_code": 0,
+            "output_sha256": "3e531ec82283cb47703dca9490277a5503d74a0f5814290dbea33a8ef6ea66eb",
+            "run": 1,
+            "timed_out": false
+          },
+          {
+            "duration_ms": 88.9,
+            "exit_code": 0,
+            "output_sha256": "3e531ec82283cb47703dca9490277a5503d74a0f5814290dbea33a8ef6ea66eb",
+            "run": 2,
+            "timed_out": false
+          }
+        ],
+        "runs": 2,
+        "uniform": true
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "scope": {
+      "duration_ms": 27.4,
+      "gate": "scope",
+      "observations": {
+        "added_files": [
+          "evidence/m4/benchmark.json",
+          "evidence/m4/corpus.json",
+          "evidence/m4/handoff-athenaos.json",
+          "evidence/m4/human-review-packet.json",
+          "evidence/m4/metrics.json",
+          "evidence/m4/radar-state.json",
+          "evidence/m4/radar-timeline.json",
+          "scripts/m4-replay.ts",
+          "src/radar-cli.ts",
+          "src/radar/artifacts.ts",
+          "src/radar/corpus.ts",
+          "src/radar/engine.ts",
+          "src/radar/identity.ts",
+          "src/radar/index.ts",
+          "src/radar/offline.ts",
+          "src/radar/store.ts",
+          "src/radar/types.ts",
+          "tests/editorial-radar-e2e.test.ts"
+        ],
+        "baseline": "governance/specs/athenasignal-m4.baseline.json",
+        "baseline_file_count": 278,
+        "changed_files": [
+          "ciclo/ORDEN-008.md",
+          "evidence/deep-search-e2e.json",
+          "evidence/m4/benchmark.json",
+          "evidence/m4/corpus.json",
+          "evidence/m4/handoff-athenaos.json",
+          "evidence/m4/human-review-packet.json",
+          "evidence/m4/metrics.json",
+          "evidence/m4/radar-state.json",
+          "evidence/m4/radar-timeline.json",
+          "scripts/m4-replay.ts",
+          "src/radar-cli.ts",
+          "src/radar/artifacts.ts",
+          "src/radar/corpus.ts",
+          "src/radar/engine.ts",
+          "src/radar/identity.ts",
+          "src/radar/index.ts",
+          "src/radar/offline.ts",
+          "src/radar/store.ts",
+          "src/radar/types.ts",
+          "tests/editorial-radar-e2e.test.ts"
+        ],
+        "current_file_count": 296,
+        "deleted_files": [],
+        "forbidden_files": [],
+        "modified_files": [
+          "ciclo/ORDEN-008.md",
+          "evidence/deep-search-e2e.json"
+        ],
+        "rule": "deny=['decisiones/', '.env', 'perfil_navegador_llm/'] allow=['src/', 'tests/', 'scripts/', 'ciclo/', 'docs/', 'evidence/', 'data/', 'governance/', 'package.json', 'package-lock.json', 'tsconfig.json', 'AGENTS.md', 'README.md']; forbidden or unexpected -> FAIL",
+        "unexpected_files": []
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "tests": {
+      "duration_ms": 241.8,
+      "gate": "tests",
+      "observations": {
+        "command": "test -f tests/editorial-radar-e2e.test.ts && test -f scripts/m4-replay.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts",
+        "decision_reason": "exit_zero",
+        "duration_ms": 241.6,
+        "error": null,
+        "exit_code": 0,
+        "output_sha256": "0adbc82e2cf5994c58220677de74b4306f3edcb2b1a9a4d4040dea57d01b550f",
+        "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+        "stderr_tail": "",
+        "stdout_tail": "...[truncated]...\nn with source, signal, verification and opportunity\n      ---\n      duration_ms: 2.40625\n      type: 'test'\n      ...\n    # Subtest: exposes processUrl returning an EditorialOpportunity\n    ok 10 - exposes processUrl returning an EditorialOpportunity\n      ---\n      duration_ms: 0.480208\n      type: 'test'\n      ...\n    1..10\nok 6 - Pipeline E2E - Deep Search Vertical Slice (offline)\n  ---\n  duration_ms: 13.83675\n  type: 'suite'\n  ...\n# Subtest: Research Candidate E2E - Signal-to-Research-Candidate (offline)\n    # Subtest: runs both minimum cases deterministically without network\n    ok 1 - runs both minimum cases deterministically without network\n      ---\n      duration_ms: 8.0515\n      type: 'test'\n      ...\n    # Subtest: persists real source provenance with url, language, capture date and hash\n    ok 2 - persists real source provenance with url, language, capture date and hash\n      ---\n      duration_ms: 1.954458\n      type: 'test'\n      ...\n    # Subtest: produces >= 2 research candidates including at least one REFRAMED\n    ok 3 - produces >= 2 research candidates including at least one REFRAMED\n      ---\n      duration_ms: 0.916792\n      type: 'test'\n      ...\n    # Subtest: builds each candidate with the full ORDEN-006 structure\n    ok 4 - builds each candidate with the full ORDEN-006 structure\n      ---\n      duration_ms: 1.164833\n      type: 'test'\n      ...\n    # Subtest: does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n    ok 5 - does not amplify a false claim: REFRAMED keeps the original claim out of CandidateFacts\n      ---\n      duration_ms: 0.863708\n      type: 'test'\n      ...\n    # Subtest: validates every AKP handoff against the vendored contract\n    ok 6 - validates every AKP handoff against the vendored contract\n      ---\n      duration_ms: 1.062875\n      type: 'test'\n      ...\n    # Subtest: rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n    ok 7 - rejects an invalid handoff and a REFRAMED handoff proposing the original claim\n      ---\n      duration_ms: 0.169125\n      type: 'test'\n      ...\n    # Subtest: separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n    ok 8 - separates FACT/EVIDENCE from MODEL_INTERPRETATION and EDITORIAL_REFRAMING\n      ---\n      duration_ms: 0.656042\n      type: 'test'\n      ...\n    # Subtest: classifies the investigable Kafka case as researchable (HIGH) and supported\n    ok 9 - classifies the investigable Kafka case as researchable (HIGH) and supported\n      ---\n      duration_ms: 0.578084\n      type: 'test'\n      ...\n    # Subtest: writes evidence files that match the returned evidence\n    ok 10 - writes evidence files that match the returned evidence\n      ---\n      duration_ms: 1.425917\n      type: 'test'\n      ...\n    # Subtest: produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n    ok 11 - produces structured AssertionAnalysis and ResearchabilityAssessment (unit)\n      ---\n      duration_ms: 0.1305\n      type: 'test'\n      ...\n    1..11\nok 7 - Research Candidate E2E - Signal-to-Research-Candidate (offline)\n  ---\n  duration_ms: 18.08325\n  type: 'suite'\n  ...\n# Subtest: SignalExtractor Service - AthenaSignal\n    # Subtest: implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n    ok 1 - implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n      ---\n      duration_ms: 12.496792\n      type: 'test'\n      ...\n    # Subtest: supports custom extractor engine and guarantees UNVERIFIED status on all claims\n    ok 2 - supports custom extractor engine and guarantees UNVERIFIED status on all claims\n      ---\n      duration_ms: 0.13875\n      type: 'test'\n      ...\n    1..2\nok 8 - SignalExtractor Service - AthenaSignal\n  ---\n  duration_ms: 13.046291\n  type: 'suite'\n  ...\n1..8\n# tests 71\n# suites 8\n# pass 71\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.028958\n",
+        "test_counts": null,
+        "test_counts_source": "unavailable",
+        "timed_out": false
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    }
+  },
+  "policy": null,
+  "review": {
+    "artifact": null,
+    "enabled": false,
+    "required": false,
+    "status": "NOT_REQUESTED"
+  },
+  "run_id": "gov-athenasignal-m4-continuous-editorial-radar-verify-37f6ed6e",
+  "spec": {
+    "path": "/Volumes/Medios/Repos/AthenaSignal/governance/specs/athenasignal-m4-verify.spec.yaml",
+    "sha256": "ea77ed095e1c86838ecdb34a54551b6f8fe052c6363353c081c95820494de527"
+  },
+  "spec_id": "athenasignal-m4-continuous-editorial-radar-verify",
+  "spec_version": 1,
+  "status": "PASS"
+}

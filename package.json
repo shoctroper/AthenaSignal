@@ -1,0 +1,27 @@
+{
+  "name": "athenasignal",
+  "version": "0.1.0",
+  "description": "AthenaSignal - Motor de Búsqueda y Verificación de Señales Epistemológicas",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "e2e": "node --experimental-strip-types src/cli.ts --offline",
+    "e2e:m2": "node --experimental-strip-types src/research-cli.ts --offline",
+    "m6": "node --experimental-strip-types scripts/m6-loop.ts",
+    "m6:record": "node --experimental-strip-types scripts/m6-record.ts",
+    "m7": "node --experimental-strip-types scripts/m7-loop.ts",
+    "m7:record": "node --experimental-strip-types scripts/m7-record.ts",
+    "verify:m1": "test -f tests/pipeline-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts",
+    "verify:m2": "test -f tests/research-candidate-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts",
+    "verify:m6": "test -f tests/closed-loop-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts",
+    "verify:m7": "test -f tests/epistemic-resolution-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts"
+  },
+  "keywords": [
+    "athenasignal",
+    "signals",
+    "epistemology",
+    "deep-search"
+  ],
+  "author": "",
+  "license": "ISC"
+}

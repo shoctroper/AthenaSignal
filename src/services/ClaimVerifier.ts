@@ -1,73 +1,138 @@
-import { Signal } from '../domain/entities';
+import type {
+  Claim,
+  ClaimVerdict,
+  ClaimVerificationResult,
+  Signal,
+  VerificationReport,
+} from '../domain/entities.ts';
 
-interface VerificationResult {
-  verified: boolean;
-  confidenceScore: number; // 0.0 to 1.0
-  evidence: string[];
-  contradictions: string[];
+/**
+ * Evidencia devuelta por un buscador/adaptador inyectable.
+ * `supports === true` soporta el claim, `false` lo contradice y `null` es
+ * inconclusa. Nunca se usa aleatoriedad para emitir un veredicto.
+ */
+export interface EvidenceItem {
+  supports: boolean | null;
+  source: string;
+  excerpt: string;
+}
+
+/**
+ * Contrato del buscador inyectable del bucle Odysseus.
+ */
+export interface ClaimSearchProvider {
+  search(query: string, claim: Claim): Promise<EvidenceItem[]> | EvidenceItem[];
 }
 
 /**
  * Motor de Búsqueda Profunda y Verificación de Claims (Bucle Odysseus).
- * Itera generando sub-consultas y buscando evidencia antes de emitir un veredicto.
+ * Itera afinando consultas y acumulando evidencia antes de emitir un veredicto.
+ *
+ * Reglas duras (ORDEN-005 / RFC-006):
+ * - `MAX_ITERATIONS = 3` estricto.
+ * - Sin generación aleatoria: la evidencia proviene de un `ClaimSearchProvider` inyectable.
+ * - Sin resolución tras 3 ciclos -> `UNVERIFIED_AMBIGUOUS` (con penalización).
  */
 export class ClaimVerifier {
-  private maxIterations: number;
+  static readonly MAX_ITERATIONS = 3;
 
-  constructor(maxIterations: number = 3) {
-    this.maxIterations = maxIterations;
+  private readonly maxIterations: number;
+  private readonly provider: ClaimSearchProvider;
+
+  constructor(provider?: ClaimSearchProvider, maxIterations: number = ClaimVerifier.MAX_ITERATIONS) {
+    this.provider = provider ?? { search: () => [] };
+    this.maxIterations = Math.max(1, Math.min(maxIterations, ClaimVerifier.MAX_ITERATIONS));
   }
 
-  public async verify(signal: Signal): Promise<VerificationResult> {
-    console.log(`[ClaimVerifier] Iniciando Bucle Odysseus para la señal: "${signal.title}"`);
-    let currentIteration = 0;
+  public async verify(signal: Signal): Promise<VerificationReport> {
+    const claims = signal.claimsToInvestigate ?? [];
+    const results: ClaimVerificationResult[] = [];
+
+    for (const claim of claims) {
+      results.push(await this.verifyClaim(claim, signal));
+    }
+
+    const verdictCounts: Record<ClaimVerdict, number> = {
+      VERIFIED: 0,
+      REFUTED: 0,
+      UNVERIFIED_AMBIGUOUS: 0,
+    };
+    for (const result of results) {
+      verdictCounts[result.verdict] += 1;
+    }
+
+    const overallConfidence = results.length
+      ? Number((results.reduce((sum, r) => sum + r.confidence, 0) / results.length).toFixed(4))
+      : 0;
+
+    // Penalización proporcional a los claims que quedaron ambiguos.
+    const penalty = Number((verdictCounts.UNVERIFIED_AMBIGUOUS * 0.15).toFixed(4));
+
+    return {
+      signalId: signal.sourceId,
+      maxIterations: this.maxIterations,
+      claims: results,
+      verdictCounts,
+      overallConfidence,
+      penalty,
+    };
+  }
+
+  private async verifyClaim(claim: Claim, signal: Signal): Promise<ClaimVerificationResult> {
     let confidence = 0.5;
+    let iterations = 0;
     const evidence: string[] = [];
     const contradictions: string[] = [];
 
-    while (currentIteration < this.maxIterations) {
-      currentIteration++;
-      console.log(`[ClaimVerifier] Iteración ${currentIteration}/${this.maxIterations}... Generando sub-consultas.`);
+    while (iterations < this.maxIterations) {
+      iterations += 1;
+      const query = this.buildQuery(claim, signal, iterations);
+      const found = await this.provider.search(query, claim);
 
-      // 1. Simular que el LLM genera una query para buscar evidencia
-      const query = `verify claim: ${signal.claims[0]?.content || signal.title}`;
-      
-      // 2. Simular búsqueda mediante un Agent (e.g. McpAgentReachAdapter / DuckDuckGo)
-      console.log(`[ClaimVerifier] Buscando evidencia para: "${query}"`);
-      const searchResult = this.mockSearchEngine(query);
-
-      // 3. Evaluar evidencia (esto lo haría el LLM)
-      if (searchResult.supports) {
-        evidence.push(searchResult.text);
-        confidence = Math.min(1.0, confidence + 0.25);
-      } else {
-        contradictions.push(searchResult.text);
-        confidence = Math.max(0.0, confidence - 0.25);
+      for (const item of found) {
+        if (item.supports === true) {
+          evidence.push(item.excerpt);
+          confidence += 0.25;
+        } else if (item.supports === false) {
+          contradictions.push(item.excerpt);
+          confidence -= 0.25;
+        }
+        // `null` => inconclusa: no altera la confianza.
       }
 
-      // Si la confianza es estadísticamente contundente, rompemos el bucle temprano
+      confidence = this.clamp(confidence, 0, 1);
+
+      // Confianza estadísticamente contundente: rompemos el bucle temprano.
       if (confidence >= 0.85 || confidence <= 0.15) {
-        console.log(`[ClaimVerifier] Confianza fuerte alcanzada (${confidence.toFixed(2)}). Rompiendo bucle temprano.`);
         break;
       }
     }
 
     return {
-      verified: confidence >= 0.7,
-      confidenceScore: confidence,
+      claimId: claim.id,
+      statement: claim.statement,
+      verdict: this.toVerdict(confidence),
+      iterations,
+      confidence: Number(confidence.toFixed(4)),
       evidence,
-      contradictions
+      contradictions,
     };
   }
 
-  private mockSearchEngine(query: string) {
-    // Simula una búsqueda. Devuelve evidencia de soporte aleatoria
-    const isSupportive = Math.random() > 0.3; 
-    return {
-      supports: isSupportive,
-      text: isSupportive 
-        ? "Fuente externa confirma la veracidad de los hechos reportados." 
-        : "Se encontraron reportes conflictivos que desmienten partes del Claim original."
-    };
+  private buildQuery(claim: Claim, signal: Signal, iteration: number): string {
+    const topic = signal.topic ? ` [${signal.topic}]` : '';
+    return `verify claim (iter ${iteration})${topic}: ${claim.statement}`;
+  }
+
+  private toVerdict(confidence: number): ClaimVerdict {
+    if (confidence >= 0.7) return 'VERIFIED';
+    if (confidence <= 0.3) return 'REFUTED';
+    return 'UNVERIFIED_AMBIGUOUS';
+  }
+
+  private clamp(value: number, min: number, max: number): number {
+    if (value < min) return min;
+    if (value > max) return max;
+    return value;
   }
 }

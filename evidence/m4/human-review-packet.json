@@ -1,0 +1,156 @@
+{
+  "kind": "athenasignal.m4.human_review_packet.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "rubric": [
+    {
+      "id": "P1",
+      "question": "¿El radar recordó señales entre ejecuciones/ciclos?"
+    },
+    {
+      "id": "P2",
+      "question": "¿Distinguió material nuevo de material conocido?"
+    },
+    {
+      "id": "P3",
+      "question": "¿Evitó duplicar fuentes y señales repetidas (idempotencia)?"
+    },
+    {
+      "id": "P4",
+      "question": "¿Vinculó fuentes relacionadas en clusters con sentido?"
+    },
+    {
+      "id": "P5",
+      "question": "¿Incorporó y registró evidencia nueva a lo largo del tiempo?"
+    },
+    {
+      "id": "P6",
+      "question": "¿Reevaluó candidates cuando cambió la evidencia?"
+    },
+    {
+      "id": "P7",
+      "question": "¿Reflejó contradicciones reales entre fuentes?"
+    },
+    {
+      "id": "P8",
+      "question": "¿Cambió prioridades con una justificación observable?"
+    },
+    {
+      "id": "P9",
+      "question": "¿Descartó ruido promocional/no investigable?"
+    },
+    {
+      "id": "P10",
+      "question": "¿El candidate promovido llega a AthenaOS con handoff válido y suficiente?"
+    }
+  ],
+  "bestCandidate": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "title": "efectividad a largo plazo del ayuno intermitente",
+    "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+    "priority": "HIGH",
+    "assessment": "SUPPORTED",
+    "status": "ACTIVE",
+    "score": 0.94,
+    "sourceCount": 2,
+    "evidenceCount": 5,
+    "cycles": [
+      "m4-cycle-3",
+      "m4-cycle-4"
+    ],
+    "priorityReasons": [
+      "Score compuesto 0.94 (researchability 1, evidencia 5, editorial 0.7, fuentes 2, contradicción 1).",
+      "Soporte: 2 fuentes independientes y 5 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+      "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración.",
+      "Contradicción abierta (2): mantiene el cluster en HIGH pero bloquea la promoción a AthenaOS."
+    ],
+    "resolutionNote": "El cluster coexiste con evaluación SUPPORTED y contradicción abierta: prevalece la evidencia de mayor tier (src-if-cochrane, src-if-cochrane) sobre las fuentes de menor peso (src-if-mayo); la tensión se conserva como contexto editorial y no se resuelve en un hecho.",
+    "promotionReason": null,
+    "why": "2 fuentes, 5 evidencias. Contiene contradicción abierta. Evaluación SUPPORTED con prioridad HIGH."
+  },
+  "worstCandidate": {
+    "candidateId": "rc4-cl-airllm",
+    "title": "capacidad de ejecución de modelos de IA",
+    "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "priority": "MEDIUM",
+    "assessment": "REFRAMED",
+    "status": "ACTIVE",
+    "score": 0.5275,
+    "sourceCount": 1,
+    "evidenceCount": 1,
+    "cycles": [
+      "m4-cycle-5"
+    ],
+    "priorityReasons": [
+      "Score compuesto 0.5275 (researchability 1, evidencia 1, editorial 0.7, fuentes 1, contradicción 0).",
+      "Soporte: 1 fuentes independientes y 1 evidencias; soporte suficiente para HIGH: no (mínimo 2 fuentes y 2 evidencias).",
+      "Prioridad MEDIUM aplicando umbral HIGH 0.6+ y corroboración."
+    ],
+    "resolutionNote": null,
+    "promotionReason": null,
+    "why": "1 fuentes, 1 evidencias. Evaluación REFRAMED con prioridad MEDIUM."
+  },
+  "largestPriorityChange": {
+    "candidateId": "rc4-cl-suplementacion-de-creatina",
+    "from": "MEDIUM",
+    "to": "HIGH",
+    "delta": 1,
+    "cycles": [
+      "m4-cycle-1",
+      "m4-cycle-2"
+    ],
+    "why": "La prioridad evolucionó de MEDIUM a HIGH al acumular evidencia/contradicción."
+  },
+  "mostDifficultDeduplication": {
+    "subjectId": "src-creatine-pmc",
+    "seenCount": 3,
+    "cycles": [
+      "m4-cycle-2",
+      "m4-cycle-6"
+    ],
+    "why": "La fuente src-creatine-pmc reapareció 3 veces; el radar la reconoció sin duplicar señales ni evidencia."
+  },
+  "importantContradiction": {
+    "clusterId": "cl-ayuno-intermitente",
+    "details": [
+      "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+      "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo)."
+    ],
+    "resolutionNote": "El cluster coexiste con evaluación SUPPORTED y contradicción abierta: prevalece la evidencia de mayor tier (src-if-cochrane, src-if-cochrane) sobre las fuentes de menor peso (src-if-mayo); la tensión se conserva como contexto editorial y no se resuelve en un hecho.",
+    "why": "El cluster ayuno intermitente reúne fuentes con posturas opuestas; la tensión es material editorial."
+  },
+  "importantReframing": {
+    "candidateId": "rc4-cl-airllm",
+    "note": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "why": "El claim original no se acepta como hecho y se conserva la idea subyacente como pregunta investigable."
+  },
+  "importantDiscard": {
+    "candidateId": "rc4-cl-ketobig",
+    "reason": "Todas las fuentes del cluster son terciarias/bloqueadas con alta probabilidad de ruido.",
+    "why": "Ruido promocional sin realidad investigable; se descartó sin destruir el estado."
+  },
+  "promotedToAthenaOs": [
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "title": "diabetes",
+      "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "priority": "HIGH",
+      "assessment": "REFRAMED",
+      "status": "PROMOTED",
+      "score": 0.605,
+      "sourceCount": 2,
+      "evidenceCount": 2,
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2"
+      ],
+      "priorityReasons": [
+        "Score compuesto 0.605 (researchability 0.5, evidencia 2, editorial 0.65, fuentes 2, contradicción 0).",
+        "Soporte: 2 fuentes independientes y 2 evidencias; soporte suficiente para HIGH: sí (mínimo 2 fuentes y 2 evidencias).",
+        "Prioridad HIGH aplicando umbral HIGH 0.6+ y corroboración."
+      ],
+      "resolutionNote": null,
+      "promotionReason": "Promovido: HIGH con score 0.605 >= 0.6, 2 fuentes independientes (1 de autoridad) y 2 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+      "why": "2 fuentes, 2 evidencias. Promovido a AthenaOS. Evaluación REFRAMED con prioridad HIGH."
+    }
+  ]
+}

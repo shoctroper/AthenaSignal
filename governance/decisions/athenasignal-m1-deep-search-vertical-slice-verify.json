@@ -1,0 +1,224 @@
+{
+  "aggregation": {
+    "escalated_required_skipped": [],
+    "final_status": "PASS",
+    "optional_gates": [],
+    "precedence": "FAIL > ESCALATE > PASS; SKIPPED is not a decision state",
+    "required_gates": [
+      "scope",
+      "tests",
+      "artifacts",
+      "regressions",
+      "reproducibility"
+    ],
+    "rule": "any required gate SKIPPED -> ESCALATE; then any FAIL -> FAIL; elif any ESCALATE -> ESCALATE; elif no required gate -> ESCALATE; else (all required PASS, optional SKIPPED policy-valid) -> PASS",
+    "statuses_seen": {
+      "artifacts": "PASS",
+      "regressions": "PASS",
+      "reproducibility": "PASS",
+      "scope": "PASS",
+      "tests": "PASS"
+    }
+  },
+  "final_status": "PASS",
+  "gate_policy": {
+    "artifacts": {
+      "required": true
+    },
+    "regressions": {
+      "required": true
+    },
+    "reproducibility": {
+      "required": true
+    },
+    "scope": {
+      "required": true
+    },
+    "tests": {
+      "required": true
+    }
+  },
+  "gates": {
+    "artifacts": {
+      "duration_ms": 0.4,
+      "gate": "artifacts",
+      "observations": {
+        "required": [
+          {
+            "exists": true,
+            "kind": "json_object",
+            "object": true,
+            "parses": true,
+            "path": "evidence/deep-search-e2e.json",
+            "size": 23824,
+            "status": "PASS"
+          }
+        ],
+        "rule": "missing/empty/unparsable/unsupported -> FAIL; unreadable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "regressions": {
+      "duration_ms": 0.7,
+      "gate": "regressions",
+      "observations": {
+        "baseline": "governance/specs/athenasignal-m1.regressions.json",
+        "checks": [
+          {
+            "baseline_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "current_sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12",
+            "path": "tests/domain.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "current_sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac",
+            "path": "tests/adapters.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "current_sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c",
+            "path": "tests/signal-extractor.test.ts",
+            "state": "unchanged"
+          },
+          {
+            "baseline_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "current_sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef",
+            "path": "tests/editorial-scorer.test.ts",
+            "state": "unchanged"
+          }
+        ],
+        "max_regressions": 0,
+        "regressions": [],
+        "rule": "regressions>max -> FAIL; baseline unavailable -> ESCALATE"
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "reproducibility": {
+      "duration_ms": 56.9,
+      "gate": "reproducibility",
+      "observations": {
+        "command": "node -e \"const fs=require('fs');const d=JSON.parse(fs.readFileSync('evidence/deep-search-e2e.json','utf8'));process.stdout.write(JSON.stringify(Object.keys(d).sort()))\"",
+        "rule": "all runs identical (exit_code+output_sha256) -> PASS; else FAIL",
+        "run_evidence": [
+          {
+            "duration_ms": 28.2,
+            "exit_code": 0,
+            "output_sha256": "19bb0c47715f6fb4decb53c1e92c5ed7dc5ee2e1a9c84a22f410adc7b6edc9b0",
+            "run": 1,
+            "timed_out": false
+          },
+          {
+            "duration_ms": 28.6,
+            "exit_code": 0,
+            "output_sha256": "19bb0c47715f6fb4decb53c1e92c5ed7dc5ee2e1a9c84a22f410adc7b6edc9b0",
+            "run": 2,
+            "timed_out": false
+          }
+        ],
+        "runs": 2,
+        "uniform": true
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "scope": {
+      "duration_ms": 83.5,
+      "gate": "scope",
+      "observations": {
+        "added_files": [
+          "docs/M1-DEEP-SEARCH.md",
+          "evidence/deep-search-e2e.json",
+          "src/cli.ts",
+          "src/services/EvidenceProviders.ts",
+          "tests/pipeline-e2e.test.ts"
+        ],
+        "baseline": "governance/specs/athenasignal-m1.baseline.json",
+        "baseline_file_count": 205,
+        "changed_files": [
+          "docs/M1-DEEP-SEARCH.md",
+          "evidence/deep-search-e2e.json",
+          "package.json",
+          "src/adapters/FirecrawlAdapter.ts",
+          "src/adapters/McpAgentReachAdapter.ts",
+          "src/cli.ts",
+          "src/domain/entities.ts",
+          "src/interfaces/ISourceAdapter.ts",
+          "src/services/ClaimVerifier.ts",
+          "src/services/EditorialScorer.ts",
+          "src/services/EvidenceProviders.ts",
+          "src/services/McpClientService.ts",
+          "src/services/PipelineOrchestrator.ts",
+          "tests/pipeline-e2e.test.ts"
+        ],
+        "current_file_count": 209,
+        "deleted_files": [
+          "src/interfaces/ISourceAdapter.ts"
+        ],
+        "forbidden_files": [],
+        "modified_files": [
+          "package.json",
+          "src/adapters/FirecrawlAdapter.ts",
+          "src/adapters/McpAgentReachAdapter.ts",
+          "src/domain/entities.ts",
+          "src/services/ClaimVerifier.ts",
+          "src/services/EditorialScorer.ts",
+          "src/services/McpClientService.ts",
+          "src/services/PipelineOrchestrator.ts"
+        ],
+        "rule": "deny=['decisiones/', '.env', 'perfil_navegador_llm/'] allow=['src/', 'tests/', 'scripts/', 'ciclo/', 'docs/', 'evidence/', 'governance/', 'package.json', 'package-lock.json', 'tsconfig.json', 'AGENTS.md', 'README.md']; forbidden or unexpected -> FAIL",
+        "unexpected_files": []
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    },
+    "tests": {
+      "duration_ms": 126.9,
+      "gate": "tests",
+      "observations": {
+        "command": "test -f tests/pipeline-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts",
+        "decision_reason": "exit_zero",
+        "duration_ms": 126.8,
+        "error": null,
+        "exit_code": 0,
+        "output_sha256": "7f1cf06965abfe01e9dfe3f8804725f70bf00a42090be47ce5c2b629d4a4b0bd",
+        "rule": "exit_code==0 -> PASS; exit_code!=0 -> FAIL; timeout -> ESCALATE",
+        "stderr_tail": "",
+        "stdout_tail": "...[truncated]...\nst: calculates global score bounded in range [0.0, 1.0]\n    ok 2 - calculates global score bounded in range [0.0, 1.0]\n      ---\n      duration_ms: 0.082125\n      type: 'test'\n      ...\n    # Subtest: evaluates opportunity building complete EditorialOpportunity entity\n    ok 3 - evaluates opportunity building complete EditorialOpportunity entity\n      ---\n      duration_ms: 0.14575\n      type: 'test'\n      ...\n    # Subtest: supports custom weights configuration and normalizes properly\n    ok 4 - supports custom weights configuration and normalizes properly\n      ---\n      duration_ms: 0.0555\n      type: 'test'\n      ...\n    1..4\nok 3 - EditorialScorer Service - AthenaSignal\n  ---\n  duration_ms: 1.25975\n  type: 'suite'\n  ...\n# Subtest: Pipeline E2E - Deep Search Vertical Slice (offline)\n    # Subtest: runs the full pipeline end-to-end deterministically without network\n    ok 1 - runs the full pipeline end-to-end deterministically without network\n      ---\n      duration_ms: 5.096541\n      type: 'test'\n      ...\n    # Subtest: updates every claim status with its verifier verdict\n    ok 2 - updates every claim status with its verifier verdict\n      ---\n      duration_ms: 0.291667\n      type: 'test'\n      ...\n    # Subtest: extracts every claim as UNVERIFIED before verification (DU-001)\n    ok 3 - extracts every claim as UNVERIFIED before verification (DU-001)\n      ---\n      duration_ms: 0.106083\n      type: 'test'\n      ...\n    # Subtest: enforces MAX_ITERATIONS = 3 and yields UNVERIFIED_AMBIGUOUS without evidence\n    ok 4 - enforces MAX_ITERATIONS = 3 and yields UNVERIFIED_AMBIGUOUS without evidence\n      ---\n      duration_ms: 0.144916\n      type: 'test'\n      ...\n    # Subtest: never exceeds MAX_ITERATIONS even if constructed with a larger value\n    ok 5 - never exceeds MAX_ITERATIONS even if constructed with a larger value\n      ---\n      duration_ms: 0.061041\n      type: 'test'\n      ...\n    # Subtest: emits VERIFIED for supporting evidence and REFUTED for contradictory evidence\n    ok 6 - emits VERIFIED for supporting evidence and REFUTED for contradictory evidence\n      ---\n      duration_ms: 0.080417\n      type: 'test'\n      ...\n    # Subtest: does not use Math.random in the ClaimVerifier source\n    ok 7 - does not use Math.random in the ClaimVerifier source\n      ---\n      duration_ms: 0.1875\n      type: 'test'\n      ...\n    # Subtest: produces deterministic adapter output without configured transports\n    ok 8 - produces deterministic adapter output without configured transports\n      ---\n      duration_ms: 0.201375\n      type: 'test'\n      ...\n    # Subtest: writes evidence/deep-search-e2e.json with source, signal, verification and opportunity\n    ok 9 - writes evidence/deep-search-e2e.json with source, signal, verification and opportunity\n      ---\n      duration_ms: 1.793375\n      type: 'test'\n      ...\n    # Subtest: exposes processUrl returning an EditorialOpportunity\n    ok 10 - exposes processUrl returning an EditorialOpportunity\n      ---\n      duration_ms: 0.472667\n      type: 'test'\n      ...\n    1..10\nok 4 - Pipeline E2E - Deep Search Vertical Slice (offline)\n  ---\n  duration_ms: 9.114167\n  type: 'suite'\n  ...\n# Subtest: SignalExtractor Service - AthenaSignal\n    # Subtest: implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n    ok 1 - implements ISignalExtractor interface and extracts Signals from NormalizedContent (RabbitMQ vs Kafka)\n      ---\n      duration_ms: 2.678792\n      type: 'test'\n      ...\n    # Subtest: supports custom extractor engine and guarantees UNVERIFIED status on all claims\n    ok 2 - supports custom extractor engine and guarantees UNVERIFIED status on all claims\n      ---\n      duration_ms: 0.143583\n      type: 'test'\n      ...\n    1..2\nok 5 - SignalExtractor Service - AthenaSignal\n  ---\n  duration_ms: 3.284917\n  type: 'suite'\n  ...\n1..5\n# tests 28\n# suites 5\n# pass 28\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 94.841958\n",
+        "test_counts": null,
+        "test_counts_source": "unavailable",
+        "timed_out": false
+      },
+      "policy_basis": null,
+      "reason": null,
+      "required": true,
+      "status": "PASS"
+    }
+  },
+  "policy": null,
+  "review": {
+    "artifact": null,
+    "enabled": false,
+    "required": false,
+    "status": "NOT_REQUESTED"
+  },
+  "run_id": "gov-athenasignal-m1-deep-search-vertical-slice-verify-b444e480",
+  "spec": {
+    "path": "/Volumes/Medios/Repos/AthenaSignal/governance/specs/athenasignal-m1-verify.spec.yaml",
+    "sha256": "9513f50f8057a3025dd4b227d3b6c794abad51f64471e2f0b49775a6dc33d713"
+  },
+  "spec_id": "athenasignal-m1-deep-search-vertical-slice-verify",
+  "spec_version": 1,
+  "status": "PASS"
+}

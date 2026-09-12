@@ -1,0 +1,84 @@
+# AthenaSignal M1 — Deep Search Vertical Slice (bootstrap / authorization run).
+#
+# This is the launcher spec. Its deterministic gates are VERDE over the current
+# repository so the root run yields a HUMAN GATE (via required semantic review,
+# which cannot be satisfied offline). The explicit human RETURN authorizes the
+# OpenCode worker to implement ciclo/ORDEN-005.md. Fresh verification of the
+# built feature is done by the strict spec athenasignal-m1-verify.spec.yaml.
+id: athenasignal-m1-deep-search-vertical-slice
+version: 1
+
+# This spec lives at AthenaSignal/governance/specs/, so ../.. is the repo root.
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+# Mandatory semantic review; offline reviewer is unavailable -> deterministic
+# PASS becomes ESCALATE -> HUMAN GATE. This is the only authority that can
+# authorize the worker (the launcher never auto-starts it).
+review:
+  enabled: true
+  required: true
+
+scope:
+  baseline: governance/specs/athenasignal-m1.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+
+acceptance:
+  tests:
+    command: npm test
+    required: true
+    junit: false
+    timeout: 300.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m1.regressions.json
+
+  artifacts:
+    required:
+      - path: src/domain/entities.ts
+        kind: file
+      - path: src/services/PipelineOrchestrator.ts
+        kind: file
+      - path: package.json
+        kind: file
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node -e "process.stdout.write('athenasignal-m1-probe')"
+  reproducible_timeout: 60.0
+
+escalate_when:
+  - ambiguous_specification

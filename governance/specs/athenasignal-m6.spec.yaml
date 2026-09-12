@@ -1,0 +1,83 @@
+# AthenaSignal M6 — Closed-Loop Editorial Intelligence (bootstrap run).
+# Deterministic gates are VERDE over the post-M5 repository, so the root run
+# yields a HUMAN GATE via required semantic review (offline reviewer
+# unavailable). The human RETURN authorizes the OpenCode worker to implement
+# ciclo/ORDEN-010.md. Functional verification via athenasignal-m6-verify.spec.yaml.
+id: athenasignal-m6-closed-loop-editorial-intelligence
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: true
+  required: true
+
+scope:
+  baseline: governance/specs/athenasignal-m6.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+    - .m6tmp
+    - .m5tmp
+    - .m4tmp
+    - .m3tmp
+
+acceptance:
+  tests:
+    command: npm test
+    required: true
+    junit: false
+    timeout: 600.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m6.regressions.json
+
+  artifacts:
+    required:
+      - path: src/platform/engine.ts
+        kind: file
+      - path: tests/platform-e2e.test.ts
+        kind: file
+      - path: package.json
+        kind: file
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node -e "process.stdout.write('athenasignal-m6-probe')"
+  reproducible_timeout: 60.0
+
+escalate_when:
+  - ambiguous_specification

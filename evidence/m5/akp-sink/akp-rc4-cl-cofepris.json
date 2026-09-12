@@ -1,0 +1,79 @@
+{
+  "handoffId": "akp-rc4-cl-cofepris",
+  "candidateId": "rc4-cl-cofepris",
+  "clusterId": "cl-cofepris",
+  "version": 1,
+  "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+  "deliveredAt": "2026-09-12T01:24:00.000Z",
+  "runId": "m5-proc-b-run-2",
+  "status": "DELIVERED_TO_SINK",
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "official_documentation",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [],
+    "knownUncertainties": [
+      "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+      "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+      "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+      "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+        "refs": [
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-cofepris-alert-1",
+      "originalClaims": [
+        "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+    }
+  },
+  "consumption": {
+    "consumer": null,
+    "consumedAt": null,
+    "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+  }
+}

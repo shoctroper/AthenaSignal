@@ -1,0 +1,1593 @@
+{
+  "kind": "athenasignal.m3.candidates.v1",
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "candidates": [
+    {
+      "candidateId": "rc-sig-src-if-cochrane-1",
+      "title": "efectividad a largo plazo del ayuno intermitente",
+      "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+      "originSignalId": "sig-src-if-cochrane-1",
+      "originalClaims": [
+        "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada."
+      ],
+      "context": [
+        "La afirmación se refiere a la eficacia del ayuno intermitente en comparación con otros métodos de pérdida de peso en estudios clínicos o revisiones de evidencia"
+      ],
+      "assessment": "SUPPORTED",
+      "assertionAnalysis": {
+        "originalClaim": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+        "context": [
+          "La afirmación se refiere a la eficacia del ayuno intermitente en comparación con otros métodos de pérdida de peso en estudios clínicos o revisiones de evidencia"
+        ],
+        "entities": [
+          "ayuno intermitente",
+          "pérdida de peso",
+          "consejos alimentarios habituales",
+          "no hacer nada"
+        ],
+        "implicitQuestions": [
+          "¿Cuál fue el método de medición de la pérdida de peso en los estudios?",
+          "¿Cuál era el período de tiempo de los estudios?",
+          "¿Qué tipo de ayuno intermitente se utilizó?"
+        ],
+        "hypotheses": [
+          "El ayuno intermitente podría ser igual de efectivo que otros métodos en la pérdida de peso",
+          "Los métodos de pérdida de peso alternativos podrían ser más efectivos que el ayuno intermitente"
+        ],
+        "uncertainties": [
+          "¿Existen diferencias significativas entre los grupos de estudio?",
+          "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?"
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 0.8,
+        "questionClarity": 0.9,
+        "editorialRelevance": 0.8,
+        "resolvableUncertainty": 0.7,
+        "reason": "La pregunta sobre la eficacia clínica del ayuno intermitente en la pérdida de peso es clara y directa, con un marco comparativo bien definido (consejos alimentarios habituales o no intervención). Existe una cantidad sustancial de estudios clínicos y metaanálisis disponibles, lo que indica una alta disponibilidad de evidencia. La incertidumbre sobre el efecto clínico es resoluble mediante análisis estadísticos adicionales, aunque la heterogeneidad entre estudios puede introducir cierta complejidad. El tema es de alta relevancia editorial, dado el interés público en estrategias de pérdida de peso. El coste razonable de investigación (revisión sistemática y metaanálisis) es moderado, lo que hace que la investigación sea factible.}"
+      },
+      "knownUncertainties": [
+        "¿Existen diferencias significativas entre los grupos de estudio?",
+        "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?",
+        "Evaluación no concluyente."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+          "refs": [
+            "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+          ]
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+          "refs": [
+            "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html"
+          ]
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+          "refs": [
+            "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+          ]
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La afirmación central está sustentada por evidencia de autoridad y abre una comparación editorialmente relevante.",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-if-cochrane",
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "platform": "blog",
+          "language": "es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "7b2159bc4a373eddd0de2b63e46484dcc8405c9505134989d1a016995d897f03"
+        },
+        {
+          "sourceId": "ev-mx-cochrane-org-news-la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-ad",
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "platform": "web",
+          "language": "en",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane (fuente de origen)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "e3bac539619c3156d796cb3063cf463e5da00e15d40240480ab9f0c8fa735def"
+        },
+        {
+          "sourceId": "ev-es-cochrane-org-en-news-la-evidencia-cientifica-sobre-el-ayuno-intermitente-para",
+          "url": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "platform": "web",
+          "language": "en",
+          "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "4f51c9fe864e0279c322e3ef32c96dc354070fda7f2d86e270f61b036a2e68f8"
+        },
+        {
+          "sourceId": "ev-elpais-com-salud-y-bienestar-2026-02-16-el-ayuno-intermitente-no-es-mejor-que-un",
+          "url": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+          "platform": "web",
+          "language": "en",
+          "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "6933cdbc1bd0d2f906504874d7b33e32380abce979b94d98ed94ca117d90d4e5"
+        },
+        {
+          "sourceId": "ev-cuidateplus-marca-com-alimentacion-dietas-2026-02-16-ayuno-intermitente-sirve-ad",
+          "url": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+          "platform": "web",
+          "language": "en",
+          "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "94460ac93e633f19f0997be0e6fbabeda59afb5939183de1b8c111ffe6f4116a"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 4
+        },
+        "proposedSources": [
+          {
+            "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+            "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+            "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          },
+          {
+            "statement": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          },
+          {
+            "statement": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+            "provenanceUrls": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Existen diferencias significativas entre los grupos de estudio?",
+          "¿Los resultados podrían variar dependiendo del tipo de ayuno intermitente utilizado?",
+          "Evaluación no concluyente."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La evidencia científica no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimentarios tradicionales o no hacer nada.",
+            "refs": [
+              "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+              "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "El ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso.",
+            "refs": [
+              "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "El ayuno intermitente no resulta en una pérdida de peso clínicamente significativa superior a la de una dieta hipocalórica convencional o a no hacer nada.",
+            "refs": [
+              "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+            ]
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-if-cochrane-1",
+          "originalClaims": [
+            "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada."
+          ],
+          "assessment": "SUPPORTED",
+          "reframingNote": null
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-if-cochrane-1",
+      "signalId": "sig-src-if-cochrane-1",
+      "hypothesis": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+      "score": 0.8,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-if-cochrane-1",
+        "score": 0.55,
+        "reasons": [
+          "La afirmación no presenta una novedad significativa, ya que la eficacia del ayuno intermitente ha sido objeto de numerosos estudios; sin embargo, contradice la percepción popular de que es una estrategia efectiva para perder peso, lo que genera cierta tensión o contraste. En cuanto a utilidad práctica, la información puede ser relevante para quienes buscan alternativas de pérdida de peso, aunque su impacto directo es limitado. El potencial de explicación es moderado, pues abre la posibilidad de explorar los mecanismos fisiológicos que podrían explicar la falta de efecto clínicamente significativo."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-if-cochrane-1"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane (fuente de origen)",
+          "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane México Skip to main content Top menu Biblioteca Cochrane Cochrane.org Admin Cochrane México Evidencia fiable. Decisiones informadas. Mejor salud. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de estas tenían sobrepeso, de las cuales 890 millones tenían obesidad. En los últimos años, la popularidad del ayuno intermitente ha ido creciendo, impulsado por las redes sociales, influencers y mensajes sobre su rápida pérdida de peso y sus beneficios metabólicos. Sin diferencia significativa en la pérdida de peso El equipo investigador analizó la evidencia de 22 ensayos clínicos aleatorizados con 1995 personas adultas de Norteaméric",
+          "policy": "EVIDENCE",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "fuente de origen"
+        },
+        {
+          "sourceUrl": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica",
+          "excerpt": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica Skip to main content English Español Top menu Inicio Biblioteca Cochrane Cochrane.org Admin Cochrane Iberoamérica Trusted evidence. Informed decisions. Better health. La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama Es poco probable que el ayuno intermitente dé lugar a una mayor pérdida de peso en personas adultas con sobrepeso u obesidad comparado con los consejos alimentarios tradicionales o con no hacer nada, según una nueva revisión Cochrane liderada por autores de la Red Cochrane Iberoamerica. Ocho de los 10 autores de esta revisión pertenecen a la Red Cochrane Iberoamericana: Luis I. Garegnani , Gisela Oltra , Diego Ivaldi , Mariana Andrea Burgos , Paola J. Andrenacci , Sabrina Rico , Camila Micaela Escobar Liquitay y Eva Madrid . La obesidad es un problema importante de salud pública que se ha convertido en una de las principales causas de muerte en los países de ingresos altos. La obesidad en personas adultas a nivel mundial es más de tres veces mayor que en 1975, según la OMS. En 2022, 2500 millones de es",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "ayuno intermitente evidencia científica adelgazar"
+        },
+        {
+          "sourceUrl": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+          "title": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS",
+          "excerpt": "Pero la mayor revisión sistemática ... de horas, llega a una conclusión que modera el entusiasmo: el ayuno intermitente funciona para adelgazar, sí, pero no es mejor que una dieta hipocalórica convencional....",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "ayuno intermitente evidencia científica adelgazar"
+        },
+        {
+          "sourceUrl": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+          "title": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus",
+          "excerpt": "La dieta hipocalórica es saludable y se adelgaza, pero se pierde más peso con el ayuno intermitente, el alterno o la dieta cetogénica cuando la persona que sigue la dieta tiene obesidad.",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "ayuno intermitente evidencia científica adelgazar"
+        }
+      ],
+      "priority": "HIGH",
+      "priorityReasons": [
+        "Evidencia inicial suficiente (4 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Base de evidencia fuerte (4 fuentes) y researchability HIGH: cumple el umbral HIGH.",
+        "Score compuesto 0.82 = 0.30·researchability(0.8) + 0.25·evidencia(1) + 0.20·editorial(0.55) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Systematic review, high evidence, supported claim"
+      ],
+      "scores": {
+        "researchability": 0.8,
+        "evidence": 1,
+        "novelty": 0.8,
+        "editorial": 0.55,
+        "risk": 0
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-kafka-vs-rabbitmq-2",
+      "title": "capacidades de Kafka",
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "originSignalId": "sig-src-kafka-vs-rabbitmq-2",
+      "originalClaims": [
+        "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+      ],
+      "context": [
+        "RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka)"
+      ],
+      "assessment": "REFRAMED",
+      "assertionAnalysis": {
+        "originalClaim": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "context": [
+          "RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka)"
+        ],
+        "entities": [
+          "Kafka 4.2 (2026)",
+          "share groups",
+          "consumidores individuales",
+          "bloqueo temporal",
+          "mensajes",
+          "reconocimiento uno a la vez"
+        ],
+        "implicitQuestions": [
+          "¿Qué es RabbitMQ y cómo se compara con Apache Kafka?",
+          "¿Cuándo se espera la versión 4.2 de Kafka?",
+          "¿Qué son los share groups en Kafka?",
+          "¿Cómo funcionan los consumidores individuales en Kafka con share groups?",
+          "¿Qué significa reconocer mensajes uno a la vez?"
+        ],
+        "hypotheses": [
+          "La afirmación original NO se asume como hipótesis válida: la evidencia inicial no la sostiene.",
+          "Hipótesis investigable: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        ],
+        "uncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?"
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 0.7,
+        "questionClarity": 0.9,
+        "editorialRelevance": 0.6,
+        "resolvableUncertainty": 0.8,
+        "reason": "La pregunta es específica y clara sobre una característica de Kafka 4.2, lo que facilita la formulación de una investigación. Se dispone de cinco fuentes iniciales, lo que indica disponibilidad moderada de evidencia, aunque la calidad y fiabilidad de las mismas deben verificarse. La incertidumbre es resoluble mediante la revisión de documentación oficial, notas de lanzamiento y foros de la comunidad. La relevancia editorial es moderada, ya que los avances en Kafka son de interés para la audiencia de AthenaSignal, pero no son de máxima prioridad. El coste razonable de la investigación es bajo, pues se requiere principalmente acceso a documentación y foros.}"
+      },
+      "knownUncertainties": [
+        "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+        "¿La versión 4.2 de Kafka se lanzará en 2026?",
+        "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+        "Fecha exacta de lanzamiento de Kafka 4.2."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+          "refs": [
+            "https://www.conduktor.io/glossary/kafka-share-groups"
+          ]
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+          "refs": [
+            "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+          ]
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+          "refs": [
+            "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+          ]
+        },
+        {
+          "kind": "EDITORIAL_REFRAMING",
+          "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+          "refs": []
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?\".",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-kafka-vs-rabbitmq",
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "platform": "docs",
+          "language": "en",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "d04505fe14fccb5afba165c2806f3003178e23c03c5061126995de59ce773a56"
+        },
+        {
+          "sourceId": "ev-www-rabbitmq-com-docs-compare-kafka",
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "platform": "web",
+          "language": "en",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ (fuente de origen)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "a555b04767c68c18129fb0622cd70f6b65825d0c80e1c7fdbf4ab638ebb12d01"
+        },
+        {
+          "sourceId": "ev-kafka-apache-org-blog-2026-02-17-apache-kafka-4-2-0-release-announcement",
+          "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "platform": "web",
+          "language": "en",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "04f79a5f392a48410473db094af21e072940132f48e921671fc5e110c6b772f6"
+        },
+        {
+          "sourceId": "ev-www-conduktor-io-glossary-kafka-share-groups",
+          "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "platform": "web",
+          "language": "en",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "3fd530373203082a5edb8327c56e412c0de6ee663acfb54e6a81466e58c4c480"
+        },
+        {
+          "sourceId": "ev-www-confluent-io-blog-kafka-queue-semantics-share-consumer-ga",
+          "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "platform": "web",
+          "language": "en",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "f18a3fd8b37c60594ca2e2ad7b53421c511b0f6e3bf54748e18dd60cda3f73b9"
+        },
+        {
+          "sourceId": "ev-kafka-apache-org-40-javadoc-org-apache-kafka-clients-consumer-kafkashareconsumer",
+          "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "platform": "web",
+          "language": "en",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "1497c1b236c2af83c2330a66b6b8116370c2fb126ccdfdaa63e637a219e7f1d6"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-kafka-vs-rabbitmq-2",
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "hypothesis": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "score": 0.75,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://www.rabbitmq.com/docs/compare/kafka",
+        "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+        "https://www.conduktor.io/glossary/kafka-share-groups",
+        "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+        "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-kafka-vs-rabbitmq-2",
+        "score": 0.7,
+        "reasons": [
+          "La idea de 'share groups' en Kafka sugiere una innovación que podría cambiar la forma en que los consumidores manejan la concurrencia, lo que aporta novedad y un posible contraste con los modelos tradicionales de consumo de mensajes.",
+          "El concepto de bloqueo temporal y reconocimiento individual de mensajes introduce una dinámica interesante que puede generar tensión entre la eficiencia y la complejidad de la implementación.",
+          "Para una audiencia general, la utilidad práctica dependerá de la adopción real y de cómo simplifique o mejore los flujos de datos; sin embargo, la idea de un control más granular puede resultar atractiva.",
+          "El potencial de explicación es alto, ya que se puede explorar cómo este mecanismo afecta la latencia, la tolerancia a fallos y la escalabilidad, ofreciendo material rico para artículos y discusiones técnicas."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-kafka-vs-rabbitmq-2"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.rabbitmq.com/docs/compare/kafka",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ (fuente de origen)",
+          "excerpt": "RabbitMQ vs. Apache Kafka | RabbitMQ Skip to main content Getting Started Docs Blog Support Security Commercial Features 4.3 Release series Next 4.3 4.2 4.1 4.0 3.13 GitHub Search Introduction Release Information Getting Started Install and Upgrade How to Use RabbitMQ How to Manage RabbitMQ How to Monitor RabbitMQ Compare with Other Brokers Apache Kafka Compare with Other Brokers Apache Kafka Version: 4.3 On this page RabbitMQ vs. Apache Kafka® Most existing comparisons of these two systems were written years ago by someone who sells one of them. This one is written by the team that builds RabbitMQ, so bear that in mind — but we have tried hard to describe Kafka the way its own documentation describes it, and we are explicit about the things Kafka does that RabbitMQ does not. If anything here reads as unfair to you, we would genuinely like to know — tell us . The short version: the two systems started from opposite ends of the problem and have been growing towards each other for years. RabbitMQ built its reputation as the default choice for messaging and task queueing; Kafka built its reputation as the default choice for event streaming. RabbitMQ then gained a durable, replicated log in 2021, and Kafka gained queue semantics in 2026. Their high-level capabilities now overlap substantially. If you are looking for a high-level summary and want to skip the technical details, you can jump directly to the use cases . The line that used to divide them ​ For a long time the advice was easy to give: RabbitMQ for messaging and queueing, Kafka for streaming. It was good advice. It is",
+          "policy": "PRIMARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "fuente de origen"
+        },
+        {
+          "sourceUrl": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "excerpt": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka Get Started Introduction Quickstart Use Cases Books and Papers Videos Podcasts Docs Key Concepts APIs Configuration Design Implementation Operations Security Clients Kafka Connect Kafka Streams Powered By Community Blog Kafka Summit Project Info Trademark Ecosystem Events Contact Us Apache Apache.org License Donate Sponsors Security Privacy Releases 4.3 4.2 4.1 4.0 3.9 3.8 3.7 3.6 3.5 3.4 3.3 3.2 3.1 3.0 2.8 2.7 2.6 2.5 2.4 2.3 2.2 2.1 2.0 1.1 1.0 0.11.0 0.10.2 0.10.1 0.10.0 0.9.0 0.8.2 0.8.1 0.8.0 0.7 DOWNLOAD KAFKA Blog Release Announcements AK 4.3.1 AK 4.2.1 AK 4.3.0 AK 4.1.2 AK 4.0.2 AK 3.9.2 AK 4.2.0 AK 4.1.1 AK 4.0.1 AK 4.1.0 AK 3.9.1 AK 4.0.0 AK 3.7.2 AK 3.9.0 AK 3.8.1 AK 3.8.0 AK 3.7.1 AK 3.6.2 AK 3.7.0 AK 3.5.2 AK 3.6.1 AK 3.6.0 AK 3.5.1 AK 3.5.0 View page source Edit this page Create child page Create documentation issue Print entire section Deprecation Notices Kafka Broker, Controller, Producer, Consumer and Admin Client Kafka Streams Kafka Connect Summary Tag Cloud Apis 1 Configuration 34 Connect 34 Design 34 Developer-Guide 34 Docs 2106 Getting-Started 34 Implementation 34 Kafka 2106 Ops 34 Security 34 Streams 68 B",
+          "policy": "PRIMARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+        },
+        {
+          "sourceUrl": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "excerpt": "Instead of committing an offset, a share consumer resolves each record individually.",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+        },
+        {
+          "sourceUrl": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "excerpt": "Kafka now supports native queue semantics with share groups and per-message acknowledgment. Learn how elastic consumers scale beyond partitions in Confluent.",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+        },
+        {
+          "sourceUrl": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "excerpt": "The consumer can do nothing, in which case the lock is automatically released when the lock duration has elapsed The cluster limits the number of records acquired for consumers for each topic-partition in a share group. Once the limit is reached, fetching records will temporarily yield no further records until the number of acquired records reduces, as naturally happens when the locks time out.",
+          "policy": "PRIMARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno"
+        }
+      ],
+      "priority": "HIGH",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial suficiente (5 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Base de evidencia fuerte (5 fuentes) y researchability HIGH: cumple el umbral HIGH.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.835 = 0.30·researchability(0.75) + 0.25·evidencia(1) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Technical claim, multiple evidence, supported"
+      ],
+      "scores": {
+        "researchability": 0.75,
+        "evidence": 1,
+        "novelty": 0.8,
+        "editorial": 0.7,
+        "risk": 0
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-airllm-claim-1",
+      "title": "capacidad de ejecución de modelos de IA",
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "originSignalId": "sig-src-airllm-claim-1",
+      "originalClaims": [
+        "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+      ],
+      "context": [
+        "permite ejecutar localmente con 12 GB de RAM"
+      ],
+      "assessment": "REFRAMED",
+      "assertionAnalysis": {
+        "originalClaim": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "context": [
+          "permite ejecutar localmente con 12 GB de RAM"
+        ],
+        "entities": [
+          "AirLLM",
+          "DeepSeek V4"
+        ],
+        "implicitQuestions": [
+          "¿Cuál es el rendimiento de AirLLM con DeepSeek V4 en 12 GB de RAM?",
+          "¿Existen limitaciones en el uso de AirLLM con DeepSeek V4 con 12 GB de RAM?"
+        ],
+        "hypotheses": [
+          "La afirmación original NO se asume como hipótesis válida: la evidencia inicial no la sostiene.",
+          "Hipótesis investigable: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+        ],
+        "uncertainties": [
+          "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+          "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?"
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 0.5,
+        "questionClarity": 0.9,
+        "editorialRelevance": 0.7,
+        "resolvableUncertainty": 0.8,
+        "reason": "La pregunta es específica y comprensible, lo que facilita la formulación de una investigación. Existe al menos una fuente que menciona la afirmación, pero la fiabilidad y la profundidad de la evidencia son inciertas, por lo que la disponibilidad de evidencia se califica como media. El tema es relevante para la comunidad de IA y la optimización de modelos, lo que le confiere una relevancia editorial moderada. La incertidumbre es resoluble mediante pruebas experimentales concretas (ejecutar AirLLM con DeepSeek V4 en un entorno con 12 GB de RAM), por lo que se considera alta investigabilidad.}"
+      },
+      "knownUncertainties": [
+        "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+        "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+        "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EDITORIAL_REFRAMING",
+          "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+          "refs": []
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?\".",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-airllm-claim",
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "platform": "youtube",
+          "language": "es",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "DISCOVERY",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "28652d37abcbdc64cfb77a02db50748af913447f3f844293c3284fa7f8cc74a9"
+        },
+        {
+          "sourceId": "ev-www-youtube-com-legitalgorithmswithpeter",
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "platform": "web",
+          "language": "en",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM (fuente de origen)",
+          "role": "DISCOVERY",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "28652d37abcbdc64cfb77a02db50748af913447f3f844293c3284fa7f8cc74a9"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+            "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "language": "es",
+            "role": "DISCOVERY",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "discovery_only",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+          "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+          "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-airllm-claim-1",
+          "originalClaims": [
+            "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-airllm-claim-1",
+      "signalId": "sig-src-airllm-claim-1",
+      "hypothesis": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "score": 0.725,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://www.youtube.com/@legitalgorithmswithpeter"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-airllm-claim-1",
+        "score": 0.7,
+        "reasons": [
+          "La afirmación presenta una novedad al indicar que un modelo de gran tamaño, DeepSeek V4, puede ejecutarse localmente con una cantidad de memoria relativamente baja (12 GB), lo cual es relevante para usuarios con recursos limitados.",
+          "El contraste entre la escala típica de los modelos de lenguaje y la capacidad de ejecución con 12 GB genera una tensión interesante que puede captar la atención del lector.",
+          "La utilidad práctica es evidente: permite a desarrolladores y entusiastas experimentar con un modelo avanzado sin necesidad de infraestructuras costosas.",
+          "Existe un potencial significativo para explicar los métodos de optimización o compresión que AirLLM emplea, lo que puede enriquecer la comprensión técnica del público general."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-airllm-claim-1"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM (fuente de origen)",
+          "excerpt": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM. Es la forma definitiva de correr modelos gigantes en tu portátil sin GPU cara. Nadie más lo logra con tan poca memoria.",
+          "policy": "DISCOVERY",
+          "role": "DISCOVERY",
+          "supports": null,
+          "query": "fuente de origen"
+        }
+      ],
+      "priority": "MEDIUM",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.64 = 0.30·researchability(0.725) + 0.25·evidencia(0.25) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere MEDIUM: Claim technical, single evidence, investigable"
+      ],
+      "scores": {
+        "researchability": 0.725,
+        "evidence": 0.25,
+        "novelty": 0.8,
+        "editorial": 0.7,
+        "risk": 0
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-cofepris-alert-1",
+      "title": "anuncios publicitarios engañosos",
+      "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "originSignalId": "sig-src-cofepris-alert-1",
+      "originalClaims": [
+        "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+      ],
+      "context": [
+        "Alerta por la proliferación de anuncios de productos 'milagro' — COFEPRIS"
+      ],
+      "assessment": "REFRAMED",
+      "assertionAnalysis": {
+        "originalClaim": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+        "context": [
+          "Alerta por la proliferación de anuncios de productos 'milagro' — COFEPRIS"
+        ],
+        "entities": [
+          "COFEPRIS",
+          "3,432 portales",
+          "productos 'milagro'",
+          "administración federal",
+          "reglas publicitarias"
+        ],
+        "implicitQuestions": [
+          "¿Cuántos productos 'milagro' han sido retirados hasta ahora?",
+          "¿Qué tipo de productos 'milagro' son los que han sido retirados?",
+          "¿En qué periodo se han retirado estos productos 'milagro'?",
+          "¿Qué reglas publicitarias han sido violadas por estos productos 'milagro'?"
+        ],
+        "hypotheses": [
+          "La afirmación original NO se asume como hipótesis válida: la evidencia inicial no la sostiene.",
+          "Hipótesis investigable: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        ],
+        "uncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?"
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 0.4,
+        "questionClarity": 0.7,
+        "editorialRelevance": 0.6,
+        "resolvableUncertainty": 0.8,
+        "reason": "La afirmación es específica y cuantitativa, lo que facilita la formulación de una pregunta investigable. La disponibilidad de evidencia es limitada (solo una fuente), pero se pueden acceder a registros oficiales de COFEPRIS, comunicados de prensa y bases de datos de sanciones para corroborar o refutar el número de portales retirados. La incertidumbre es resoluble mediante la búsqueda de documentos públicos y entrevistas con funcionarios. La relevancia editorial es moderada, ya que la regulación de productos ‘milagro’ afecta la salud pública y la confianza del consumidor. El coste razonable de la investigación es bajo, pues la información se encuentra en fuentes accesibles en línea y en archivos gubernamentales.}"
+      },
+      "knownUncertainties": [
+        "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+        "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+        "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+        "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+          "refs": [
+            "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+          ]
+        },
+        {
+          "kind": "EDITORIAL_REFRAMING",
+          "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+          "refs": []
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?\".",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-cofepris-alert",
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "platform": "gob",
+          "language": "es",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "3e4d53aa69759f1a80b892214269259a96a34909d8d365fcb04a3c493765bb4e"
+        },
+        {
+          "sourceId": "ev-www-gob-mx-cofepris-prensa-alerta-por-la-proliferacion-de-anuncios-de-productos-",
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "platform": "web",
+          "language": "en",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (fuente de origen)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "edd07a1382f310b56ac7060640411cfff9ef80dc662a97f460bc45ba1b25a6c6"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+            "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+          "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+            "refs": [
+              "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-cofepris-alert-1",
+          "originalClaims": [
+            "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-cofepris-alert-1",
+      "signalId": "sig-src-cofepris-alert-1",
+      "hypothesis": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+      "score": 0.625,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-cofepris-alert-1",
+        "score": 0.7,
+        "reasons": [
+          "La noticia presenta un dato cuantitativo relevante (3,432 portales retirados), lo que aporta novedad y contexto a la audiencia.",
+          "El contraste entre la proliferación de productos 'milagro' y la acción regulatoria genera tensión y relevancia política.",
+          "La información es útil para consumidores y profesionales de la salud al alertar sobre la disponibilidad de productos potencialmente engañosos.",
+          "Ofrece una base para explorar explicaciones sobre la regulación publicitaria y la protección al consumidor, lo que puede generar interés en análisis más profundos."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-cofepris-alert-1"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (fuente de origen)",
+          "excerpt": "Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales | Comisión Federal para la Protección contra Riesgos Sanitarios | Gobierno | gob.mx Interruptor de Navegación Trámites Gobierno English Interruptor de Navegación COFEPRIS Prensa Datos Personales Transparencia Inicio Comisión Federal para la Protección contra Riesgos Sanitarios Prensa Publicaciones Recientes Nuevo 2026-09-07 12:00:00 -0600 COFEPRIS fortalece acciones de coordinación para atender emergencias sanitarias en temporada de lluvias y huracanes 2026 Nuevo 2026-08-20 14:29:00 -0600 COFEPRIS publica Visor de Registros Sanitarios de Dispositivos Médicos Nuevo 2026-08-06 21:14:00 -0600 COFEPRIS realiza investigación en la planta empacadora de chiles jalapeños en Nuevo León Nuevo 2026-07-24 17:27:00 -0600 En la investigación por Cyclospora cayetanensis, ni México ni EE.UU. han encontrado el parásito en lechugas de origen mexicano Nuevo 2026-07-24 12:52:00 -0600 COFEPRIS y CONBIOÉTICA realizaron capacitación para agilizar el ingreso, evaluación y autorización de protocolos de investigación clínica Aa+ Aa- Alerta por la proliferación de anuncios de productos “milagro” para supuestamente bajar de peso en redes sociales Comunicado 05 - Con motivo del inicio del nuevo año, se multiplican en Facebook, Twitter, YouTube e Instagram anuncios publicitarios de suplementos “para recuperar la figura” los cuales carecen de evidencia científica y aval sanitario. La COFEPRIS envía oficio a la policía cibernética para que den de baja decenas de páginas que promueven estos pro",
+          "policy": "EVIDENCE",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "fuente de origen"
+        }
+      ],
+      "priority": "MEDIUM",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Valor editorial alto (0.7).",
+        "Score compuesto 0.61 = 0.30·researchability(0.625) + 0.25·evidencia(0.25) + 0.20·editorial(0.7) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere HIGH: Regulatory claim, high evidence, supported",
+        "Sugerencia HIGH del modelo no aplicada: base de evidencia o researchability insuficiente."
+      ],
+      "scores": {
+        "researchability": 0.625,
+        "evidence": 0.25,
+        "novelty": 0.8,
+        "editorial": 0.7,
+        "risk": 0
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-creatine-harvard-1",
+      "title": "efectos de la creatina en la recuperación muscular",
+      "researchQuestion": "¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+      "originSignalId": "sig-src-creatine-harvard-1",
+      "originalClaims": [
+        "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso"
+      ],
+      "context": [
+        "What is creatine? Potential benefits and risks — Harvard Health (https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement)"
+      ],
+      "assessment": "REFRAMED",
+      "assertionAnalysis": {
+        "originalClaim": "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso",
+        "context": [
+          "What is creatine? Potential benefits and risks — Harvard Health (https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement)"
+        ],
+        "entities": [
+          "creatinina suplemento",
+          "recuperación muscular",
+          "ejercicio intenso"
+        ],
+        "implicitQuestions": [
+          "¿Cuáles son los posibles beneficios del suplemento de creatina para la recuperación muscular?",
+          "¿Qué tipo de ejercicio intenso podría beneficiarse de la suplementación de creatina?"
+        ],
+        "hypotheses": [
+          "La afirmación original NO se asume como hipótesis válida: la evidencia inicial no la sostiene.",
+          "Hipótesis investigable: ¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?"
+        ],
+        "uncertainties": [
+          "¿Existe evidencia científica suficiente para afirmar que la suplementación de creatina acelera la recuperación muscular después del ejercicio intenso?",
+          "¿Cuáles son los límites y riesgos asociados con la suplementación de creatina para la recuperación muscular?"
+        ]
+      },
+      "researchability": {
+        "level": "MEDIUM",
+        "evidenceAvailability": 0.6,
+        "questionClarity": 0.7,
+        "editorialRelevance": 0.5,
+        "resolvableUncertainty": 0.8,
+        "reason": "La pregunta es específica pero contiene una posible ambigüedad terminológica (creatinina vs creatina). Existe literatura sobre suplementos de creatina y recuperación muscular, lo que sugiere disponibilidad moderada de evidencia. La incertidumbre es resoluble mediante ensayos controlados aleatorizados. La relevancia editorial es moderada, ya que el tema es de interés para atletas y nutricionistas, pero no es de alta prioridad científica. El coste razonable de la investigación es moderado, considerando la necesidad de un diseño clínico controlado."
+      },
+      "knownUncertainties": [
+        "¿Existe evidencia científica suficiente para afirmar que la suplementación de creatina acelera la recuperación muscular después del ejercicio intenso?",
+        "¿Cuáles son los límites y riesgos asociados con la suplementación de creatina para la recuperación muscular?",
+        "Posibles estudios que no se citan aquí podrían abordar la recuperación muscular, pero sin evidencia directa no se puede afirmar el claim."
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "El suplemento de creatinina puede mejorar la fuerza y la masa muscular en personas que realizan ejercicio intenso, pero no se menciona específicamente la recuperación muscular.",
+          "refs": [
+            "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+          ]
+        },
+        {
+          "kind": "EDITORIAL_REFRAMING",
+          "text": "La afirmación «creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Segunda fuente independiente sobre creatina: permite cruzar evidencia (MULTI_SOURCE). Se reformula la afirmación original en una pregunta investigable que no asume el resultado, y se propone un hecho conservador basado en evidencia existente sobre fuerza y masa muscular. Pregunta investigable reformulada: ¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+          "refs": []
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La afirmación original no se acepta como hecho; la idea subyacente es investigable: \"¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?\".",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-creatine-harvard",
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+          "platform": "blog",
+          "language": "en",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "325bbb36a3380cb4af435b59e1b6048b4c6e67e5c4f6c54da2812d1b210e99ac"
+        },
+        {
+          "sourceId": "ev-www-health-harvard-edu-exercise-and-fitness-what-is-creatine-potential-benefits-",
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+          "platform": "web",
+          "language": "en",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health (fuente de origen)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "811d3518ed0500a8d42e1581ba6f34f4c2917defa41a5627c80620b8958bb46e"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+            "title": "What is creatine? Potential benefits and risks — Harvard Health",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La suplementación con creatinina mejora la fuerza y la masa muscular en personas que realizan ejercicio intenso.",
+            "provenanceUrls": [
+              "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Existe evidencia científica suficiente para afirmar que la suplementación de creatina acelera la recuperación muscular después del ejercicio intenso?",
+          "¿Cuáles son los límites y riesgos asociados con la suplementación de creatina para la recuperación muscular?",
+          "Posibles estudios que no se citan aquí podrían abordar la recuperación muscular, pero sin evidencia directa no se puede afirmar el claim."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El suplemento de creatinina puede mejorar la fuerza y la masa muscular en personas que realizan ejercicio intenso, pero no se menciona específicamente la recuperación muscular.",
+            "refs": [
+              "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Segunda fuente independiente sobre creatina: permite cruzar evidencia (MULTI_SOURCE). Se reformula la afirmación original en una pregunta investigable que no asume el resultado, y se propone un hecho conservador basado en evidencia existente sobre fuerza y masa muscular. Pregunta investigable reformulada: ¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-harvard-1",
+          "originalClaims": [
+            "creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «creatinina suplemento puede acelerar la recuperación muscular después del ejercicio intenso» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Segunda fuente independiente sobre creatina: permite cruzar evidencia (MULTI_SOURCE). Se reformula la afirmación original en una pregunta investigable que no asume el resultado, y se propone un hecho conservador basado en evidencia existente sobre fuerza y masa muscular. Pregunta investigable reformulada: ¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?"
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-creatine-harvard-1",
+      "signalId": "sig-src-creatine-harvard-1",
+      "hypothesis": "¿La suplementación con creatinina acelera la recuperación muscular después de ejercicio intenso?",
+      "score": 0.65,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-creatine-harvard-1",
+        "score": 0.3,
+        "reasons": [
+          "La idea de que la creatinina, un subproducto del metabolismo muscular, pueda funcionar como suplemento para acelerar la recuperación es poco novedosa y carece de respaldo científico, lo que reduce su valor editorial. La tensión o contraste proviene de la contradicción con el conocimiento establecido sobre la creatinina, pero la falta de evidencia disminuye su impacto. La utilidad práctica es limitada, ya que la afirmación no ofrece una recomendación viable ni una guía clara para los lectores. Sin embargo, el tema tiene cierto potencial explicativo, pues podría generar debate sobre la diferencia entre creatina y creatinina y sobre la importancia de la verificación de fuentes en la información de salud."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-creatine-harvard-1"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health (fuente de origen)",
+          "excerpt": "What is creatine? Potential benefits and risks of this popular supplement - Harvard Health Skip to main content = 400\" > Harvard Health Publishing Harvard Health Publishing HarvardHealthOnline+ Search Customer Service Content Licensing About Us Log In { $refs.menuCloseButton.focus(); $refs.slideOverNav.classList.remove('opacity-0'); $refs.slideOverNav.classList.add('opacity-100') });\" x-ref=\"mobileMenuToggle\" > Open mobile menu Subscriptions Special Health Reports Online Courses Pay My Bill Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup { $refs.mobileMenuToggle.focus() })\" x-ref=\"menuCloseButton\" > Close menu HarvardHealthOnline+ Main Content Common Conditions Staying Healthy Resources Ask Our Experts Free HealthBeat Signup Helpful Links Customer Service About Us Content Licensing Subscriptions Special Health Reports Online Courses Pay My Bill { document.querySelector('#search-dropdown-input').focus(); });\" x-on:close-search-dropdown.window=\"$nextTick(() => { document.querySelector('#search-open-button').focus(); });\" x-on:keydown.escape=\"searchOpen = false\" x-on:click.away=\"searchOpen = false\" x-transition:enter=\"transform duration-200\" x-transition:enter-start=\"-translate-y-full\" x-transition:enter-end=\"translate-y-0\" x-transition:leave=\"transform duration-250\" x-transition:leave-start=\"translate-y-0\" x-transition:leave-end=\"-translate-y-full\" x-cloak> Search Search Close Recent Articles Fatty liver disease: Should you be tested? Weight-loss drug may lower risk of heart attacks and infections Testosterone therapy without evidence of def",
+          "policy": "SECONDARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "fuente de origen"
+        }
+      ],
+      "priority": "MEDIUM",
+      "priorityReasons": [
+        "Reformulación válida: claim incorrecto con idea subyacente investigable.",
+        "Evidencia inicial limitada (1 fuentes).",
+        "Score compuesto 0.5375 = 0.30·researchability(0.65) + 0.25·evidencia(0.25) + 0.20·editorial(0.3) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere MEDIUM: Well-known claim, single evidence, investigable"
+      ],
+      "scores": {
+        "researchability": 0.65,
+        "evidence": 0.25,
+        "novelty": 0.8,
+        "editorial": 0.3,
+        "risk": 0
+      }
+    },
+    {
+      "candidateId": "rc-sig-src-python-freethreading-1",
+      "title": "implementación de la GIL en Python 3.13",
+      "researchQuestion": "¿Cuáles son las implicaciones de deshabilitar la GIL en Python 3.13?",
+      "originSignalId": "sig-src-python-freethreading-1",
+      "originalClaims": [
+        "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil"
+      ],
+      "context": [
+        "Python experimental support for free threading — Python 3.13 docs"
+      ],
+      "assessment": "AMBIGUOUS",
+      "assertionAnalysis": {
+        "originalClaim": "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil",
+        "context": [
+          "Python experimental support for free threading — Python 3.13 docs"
+        ],
+        "entities": [
+          "Python 3.13",
+          "GIL",
+          "--disable-gil"
+        ],
+        "implicitQuestions": [
+          "¿Cuál es el propósito del GIL en Python 3.13?",
+          "¿Qué significa la opción de compilación --disable-gil en Python 3.13?"
+        ],
+        "hypotheses": [
+          "La deshabilitación del GIL en Python 3.13 es experimental",
+          "La deshabilitación del GIL en Python 3.13 puede afectar el rendimiento"
+        ],
+        "uncertainties": [
+          "¿La deshabilitación del GIL está disponible en todas las implementaciones de Python 3.13?",
+          "¿Cómo se implementa la deshabilitación del GIL en Python 3.13?"
+        ]
+      },
+      "researchability": {
+        "level": "HIGH",
+        "evidenceAvailability": 0.4,
+        "questionClarity": 0.9,
+        "editorialRelevance": 0.5,
+        "resolvableUncertainty": 0.8,
+        "reason": "La pregunta es específica y clara sobre la posibilidad de deshabilitar el GIL en Python 3.13 mediante una opción de compilación. Existe al menos una fuente que menciona la opción, pero su fiabilidad y cobertura no están garantizadas, por lo que la disponibilidad de evidencia es moderada. El tema es relevante para desarrolladores que buscan rendimiento multihilo, pero su interés editorial es moderado. La incertidumbre es resoluble mediante pruebas de compilación y revisión de la documentación oficial, lo que justifica un nivel de investigabilidad alto."
+      },
+      "knownUncertainties": [
+        "¿La deshabilitación del GIL está disponible en todas las implementaciones de Python 3.13?",
+        "¿Cómo se implementa la deshabilitación del GIL en Python 3.13?",
+        "Falta evidencia directa de la presencia de la opción --disable-gil en Python 3.13"
+      ],
+      "initialFindings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La documentación de Python 3.13 menciona el soporte experimental para hilos libres, lo que sugiere que la opción --disable-gil podría estar disponible.",
+          "refs": [
+            "https://docs.python.org/3.13/howto/free-threading-python.html"
+          ]
+        },
+        {
+          "kind": "MODEL_INTERPRETATION",
+          "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+          "refs": []
+        }
+      ],
+      "reasonForSelection": "La evidencia inicial es ambigua; la pregunta es investigable pero requiere verificación adicional.",
+      "sourceProvenance": [
+        {
+          "sourceId": "corpus-src-python-freethreading",
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "platform": "docs",
+          "language": "en",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "4bb1026d357f63ea08f9bf479c082bb3722fea05a197f6c017ada4361d62b1df"
+        },
+        {
+          "sourceId": "ev-docs-python-org-3-13-howto-free-threading-python-html",
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "platform": "web",
+          "language": "en",
+          "title": "Python experimental support for free threading — Python 3.13 docs (fuente de origen)",
+          "role": "EVIDENCE",
+          "capturedAt": "2026-09-11T00:00:00.000Z",
+          "contentHash": "c1a8309f0f56904c6e19b54ddec68fed88b4cb636d66c4b7a8e63a02ef866e44"
+        }
+      ],
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuáles son las implicaciones de deshabilitar la GIL en Python 3.13?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-11T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿La deshabilitación del GIL está disponible en todas las implementaciones de Python 3.13?",
+          "¿Cómo se implementa la deshabilitación del GIL en Python 3.13?",
+          "Falta evidencia directa de la presencia de la opción --disable-gil en Python 3.13"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación de Python 3.13 menciona el soporte experimental para hilos libres, lo que sugiere que la opción --disable-gil podría estar disponible.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-1",
+          "originalClaims": [
+            "La GIL se puede deshabilitar en Python 3.13 mediante la opción de compilación --disable-gil"
+          ],
+          "assessment": "AMBIGUOUS",
+          "reframingNote": null
+        }
+      },
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "id": "rc-sig-src-python-freethreading-1",
+      "signalId": "sig-src-python-freethreading-1",
+      "hypothesis": "¿Cuáles son las implicaciones de deshabilitar la GIL en Python 3.13?",
+      "score": 0.65,
+      "claims": [],
+      "primarySourcesToCheck": [
+        "https://docs.python.org/3.13/howto/free-threading-python.html"
+      ],
+      "editorialRelevance": {
+        "signalId": "sig-src-python-freethreading-1",
+        "score": 0.8,
+        "reasons": [
+          "La propuesta de deshabilitar el GIL en Python 3.13 representa una novedad significativa que atrae la atención de la comunidad de desarrolladores y científicos de datos.",
+          "El tema genera tensión y contraste al desafiar la arquitectura tradicional de Python y plantear debates sobre rendimiento y compatibilidad.",
+          "Ofrece utilidad práctica al potencialmente mejorar la concurrencia y el rendimiento en aplicaciones multihilo, lo que es relevante para la audiencia tecnológica.",
+          "Permite una explicación profunda sobre el funcionamiento interno de Python, la gestión de memoria y la ejecución de código concurrente, lo que aumenta su valor informativo."
+        ]
+      },
+      "originSignalIds": [
+        "sig-src-python-freethreading-1"
+      ],
+      "evidence": [
+        {
+          "sourceUrl": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "title": "Python experimental support for free threading — Python 3.13 docs (fuente de origen)",
+          "excerpt": "Python experimental support for free threading &#8212; Python 3.13.15 documentation Theme Auto Light Dark Table of Contents Python experimental support for free threading Installation Identifying free-threaded Python The global interpreter lock in free-threaded Python Thread safety Known limitations Immortalization Frame objects Iterators Single-threaded performance Previous topic The Python 2.3 Method Resolution Order Next topic C API Extension Support for Free Threading This page Report a bug Show source Navigation index modules | next | previous | Python &#187; 3.13.15 Documentation &#187; Python HOWTOs &#187; Python experimental support for free threading | Theme Auto Light Dark | Python experimental support for free threading ¶ Starting with the 3.13 release, CPython has experimental support for a build of Python called free threading where the global interpreter lock (GIL) is disabled. Free-threaded execution allows for full utilization of the available processing power by running threads in parallel on available CPU cores. While not all software will benefit from this automatically, programs designed with threading in mind will run faster on multi-core hardware. The free-threaded mode is experimental and work is ongoing to improve it: expect some bugs and a substantial single-threaded performance hit. This document describes the implications of free threading for Python code. See C API Extension Support for Free Threading for information on how to write C extensions that support the free-threaded build. See also PEP 703 – Making the Global Interpreter Lock Optional i",
+          "policy": "PRIMARY",
+          "role": "EVIDENCE",
+          "supports": null,
+          "query": "fuente de origen"
+        }
+      ],
+      "priority": "MEDIUM",
+      "priorityReasons": [
+        "Evidencia inicial limitada (1 fuentes).",
+        "Researchability HIGH con incertidumbre resoluble.",
+        "Valor editorial alto (0.8).",
+        "Score compuesto 0.6375 = 0.30·researchability(0.65) + 0.25·evidencia(0.25) + 0.20·editorial(0.8) + 0.15·novedad(0.8) + 0.10·(1-riesgo(0)).",
+        "Capa cognitiva sugiere MEDIUM: Technical claim, single evidence, investigable"
+      ],
+      "scores": {
+        "researchability": 0.65,
+        "evidence": 0.25,
+        "novelty": 0.8,
+        "editorial": 0.8,
+        "risk": 0
+      }
+    }
+  ],
+  "discarded": [
+    {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "corpusId": "src-miracle-weightloss",
+      "assertion": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+      "reason": "Reformulación válida: claim incorrecto con idea subyacente investigable. | Evidencia inicial limitada (1 fuentes). | Riesgo de ruido elevado (0.8). | Score compuesto 0.3475 = 0.30·researchability(0.65) + 0.25·evidencia(0.25) + 0.20·editorial(0.2) + 0.15·novedad(0.2) + 0.10·(1-riesgo(0.8)). | Capa cognitiva sugiere DISCARD: Promotional claim, no evidence, likely false | Descartado: no supera el umbral de inviabilidad/ruido."
+    },
+    {
+      "signalId": "sig-src-miracle-weightloss-2",
+      "corpusId": "src-miracle-weightloss",
+      "assertion": "Bájalo ahora con descuento",
+      "reason": "Reformulación válida: claim incorrecto con idea subyacente investigable. | Evidencia inicial limitada (1 fuentes). | Riesgo de ruido elevado (0.9). | Score compuesto 0.2 = 0.30·researchability(0.225) + 0.25·evidencia(0.25) + 0.20·editorial(0.15) + 0.15·novedad(0.2) + 0.10·(1-riesgo(0.9)). | Capa cognitiva sugiere DISCARD: Promotional statement, no evidence | Descartado: no supera el umbral de inviabilidad/ruido."
+    },
+    {
+      "signalId": "sig-src-creatine-harvard-2",
+      "corpusId": "src-creatine-harvard",
+      "assertion": "suplementación de creatina puede ayudar a contrarrestar la sarcopenia en personas mayores",
+      "reason": "Selección editorial: señal redundante de la misma fuente (src-creatine-harvard); se conserva rc-sig-src-creatine-harvard-1 por mayor prioridad/valor."
+    },
+    {
+      "signalId": "sig-src-if-cochrane-2",
+      "corpusId": "src-if-cochrane",
+      "assertion": "La información sobre los efectos secundarios no fue concordante entre los ensayos, lo que dificulta establecer conclusiones firmes.",
+      "reason": "Selección editorial: señal redundante de la misma fuente (src-if-cochrane); se conserva rc-sig-src-if-cochrane-1 por mayor prioridad/valor."
+    },
+    {
+      "signalId": "sig-src-python-freethreading-2",
+      "corpusId": "src-python-freethreading",
+      "assertion": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+      "reason": "Selección editorial: señal redundante de la misma fuente (src-python-freethreading); se conserva rc-sig-src-python-freethreading-1 por mayor prioridad/valor."
+    },
+    {
+      "signalId": "sig-src-kafka-vs-rabbitmq-1",
+      "corpusId": "src-kafka-vs-rabbitmq",
+      "assertion": "RabbitMQ 3.11 (2022) añadió super streams — partitioned streams — junto con single active consumer, dando consumo ordenado y paralelo particionado.",
+      "reason": "Selección editorial: señal redundante de la misma fuente (src-kafka-vs-rabbitmq); se conserva rc-sig-src-kafka-vs-rabbitmq-2 por mayor prioridad/valor."
+    },
+    {
+      "signalId": "sig-src-cofepris-alert-2",
+      "corpusId": "src-cofepris-alert",
+      "assertion": "No hay recetas mágicas para bajar de peso. Esto se logra sólo con ejercicio diario y una dieta balanceada.",
+      "reason": "Selección editorial: señal redundante de la misma fuente (src-cofepris-alert); se conserva rc-sig-src-cofepris-alert-1 por mayor prioridad/valor."
+    },
+    {
+      "signalId": "sig-src-creatine-pmc-1",
+      "corpusId": "src-creatine-pmc",
+      "assertion": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+      "reason": "Selección editorial: tema ya cubierto por rc-sig-src-creatine-harvard-1; se descarta para evitar duplicación temática entre fuentes (M << N)."
+    },
+    {
+      "signalId": "sig-src-if-mayo-1",
+      "corpusId": "src-if-mayo",
+      "assertion": "El ayuno intermitente puede reducir la inflamación crónica.",
+      "reason": "Selección editorial: tema ya cubierto por rc-sig-src-if-cochrane-1; se descarta para evitar duplicación temática entre fuentes (M << N)."
+    }
+  ],
+  "distribution": {
+    "priority": {
+      "HIGH": 2,
+      "MEDIUM": 4,
+      "LOW": 0,
+      "DISCARD": 9
+    },
+    "assessment": {
+      "SUPPORTED": 2,
+      "UNSUPPORTED": 0,
+      "AMBIGUOUS": 5,
+      "REFRAMED": 8,
+      "DISCARDED": 9
+    }
+  }
+}

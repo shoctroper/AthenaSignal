@@ -1,0 +1,35 @@
+{
+  "kind": "athenasignal.akp.inbox_index.v1",
+  "consumer": "akp-local-ingestor-v1",
+  "updatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "handoffId": "akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "ingestedAt": "2026-09-12T00:00:00.000Z",
+      "inboxPath": "data/akp-inbox/rc4-cl-python-3-13.json"
+    },
+    {
+      "handoffId": "akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "ingestedAt": "2026-09-12T00:00:00.000Z",
+      "inboxPath": "data/akp-inbox/rc4-cl-cofepris.json"
+    },
+    {
+      "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "ingestedAt": "2026-09-12T00:00:00.000Z",
+      "inboxPath": "data/akp-inbox/rc4-cl-suplementacion-de-creatina.json"
+    },
+    {
+      "handoffId": "akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "ingestedAt": "2026-09-12T00:00:00.000Z",
+      "inboxPath": "data/akp-inbox/rc4-cl-rabbitmq-3-11.json"
+    }
+  ]
+}

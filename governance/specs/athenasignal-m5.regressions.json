@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "path": "tests/domain.test.ts",
+      "sha256": "0ba06f87d93055782896b21001e267351e92af7822cc3a8bc1ac228686846a12"
+    },
+    {
+      "path": "tests/adapters.test.ts",
+      "sha256": "c255257f9b5d82fc09da1518db1572e509e236cd908efc5301f66f284e3b78ac"
+    },
+    {
+      "path": "tests/signal-extractor.test.ts",
+      "sha256": "d621ab77c16e2b05c9abd842f3fc0f23b09e6bc048bc6632b3fe5525932f3e5c"
+    },
+    {
+      "path": "tests/editorial-scorer.test.ts",
+      "sha256": "bc44abe03794cd03295875797d67dd2b2c5aa9ce24b47ffb2f21df9808f16eef"
+    },
+    {
+      "path": "tests/pipeline-e2e.test.ts",
+      "sha256": "824cc82f16fd79f042d0bde8ffd5ba9049f28edb4e4a72636ab75a9c865f31fb"
+    },
+    {
+      "path": "tests/research-candidate-e2e.test.ts",
+      "sha256": "e377fcf70dca96d9c725932c50fe1d7e351279987c03e9d4266484a915953a5b"
+    },
+    {
+      "path": "tests/autonomous-intelligence-e2e.test.ts",
+      "sha256": "54a2dfa12389d065fd704d37a029d41505895e36810d996a3adb1b6423dc2646"
+    },
+    {
+      "path": "tests/editorial-radar-e2e.test.ts",
+      "sha256": "84abd1ce9b00d5b2691e9582f0e27dba9bd4c9303230d663f5100b4b592f8e43"
+    }
+  ]
+}

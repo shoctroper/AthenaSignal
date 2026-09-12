@@ -36,7 +36,32 @@ export interface Content {
   metadata?: Record<string, unknown>;
 }
 
-export type ClaimStatus = 'UNVERIFIED' | 'VERIFIED' | 'REFUTED';
+export type ClaimStatus = 'UNVERIFIED' | 'VERIFIED' | 'REFUTED' | 'UNVERIFIED_AMBIGUOUS';
+
+/**
+ * Veredicto emitido por el bucle Odysseus del ClaimVerifier.
+ * Un claim sin resolución tras MAX_ITERATIONS se marca como UNVERIFIED_AMBIGUOUS.
+ */
+export type ClaimVerdict = 'VERIFIED' | 'REFUTED' | 'UNVERIFIED_AMBIGUOUS';
+
+export interface ClaimVerificationResult {
+  claimId?: string;
+  statement: string;
+  verdict: ClaimVerdict;
+  iterations: number;
+  confidence: number;
+  evidence: string[];
+  contradictions: string[];
+}
+
+export interface VerificationReport {
+  signalId?: string;
+  maxIterations: number;
+  claims: ClaimVerificationResult[];
+  verdictCounts: Record<ClaimVerdict, number>;
+  overallConfidence: number;
+  penalty: number;
+}
 
 export class Claim {
   id?: string;
@@ -77,16 +102,145 @@ export interface Signal {
   contradictions: string[];
   potentialAngles?: string[];
   createdAt?: string;
+  verification?: VerificationReport;
 }
 
+/**
+ * =====================================================================
+ * M2 — Signal-to-Research-Candidate (ORDEN-006)
+ * Tipos del vertical slice de investigación editorial. Extienden el
+ * modelo M1 sin romperlo (los campos M1 permanecen opcionales).
+ * =====================================================================
+ */
+
+export type Researchability = 'HIGH' | 'MEDIUM' | 'LOW';
+
+export type ResearchAssessment = 'SUPPORTED' | 'UNSUPPORTED' | 'AMBIGUOUS' | 'REFRAMED';
+
+/**
+ * Rol epistemológico de una fuente en el handoff.
+ * - DISCOVERY: sirve para descubrir entidades/conceptos/referencias.
+ * - EVIDENCE: candidata a evidencia por su autoridad.
+ */
+export type SourceRole = 'DISCOVERY' | 'EVIDENCE';
+
+/**
+ * Distinción obligatoria en los artefactos (ORDEN-006 §9).
+ */
+export type FindingKind = 'FACT' | 'EVIDENCE' | 'MODEL_INTERPRETATION' | 'EDITORIAL_REFRAMING';
+
+/**
+ * Trazabilidad de una fuente real capturada (URL, plataforma, idioma,
+ * fecha de captura y hash del snapshot vendoreado).
+ */
+export interface Provenance {
+  sourceId: string;
+  url: string;
+  platform: string;
+  language: string;
+  title: string;
+  role: SourceRole;
+  capturedAt: string;
+  contentHash: string;
+}
+
+export interface AssertionAnalysis {
+  originalClaim: string;
+  context: string[];
+  entities: string[];
+  implicitQuestions: string[];
+  hypotheses: string[];
+  uncertainties: string[];
+}
+
+export interface ResearchabilityAssessment {
+  level: Researchability;
+  evidenceAvailability: number; // 0.0 - 1.0
+  questionClarity: number;      // 0.0 - 1.0
+  editorialRelevance: number;   // 0.0 - 1.0
+  resolvableUncertainty: number; // 0.0 - 1.0
+  reason: string;
+}
+
+export interface InitialFinding {
+  kind: FindingKind;
+  text: string;
+  refs: string[];
+}
+
+export interface AthenaOsEligibility {
+  hasIdentifiableOrigin: boolean;
+  hasTraceableLocation: boolean;
+  hasTemporalContext: boolean;
+  hasRecoverableEvidence: boolean;
+}
+
+export interface AthenaOsProposedSource {
+  url: string;
+  title: string;
+  language: string;
+  role: SourceRole;
+  eligibility: AthenaOsEligibility;
+  proposedTrustTier: string;
+  accessedAt: string;
+}
+
+export interface AthenaOsProposedCandidateFact {
+  statement: string;
+  provenanceUrls: string[];
+  statusHint: 'UNVERIFIED';
+}
+
+export interface AthenaOsHandoff {
+  kind: 'athenasignal.research_candidate.handoff.v1';
+  researchQuestion: string;
+  outputLanguage: 'es';
+  viableBase: {
+    format: 'short_video' | 'article' | 'long_video';
+    factsRequired: number;
+    sourcesMinimum: number;
+  };
+  proposedSources: AthenaOsProposedSource[];
+  proposedCandidateFacts: AthenaOsProposedCandidateFact[];
+  knownUncertainties: string[];
+  initialFindings: InitialFinding[];
+  origin: {
+    signalId: string;
+    originalClaims: string[];
+    assessment: ResearchAssessment;
+    reframingNote: string | null;
+  };
+}
+
+/**
+ * Research Candidate transferible a AKP (ORDEN-006 §5).
+ * Los campos M1 (`id`, `signalId`, `hypothesis`, `score`, `claims`) se
+ * conservan opcionales por compatibilidad.
+ */
 export interface ResearchCandidate {
+  candidateId: string;
+  title: string;
+  researchQuestion: string;
+  originSignalId: string;
+  originalClaims: string[];
+  context: string[];
+  assessment: ResearchAssessment;
+  assertionAnalysis: AssertionAnalysis;
+  researchability: ResearchabilityAssessment;
+  knownUncertainties: string[];
+  initialFindings: InitialFinding[];
+  reasonForSelection: string;
+  sourceProvenance: Provenance[];
+  recommendedAthenaOsInput: AthenaOsHandoff;
+  createdAt: string;
+
+  // M1 (compatibilidad, opcionales)
   id?: string;
-  signalId: string;
-  hypothesis: string;
-  score: number;
-  claims: Claim[];
+  signalId?: string;
+  hypothesis?: string;
+  score?: number;
+  claims?: Claim[];
   primarySourcesToCheck?: string[];
-  createdAt?: string;
 }
 
 export interface Knowledge {

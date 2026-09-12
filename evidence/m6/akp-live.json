@@ -1,0 +1,70 @@
+{
+  "kind": "athenasignal.m6.akp_live.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "inboxDir": ".m6tmp/akp-write/inbox",
+  "returnDir": ".m6tmp/akp-write/returns",
+  "transport": "durable-file-queue",
+  "consumer": "akp-live-ingestor-v2",
+  "worker": "athenaos-research-stand-in-v1",
+  "handoffs": [
+    {
+      "handoffId": "m6-akp-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "bc4f02d9767a772f4e059f063d76055ddf936efdaf0a985360fc219bc7dc4e38",
+      "consumedAt": "2026-09-12T02:11:00.000Z",
+      "inboxPath": ""
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "contentHash": "20d5d241d06353a923eccb9bb69573c8be25470fbb9c540ffe4374a90723b637",
+      "consumedAt": "2026-09-12T02:15:00.000Z",
+      "inboxPath": ""
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "consumedAt": "2026-09-12T02:19:00.000Z",
+      "inboxPath": ""
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "consumedAt": "2026-09-12T02:55:00.000Z",
+      "inboxPath": ""
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "consumedAt": "2026-09-12T02:59:00.000Z",
+      "inboxPath": ""
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "consumedAt": "2026-09-12T03:03:00.000Z",
+      "inboxPath": ""
+    }
+  ],
+  "consumed": 6,
+  "resultsReturned": 6,
+  "returnedResultIds": [
+    "aos-rc4-cl-airllm",
+    "aos-rc4-cl-ayuno-intermitente",
+    "aos-rc4-cl-cofepris",
+    "aos-rc4-cl-python-3-13",
+    "aos-rc4-cl-rabbitmq-3-11",
+    "aos-rc4-cl-suplementacion-de-creatina"
+  ],
+  "limitation": "AKP/AthenaOS externo no invocable desde el worktree: el transporte es una cola durable en disco y el worker de investigación es el stand-in documentado."
+}

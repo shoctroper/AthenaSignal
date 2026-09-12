@@ -1,0 +1,88 @@
+{
+  "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+  "candidateId": "rc4-cl-suplementacion-de-creatina",
+  "clusterId": "cl-suplementacion-de-creatina",
+  "version": 1,
+  "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+  "deliveredAt": "2026-09-12T01:27:00.000Z",
+  "runId": "m5-proc-b-run-2",
+  "status": "DELIVERED_TO_SINK",
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+        "title": "Creatine in Health and Disease — PMC7910963",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "official_documentation",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+        "provenanceUrls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+      "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+      "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+      "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+      "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+        "refs": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-creatine-pmc-1",
+      "originalClaims": [
+        "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+    }
+  },
+  "consumption": {
+    "consumer": null,
+    "consumedAt": null,
+    "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m7-akp-w3-rc4-cl-python-3-13",
+  "candidateId": "rc4-cl-python-3-13",
+  "clusterId": "cl-python-3-13",
+  "contentHash": "114baf7a43fc04b88cd1e0a26e2fef0ef5861bad10da1b553eaa27823d3f4b39",
+  "publishedAt": "2026-09-12T00:00:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+        "title": "Python experimental support for free threading — Python 3.13 docs",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "primary_source",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+        "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+        "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://dev.to/epam_india_python/python-313-the-gateway-to-high-performance-multithreading-without-gil-1dm7",
+        "title": "Python 3.13: The Gateway to High-Performance Multithreading ...",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs",
+        "title": "Python experimental support for free threading — Python 3.13 docs",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://docs.python.org/3/howto/free-threading-python.html",
+        "title": "Python support for free threading — Python 3.14.7 documentation",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://github.com/aio-libs/aiohttp/issues/8796",
+        "title": "Support free-threaded Python build · Issue #8796 · aio-libs/aiohttp",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://indico.cern.ch/event/1338689/contributions/6015924/attachments/2942382/5169952/pivarski-chep2024-python313.pdf",
+        "title": "GIL-free scaling of Uproot in Python 3.13 - Indico",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://medium.com/@kevaldekivadiya2415/python-gil-vs-no-gil-real-fastapi-benchmarks-with-free-threaded-python-3-13-b5751f8d57a2",
+        "title": "Python GIL vs No-GIL: Real FastAPI benchmarks with free-threaded ...",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://medium.com/@sohail_saifi/pythons-gil-is-gone-in-3-13-but-your-code-probably-doesn-t-benefit-yet-here-s-exactly-why-31d2d93ff76c",
+        "title": "Python's GIL Is Gone in 3.13. But Your Code Probably Doesn't ...",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T02:55:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T02:55:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "provenanceUrls": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "https://dev.to/epam_india_python/python-313-the-gateway-to-high-performance-multithreading-without-gil-1dm7",
+          "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs",
+          "https://docs.python.org/3/howto/free-threading-python.html",
+          "https://github.com/aio-libs/aiohttp/issues/8796",
+          "https://indico.cern.ch/event/1338689/contributions/6015924/attachments/2942382/5169952/pivarski-chep2024-python313.pdf",
+          "https://medium.com/@kevaldekivadiya2415/python-gil-vs-no-gil-real-fastapi-benchmarks-with-free-threaded-python-3-13-b5751f8d57a2",
+          "https://medium.com/@sohail_saifi/pythons-gil-is-gone-in-3-13-but-your-code-probably-doesn-t-benefit-yet-here-s-exactly-why-31d2d93ff76c",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿Está claro qué extensiones C necesitan modificaciones?",
+      "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+      "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+      "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+        "refs": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-python-freethreading-2",
+      "originalClaims": [
+        "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/inbox/rc4-cl-python-3-13.json"
+}

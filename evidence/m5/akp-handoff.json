@@ -1,0 +1,1294 @@
+{
+  "kind": "athenasignal.m5.akp_handoff.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "sink": "evidence/m5/akp-sink",
+  "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local.",
+  "consumed": 4,
+  "consumption": {
+    "kind": "athenasignal.m5.akp_consumption.v1",
+    "consumer": "akp-local-ingestor-v1",
+    "consumedAt": "2026-09-12T00:00:00.000Z",
+    "consumed": 4,
+    "ingested": 4,
+    "duplicates": 0,
+    "invalid": 0,
+    "inboxDir": "data/akp-inbox",
+    "records": [
+      {
+        "handoffId": "akp-rc4-cl-python-3-13",
+        "candidateId": "rc4-cl-python-3-13",
+        "clusterId": "cl-python-3-13",
+        "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+        "status": "INGESTED",
+        "inboxPath": "data/akp-inbox/rc4-cl-python-3-13.json",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "validation": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      {
+        "handoffId": "akp-rc4-cl-cofepris",
+        "candidateId": "rc4-cl-cofepris",
+        "clusterId": "cl-cofepris",
+        "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+        "status": "INGESTED",
+        "inboxPath": "data/akp-inbox/rc4-cl-cofepris.json",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "validation": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      {
+        "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+        "candidateId": "rc4-cl-suplementacion-de-creatina",
+        "clusterId": "cl-suplementacion-de-creatina",
+        "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+        "status": "INGESTED",
+        "inboxPath": "data/akp-inbox/rc4-cl-suplementacion-de-creatina.json",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "validation": {
+          "valid": true,
+          "errors": []
+        }
+      },
+      {
+        "handoffId": "akp-rc4-cl-rabbitmq-3-11",
+        "candidateId": "rc4-cl-rabbitmq-3-11",
+        "clusterId": "cl-rabbitmq-3-11",
+        "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+        "status": "INGESTED",
+        "inboxPath": "data/akp-inbox/rc4-cl-rabbitmq-3-11.json",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "validation": {
+          "valid": true,
+          "errors": []
+        }
+      }
+    ]
+  },
+  "deliveries": [
+    {
+      "handoffId": "akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "version": 1,
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "deliveredAt": "2026-09-12T01:24:00.000Z",
+      "runId": "m5-proc-b-run-2",
+      "status": "DELIVERED_TO_SINK",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+            "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+          "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+            "refs": [
+              "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-cofepris-alert-1",
+          "originalClaims": [
+            "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        }
+      },
+      "consumption": {
+        "consumer": "akp-local-ingestor-v1",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "version": 1,
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "deliveredAt": "2026-09-12T01:25:00.000Z",
+      "runId": "m5-proc-b-run-2",
+      "status": "DELIVERED_TO_SINK",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Está claro qué extensiones C necesitan modificaciones?",
+          "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+          "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+          "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-2",
+          "originalClaims": [
+            "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+        }
+      },
+      "consumption": {
+        "consumer": "akp-local-ingestor-v1",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "version": 1,
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "deliveredAt": "2026-09-12T01:26:00.000Z",
+      "runId": "m5-proc-b-run-2",
+      "status": "DELIVERED_TO_SINK",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "consumption": {
+        "consumer": "akp-local-ingestor-v1",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "version": 1,
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "deliveredAt": "2026-09-12T01:27:00.000Z",
+      "runId": "m5-proc-b-run-2",
+      "status": "DELIVERED_TO_SINK",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+            "provenanceUrls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+          "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+          "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+          "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+          "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+            "refs": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-pmc-1",
+          "originalClaims": [
+            "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+        }
+      },
+      "consumption": {
+        "consumer": "akp-local-ingestor-v1",
+        "consumedAt": "2026-09-12T00:00:00.000Z",
+        "limitation": "AKP/AthenaOS no expone un endpoint vivo en este entorno: el handoff se persiste de forma consumible en el sink de archivo y lo ingiere el consumidor AKP local."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "version": 2,
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "deliveredAt": "2026-09-12T01:34:00.000Z",
+      "runId": "m5-proc-c-run-3",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+            "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+          "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+            "refs": [
+              "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-cofepris-alert-1",
+          "originalClaims": [
+            "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "version": 2,
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "deliveredAt": "2026-09-12T01:35:00.000Z",
+      "runId": "m5-proc-c-run-3",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Está claro qué extensiones C necesitan modificaciones?",
+          "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+          "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+          "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-2",
+          "originalClaims": [
+            "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "version": 2,
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "deliveredAt": "2026-09-12T01:36:00.000Z",
+      "runId": "m5-proc-c-run-3",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "version": 2,
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "deliveredAt": "2026-09-12T01:37:00.000Z",
+      "runId": "m5-proc-c-run-3",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+            "provenanceUrls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+          "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+          "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+          "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+          "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+            "refs": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-pmc-1",
+          "originalClaims": [
+            "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "version": 3,
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "deliveredAt": "2026-09-12T02:14:00.000Z",
+      "runId": "m5-proc-d-run-4",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+            "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Se han retirado otros tipos de productos además de los 'milagro'?",
+          "¿Hay evidencia de que los productos 'milagro' siguen siendo comercializados ilegalmente?",
+          "¿Cuáles son los criterios exactos para determinar si un producto es un 'milagro'?",
+          "Falta de datos numéricos específicos sobre el número de portales retirados y la falta de detalles sobre los tipos de productos y las reglas publicitarias violadas."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La COFEPRIS ha emitido una alerta sobre la proliferación de anuncios de productos 'milagro' para supuestamente bajar de peso en redes sociales, lo que sugiere que ha tomado medidas contra este tipo de publicidad.",
+            "refs": [
+              "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-cofepris-alert-1",
+          "originalClaims": [
+            "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Autoridad regulatoria real que desmiente productos milagro sin registro sanitario. Contraste con fuente(s) de autoridad del corpus: Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS (https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob). Se reformula la afirmación original en una pregunta investigable para evitar afirmar un número sin evidencia directa. Pregunta investigable reformulada: ¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "version": 3,
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "deliveredAt": "2026-09-12T02:15:00.000Z",
+      "runId": "m5-proc-d-run-4",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [],
+        "knownUncertainties": [
+          "¿Está claro qué extensiones C necesitan modificaciones?",
+          "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+          "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+          "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-2",
+          "originalClaims": [
+            "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "version": 3,
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "deliveredAt": "2026-09-12T02:16:00.000Z",
+      "runId": "m5-proc-d-run-4",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    },
+    {
+      "handoffId": "akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "version": 3,
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "deliveredAt": "2026-09-12T02:17:00.000Z",
+      "runId": "m5-proc-d-run-4",
+      "status": "DUPLICATE_SUPPRESSED",
+      "validation": {
+        "valid": true,
+        "errors": []
+      },
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+            "provenanceUrls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+          "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+          "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+          "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+          "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+            "refs": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-pmc-1",
+          "originalClaims": [
+            "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+        }
+      },
+      "consumption": {
+        "consumer": null,
+        "consumedAt": null,
+        "limitation": "AKP/AthenaOS no expone endpoint vivo; el handoff se persiste validado en el sink de archivo."
+      }
+    }
+  ]
+}

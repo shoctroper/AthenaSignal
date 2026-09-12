@@ -1,0 +1,187 @@
+{
+  "kind": "athenasignal.m7.akp_live.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "inboxDir": "data/m7-akp/inbox",
+  "returnDir": "data/m7-akp/returns",
+  "transport": "durable-file-queue",
+  "consumer": "akp-live-ingestor-m7",
+  "worker": "athenaos-research-stand-in-m7",
+  "handoffs": [
+    {
+      "handoffId": "m6-akp-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "bc4f02d9767a772f4e059f063d76055ddf936efdaf0a985360fc219bc7dc4e38",
+      "wave": 1,
+      "consumedAt": "2026-09-12T02:11:00.000Z"
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "contentHash": "20d5d241d06353a923eccb9bb69573c8be25470fbb9c540ffe4374a90723b637",
+      "wave": 1,
+      "consumedAt": "2026-09-12T02:15:00.000Z"
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "wave": 1,
+      "consumedAt": "2026-09-12T02:19:00.000Z"
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "wave": 1,
+      "consumedAt": "2026-09-12T02:55:00.000Z"
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "wave": 1,
+      "consumedAt": "2026-09-12T02:59:00.000Z"
+    },
+    {
+      "handoffId": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "wave": 1,
+      "consumedAt": "2026-09-12T03:03:00.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "74605b5c7d2ef4a039070be0113a4cd3d59227bbe204be1a6bace555b90651b9",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:00:00.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "contentHash": "6e85bee2563f79d075b3c0a3e9c9305ace7cb364270d42cdbcdaef8c348363d1",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:00:45.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "contentHash": "7a93098580678f9ef5a0345d0c993cff5e05358fc86072d133cd0ed3ae332c48",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:01:30.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-ketobig",
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "contentHash": "526503d65aa1eaa4cf2936b7f7ac0d5cffa968a6c8f147e5b84584a994a28bee",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "b34fcac7b0ba7803bb729c86757ad0f455033df9e0bcb67c9f841a8ec6e828e5",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:03:00.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "aea020f862c8f75de469b758020282cfaee7769c1ba438e8296e8beaaff277ac",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:03:45.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w2-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "3b1772b3c06405674d06514b4a59c2618aecf6df23e7ef58bfe9846e1cd56e1b",
+      "wave": 2,
+      "consumedAt": "2026-09-21T03:04:30.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "e7e0baa8ae8f78c0c892e3a07d00d377fd8ccd70a7e19a30f617b64e866976b5",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "contentHash": "ceb957fa545e70e3b3ce6568e65f758fa344a3f41108c0525f77efcb29ff74a7",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:00:45.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "contentHash": "f9d63e7f803edd79a5e1a8c34b961df161b4492f6ce0deba1b93b30e13cd1e9d",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:01:30.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "114baf7a43fc04b88cd1e0a26e2fef0ef5861bad10da1b553eaa27823d3f4b39",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:02:15.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "4d7b917396b515bf55c01e7f40f799543d339990bfe455ebeef46c7d7e1fb41f",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:03:00.000Z"
+    },
+    {
+      "handoffId": "m7-akp-w3-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "25cc661e39bb5ddf1c5b57a53320ec423fa9ae7d3007fcdf36e21ca0673a9e41",
+      "wave": 3,
+      "consumedAt": "2026-09-21T04:03:45.000Z"
+    }
+  ],
+  "consumed": 19,
+  "resultsReturned": 19,
+  "returnedResultIds": [
+    "aos-rc4-cl-airllm",
+    "aos-rc4-cl-ayuno-intermitente",
+    "aos-rc4-cl-cofepris",
+    "aos-rc4-cl-python-3-13",
+    "aos-rc4-cl-rabbitmq-3-11",
+    "aos-rc4-cl-suplementacion-de-creatina",
+    "aos-w2-rc4-cl-airllm",
+    "aos-w2-rc4-cl-ayuno-intermitente",
+    "aos-w2-rc4-cl-cofepris",
+    "aos-w2-rc4-cl-ketobig",
+    "aos-w2-rc4-cl-python-3-13",
+    "aos-w2-rc4-cl-rabbitmq-3-11",
+    "aos-w2-rc4-cl-suplementacion-de-creatina",
+    "aos-w3-rc4-cl-airllm",
+    "aos-w3-rc4-cl-ayuno-intermitente",
+    "aos-w3-rc4-cl-cofepris",
+    "aos-w3-rc4-cl-python-3-13",
+    "aos-w3-rc4-cl-rabbitmq-3-11",
+    "aos-w3-rc4-cl-suplementacion-de-creatina"
+  ],
+  "limitation": "AKP/AthenaOS externo no invocable desde el worktree: transporte durable en disco + worker stand-in documentado (mismo boundary que M6, ampliado con resolución epistémica)."
+}

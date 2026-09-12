@@ -1,0 +1,3 @@
+Implementar Adaptador Firecrawl Web en src/adapters/FirecrawlAdapter.ts	Edward `[Model: agy]`		Ninguna	src/adapters/FirecrawlAdapter.ts	Implementar ISourceAdapter
+Implementar Agente ClaimVerifier en src/services/ClaimVerifier.ts	Edward `[Model: agy]`	athenasignal-001	Ninguna	src/services/ClaimVerifier.ts	Implementar ClaimVerifier
+Actualizar PipelineOrchestrator en src/services/PipelineOrchestrator.ts	Alphonse `[Model: agy]`	athenasignal-002	Ninguna	src/services/PipelineOrchestrator.ts	Orquestar pipeline

@@ -1,0 +1,108 @@
+{
+  "kind": "athenasignal.m6.metrics.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "scale": {
+    "sources": 250,
+    "uniqueSources": 250,
+    "baseM5Sources": 130,
+    "m6Sources": 120,
+    "cycles": 72,
+    "cyclesProcessed": 72,
+    "inputsObserved": 288,
+    "signalsTracked": 25,
+    "clusters": 7,
+    "candidates": 7
+  },
+  "loop": {
+    "runs": 3,
+    "processes": 3,
+    "hosts": 2,
+    "loopCycles": 97,
+    "handoffs": 6,
+    "researchResults": 6,
+    "feedbackUpdates": 6,
+    "continuousCycles": 24
+  },
+  "research": {
+    "results": 6,
+    "confirmed": 1,
+    "refuted": 0,
+    "inconclusive": 5,
+    "failed": 0,
+    "claims": 5,
+    "supportedClaims": 0,
+    "contradictedClaims": 0,
+    "uncertainClaims": 5,
+    "evidenceRefs": 57,
+    "newEvidence": 34,
+    "realResponses": 6,
+    "deterministicResponses": 0,
+    "providers": [
+      "ollama"
+    ],
+    "replayMisses": 0
+  },
+  "feedback": {
+    "updates": 6,
+    "byChange": {
+      "ASSESSMENT_CHANGED": 5,
+      "EVIDENCE_ADDED": 6,
+      "INTERPRETATION_UPDATED": 6,
+      "PRIORITY_CHANGED": 4,
+      "REOPENED": 4
+    },
+    "evidenceAdded": 6,
+    "promotions": 0,
+    "closures": 0,
+    "reopenings": 4,
+    "contradictions": 0,
+    "priorityChanges": 4,
+    "assessmentChanges": 5,
+    "interpretationUpdates": 6
+  },
+  "llm": {
+    "providerChain": "cognitive-router(deep_research)",
+    "realResponses": 6,
+    "deterministicResponses": 0,
+    "replayMisses": 0,
+    "localRoutes": 5,
+    "localAltRoutes": 4,
+    "remoteRoutes": 3,
+    "fallbackRoutes": 5
+  },
+  "distributed": {
+    "nodesUp": 3,
+    "nodesDown": 1,
+    "degraded": true,
+    "remoteEscalations": 3
+  },
+  "recovery": {
+    "events": 10,
+    "byKind": {
+      "INVALID_RESPONSE": 1,
+      "LLM_FALLBACK": 3,
+      "NODE_DOWN": 3,
+      "PARTIAL_RUN": 1,
+      "PROCESS_RESTART": 1,
+      "TIMEOUT": 1
+    }
+  },
+  "idempotency": {
+    "noOps": 30,
+    "attempted": 36
+  },
+  "performance": {
+    "costUnits": 17,
+    "localCalls": 5,
+    "remoteCalls": 3,
+    "deterministicCalls": 0,
+    "inputsPerCycle": 4
+  },
+  "quality": {
+    "researchCoverage": 0.857,
+    "feedbackRate": 1,
+    "positiveAssessmentRate": 0.167,
+    "contradictionRate": 0
+  },
+  "falsePositiveObservations": []
+}

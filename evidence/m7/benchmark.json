@@ -1,0 +1,128 @@
+{
+  "kind": "athenasignal.m7.benchmark.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "NEW_SIGNAL",
+      "description": "El loop descubre señales nuevas sobre el universo ampliado.",
+      "observed": true,
+      "evidence": "radar NEW > 0"
+    },
+    {
+      "id": "KNOWN",
+      "description": "Material conocido reaparece preservando identidad histórica.",
+      "observed": true,
+      "evidence": "radar KNOWN > 0"
+    },
+    {
+      "id": "DUPLICATE",
+      "description": "Fuentes repetidas no se reprocesan ni duplican.",
+      "observed": true,
+      "evidence": "radar DUPLICATE > 0"
+    },
+    {
+      "id": "RELATED",
+      "description": "Fuentes/señales relacionadas se vinculan cross-source.",
+      "observed": true,
+      "evidence": "radar RELATED > 0"
+    },
+    {
+      "id": "REASSESSMENT",
+      "description": "El conocimiento que regresa reevalúa candidates existentes.",
+      "observed": true,
+      "evidence": "ASSESSMENT_CHANGED o transición epistémica"
+    },
+    {
+      "id": "PROMOTION",
+      "description": "Un candidate confirmado se promueve con handoff válido.",
+      "observed": true,
+      "evidence": "estado PROMOTED"
+    },
+    {
+      "id": "DEMOTION",
+      "description": "Un candidate confirmado se degrada por nueva evidencia.",
+      "observed": true,
+      "evidence": "estado DEMOTED o prioridad degradada"
+    },
+    {
+      "id": "CLOSURE",
+      "description": "Un candidate se cierra por confirmación o refutación.",
+      "observed": true,
+      "evidence": "CLOSED_CONFIRMED o CLOSED_REFUTED"
+    },
+    {
+      "id": "REOPENING",
+      "description": "Nueva evidencia reabre un candidate cerrado/descartado.",
+      "observed": true,
+      "evidence": "transición REOPENED"
+    },
+    {
+      "id": "CONTRADICTION",
+      "description": "Evidencia contradictoria se representa y resuelve o conserva.",
+      "observed": true,
+      "evidence": "contradiction artifact > 0"
+    },
+    {
+      "id": "RESEARCH_RESULT_CONFIRMED",
+      "description": "AthenaOS devuelve confirmación basada en evidencia.",
+      "observed": true,
+      "evidence": "verdict CONFIRMED > 0"
+    },
+    {
+      "id": "RESEARCH_RESULT_REFUTED",
+      "description": "AthenaOS devuelve refutación basada en evidencia.",
+      "observed": true,
+      "evidence": "verdict REFUTED > 0"
+    },
+    {
+      "id": "FEEDBACK_UPDATE",
+      "description": "El resultado muta el radar conservando las capas separadas.",
+      "observed": true,
+      "evidence": "feedbackUpdates > 0 con layers"
+    },
+    {
+      "id": "NODE_FAILURE",
+      "description": "El loop degrada correctamente ante un nodo caído.",
+      "observed": true,
+      "evidence": "recovery NODE_DOWN"
+    },
+    {
+      "id": "PROCESS_RESTART",
+      "description": "El loop sobrevive a un reinicio de proceso.",
+      "observed": true,
+      "evidence": "recovery PROCESS_RESTART > 0"
+    },
+    {
+      "id": "LLM_FAILURE",
+      "description": "Un fallo de LLM/timeout degrada sin fabricar evidencia.",
+      "observed": true,
+      "evidence": "recovery LLM_FALLBACK/TIMEOUT/INVALID_RESPONSE"
+    },
+    {
+      "id": "AKP_RETRY",
+      "description": "Reintentos/idempotencia no corrompen el conocimiento compartido.",
+      "observed": true,
+      "evidence": "idempotency noOps > 0"
+    },
+    {
+      "id": "SCALE",
+      "description": "M7 procesa un universo materialmente mayor que M6 (>= 400 fuentes).",
+      "observed": true,
+      "evidence": "sources >= 400"
+    },
+    {
+      "id": "CONTINUOUS",
+      "description": "El loop corre repetidamente sin intervención manual.",
+      "observed": true,
+      "evidence": "ondas > 1 y ciclos M7 procesados"
+    },
+    {
+      "id": "EVIDENCE_DRIVEN_TRANSITION",
+      "description": "Cada transición epistémica conserva evidencia y provenance.",
+      "observed": true,
+      "evidence": "transiciones con evidenceRefs > 0"
+    }
+  ],
+  "coverage": 1,
+  "falsePositiveObservations": []
+}

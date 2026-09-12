@@ -1,0 +1,137 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m7-akp-w2-rc4-cl-ketobig",
+  "candidateId": "rc4-cl-ketobig",
+  "clusterId": "cl-ketobig",
+  "contentHash": "526503d65aa1eaa4cf2936b7f7ac0d5cffa968a6c8f147e5b84584a994a28bee",
+  "publishedAt": "2026-09-12T00:00:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 1
+    },
+    "proposedSources": [
+      {
+        "url": "https://k-state.com/plketobig",
+        "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+        "language": "es",
+        "role": "DISCOVERY",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "low_trust_tertiary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+        "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+        "language": "es",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+        "provenanceUrls": [
+          "https://k-state.com/plketobig",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿La afirmación de perder 10 kilos en una semana es realista?",
+      "¿El suplemento KetoBig es efectivo para todas las personas?",
+      "¿Existen riesgos o efectos secundarios asociados con el uso de KetoBig?",
+      "Falta de estudios clínicos, datos de seguridad y eficacia, y ausencia de revisión por pares"
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "KetoBig afirma que puede ayudar a perder 10 kilos en una semana sin dieta ni ejercicio.",
+        "refs": [
+          "https://k-state.com/plketobig"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable que puede ser evaluada mediante un estudio controlado. Pregunta investigable reformulada: ¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-miracle-weightloss-1",
+      "originalClaims": [
+        "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio"
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Anuncio de producto milagro. Debe ser rechazado por ruido: sin respaldo, riesgo para la salud y sin interés editorial investigable. Se reformula la afirmación original en una pregunta investigable que puede ser evaluada mediante un estudio controlado. Pregunta investigable reformulada: ¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/inbox/rc4-cl-ketobig.json"
+}

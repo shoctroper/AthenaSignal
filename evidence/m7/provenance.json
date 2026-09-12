@@ -1,0 +1,695 @@
+{
+  "kind": "athenasignal.m7.provenance.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "edges": [
+    {
+      "from": "src-creatine-harvard",
+      "to": "sig-src-creatine-harvard-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-suplementacion-de-creatina"
+    },
+    {
+      "from": "sig-src-creatine-harvard-1",
+      "to": "rc4-cl-suplementacion-de-creatina",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-suplementacion-de-creatina",
+      "to": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "to": "aos-rc4-cl-suplementacion-de-creatina",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_INCONCLUSIVE"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayuno intermitente: efectos en diversos escenarios clínicos"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Evidencias científicas del ayuno intermitente"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://k-state.com/plketobig",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Creatine in Health and Disease — PMC7910963"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "AYUNO INTERMITENTE | Endocrinología y Nutrición ... - ENDOCS"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía"
+    },
+    {
+      "from": "aos-rc4-cl-suplementacion-de-creatina",
+      "to": "fb-aos-rc4-cl-suplementacion-de-creatina",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED, REOPENED, PRIORITY_CHANGED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-suplementacion-de-creatina",
+      "to": "radar:cl-suplementacion-de-creatina",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-suplementacion-de-creatina",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-if-cochrane",
+      "to": "sig-src-if-cochrane-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-ayuno-intermitente"
+    },
+    {
+      "from": "sig-src-if-cochrane-1",
+      "to": "rc4-cl-ayuno-intermitente",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-ayuno-intermitente",
+      "to": "m6-akp-rc4-cl-ayuno-intermitente",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-ayuno-intermitente",
+      "to": "aos-rc4-cl-ayuno-intermitente",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_CONFIRMED"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayuno intermitente: efectos en diversos escenarios clínicos"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Evidencias científicas del ayuno intermitente"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "¿El ayuno intermitente sirve para adelgazar? Esto es lo que dice la ciencia | Cuidateplus"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "El ayuno intermitente no es mejor que una dieta clásica para perder peso, según la mayor revisión de la evidencia disponible | Salud y bienestar | EL PAÍS"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente para adelgazar no está a la altura de su fama | Cochrane Iberoamérica"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Eligiendo un Broker de Mensajería : Kafka vs. RabbitMQ - Medium"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://secardiologia.es/blog/11239-potenciales-beneficios-del-ayuno-intermitente-mas-alla-de-la-perdida-de-peso",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Potenciales beneficios del ayuno intermitente más allá de la pérdida ..."
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://www.arsys.es/blog/kafka-vs-rabbitmq-principales-diferencias",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Kafka vs. RabbitMQ: principales diferencias | Blog de Arsys"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://www.bbc.com/mundo/articles/c70gde8p6k8o",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Por qué es tan complicado demostrar si el ayuno intermitente ... - BBC"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "https://www.datacamp.com/es/blog/kafka-vs-rabbitmq",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Kafka vs RabbitMQ: Diferencias clave y cuándo utilizar cada una"
+    },
+    {
+      "from": "aos-rc4-cl-ayuno-intermitente",
+      "to": "fb-aos-rc4-cl-ayuno-intermitente",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, INTERPRETATION_UPDATED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-ayuno-intermitente",
+      "to": "radar:cl-ayuno-intermitente",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-ayuno-intermitente",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-airllm-claim",
+      "to": "sig-src-airllm-claim-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-airllm"
+    },
+    {
+      "from": "sig-src-airllm-claim-1",
+      "to": "rc4-cl-airllm",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-airllm",
+      "to": "m6-akp-rc4-cl-airllm",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-airllm",
+      "to": "aos-rc4-cl-airllm",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_INCONCLUSIVE"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "AirLLM Review: The Truth Behind Running 70B LLMs Locally"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "The Complete AirLLM Guide: Run 70B LLMs on a 4GB GPU"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "AirLLM vs Colibrì: ejecutando modelos de IA gigantes usando poca ..."
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://roadmapia.org/modelos-locales/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Modelos IA descargables · Corre LLMs gratis local - RoadmapIA"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "https://www.youtube.com/watch?v=-6I52TK654g",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "This AI can run massive models with just 4 GB of RAM - YouTube"
+    },
+    {
+      "from": "aos-rc4-cl-airllm",
+      "to": "fb-aos-rc4-cl-airllm",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-airllm",
+      "to": "radar:cl-airllm",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-airllm",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-miracle-weightloss",
+      "to": "sig-src-miracle-weightloss-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-ketobig"
+    },
+    {
+      "from": "sig-src-miracle-weightloss-1",
+      "to": "rc4-cl-ketobig",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-ketobig",
+      "to": "m7-akp-w2-rc4-cl-ketobig",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m7-akp-w2-rc4-cl-ketobig",
+      "to": "aos-w2-rc4-cl-ketobig",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_REFUTED"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayuno intermitente: efectos en diversos escenarios clínicos"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://k-state.com/plketobig",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayuno intermitente: ventajas y desventajas - Unilabs"
+    },
+    {
+      "from": "aos-w2-rc4-cl-ketobig",
+      "to": "fb-aos-w2-rc4-cl-ketobig",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED"
+    },
+    {
+      "from": "fb-aos-w2-rc4-cl-ketobig",
+      "to": "radar:cl-ketobig",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-ketobig",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-cofepris-alert",
+      "to": "sig-src-cofepris-alert-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-cofepris"
+    },
+    {
+      "from": "sig-src-cofepris-alert-1",
+      "to": "rc4-cl-cofepris",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-cofepris",
+      "to": "m6-akp-rc4-cl-cofepris",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-cofepris",
+      "to": "aos-rc4-cl-cofepris",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_INCONCLUSIVE"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "https://k-state.com/plketobig",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "https://www.centrojuliafarre.es/blog/ayuno-intermitente/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Ayuno intermitente: Qué es, tipos de ayuno y cómo hacerlo BIEN"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS"
+    },
+    {
+      "from": "aos-rc4-cl-cofepris",
+      "to": "fb-aos-rc4-cl-cofepris",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED, REOPENED, PRIORITY_CHANGED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-cofepris",
+      "to": "radar:cl-cofepris",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-cofepris",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-mirror-python-freethreading",
+      "to": "sig-src-mirror-python-freethreading-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-python-3-13"
+    },
+    {
+      "from": "sig-src-mirror-python-freethreading-1",
+      "to": "rc4-cl-python-3-13",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-python-3-13",
+      "to": "m6-akp-rc4-cl-python-3-13",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-python-3-13",
+      "to": "aos-rc4-cl-python-3-13",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_INCONCLUSIVE"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Faster Python: Unlocking the Python Global Interpreter Lock"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "State of Python 3.13 Performance: Free-Threading - CodSpeed"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://dev.to/epam_india_python/python-313-the-gateway-to-high-performance-multithreading-without-gil-1dm7",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Python 3.13: The Gateway to High-Performance Multithreading ..."
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://docs.python.org/3.13/howto/free-threading-python.html",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Python experimental support for free threading — Python 3.13 docs"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Python experimental support for free threading — Python 3.13 docs"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-python-3-13",
+      "to": "fb-aos-rc4-cl-python-3-13",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED, REOPENED, PRIORITY_CHANGED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-python-3-13",
+      "to": "radar:cl-python-3-13",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-python-3-13",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    },
+    {
+      "from": "src-kafka-vs-rabbitmq",
+      "to": "sig-src-kafka-vs-rabbitmq-1",
+      "relation": "SOURCE_TO_SIGNAL",
+      "detail": "Fuente origen de rc4-cl-rabbitmq-3-11"
+    },
+    {
+      "from": "sig-src-kafka-vs-rabbitmq-1",
+      "to": "rc4-cl-rabbitmq-3-11",
+      "relation": "SIGNAL_TO_CANDIDATE",
+      "detail": "Señal agrupada en el candidate"
+    },
+    {
+      "from": "rc4-cl-rabbitmq-3-11",
+      "to": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "relation": "CANDIDATE_TO_HANDOFF",
+      "detail": "Handoff validado AKP"
+    },
+    {
+      "from": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "to": "aos-rc4-cl-rabbitmq-3-11",
+      "relation": "HANDOFF_TO_RESULT",
+      "detail": "AthenaOS devolvió RESEARCHED_INCONCLUSIVE"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Kafka vs RabbitMQ: Bróker de mensajería 2026 - Aprender BIG DATA"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://arxiv.org/abs/1709.00333",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "[1709.00333] Kafka versus RabbitMQ - arXiv"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "What's the Difference Between Kafka and RabbitMQ?"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://aws.amazon.com/es/compare/the-difference-between-rabbitmq-and-kafka/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "¿Cuál es la diferencia entre Kafka y RabbitMQ? - AWS"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "KafkaShareConsumer (kafka 4.0.2 API)"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "La evidencia científica sobre el ayuno intermitente — Cochrane"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://profile.es/blog/rabbitmq-o-kafka/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "RabbitMQ o Kafka: ¿Cuál es la mejor opción?"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://raw.githubusercontent.com/lyogavin/airllm/main/README.md",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "lyogavin/airllm — README"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://www.conduktor.io/glossary/kafka-share-groups",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Kafka Queues: Share Groups Explained | Conduktor"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "Kafka Queue Semantics Now GA with Share Consumer API"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://www.rabbitmq.com/docs/compare/kafka",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "RabbitMQ vs. Apache Kafka — RabbitMQ"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+      "relation": "RESULT_TO_EVIDENCE",
+      "detail": "RabbitMQ vs. Apache Kafka — RabbitMQ"
+    },
+    {
+      "from": "aos-rc4-cl-rabbitmq-3-11",
+      "to": "fb-aos-rc4-cl-rabbitmq-3-11",
+      "relation": "RESULT_TO_FEEDBACK",
+      "detail": "EVIDENCE_ADDED, ASSESSMENT_CHANGED, INTERPRETATION_UPDATED, REOPENED, PRIORITY_CHANGED"
+    },
+    {
+      "from": "fb-aos-rc4-cl-rabbitmq-3-11",
+      "to": "radar:cl-rabbitmq-3-11",
+      "relation": "FEEDBACK_TO_RADAR",
+      "detail": "El radar mutó conservando historial"
+    },
+    {
+      "from": "radar:cl-rabbitmq-3-11",
+      "to": "m7:radar-state",
+      "relation": "RADAR_TO_STATE",
+      "detail": "Estado persistido"
+    }
+  ],
+  "chain": [
+    "src-airllm-claim→sig-src-airllm-claim-1→rc4-cl-airllm→aos-rc4-cl-airllm→fb-aos-rc4-cl-airllm→radar:cl-airllm",
+    "src-cofepris-alert→sig-src-cofepris-alert-1→rc4-cl-cofepris→aos-rc4-cl-cofepris→fb-aos-rc4-cl-cofepris→radar:cl-cofepris",
+    "src-creatine-harvard→sig-src-creatine-harvard-1→rc4-cl-suplementacion-de-creatina→aos-rc4-cl-suplementacion-de-creatina→fb-aos-rc4-cl-suplementacion-de-creatina→radar:cl-suplementacion-de-creatina",
+    "src-if-cochrane→sig-src-if-cochrane-1→rc4-cl-ayuno-intermitente→aos-rc4-cl-ayuno-intermitente→fb-aos-rc4-cl-ayuno-intermitente→radar:cl-ayuno-intermitente",
+    "src-kafka-vs-rabbitmq→sig-src-kafka-vs-rabbitmq-1→rc4-cl-rabbitmq-3-11→aos-rc4-cl-rabbitmq-3-11→fb-aos-rc4-cl-rabbitmq-3-11→radar:cl-rabbitmq-3-11",
+    "src-miracle-weightloss→sig-src-miracle-weightloss-1→rc4-cl-ketobig→aos-w2-rc4-cl-ketobig→fb-aos-w2-rc4-cl-ketobig→radar:cl-ketobig",
+    "src-mirror-python-freethreading→sig-src-mirror-python-freethreading-1→rc4-cl-python-3-13→aos-rc4-cl-python-3-13→fb-aos-rc4-cl-python-3-13→radar:cl-python-3-13"
+  ],
+  "completeChains": 7,
+  "missingChains": []
+}

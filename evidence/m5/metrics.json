@@ -1,0 +1,86 @@
+{
+  "kind": "athenasignal.m5.metrics.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "runs": 4,
+  "processes": 4,
+  "cycles": 48,
+  "sources": 130,
+  "extendedSources": 120,
+  "inputsObserved": 228,
+  "uniqueSources": 130,
+  "repeatedSources": 62,
+  "signalsTracked": 25,
+  "newSignals": 25,
+  "knownSignals": 99,
+  "duplicates": 110,
+  "related": 18,
+  "clusters": 7,
+  "multiSourceClusters": 5,
+  "candidates": 7,
+  "discarded": 1,
+  "promoted": 4,
+  "priorityChanges": 5,
+  "evidenceUpdates": 7,
+  "reassessments": 1,
+  "contradictions": 1,
+  "supported": 2,
+  "unsupported": 7,
+  "ambiguous": 15,
+  "reframed": 1,
+  "averageSourcesPerCandidate": 2,
+  "languages": {
+    "en": 93,
+    "es": 37
+  },
+  "platforms": {
+    "pmc": 6,
+    "blog": 15,
+    "youtube": 7,
+    "github": 5,
+    "tiktok": 1,
+    "docs": 5,
+    "gob": 2,
+    "web": 89
+  },
+  "llm": {
+    "providerChain": "audit(cognitive-router)",
+    "realResponses": 107,
+    "deterministicResponses": 157,
+    "replayMisses": 0,
+    "localRoutes": 181,
+    "localAltRoutes": 85,
+    "remoteRoutes": 1,
+    "fallbackRoutes": 0
+  },
+  "research": {
+    "queries": 34,
+    "evidenceItems": 47
+  },
+  "recovery": {
+    "events": 15,
+    "byKind": {
+      "LLM_FALLBACK": 10,
+      "NODE_DOWN": 1,
+      "TIMEOUT": 1,
+      "INVALID_RESPONSE": 1,
+      "PARTIAL_RUN": 1,
+      "PROCESS_RESTART": 1
+    }
+  },
+  "idempotency": {
+    "noOps": 12,
+    "attempted": 54
+  },
+  "akp": {
+    "delivered": 4,
+    "consumed": 4,
+    "suppressed": 8
+  },
+  "rawAssessments": {
+    "UNSUPPORTED": 7,
+    "AMBIGUOUS": 15,
+    "SUPPORTED": 2,
+    "REFRAMED": 1
+  },
+  "falsePositiveObservations": []
+}

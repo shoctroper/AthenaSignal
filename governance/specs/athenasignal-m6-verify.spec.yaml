@@ -1,0 +1,104 @@
+# AthenaSignal M6 — Closed-Loop Editorial Intelligence (STRICT verify run).
+# Executed directly after the worker builds, to obtain deterministic
+# red->green evidence for ciclo/ORDEN-010.md. Fails today (M6 test, loop
+# script and evidence/m6/*.json do not exist yet).
+id: athenasignal-m6-closed-loop-editorial-intelligence-verify
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: false
+  required: false
+
+scope:
+  baseline: governance/specs/athenasignal-m6.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+    - .m6tmp
+    - .m5tmp
+    - .m4tmp
+    - .m3tmp
+
+acceptance:
+  tests:
+    command: 'test -f tests/closed-loop-e2e.test.ts && test -f scripts/m6-loop.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts'
+    required: true
+    junit: false
+    timeout: 600.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m6.regressions.json
+
+  artifacts:
+    required:
+      - path: evidence/m6/corpus.json
+        kind: json_object
+      - path: evidence/m6/benchmark.json
+        kind: json_object
+      - path: evidence/m6/loop-timeline.json
+        kind: json_object
+      - path: evidence/m6/radar-state.json
+        kind: json_object
+      - path: evidence/m6/akp-live.json
+        kind: json_object
+      - path: evidence/m6/athenaos-results.json
+        kind: json_object
+      - path: evidence/m6/feedback-updates.json
+        kind: json_object
+      - path: evidence/m6/metrics.json
+        kind: json_object
+      - path: evidence/m6/cognitive-routing.json
+        kind: json_object
+      - path: evidence/m6/observability.json
+        kind: json_object
+      - path: evidence/m6/recovery-events.json
+        kind: json_object
+      - path: evidence/m6/idempotency.json
+        kind: json_object
+      - path: evidence/m6/distributed.json
+        kind: json_object
+      - path: evidence/m6/human-review-packet.json
+        kind: json_object
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node --experimental-strip-types scripts/m6-loop.ts
+  reproducible_timeout: 360.0
+
+escalate_when:
+  - required_data_missing

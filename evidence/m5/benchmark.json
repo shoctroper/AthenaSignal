@@ -1,0 +1,98 @@
+{
+  "kind": "athenasignal.m5.benchmark.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "NEW",
+      "description": "Se descubren señales nuevas a lo largo de la vida de la plataforma.",
+      "observed": true,
+      "evidence": "25 eventos NEW"
+    },
+    {
+      "id": "KNOWN",
+      "description": "Material conocido reaparece preservando identidad histórica.",
+      "observed": true,
+      "evidence": "99 eventos KNOWN"
+    },
+    {
+      "id": "DUPLICATE",
+      "description": "Fuentes repetidas no se reprocesan ni duplican.",
+      "observed": true,
+      "evidence": "110 eventos DUPLICATE"
+    },
+    {
+      "id": "RELATED",
+      "description": "Se vinculan fuentes/señales relacionadas cross-source.",
+      "observed": true,
+      "evidence": "18 eventos RELATED"
+    },
+    {
+      "id": "AMBIGUOUS",
+      "description": "Afirmaciones ambiguas se tratan como tales, sin elevarse a hecho.",
+      "observed": true,
+      "evidence": "15 assessments ambiguos"
+    },
+    {
+      "id": "SUPPORTED",
+      "description": "Afirmaciones sostenidas por evidencia de autoridad.",
+      "observed": true,
+      "evidence": "2 assessments soportados"
+    },
+    {
+      "id": "UNSUPPORTED",
+      "description": "Afirmaciones no sostenidas se reformulan o descartan; nunca se promueven.",
+      "observed": true,
+      "evidence": "7 assessments no soportados, ninguno promovido como hecho"
+    },
+    {
+      "id": "REFRAMED",
+      "description": "Claims incorrectos se reformulan como pregunta investigable.",
+      "observed": true,
+      "evidence": "1 assessments reformulados"
+    },
+    {
+      "id": "CONTRADICTED",
+      "description": "Contradicciones entre fuentes se conservan explícitamente.",
+      "observed": true,
+      "evidence": "1 eventos CONTRADICTED"
+    },
+    {
+      "id": "DISCARD",
+      "description": "Ruido promocional/no investigable se descarta sin destruir estado.",
+      "observed": true,
+      "evidence": "1 eventos DISCARDED"
+    },
+    {
+      "id": "PROMOTION",
+      "description": "Un candidate sostenido se promueve a AKP con handoff válido.",
+      "observed": true,
+      "evidence": "4 eventos PROMOTED"
+    },
+    {
+      "id": "PRIORITY_CHANGE",
+      "description": "La prioridad cambia dinámicamente con justificación observable.",
+      "observed": true,
+      "evidence": "5 cambios de prioridad"
+    },
+    {
+      "id": "MULTILINGUAL",
+      "description": "Material en varios idiomas se conserva con provenance.",
+      "observed": true,
+      "evidence": "2 idiomas: en, es"
+    },
+    {
+      "id": "CROSS_SOURCE",
+      "description": "Un cluster reúne >= 2 fuentes independientes.",
+      "observed": true,
+      "evidence": "5 clusters multi-fuente"
+    },
+    {
+      "id": "RECOVERED",
+      "description": "El sistema se recupera de reinicios, nodos caídos y fallos.",
+      "observed": true,
+      "evidence": "15 eventos de recuperación"
+    }
+  ],
+  "coverage": 1,
+  "falsePositiveObservations": []
+}

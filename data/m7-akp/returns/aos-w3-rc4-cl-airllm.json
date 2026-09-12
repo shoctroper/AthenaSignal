@@ -1,0 +1,237 @@
+{
+  "kind": "athenasignal.m6.athenaos_result.v1",
+  "resultId": "aos-w3-rc4-cl-airllm",
+  "candidateId": "rc4-cl-airllm",
+  "clusterId": "cl-airllm",
+  "handoffId": "m7-akp-w3-rc4-cl-airllm",
+  "handoffContentHash": "e7e0baa8ae8f78c0c892e3a07d00d377fd8ccd70a7e19a30f617b64e866976b5",
+  "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+  "worker": "athenaos-research-stand-in-m7",
+  "executionMode": "replay",
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "deterministic": false,
+  "status": "RESEARCHED_INCONCLUSIVE",
+  "steps": [
+    {
+      "id": "plan",
+      "step": "Decomposición del problema de investigación",
+      "detail": "Sub-preguntas derivadas: 4"
+    },
+    {
+      "id": "gather",
+      "step": "Recuperación y provenance de evidencia",
+      "detail": "11 referencias (11 del handoff, 0 de búsqueda)."
+    },
+    {
+      "id": "interpret",
+      "step": "Interpretación y evaluación de claims",
+      "detail": "2 hallazgos, 1 claims evaluados."
+    },
+    {
+      "id": "synthesize",
+      "step": "Síntesis estructurada y evaluación final",
+      "detail": "Evaluación final AMBIGUOUS (confianza 0.7)."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "EVIDENCE",
+      "text": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, como 4 GB de GPU, lo que sugiere que podría manejar 12 GB de RAM.",
+      "refs": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "cl-1",
+      "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "verdict": "UNCERTAIN",
+      "confidence": 0.3,
+      "evidenceRefs": [
+        "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+        "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+        "https://dev.to/arshtechpro/airllm-runs-a-70b-model-on-a-4gb-gpu-its-true-and-thats-not-the-interesting-part-hha",
+        "https://docs.python.org/3.13/howto/free-threading-python.html"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+      "title": "The Complete AirLLM Guide: Run 70B LLMs on a 4GB GPU",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://dev.to/arshtechpro/airllm-runs-a-70b-model-on-a-4gb-gpu-its-true-and-thats-not-the-interesting-part-hha",
+      "title": "AirLLM Runs a 70B Model on a 4GB GPU. It's True, and That's Not ...",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+      "title": "Python experimental support for free threading — Python 3.13 docs",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+      "title": "AirLLM vs Colibrì: ejecutando modelos de IA gigantes usando poca ...",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://roadmapia.org/modelos-locales/",
+      "title": "Modelos IA descargables · Corre LLMs gratis local - RoadmapIA",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DaIcV67jdDV/",
+      "title": "Correr Llama 3 o Mistral en una GPU de 4 GB era ... - Instagram",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "DISCOVERY",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-6I52TK654g",
+      "title": "This AI can run massive models with just 4 GB of RAM - YouTube",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+      "title": "The Complete AirLLM Guide: Run 70B LLMs on a 4GB GPU",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://dev.to/arshtechpro/airllm-runs-a-70b-model-on-a-4gb-gpu-its-true-and-thats-not-the-interesting-part-hha",
+      "title": "AirLLM Runs a 70B Model on a 4GB GPU. It's True, and That's Not ...",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+      "title": "Python experimental support for free threading — Python 3.13 docs",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+      "title": "AirLLM vs Colibrì: ejecutando modelos de IA gigantes usando poca ...",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://roadmapia.org/modelos-locales/",
+      "title": "Modelos IA descargables · Corre LLMs gratis local - RoadmapIA",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://www.instagram.com/reel/DaIcV67jdDV/",
+      "title": "Correr Llama 3 o Mistral en una GPU de 4 GB era ... - Instagram",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "language": "es",
+      "role": "DISCOVERY",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-6I52TK654g",
+      "title": "This AI can run massive models with just 4 GB of RAM - YouTube",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T04:00:00.000Z"
+    }
+  ],
+  "uncertainties": [
+    "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+    "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?"
+  ],
+  "finalAssessment": "AMBIGUOUS",
+  "confidence": 0.7,
+  "layers": {
+    "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+    "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "researchResult": "La pregunta se centra en las capacidades de AirLLM con 12 GB de RAM y el modelo DeepSeek V4. La evidencia sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no proporciona detalles específicos sobre DeepSeek V4 en 12 GB de RAM.",
+    "newEvidence": [],
+    "newInterpretation": "La pregunta se centra en las capacidades de AirLLM con 12 GB de RAM y el modelo DeepSeek V4. La evidencia sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no proporciona detalles específicos sobre DeepSeek V4 en 12 GB de RAM."
+  },
+  "createdAt": "2026-09-21T04:00:00.000Z",
+  "runId": "m7-proc-w3-run",
+  "limitations": [
+    "Sin resultados de búsqueda en este entorno; el análisis se apoya en la evidencia del handoff.",
+    "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+  ],
+  "wave": 3,
+  "evidenceBalance": {
+    "supporting": 0,
+    "contradicting": 0,
+    "uncertain": 1,
+    "authoritative": 2
+  },
+  "returnPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/returns/aos-w3-rc4-cl-airllm.json"
+}

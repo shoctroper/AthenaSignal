@@ -1,0 +1,79 @@
+# AthenaSignal M4 — Continuous Editorial Radar (bootstrap / authorization run).
+# Deterministic gates are VERDE over the post-M3 repository, so the root run
+# yields a HUMAN GATE via required semantic review (offline reviewer
+# unavailable). The human RETURN authorizes the OpenCode worker to implement
+# ciclo/ORDEN-008.md. Functional verification via athenasignal-m4-verify.spec.yaml.
+id: athenasignal-m4-continuous-editorial-radar
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: true
+  required: true
+
+scope:
+  baseline: governance/specs/athenasignal-m4.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+
+acceptance:
+  tests:
+    command: npm test
+    required: true
+    junit: false
+    timeout: 300.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m4.regressions.json
+
+  artifacts:
+    required:
+      - path: src/autonomous/pipeline.ts
+        kind: file
+      - path: tests/autonomous-intelligence-e2e.test.ts
+        kind: file
+      - path: package.json
+        kind: file
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node -e "process.stdout.write('athenasignal-m4-probe')"
+  reproducible_timeout: 60.0
+
+escalate_when:
+  - ambiguous_specification

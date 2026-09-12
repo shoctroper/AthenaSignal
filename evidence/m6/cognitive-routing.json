@@ -1,0 +1,136 @@
+{
+  "kind": "athenasignal.m6.cognitive_routing.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "decisions": [
+    {
+      "decisionId": "route-m6-research-0001",
+      "sequence": 1,
+      "runId": "m6-research",
+      "stage": "deep_research",
+      "route": "LOCAL_ALT",
+      "node": "macmini-ollama",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "fallback": false,
+      "escalated": false,
+      "reason": "Ruta preferida LOCAL_ALT disponible (macmini-ollama)."
+    },
+    {
+      "decisionId": "route-m6-research-0002",
+      "sequence": 2,
+      "runId": "m6-research",
+      "stage": "deep_research",
+      "route": "LOCAL_ALT",
+      "node": "macmini-ollama",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "fallback": false,
+      "escalated": false,
+      "reason": "Ruta preferida LOCAL_ALT disponible (macmini-ollama)."
+    },
+    {
+      "decisionId": "route-m6-research-0003",
+      "sequence": 3,
+      "runId": "m6-research",
+      "stage": "deep_research",
+      "route": "LOCAL_ALT",
+      "node": "macmini-ollama",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "fallback": false,
+      "escalated": false,
+      "reason": "Ruta preferida LOCAL_ALT disponible (macmini-ollama)."
+    },
+    {
+      "decisionId": "route-m6-research-0004",
+      "sequence": 4,
+      "runId": "m6-research",
+      "stage": "deep_research",
+      "route": "REMOTE_ESCALATION",
+      "node": "remote-deepseek",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "fallback": true,
+      "escalated": true,
+      "reason": "Degradación a REMOTE_ESCALATION (remote-deepseek) tras preferida."
+    },
+    {
+      "decisionId": "route-m6-research-0005",
+      "sequence": 5,
+      "runId": "m6-research",
+      "stage": "deep_research",
+      "route": "REMOTE_ESCALATION",
+      "node": "remote-deepseek",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "fallback": true,
+      "escalated": true,
+      "reason": "Degradación a REMOTE_ESCALATION (remote-deepseek) tras preferida."
+    },
+    {
+      "decisionId": "route-m5-drill-nodedown-0001",
+      "sequence": 1,
+      "runId": "m5-drill-nodedown",
+      "stage": "claim_assessment",
+      "route": "REMOTE_ESCALATION",
+      "node": "remote-deepseek",
+      "provider": "deterministic",
+      "model": "deterministic-fallback",
+      "deterministic": true,
+      "fallback": true,
+      "escalated": true,
+      "reason": "Degradación a REMOTE_ESCALATION (remote-deepseek) tras preferida."
+    },
+    {
+      "decisionId": "route-m5-drill-timeout-0001",
+      "sequence": 1,
+      "runId": "m5-drill-timeout",
+      "stage": "signal_discovery",
+      "route": "LOCAL_ALT",
+      "node": "macmini-ollama",
+      "provider": "deterministic",
+      "model": "deterministic-fallback",
+      "deterministic": true,
+      "fallback": true,
+      "escalated": false,
+      "reason": "Degradación a LOCAL_ALT (macmini-ollama) tras LOCAL."
+    },
+    {
+      "decisionId": "route-m5-drill-invalid-0001",
+      "sequence": 1,
+      "runId": "m5-drill-invalid",
+      "stage": "claim_assessment",
+      "route": "LOCAL",
+      "node": "ubuntu-ollama",
+      "provider": "deterministic",
+      "model": "deterministic-fallback",
+      "deterministic": true,
+      "fallback": true,
+      "escalated": false,
+      "reason": "Degradación a LOCAL (ubuntu-ollama) tras LOCAL_ALT."
+    }
+  ],
+  "byRoute": {
+    "LOCAL": 1,
+    "LOCAL_ALT": 4,
+    "REMOTE_ESCALATION": 3
+  },
+  "byStage": {
+    "deep_research": {
+      "LOCAL_ALT": 3,
+      "REMOTE_ESCALATION": 2
+    },
+    "claim_assessment": {
+      "REMOTE_ESCALATION": 1,
+      "LOCAL": 1
+    },
+    "signal_discovery": {
+      "LOCAL_ALT": 1
+    }
+  }
+}

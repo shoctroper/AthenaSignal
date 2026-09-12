@@ -1,0 +1,194 @@
+{
+  "kind": "athenasignal.m6.athenaos_result.v1",
+  "resultId": "aos-w2-rc4-cl-ketobig",
+  "candidateId": "rc4-cl-ketobig",
+  "clusterId": "cl-ketobig",
+  "handoffId": "m7-akp-w2-rc4-cl-ketobig",
+  "handoffContentHash": "526503d65aa1eaa4cf2936b7f7ac0d5cffa968a6c8f147e5b84584a994a28bee",
+  "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+  "worker": "athenaos-research-stand-in-m7",
+  "executionMode": "replay",
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "deterministic": false,
+  "status": "RESEARCHED_REFUTED",
+  "steps": [
+    {
+      "id": "plan",
+      "step": "Decomposición del problema de investigación",
+      "detail": "Sub-preguntas derivadas: 4"
+    },
+    {
+      "id": "gather",
+      "step": "Recuperación y provenance de evidencia",
+      "detail": "7 referencias (5 del handoff, 2 de búsqueda)."
+    },
+    {
+      "id": "interpret",
+      "step": "Interpretación y evaluación de claims",
+      "detail": "3 hallazgos, 1 claims evaluados."
+    },
+    {
+      "id": "synthesize",
+      "step": "Síntesis estructurada y evaluación final",
+      "detail": "Evaluación final UNSUPPORTED (confianza 0.8)."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "EVIDENCE",
+      "text": "La evidencia disponible sobre el ayuno intermitente no respalda la afirmación de que un individuo puede perder 10 kilos en una semana sin cambios en la dieta o actividad física.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "Existen alertas de autoridades sanitarias sobre la proliferación de productos 'milagro' para la pérdida de peso, lo que sugiere que afirmaciones tan exageradas como la de KetoBig son poco probables.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "Los estudios clínicos disponibles sobre el ayuno intermitente no proporcionan evidencia suficiente para respaldar afirmaciones tan específicas como la de KetoBig.",
+      "refs": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "cl-1",
+      "statement": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+      "verdict": "UNCERTAIN",
+      "confidence": 0.3,
+      "evidenceRefs": [
+        "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+        "https://k-state.com/plketobig",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "title": "Ayuno intermitente: efectos en diversos escenarios clínicos",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://k-state.com/plketobig",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "role": "DISCOVERY",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/",
+      "title": "Ayuno intermitente: ventajas y desventajas - Unilabs",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "title": "Ayuno intermitente: efectos en diversos escenarios clínicos",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://k-state.com/plketobig",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "language": "es",
+      "role": "DISCOVERY",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    },
+    {
+      "url": "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/",
+      "title": "Ayuno intermitente: ventajas y desventajas - Unilabs",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-21T03:02:15.000Z"
+    }
+  ],
+  "uncertainties": [
+    "La afirmación de perder 10 kilos en una semana es realista.",
+    "El suplemento KetoBig es efectivo para todas las personas.",
+    "Existen riesgos o efectos secundarios asociados con el uso de KetoBig.",
+    "Falta de estudios clínicos, datos de seguridad y eficacia, y ausencia de revisión por pares."
+  ],
+  "finalAssessment": "UNSUPPORTED",
+  "confidence": 0.8,
+  "layers": {
+    "originalSignal": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+    "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+    "researchResult": "La afirmación de que un individuo puede perder 10 kilos en una semana sin cambios en la dieta o actividad física utilizando el suplemento KetoBig no tiene respaldo en la evidencia científica. La evidencia disponible sugiere que el ayuno intermitente puede ser efectivo para la pérdida de peso, pero no hay estudios clínicos que respalden la afirmación específica de KetoBig. Además, existen preocupaciones sobre la seguridad y la eficacia del producto.",
+    "newEvidence": [
+      "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/"
+    ],
+    "newInterpretation": "La afirmación de que un individuo puede perder 10 kilos en una semana sin cambios en la dieta o actividad física utilizando el suplemento KetoBig no tiene respaldo en la evidencia científica. La evidencia disponible sugiere que el ayuno intermitente puede ser efectivo para la pérdida de peso, pero no hay estudios clínicos que respalden la afirmación específica de KetoBig. Además, existen preocupaciones sobre la seguridad y la eficacia del producto."
+  },
+  "createdAt": "2026-09-21T03:02:15.000Z",
+  "runId": "m7-proc-w2-run",
+  "limitations": [
+    "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+  ],
+  "wave": 2,
+  "evidenceBalance": {
+    "supporting": 0,
+    "contradicting": 0,
+    "uncertain": 1,
+    "authoritative": 8
+  },
+  "returnPath": "/Volumes/Medios/Repos/AthenaSignal/data/m7-akp/returns/aos-w2-rc4-cl-ketobig.json"
+}

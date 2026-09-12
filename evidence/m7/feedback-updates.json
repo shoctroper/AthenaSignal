@@ -1,0 +1,862 @@
+{
+  "kind": "athenasignal.m7.feedback_updates.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "updates": [
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-airllm",
+      "resultId": "aos-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "runId": "m6-proc-a-run-1",
+      "at": "2026-09-12T02:24:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-airllm",
+      "cycleNumber": 49,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "MEDIUM",
+        "score": 0.5275,
+        "status": "ACTIVE",
+        "evidence": 1,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.715,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "researchResult": "La pregunta se centra en las capacidades de AirLLM en hardware de consumo 12 GB, específicamente con el modelo DeepSeek V4. La evidencia proporcionada sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no se proporciona información directa sobre la capacidad de ejecutar DeepSeek V4 en 12 GB de RAM.",
+        "newEvidence": [
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+          "https://hacks4geeks.com/airllm-vs-colibri-ejecutando-modelos-de-ia-gigantes-usando-poca-vram-ram-y-almacenamiento-nvme/",
+          "https://roadmapia.org/modelos-locales/",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "https://www.youtube.com/watch?v=-6I52TK654g"
+        ],
+        "newInterpretation": "La pregunta se centra en las capacidades de AirLLM en hardware de consumo 12 GB, específicamente con el modelo DeepSeek V4. La evidencia proporcionada sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no se proporciona información directa sobre la capacidad de ejecutar DeepSeek V4 en 12 GB de RAM."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-ayuno-intermitente",
+      "resultId": "aos-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "runId": "m6-proc-a-run-1",
+      "at": "2026-09-12T02:29:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-ayuno-intermitente",
+      "cycleNumber": 50,
+      "previous": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 0.94,
+        "status": "ACTIVE",
+        "evidence": 6,
+        "contradiction": true
+      },
+      "next": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+        "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "researchResult": "La evidencia disponible no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados no muestran que el ayuno intermitente sea superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, existen incertidumbres sobre las diferencias entre grupos de estudio y el tipo de ayuno intermitente utilizado.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+          "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "https://secardiologia.es/blog/11239-potenciales-beneficios-del-ayuno-intermitente-mas-alla-de-la-perdida-de-peso",
+          "https://www.arsys.es/blog/kafka-vs-rabbitmq-principales-diferencias",
+          "https://www.bbc.com/mundo/articles/c70gde8p6k8o",
+          "https://www.datacamp.com/es/blog/kafka-vs-rabbitmq"
+        ],
+        "newInterpretation": "La evidencia disponible no respalda una mayor pérdida de peso con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados no muestran que el ayuno intermitente sea superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, existen incertidumbres sobre las diferencias entre grupos de estudio y el tipo de ayuno intermitente utilizado."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-cofepris",
+      "resultId": "aos-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "runId": "m6-proc-a-run-1",
+      "at": "2026-09-12T02:34:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-cofepris",
+      "cycleNumber": 51,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.715,
+        "status": "PROMOTED",
+        "evidence": 2,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 5,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "researchResult": "La COFEPRIS ha emitido alertas sobre la proliferación de anuncios de productos 'milagro' para bajar de peso en redes sociales, pero no se proporciona un número específico de portales retirados durante la presente administración federal. La evidencia sugiere que estos productos son comercializados ilegalmente y que COFEPRIS ha tomado medidas para retirarlos, pero no se detalla el número exacto.",
+        "newEvidence": [
+          "https://k-state.com/plketobig",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://www.centrojuliafarre.es/blog/ayuno-intermitente/",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob"
+        ],
+        "newInterpretation": "La COFEPRIS ha emitido alertas sobre la proliferación de anuncios de productos 'milagro' para bajar de peso en redes sociales, pero no se proporciona un número específico de portales retirados durante la presente administración federal. La evidencia sugiere que estos productos son comercializados ilegalmente y que COFEPRIS ha tomado medidas para retirarlos, pero no se detalla el número exacto."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-python-3-13",
+      "resultId": "aos-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "runId": "m6-proc-b-run-2",
+      "at": "2026-09-12T03:08:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-python-3-13",
+      "cycleNumber": 57,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.735,
+        "status": "PROMOTED",
+        "evidence": 2,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "researchResult": "La pregunta plantea si es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada. La evidencia proporcionada sugiere que la deshabilitación del GIL en Python 3.13 es una característica experimental y que puede mejorar el rendimiento en ciertas situaciones. Sin embargo, no se proporciona información clara sobre si todas las extensiones C necesitan modificaciones para funcionar correctamente en este entorno.",
+        "newEvidence": [
+          "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "https://dev.to/epam_india_python/python-313-the-gateway-to-high-performance-multithreading-without-gil-1dm7",
+          "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+        ],
+        "newInterpretation": "La pregunta plantea si es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada. La evidencia proporcionada sugiere que la deshabilitación del GIL en Python 3.13 es una característica experimental y que puede mejorar el rendimiento en ciertas situaciones. Sin embargo, no se proporciona información clara sobre si todas las extensiones C necesitan modificaciones para funcionar correctamente en este entorno."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-rabbitmq-3-11",
+      "resultId": "aos-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "runId": "m6-proc-b-run-2",
+      "at": "2026-09-12T03:13:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-rabbitmq-3-11",
+      "cycleNumber": 58,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.84,
+        "status": "PROMOTED",
+        "evidence": 6,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La fecha exacta de lanzamiento de Kafka 4.2.0 es incierta.",
+        "newEvidence": [
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+          "https://arxiv.org/abs/1709.00333",
+          "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/",
+          "https://aws.amazon.com/es/compare/the-difference-between-rabbitmq-and-kafka/",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://profile.es/blog/rabbitmq-o-kafka/",
+          "https://raw.githubusercontent.com/lyogavin/airllm/main/README.md",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor"
+        ],
+        "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La fecha exacta de lanzamiento de Kafka 4.2.0 es incierta."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-rc4-cl-suplementacion-de-creatina",
+      "resultId": "aos-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "runId": "m6-proc-b-run-2",
+      "at": "2026-09-12T03:18:00.000Z",
+      "cycleId": "m6-feedback-rc4-cl-suplementacion-de-creatina",
+      "cycleNumber": 59,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "HIGH",
+        "score": 0.6675,
+        "status": "PROMOTED",
+        "evidence": 3,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "REOPENED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia para su uso en diabetes y bajo oxígeno es limitada.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+          "https://k-state.com/plketobig",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente"
+        ],
+        "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia para su uso en diabetes y bajo oxígeno es limitada."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-airllm",
+      "resultId": "aos-w2-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:00:00.000Z",
+      "cycleId": "m7-wave2-rc4-cl-airllm",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.715,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "REFRAMED",
+        "priority": "MEDIUM",
+        "score": 0.745,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "changes": [
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "researchResult": "La investigación muestra que AirLLM puede permitir la ejecución de DeepSeek V4 localmente con 12 GB de RAM, pero existen dudas sobre la suficiencia de este recurso y otros factores que podrían afectar la ejecución.",
+        "newEvidence": [
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "https://dashen-tech.com/en/dev-tools/airllm-4gb-gpu-70b-llm-guide/",
+          "https://www.youtube.com/watch?v=-6I52TK654g"
+        ],
+        "newInterpretation": "La investigación muestra que AirLLM puede permitir la ejecución de DeepSeek V4 localmente con 12 GB de RAM, pero existen dudas sobre la suficiencia de este recurso y otros factores que podrían afectar la ejecución."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, REFRAMED) informó la decisión editorial: assessment changed, interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-ayuno-intermitente",
+      "resultId": "aos-w2-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:00:45.000Z",
+      "cycleId": "m7-wave2-rc4-cl-ayuno-intermitente",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      },
+      "next": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+        "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "researchResult": "La evidencia disponible no respalda una mayor pérdida de peso a largo plazo con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados sugieren que el ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, existen incertidumbres sobre las diferencias entre los grupos de estudio y la variabilidad de resultados dependiendo del tipo de ayuno intermitente utilizado.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+          "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+          "https://secardiologia.es/blog/11239-potenciales-beneficios-del-ayuno-intermitente-mas-alla-de-la-perdida-de-peso",
+          "https://www.arsys.es/blog/kafka-vs-rabbitmq-principales-diferencias",
+          "https://www.bbc.com/mundo/articles/c70gde8p6k8o",
+          "https://www.datacamp.com/es/blog/kafka-vs-rabbitmq"
+        ],
+        "newInterpretation": "La evidencia disponible no respalda una mayor pérdida de peso a largo plazo con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados sugieren que el ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, existen incertidumbres sobre las diferencias entre los grupos de estudio y la variabilidad de resultados dependiendo del tipo de ayuno intermitente utilizado."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-cofepris",
+      "resultId": "aos-w2-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:01:30.000Z",
+      "cycleId": "m7-wave2-rc4-cl-cofepris",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 5,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 0.9,
+        "status": "ACTIVE",
+        "evidence": 6,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "researchResult": "Se ha informado que la COFEPRIS ha retirado 3,432 portales de productos 'milagro' durante la presente administración federal, pero existen incertidumbres sobre otros aspectos relacionados con estos productos y las reglas publicitarias.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://www.centrojuliafarre.es/blog/ayuno-intermitente/"
+        ],
+        "newInterpretation": "Se ha informado que la COFEPRIS ha retirado 3,432 portales de productos 'milagro' durante la presente administración federal, pero existen incertidumbres sobre otros aspectos relacionados con estos productos y las reglas publicitarias."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: evidence added, assessment changed, interpretation updated, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-ketobig",
+      "resultId": "aos-w2-rc4-cl-ketobig",
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:02:15.000Z",
+      "cycleId": "m7-wave2-rc4-cl-ketobig",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "DISCARD",
+        "score": 0.3275,
+        "status": "DISCARDED",
+        "evidence": 1,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "UNSUPPORTED",
+        "priority": "DISCARD",
+        "score": 0.2725,
+        "status": "DISCARDED",
+        "evidence": 3,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+        "researchQuestion": "¿Cuánto peso pierde un individuo que consume KetoBig durante una semana sin cambios en la dieta o actividad física?",
+        "researchResult": "La afirmación de que un individuo puede perder 10 kilos en una semana sin cambios en la dieta o actividad física utilizando el suplemento KetoBig no tiene respaldo en la evidencia científica. La evidencia disponible sugiere que el ayuno intermitente puede ser efectivo para la pérdida de peso, pero no hay estudios clínicos que respalden la afirmación específica de KetoBig. Además, existen preocupaciones sobre la seguridad y la eficacia del producto.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/"
+        ],
+        "newInterpretation": "La afirmación de que un individuo puede perder 10 kilos en una semana sin cambios en la dieta o actividad física utilizando el suplemento KetoBig no tiene respaldo en la evidencia científica. La evidencia disponible sugiere que el ayuno intermitente puede ser efectivo para la pérdida de peso, pero no hay estudios clínicos que respalden la afirmación específica de KetoBig. Además, existen preocupaciones sobre la seguridad y la eficacia del producto."
+      },
+      "reason": "AthenaOS (RESEARCHED_REFUTED, UNSUPPORTED) informó la decisión editorial: evidence added, assessment changed, interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-python-3-13",
+      "resultId": "aos-w2-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:03:00.000Z",
+      "cycleId": "m7-wave2-rc4-cl-python-3-13",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 9,
+        "contradiction": false
+      },
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "researchResult": "La pregunta plantea si es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada. La evidencia proporcionada sugiere que la deshabilitación del GIL es una característica experimental en Python 3.13, pero no se proporciona información clara sobre qué extensiones C necesitan modificaciones específicas para funcionar correctamente en este entorno.",
+        "newEvidence": [
+          "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://www.centrojuliafarre.es/blog/ayuno-intermitente/",
+          "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm"
+        ],
+        "newInterpretation": "La pregunta plantea si es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada. La evidencia proporcionada sugiere que la deshabilitación del GIL es una característica experimental en Python 3.13, pero no se proporciona información clara sobre qué extensiones C necesitan modificaciones específicas para funcionar correctamente en este entorno."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-rabbitmq-3-11",
+      "resultId": "aos-w2-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:03:45.000Z",
+      "cycleId": "m7-wave2-rc4-cl-rabbitmq-3-11",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La fecha de lanzamiento de Kafka 4.2.0 es incierta.",
+        "newEvidence": [
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "https://aprenderbigdata.com/kafka-vs-rabbitmq/",
+          "https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/",
+          "https://aws.amazon.com/es/compare/the-difference-between-rabbitmq-and-kafka/",
+          "https://profile.es/blog/rabbitmq-o-kafka/",
+          "https://raw.githubusercontent.com/lyogavin/airllm/main/README.md",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor"
+        ],
+        "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La fecha de lanzamiento de Kafka 4.2.0 es incierta."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: interpretation updated, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w2-rc4-cl-suplementacion-de-creatina",
+      "resultId": "aos-w2-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "runId": "m7-proc-w2-run",
+      "at": "2026-09-21T03:04:30.000Z",
+      "cycleId": "m7-wave2-rc4-cl-suplementacion-de-creatina",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED",
+        "PRIORITY_CHANGED"
+      ],
+      "layers": {
+        "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia para su uso en diabetes y bajo oxígeno es limitada.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+          "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+          "https://k-state.com/plketobig",
+          "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente"
+        ],
+        "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia para su uso en diabetes y bajo oxígeno es limitada."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: interpretation updated, priority changed"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-airllm",
+      "resultId": "aos-w3-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:00:00.000Z",
+      "cycleId": "m7-wave3-rc4-cl-airllm",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "REFRAMED",
+        "priority": "MEDIUM",
+        "score": 0.745,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "MEDIUM",
+        "score": 0.715,
+        "status": "ACTIVE",
+        "evidence": 7,
+        "contradiction": false
+      },
+      "changes": [
+        "ASSESSMENT_CHANGED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "researchResult": "La pregunta se centra en las capacidades de AirLLM con 12 GB de RAM y el modelo DeepSeek V4. La evidencia sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no proporciona detalles específicos sobre DeepSeek V4 en 12 GB de RAM.",
+        "newEvidence": [],
+        "newInterpretation": "La pregunta se centra en las capacidades de AirLLM con 12 GB de RAM y el modelo DeepSeek V4. La evidencia sugiere que AirLLM puede ejecutar modelos de gran tamaño con recursos limitados, pero no proporciona detalles específicos sobre DeepSeek V4 en 12 GB de RAM."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: assessment changed, interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-ayuno-intermitente",
+      "resultId": "aos-w3-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:00:45.000Z",
+      "cycleId": "m7-wave3-rc4-cl-ayuno-intermitente",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      },
+      "next": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 1,
+        "status": "ACTIVE",
+        "evidence": 14,
+        "contradiction": true
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "El ayuno intermitente no pareció tener un efecto clínicamente significativo sobre la pérdida de peso en comparación con los consejos alimentarios habituales o con no hacer nada.",
+        "researchQuestion": "¿Cuáles son los efectos a largo plazo del ayuno intermitente en la pérdida de peso?",
+        "researchResult": "La evidencia disponible no respalda una mayor pérdida de peso a largo plazo con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados sugieren que el ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, la evidencia es limitada y puede variar dependiendo del tipo de ayuno intermitente utilizado y otros factores.",
+        "newEvidence": [],
+        "newInterpretation": "La evidencia disponible no respalda una mayor pérdida de peso a largo plazo con el ayuno intermitente en comparación con los consejos alimenticios tradicionales o no hacer nada. Los estudios revisados sugieren que el ayuno intermitente no es superior a una dieta hipocalórica convencional en términos de pérdida de peso. Sin embargo, la evidencia es limitada y puede variar dependiendo del tipo de ayuno intermitente utilizado y otros factores."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-cofepris",
+      "resultId": "aos-w3-rc4-cl-cofepris",
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:01:30.000Z",
+      "cycleId": "m7-wave3-rc4-cl-cofepris",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 0.9,
+        "status": "ACTIVE",
+        "evidence": 6,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "SUPPORTED",
+        "priority": "HIGH",
+        "score": 0.9,
+        "status": "PROMOTED",
+        "evidence": 6,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED",
+        "PROMOTED"
+      ],
+      "layers": {
+        "originalSignal": "La COFEPRIS ha retirado 3,432 portales de productos ‘milagro’ en lo que va de la presente administración federal, por violar las reglas publicitarias.",
+        "researchQuestion": "¿Cuántos portales de productos ‘milagro’ ha retirado la COFEPRIS durante la presente administración federal?",
+        "researchResult": "Se ha informado que la COFEPRIS ha retirado 3,432 portales de productos 'milagro' durante la presente administración federal, pero existen incertidumbres sobre otros aspectos relacionados con estos productos y las reglas publicitarias.",
+        "newEvidence": [
+          "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026"
+        ],
+        "newInterpretation": "Se ha informado que la COFEPRIS ha retirado 3,432 portales de productos 'milagro' durante la presente administración federal, pero existen incertidumbres sobre otros aspectos relacionados con estos productos y las reglas publicitarias."
+      },
+      "reason": "AthenaOS (RESEARCHED_CONFIRMED, SUPPORTED) informó la decisión editorial: interpretation updated, promoted"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-python-3-13",
+      "resultId": "aos-w3-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:02:15.000Z",
+      "cycleId": "m7-wave3-rc4-cl-python-3-13",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 9,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.86,
+        "status": "ACTIVE",
+        "evidence": 9,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "researchResult": "La deshabilitación del GIL en Python 3.13 introduce un nuevo enfoque para la programación multihilo, pero no está claro si todas las extensiones C necesitan ser modificadas para funcionar correctamente en este entorno. La evidencia disponible sugiere que algunas extensiones C pueden requerir ajustes, pero no proporciona una guía clara sobre cuáles son necesarios.",
+        "newEvidence": [
+          "https://www.centrojuliafarre.es/blog/ayuno-intermitente/",
+          "https://www.endocrino.cat/es/blog-endocrinologia.cfm/ID/16053/ESP/ayuno-intermitente.htm"
+        ],
+        "newInterpretation": "La deshabilitación del GIL en Python 3.13 introduce un nuevo enfoque para la programación multihilo, pero no está claro si todas las extensiones C necesitan ser modificadas para funcionar correctamente en este entorno. La evidencia disponible sugiere que algunas extensiones C pueden requerir ajustes, pero no proporciona una guía clara sobre cuáles son necesarios."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-rabbitmq-3-11",
+      "resultId": "aos-w3-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:03:00.000Z",
+      "cycleId": "m7-wave3-rc4-cl-rabbitmq-3-11",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.84,
+        "status": "ACTIVE",
+        "evidence": 15,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proporcionada no es suficiente para determinar con certeza la versión exacta en la que se introdujeron los share groups, ni cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor.",
+        "newEvidence": [],
+        "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proporcionada no es suficiente para determinar con certeza la versión exacta en la que se introdujeron los share groups, ni cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: interpretation updated"
+    },
+    {
+      "kind": "athenasignal.m6.feedback_update.v1",
+      "updateId": "fb-aos-w3-rc4-cl-suplementacion-de-creatina",
+      "resultId": "aos-w3-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "runId": "m7-proc-w3-run",
+      "at": "2026-09-21T04:03:45.000Z",
+      "cycleId": "m7-wave3-rc4-cl-suplementacion-de-creatina",
+      "cycleNumber": 73,
+      "previous": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      },
+      "next": {
+        "assessment": "AMBIGUOUS",
+        "priority": "HIGH",
+        "score": 0.73,
+        "status": "ACTIVE",
+        "evidence": 12,
+        "contradiction": false
+      },
+      "changes": [
+        "INTERPRETATION_UPDATED"
+      ],
+      "layers": {
+        "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia actual es limitada y no es suficiente para afirmar que la suplementación de creatina mejora la metabolización celular o reduce la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno.",
+        "newEvidence": [],
+        "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero su efecto en la metabolización celular y en la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, no ha sido ampliamente investigado. Existen evidencias que sugieren que la creatina puede tener beneficios en ciertas condiciones, pero la evidencia actual es limitada y no es suficiente para afirmar que la suplementación de creatina mejora la metabolización celular o reduce la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno."
+      },
+      "reason": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: interpretation updated"
+    }
+  ],
+  "byChange": {
+    "ASSESSMENT_CHANGED": 9,
+    "EVIDENCE_ADDED": 9,
+    "INTERPRETATION_UPDATED": 19,
+    "PRIORITY_CHANGED": 8,
+    "PROMOTED": 1,
+    "REOPENED": 4
+  }
+}

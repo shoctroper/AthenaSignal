@@ -1,0 +1,146 @@
+{
+  "kind": "athenasignal.m6.human_review_packet.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "rubric": [
+    {
+      "id": "Q1",
+      "question": "¿Un candidate real llegó a AthenaOS (o al stand-in documentado)?"
+    },
+    {
+      "id": "Q2",
+      "question": "¿Se produjo investigación real sobre el candidate?"
+    },
+    {
+      "id": "Q3",
+      "question": "¿El resultado volvió al conocimiento compartido (AKP)?"
+    },
+    {
+      "id": "Q4",
+      "question": "¿AthenaSignal cambió de estado por la información nueva?"
+    },
+    {
+      "id": "Q5",
+      "question": "¿El loop corre repetidamente sin intervención manual?"
+    },
+    {
+      "id": "Q6",
+      "question": "¿El sistema degrada correctamente si un nodo falla?"
+    },
+    {
+      "id": "Q7",
+      "question": "¿El universo creció por encima de M5 sin degradación catastrófica?"
+    },
+    {
+      "id": "Q8",
+      "question": "¿La memoria histórica sobrevive a reinicios y nuevas ejecuciones?"
+    },
+    {
+      "id": "Q9",
+      "question": "¿Los reintentos/idempotencia no corrompen el estado?"
+    },
+    {
+      "id": "Q10",
+      "question": "¿Un editor humano confirmaría que el radar quedó mejor informado?"
+    }
+  ],
+  "bestStory": "rc4-cl-ayuno-intermitente: investigación AthenaOS SUPPORTED con 3 claims y 13 evidencias; el radar actualizó su evaluación e interpretación conservando la señal original.",
+  "worstStory": "rc4-cl-airllm: investigación RESEARCHED_INCONCLUSIVE; se preservó provenance e incertidumbre (limitaciones: AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado.).",
+  "mostImportantFeedback": {
+    "candidateId": "rc4-cl-cofepris",
+    "changes": [
+      "EVIDENCE_ADDED",
+      "ASSESSMENT_CHANGED",
+      "INTERPRETATION_UPDATED",
+      "REOPENED",
+      "PRIORITY_CHANGED"
+    ],
+    "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, assessment changed, interpretation updated, reopened, priority changed"
+  },
+  "mostDifficultSource": "Los canales espejo M6 carecen de cognición grabada propia y degradan al fallback determinista seguro, preservando provenance sin inventar señales.",
+  "majorContradiction": {
+    "candidateId": "cluster:cl-ayuno-intermitente",
+    "details": [
+      "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+      "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+      "Contradicción entre sig-src-if-mayo-1 (src-if-mayo) y sig-src-mirror-if-cochrane-1 (src-mirror-if-cochrane).",
+      "Contradicción entre sig-src-if-mayo-1 (src-if-mayo) y sig-src-mirror-if-cochrane-2 (src-mirror-if-cochrane)."
+    ],
+    "why": "Contradicción histórica conservada por el radar; bloquea la promoción y permanece como tensión editorial explícita."
+  },
+  "majorPromotion": {
+    "candidateId": "rc4-cl-suplementacion-de-creatina",
+    "reason": "Promovido: HIGH con score 0.6675 >= 0.6, 3 fuentes independientes (1 de autoridad) y 3 evidencias >= 2, sin contradicción bloqueante, evaluación REFRAMED.",
+    "why": "Candidate promovido a AKP con handoff validado."
+  },
+  "majorFailure": {
+    "recoveryId": "rec-m6-proc-a-run-1-001",
+    "kind": "PARTIAL_RUN",
+    "runId": "m6-proc-a-run-1",
+    "why": "El proceso murió tras m6-cycle-56; el radar quedó persistido y una corrida posterior debe reanudar sin duplicar ni perder provenance."
+  },
+  "distributedExample": "Nodos no disponibles: macmini-cognitive; el loop degradó a las rutas restantes sin detener la operación.",
+  "longRunningTimeline": [
+    "[DISCOVER] Continuidad M6 69: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 70: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 71: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7.",
+    "[DISCOVER] Continuidad M6 72: observación desatendida de 12 fuentes del universo ampliado (incluye canales espejo M6).",
+    "[TRIAGE] Triaje autónomo de 12 fuentes: se conservan las investigables y se descarta ruido sin intervención manual.",
+    "[CANDIDATE] Candidates vigentes tras el ciclo: 7."
+  ],
+  "akpTrace": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "handoffId": "m6-akp-rc4-cl-airllm",
+      "deliveredAt": "2026-09-12T02:11:00.000Z",
+      "consumedAt": "2026-09-12T02:11:00.000Z",
+      "researchResultId": "aos-rc4-cl-airllm",
+      "feedbackUpdateId": "fb-aos-rc4-cl-airllm"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+      "deliveredAt": "2026-09-12T02:15:00.000Z",
+      "consumedAt": "2026-09-12T02:15:00.000Z",
+      "researchResultId": "aos-rc4-cl-ayuno-intermitente",
+      "feedbackUpdateId": "fb-aos-rc4-cl-ayuno-intermitente"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "handoffId": "m6-akp-rc4-cl-cofepris",
+      "deliveredAt": "2026-09-12T02:19:00.000Z",
+      "consumedAt": "2026-09-12T02:19:00.000Z",
+      "researchResultId": "aos-rc4-cl-cofepris",
+      "feedbackUpdateId": "fb-aos-rc4-cl-cofepris"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "handoffId": "m6-akp-rc4-cl-python-3-13",
+      "deliveredAt": "2026-09-12T02:55:00.000Z",
+      "consumedAt": "2026-09-12T02:55:00.000Z",
+      "researchResultId": "aos-rc4-cl-python-3-13",
+      "feedbackUpdateId": "fb-aos-rc4-cl-python-3-13"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "handoffId": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "deliveredAt": "2026-09-12T02:59:00.000Z",
+      "consumedAt": "2026-09-12T02:59:00.000Z",
+      "researchResultId": "aos-rc4-cl-rabbitmq-3-11",
+      "feedbackUpdateId": "fb-aos-rc4-cl-rabbitmq-3-11"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "handoffId": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "deliveredAt": "2026-09-12T03:03:00.000Z",
+      "consumedAt": "2026-09-12T03:03:00.000Z",
+      "researchResultId": "aos-rc4-cl-suplementacion-de-creatina",
+      "feedbackUpdateId": "fb-aos-rc4-cl-suplementacion-de-creatina"
+    }
+  ]
+}

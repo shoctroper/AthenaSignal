@@ -1,0 +1,102 @@
+{
+  "kind": "athenasignal.m4.benchmark.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "bench-m4-dedup-repeat",
+      "description": "Reprocesar una fuente ya vista no la duplica y registra KNOWN/DUPLICATE.",
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2"
+      ],
+      "expected": {
+        "eventKinds": [
+          "DUPLICATE",
+          "KNOWN"
+        ]
+      }
+    },
+    {
+      "id": "bench-m4-cross-source-link",
+      "description": "Una fuente relacionada se vincula al cluster existente y amplía la evidencia.",
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2"
+      ],
+      "expected": {
+        "eventKinds": [
+          "RELATED",
+          "UPDATED"
+        ]
+      }
+    },
+    {
+      "id": "bench-m4-priority-change",
+      "description": "La evidencia acumulada cambia la prioridad del candidate (MEDIUM → HIGH).",
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2"
+      ],
+      "expected": {
+        "eventKinds": [
+          "PRIORITY_CHANGED"
+        ]
+      }
+    },
+    {
+      "id": "bench-m4-contradiction",
+      "description": "Evidencia contradictoria se refleja como contradicción explícita y reevaluación.",
+      "cycles": [
+        "m4-cycle-3",
+        "m4-cycle-4"
+      ],
+      "expected": {
+        "eventKinds": [
+          "CONTRADICTED",
+          "REASSESSED"
+        ],
+        "contradiction": true
+      }
+    },
+    {
+      "id": "bench-m4-noise-discard",
+      "description": "El ruido promocional terciario se descarta.",
+      "cycles": [
+        "m4-cycle-5"
+      ],
+      "expected": {
+        "eventKinds": [
+          "DISCARDED"
+        ],
+        "discarded": true
+      }
+    },
+    {
+      "id": "bench-m4-reframing",
+      "description": "Un claim incorrecto se reformula y sigue siendo investigable.",
+      "cycles": [
+        "m4-cycle-5"
+      ],
+      "expected": {
+        "eventKinds": [
+          "NEW"
+        ]
+      }
+    },
+    {
+      "id": "bench-m4-promotion",
+      "description": "Un candidate suficientemente sostenido se promueve a AthenaOS.",
+      "cycles": [
+        "m4-cycle-1",
+        "m4-cycle-2",
+        "m4-cycle-6"
+      ],
+      "expected": {
+        "eventKinds": [
+          "PROMOTED"
+        ],
+        "promoted": true
+      }
+    }
+  ]
+}

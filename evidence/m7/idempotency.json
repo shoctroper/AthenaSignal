@@ -1,0 +1,395 @@
+{
+  "kind": "athenasignal.m7.idempotency.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "records": [
+    {
+      "key": "research:rc4-cl-airllm",
+      "kind": "SOURCE",
+      "runId": "m6-proc-a-run-1",
+      "appliedAt": "2026-09-12T02:14:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-airllm completada y devuelta a AKP."
+    },
+    {
+      "key": "research:rc4-cl-ayuno-intermitente",
+      "kind": "SOURCE",
+      "runId": "m6-proc-a-run-1",
+      "appliedAt": "2026-09-12T02:18:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-ayuno-intermitente completada y devuelta a AKP."
+    },
+    {
+      "key": "research:rc4-cl-cofepris",
+      "kind": "SOURCE",
+      "runId": "m6-proc-a-run-1",
+      "appliedAt": "2026-09-12T02:22:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-cofepris completada y devuelta a AKP."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-airllm",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:28:00.000Z",
+      "attempts": 3,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-airllm aplicado una sola vez."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-ayuno-intermitente",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:33:00.000Z",
+      "attempts": 3,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-ayuno-intermitente aplicado una sola vez."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-cofepris",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:38:00.000Z",
+      "attempts": 3,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-cofepris aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-49",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:40:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-49 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-50",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:41:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-50 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-51",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:42:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-51 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-52",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:43:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-52 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-53",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:44:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-53 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-54",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:45:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-54 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-55",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:46:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-55 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-56",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T02:47:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-56 aplicado una sola vez."
+    },
+    {
+      "key": "research:rc4-cl-python-3-13",
+      "kind": "SOURCE",
+      "runId": "m6-proc-b-run-2",
+      "appliedAt": "2026-09-12T02:58:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-python-3-13 completada y devuelta a AKP."
+    },
+    {
+      "key": "research:rc4-cl-rabbitmq-3-11",
+      "kind": "SOURCE",
+      "runId": "m6-proc-b-run-2",
+      "appliedAt": "2026-09-12T03:02:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-rabbitmq-3-11 completada y devuelta a AKP."
+    },
+    {
+      "key": "research:rc4-cl-suplementacion-de-creatina",
+      "kind": "SOURCE",
+      "runId": "m6-proc-b-run-2",
+      "appliedAt": "2026-09-12T03:06:00.000Z",
+      "attempts": 1,
+      "noOp": false,
+      "detail": "Investigación aos-rc4-cl-suplementacion-de-creatina completada y devuelta a AKP."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-python-3-13",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:12:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-python-3-13 aplicado una sola vez."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-rabbitmq-3-11",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:17:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-rabbitmq-3-11 aplicado una sola vez."
+    },
+    {
+      "key": "feedback:aos-rc4-cl-suplementacion-de-creatina",
+      "kind": "SIGNAL",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:22:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Feedback fb-aos-rc4-cl-suplementacion-de-creatina aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-57",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:24:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-57 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-58",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:25:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-58 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-59",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:26:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-59 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-60",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:27:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-60 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-61",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:28:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-61 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-62",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:29:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-62 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-63",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:30:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-63 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-64",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:31:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-64 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-65",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:32:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-65 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-66",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:33:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-66 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-67",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:34:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-67 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-68",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:35:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-68 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-69",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:36:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-69 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-70",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:37:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-70 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-71",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:38:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-71 aplicado una sola vez."
+    },
+    {
+      "key": "m6-cycle-72",
+      "kind": "CYCLE",
+      "runId": "m6-proc-c-run-3",
+      "appliedAt": "2026-09-12T03:39:00.000Z",
+      "attempts": 2,
+      "noOp": true,
+      "detail": "Ciclo m6-cycle-72 aplicado una sola vez."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-airllm",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-airllm ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-ayuno-intermitente",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-ayuno-intermitente ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-cofepris",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-cofepris ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-ketobig",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-ketobig ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-python-3-13",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-python-3-13 ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-rabbitmq-3-11",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-rabbitmq-3-11 ya resuelto; reproceso idempotente sin mutar el historial."
+    },
+    {
+      "key": "m7-reprocess:aos-w2-rc4-cl-suplementacion-de-creatina",
+      "kind": "SOURCE",
+      "runId": "m7-reprocess",
+      "appliedAt": "2026-09-12T00:00:00.000Z",
+      "attempts": 1,
+      "noOp": true,
+      "detail": "Resultado aos-w2-rc4-cl-suplementacion-de-creatina ya resuelto; reproceso idempotente sin mutar el historial."
+    }
+  ],
+  "noOps": 37,
+  "attempted": 43
+}

@@ -1,0 +1,97 @@
+# AthenaSignal M5 — Autonomous Editorial Intelligence Platform (STRICT verify).
+# Executed directly after the worker builds, to obtain deterministic
+# red->green evidence for ciclo/ORDEN-009.md. Fails today (M5 test, replay
+# script and evidence/m5/*.json do not exist yet).
+id: athenasignal-m5-autonomous-editorial-intelligence-verify
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: false
+  required: false
+
+scope:
+  baseline: governance/specs/athenasignal-m5.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+    - .m5tmp
+    - .m4tmp
+    - .m3tmp
+
+acceptance:
+  tests:
+    command: 'test -f tests/platform-e2e.test.ts && test -f scripts/m5-replay.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts'
+    required: true
+    junit: false
+    timeout: 600.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m5.regressions.json
+
+  artifacts:
+    required:
+      - path: evidence/m5/corpus.json
+        kind: json_object
+      - path: evidence/m5/benchmark.json
+        kind: json_object
+      - path: evidence/m5/run-timeline.json
+        kind: json_object
+      - path: evidence/m5/radar-state.json
+        kind: json_object
+      - path: evidence/m5/metrics.json
+        kind: json_object
+      - path: evidence/m5/cognitive-routing.json
+        kind: json_object
+      - path: evidence/m5/observability.json
+        kind: json_object
+      - path: evidence/m5/recovery-events.json
+        kind: json_object
+      - path: evidence/m5/idempotency.json
+        kind: json_object
+      - path: evidence/m5/akp-handoff.json
+        kind: json_object
+      - path: evidence/m5/human-review-packet.json
+        kind: json_object
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node --experimental-strip-types scripts/m5-replay.ts
+  reproducible_timeout: 300.0
+
+escalate_when:
+  - required_data_missing
