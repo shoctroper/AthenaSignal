@@ -1,0 +1,811 @@
+{
+  "pass_topics": [
+    "adn-franklin",
+    "chernobil",
+    "contenedor-carga",
+    "curie-radio",
+    "enigma-bletchley",
+    "hambruna-irlandesa",
+    "imprenta-rich",
+    "juicio-nuremberg",
+    "muro-berlin",
+    "peste-rich"
+  ],
+  "topic_count": 12,
+  "final_ratio": "10/12",
+  "best_by_topic": {
+    "contenedor-carga": {
+      "variant": "r1",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 737,
+        "sentences": 29,
+        "paragraphs": 4,
+        "fact_dump_ratio": 0.103,
+        "connectives": 2,
+        "length_stdev": 11.71,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "hambruna-irlandesa": {
+      "variant": "r1",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 1011,
+        "sentences": 34,
+        "paragraphs": 10,
+        "fact_dump_ratio": 0.324,
+        "connectives": 9,
+        "length_stdev": 11.55,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "imprenta-rich": {
+      "variant": "r1",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 1410,
+        "sentences": 44,
+        "paragraphs": 7,
+        "fact_dump_ratio": 0.0,
+        "connectives": 14,
+        "length_stdev": 13.86,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "muro-berlin": {
+      "variant": "r3",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 591,
+        "sentences": 14,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.0,
+        "connectives": 7,
+        "length_stdev": 25.85,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "peste-rich": {
+      "variant": "r1",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 2989,
+        "sentences": 110,
+        "paragraphs": 13,
+        "fact_dump_ratio": 0.045,
+        "connectives": 20,
+        "length_stdev": 11.98,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "juicio-nuremberg": {
+      "variant": "r2-1",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 562,
+        "sentences": 22,
+        "paragraphs": 5,
+        "fact_dump_ratio": 0.136,
+        "connectives": 3,
+        "length_stdev": 14.49,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "adn-franklin": {
+      "variant": "r3",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 811,
+        "sentences": 31,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.129,
+        "connectives": 7,
+        "length_stdev": 13.62,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "chernobil": {
+      "variant": "r3",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 726,
+        "sentences": 29,
+        "paragraphs": 5,
+        "fact_dump_ratio": 0.172,
+        "connectives": 12,
+        "length_stdev": 12.36,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "curie-radio": {
+      "variant": "r3",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 864,
+        "sentences": 33,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.455,
+        "connectives": 8,
+        "length_stdev": 9.77,
+        "duplicate_ratio": 0.0
+      }
+    },
+    "enigma-bletchley": {
+      "variant": "r3",
+      "pass": true,
+      "criteria": {
+        "non_empty": true,
+        "min_length": true,
+        "no_claim_id_leak": true,
+        "structural_validity": true,
+        "anti_fact_dump": true,
+        "narrative_connectives": true,
+        "sentence_variety": true,
+        "low_repetition": true,
+        "engine_review_approved": true
+      },
+      "failed": [],
+      "metrics": {
+        "words": 1037,
+        "sentences": 35,
+        "paragraphs": 7,
+        "fact_dump_ratio": 0.257,
+        "connectives": 13,
+        "length_stdev": 16.21,
+        "duplicate_ratio": 0.0
+      }
+    }
+  },
+  "candidate_count": 33,
+  "pass_candidate_count": 15,
+  "all": [
+    {
+      "bank": "adn-franklin",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump",
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 1133,
+        "sentences": 50,
+        "paragraphs": 5,
+        "fact_dump_ratio": 1.0,
+        "connectives": 1,
+        "length_stdev": 6.2,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "alejandria",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1236,
+        "sentences": 46,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.587,
+        "connectives": 9,
+        "length_stdev": 10.5,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "apollo-13",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1157,
+        "sentences": 54,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.722,
+        "connectives": 13,
+        "length_stdev": 9.98,
+        "duplicate_ratio": 0.019
+      }
+    },
+    {
+      "bank": "chernobil",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 806,
+        "sentences": 47,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.872,
+        "connectives": 6,
+        "length_stdev": 5.19,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "contenedor-carga",
+      "variant": "r1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 737,
+        "sentences": 29,
+        "paragraphs": 4,
+        "fact_dump_ratio": 0.103,
+        "connectives": 2,
+        "length_stdev": 11.71,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "curie-radio",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "structural_validity",
+        "anti_fact_dump",
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 761,
+        "sentences": 42,
+        "paragraphs": 1,
+        "fact_dump_ratio": 1.0,
+        "connectives": 0,
+        "length_stdev": 4.8,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "enigma-bletchley",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "structural_validity"
+      ],
+      "metrics": {
+        "words": 689,
+        "sentences": 28,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.107,
+        "connectives": 2,
+        "length_stdev": 11.86,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "hambruna-irlandesa",
+      "variant": "r1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 1011,
+        "sentences": 34,
+        "paragraphs": 10,
+        "fact_dump_ratio": 0.324,
+        "connectives": 9,
+        "length_stdev": 11.55,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "imprenta-rich",
+      "variant": "r1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 1410,
+        "sentences": 44,
+        "paragraphs": 7,
+        "fact_dump_ratio": 0.0,
+        "connectives": 14,
+        "length_stdev": 13.86,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "juicio-nuremberg",
+      "variant": "r1",
+      "pass": false,
+      "failed": [
+        "structural_validity"
+      ],
+      "metrics": {
+        "words": 558,
+        "sentences": 22,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.182,
+        "connectives": 2,
+        "length_stdev": 12.07,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "muro-berlin",
+      "variant": "r1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 668,
+        "sentences": 13,
+        "paragraphs": 3,
+        "fact_dump_ratio": 0.077,
+        "connectives": 5,
+        "length_stdev": 50.43,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "peste-rich",
+      "variant": "r1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 2989,
+        "sentences": 110,
+        "paragraphs": 13,
+        "fact_dump_ratio": 0.045,
+        "connectives": 20,
+        "length_stdev": 11.98,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "adn-franklin",
+      "variant": "r2-1",
+      "pass": false,
+      "failed": [
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 836,
+        "sentences": 30,
+        "paragraphs": 7,
+        "fact_dump_ratio": 0.267,
+        "connectives": 1,
+        "length_stdev": 9.05,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "adn-franklin",
+      "variant": "r2-2",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump",
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 1098,
+        "sentences": 50,
+        "paragraphs": 3,
+        "fact_dump_ratio": 1.0,
+        "connectives": 1,
+        "length_stdev": 5.94,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "alejandria",
+      "variant": "r2-1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1261,
+        "sentences": 51,
+        "paragraphs": 4,
+        "fact_dump_ratio": 0.686,
+        "connectives": 8,
+        "length_stdev": 5.83,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "alejandria",
+      "variant": "r2-2",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1320,
+        "sentences": 52,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.75,
+        "connectives": 7,
+        "length_stdev": 6.32,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "chernobil",
+      "variant": "r2-1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 806,
+        "sentences": 47,
+        "paragraphs": 5,
+        "fact_dump_ratio": 0.872,
+        "connectives": 6,
+        "length_stdev": 5.19,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "chernobil",
+      "variant": "r2-2",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 690,
+        "sentences": 35,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.514,
+        "connectives": 8,
+        "length_stdev": 6.16,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "curie-radio",
+      "variant": "r2-1",
+      "pass": false,
+      "failed": [
+        "structural_validity",
+        "anti_fact_dump",
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 761,
+        "sentences": 42,
+        "paragraphs": 1,
+        "fact_dump_ratio": 1.0,
+        "connectives": 0,
+        "length_stdev": 4.8,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "curie-radio",
+      "variant": "r2-2",
+      "pass": false,
+      "failed": [
+        "structural_validity",
+        "anti_fact_dump",
+        "narrative_connectives"
+      ],
+      "metrics": {
+        "words": 788,
+        "sentences": 43,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.977,
+        "connectives": 0,
+        "length_stdev": 5.03,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "enigma-bletchley",
+      "variant": "r2-1",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1052,
+        "sentences": 44,
+        "paragraphs": 1,
+        "fact_dump_ratio": 1.0,
+        "connectives": 6,
+        "length_stdev": 4.87,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "enigma-bletchley",
+      "variant": "r2-2",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1052,
+        "sentences": 44,
+        "paragraphs": 8,
+        "fact_dump_ratio": 1.0,
+        "connectives": 6,
+        "length_stdev": 4.87,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "juicio-nuremberg",
+      "variant": "r2-1",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 562,
+        "sentences": 22,
+        "paragraphs": 5,
+        "fact_dump_ratio": 0.136,
+        "connectives": 3,
+        "length_stdev": 14.49,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "juicio-nuremberg",
+      "variant": "r2-2",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 842,
+        "sentences": 48,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.458,
+        "connectives": 5,
+        "length_stdev": 7.75,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "adn-franklin",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 811,
+        "sentences": 31,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.129,
+        "connectives": 7,
+        "length_stdev": 13.62,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "alejandria",
+      "variant": "r3",
+      "pass": false,
+      "failed": [
+        "anti_fact_dump"
+      ],
+      "metrics": {
+        "words": 1356,
+        "sentences": 54,
+        "paragraphs": 10,
+        "fact_dump_ratio": 0.611,
+        "connectives": 14,
+        "length_stdev": 7.28,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "chernobil",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 726,
+        "sentences": 29,
+        "paragraphs": 5,
+        "fact_dump_ratio": 0.172,
+        "connectives": 12,
+        "length_stdev": 12.36,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "contenedor-carga",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 735,
+        "sentences": 37,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.108,
+        "connectives": 12,
+        "length_stdev": 10.39,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "curie-radio",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 864,
+        "sentences": 33,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.455,
+        "connectives": 8,
+        "length_stdev": 9.77,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "enigma-bletchley",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 1037,
+        "sentences": 35,
+        "paragraphs": 7,
+        "fact_dump_ratio": 0.257,
+        "connectives": 13,
+        "length_stdev": 16.21,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "hambruna-irlandesa",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 1068,
+        "sentences": 42,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.405,
+        "connectives": 15,
+        "length_stdev": 6.76,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "juicio-nuremberg",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 712,
+        "sentences": 32,
+        "paragraphs": 6,
+        "fact_dump_ratio": 0.219,
+        "connectives": 10,
+        "length_stdev": 11.86,
+        "duplicate_ratio": 0.0
+      }
+    },
+    {
+      "bank": "muro-berlin",
+      "variant": "r3",
+      "pass": true,
+      "failed": [],
+      "metrics": {
+        "words": 591,
+        "sentences": 14,
+        "paragraphs": 1,
+        "fact_dump_ratio": 0.0,
+        "connectives": 7,
+        "length_stdev": 25.85,
+        "duplicate_ratio": 0.0
+      }
+    }
+  ]
+}

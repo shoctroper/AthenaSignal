@@ -56,3 +56,14 @@ Strict re-evaluation of the real drafts (24 candidates across 12 topics):
 
 This is the honest baseline. Reaching a credible 10/10 requires a generation
 change (narrative prompt/structure enforcement in the engine), not a lower bar.
+
+## MGV-FLEET-8 final result
+
+**Strict PASS: 10/12 topics (10 selected scripts 10/10 PASS; 15 passing candidates / 33).**
+
+- Improvement came from a real product change: the engine's generation prompt now
+  enforces continuous narrative prose (anti-fact-dump), not from lowering the bar.
+- Provider/model: OpenCode Go `deepseek-v4-flash` (no fallback).
+- Still failing: `alejandria` (fact-dump) and `apollo-13` (knowledge loader).
+- Selected scripts: `evidence/athenaos-scripts/final/<topic>.txt`.
+- Remaining gap: execution is not yet driven by `gov run` (governed producer).
