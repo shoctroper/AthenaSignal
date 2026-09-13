@@ -1,0 +1,99 @@
+{
+  "docs_reports": [
+    "M1-DEEP-SEARCH.md",
+    "M2-RESEARCH-CANDIDATE.md",
+    "M3-PRODUCT-REVIEW.md",
+    "M4-PRODUCT-REVIEW.md",
+    "M5-PRODUCT-REVIEW.md",
+    "M6-CLOSED-LOOP.md",
+    "M6-PRODUCT-REVIEW.md",
+    "M7-PRODUCT-REVIEW.md",
+    "M8-PRODUCT-REVIEW.md",
+    "M8-REPORT.md"
+  ],
+  "evidence": {
+    "directories": [
+      "m3",
+      "m4",
+      "m5",
+      "m6",
+      "m7",
+      "m8"
+    ]
+  },
+  "evidence_origin": "LEGACY",
+  "generated_at": "2026-09-13T00:41:39+00:00",
+  "generated_by": "MarioGovernance 1.0.0",
+  "gov_decisions": {
+    "by_milestone": {
+      "m1": 2,
+      "m2": 2,
+      "m3": 2,
+      "m4": 2,
+      "m5": 2,
+      "m6": 2,
+      "m7": 2,
+      "m8": 2
+    },
+    "count": 16
+  },
+  "gov_specs": {
+    "by_milestone": {
+      "m1": 4,
+      "m2": 4,
+      "m3": 4,
+      "m4": 4,
+      "m5": 4,
+      "m6": 4,
+      "m7": 4,
+      "m8": 4
+    },
+    "count": 32
+  },
+  "known_divergence": {
+    "legacy_reported": "M8 COMPLETED/PASS",
+    "published_git_checkpoint": "m7-checkpoint",
+    "resolution": "NOT RECONCILED by onboarding; recorded only. Current working tree preserved unmodified."
+  },
+  "legacy_markers": {
+    "evidence/m*/": 6,
+    "governance/decisions/*": 16,
+    "governance/specs/*": 32
+  },
+  "note": "Historical Governance runs produced by the Legacy Governance. Preserved verbatim: never imported, rewritten, or re-timestamped. Distinct from future MARIOGOVERNANCE evidence.",
+  "preserved": [
+    "governance/specs/",
+    "governance/decisions/",
+    "evidence/",
+    "decisiones/"
+  ],
+  "schema_version": "1",
+  "untracked_legacy_artifacts": [
+    "M AGENTS.md",
+    " M ciclo/BITACORA.md",
+    " M ciclo/ESTADO.md",
+    " M evidence/deep-search-e2e.json",
+    " M package.json",
+    " M src/epistemic/offline.ts",
+    " M src/epistemic/types.ts",
+    "?? .governance/",
+    "?? .m8tmp/",
+    "?? ciclo/ORDEN-012.md",
+    "?? data/m8-akp/",
+    "?? docs/M8-PRODUCT-REVIEW.md",
+    "?? docs/M8-REPORT.md",
+    "?? evidence/m8/",
+    "?? governance/decisions/athenasignal-m8-sustained-autonomous-operation-verify.json",
+    "?? governance/decisions/athenasignal-m8-sustained-autonomous-operation.json",
+    "?? governance/specs/athenasignal-m8-verify.spec.yaml",
+    "?? governance/specs/athenasignal-m8.baseline.json",
+    "?? governance/specs/athenasignal-m8.regressions.json",
+    "?? governance/specs/athenasignal-m8.spec.yaml",
+    "?? scripts/m8-operation.ts",
+    "?? scripts/m8-real-engines.ts",
+    "?? scripts/m8-record.ts",
+    "?? scripts/m8-sustain.ts",
+    "?? src/sustained/",
+    "?? tests/sustained-operation-e2e.test.ts"
+  ]
+}

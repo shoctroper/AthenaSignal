@@ -1,0 +1,40 @@
+schema_version: '1'
+project: athenasignal
+governance_version: 1.0.0
+task_type: CODE
+policy_version: 1
+objective: Onboard AthenaSignal under MarioGovernance, preserving M1-M8 Legacy history
+  as historical evidence and all current working-tree changes; no product implementation.
+scope:
+  allow:
+  - src/
+  - tests/
+  - scripts/
+  - docs/
+  - ciclo/
+  - evidence/
+  - data/
+  - governance/
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - opencode.json
+  deny: []
+  ignore: []
+acceptance:
+  tests:
+    command: npm test
+    timeout: 300.0
+    junit: false
+  artifacts: []
+providers: {}
+repository:
+  id: athenasignal
+  remote: origin
+  branch_policy:
+    mode: direct
+    allowed_branches:
+    - main
+    require_work_branch_for:
+    - ARCHITECTURE
+    - RESEARCH
