@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-30",
+  "statement": "La burbuja .com estalló el 10 de marzo de 2000, cuando el índice NASDAQ compuesto fuertemente por valores tecnológicos hizo su máximo en 5048,62, más del doble de su valor un año anterior.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

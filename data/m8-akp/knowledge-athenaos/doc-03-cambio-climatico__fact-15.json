@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-15",
+  "statement": "El clima es un promedio del tiempo atmosférico a una escala de tiempo dado que la Organización Meteorológica Mundial ha estandarizado en 30 años.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-04",
+  "statement": "En el adulto, el sueño nocturno de unas ocho horas se organiza en 4-5 ciclos de unos 90-120 minutos, durante los cuales se pasa de la vigilia a la somnolencia (estadio o fase I), de allí al sueño ligero (fase II), de allí al sueño lento o profundo (fase III) y finalmente al sueño MOR (fase IV).",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

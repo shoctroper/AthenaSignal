@@ -1,0 +1,21 @@
+{
+  "id": "doc-07-photosynthesis::fact-16",
+  "statement": "Cyanobacteria appeared later; the excess oxygen they produced contributed directly to the oxygenation of the Earth, which rendered the evolution of complex life possible.",
+  "provenance": {
+    "sourceIds": [
+      "doc-07-photosynthesis"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

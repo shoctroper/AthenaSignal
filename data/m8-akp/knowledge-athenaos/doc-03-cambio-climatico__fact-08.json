@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-08",
+  "statement": "Los factores externos que pueden influir en el clima son llamados forzamientos climáticos.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

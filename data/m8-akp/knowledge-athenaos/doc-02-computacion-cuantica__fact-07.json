@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-07",
+  "statement": "La doctora Talia Gershon (directora de Estrategia de Investigación e Iniciativas de Crecimiento en IBM) describe la computación cuántica, de manera muy general, como una combinación entre tres factores: la superposición de giros, el entrelazamiento de dos objetos y la interferencia, la cual ayuda a controlar los estados cuánticos y amplificar los tipos de señales que están orientados hacia la respuesta correcta, y luego cancelar los tipos de señales que conducen a la respuesta incorrecta.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

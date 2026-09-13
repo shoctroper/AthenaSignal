@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-11",
+  "statement": "En 1996, el presidente Bill Clinton impulsó una directiva declarando el uso dual (militar y civil) del GPS.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

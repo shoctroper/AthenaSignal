@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-22",
+  "statement": "El efecto de desplazamiento de frecuencia gravitacional predice que los relojes del GPS son más rápidos en un factor de 5 × 10-10, o alrededor de 45,9 μs/día.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

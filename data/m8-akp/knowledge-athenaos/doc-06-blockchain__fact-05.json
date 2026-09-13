@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-05",
+  "statement": "El concepto de cadena de bloque fue aplicado por primera vez en 2009 como parte de Bitcoin.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

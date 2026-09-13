@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-03",
+  "statement": "Dormir es el acto de reposar en un estado inconsciente en el que se produce la suspensión de las funciones sensoriales y de los movimientos voluntarios del cuerpo.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

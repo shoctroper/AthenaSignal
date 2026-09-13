@@ -1,0 +1,69 @@
+{
+  "kind": "athenasignal.m6.distributed.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "nodes": [
+    {
+      "node": "ubuntu-orchestrator",
+      "role": "ORCHESTRATION",
+      "route": "LOCAL",
+      "host": "ubuntu",
+      "model": "qwen2.5:7b-instruct",
+      "status": "UP",
+      "reason": "Nodo de orquestación/ingesta/persistencia del loop."
+    },
+    {
+      "node": "ubuntu-scheduler",
+      "role": "SCHEDULER",
+      "route": "LOCAL",
+      "host": "ubuntu",
+      "model": "qwen2.5:7b-instruct",
+      "status": "UP",
+      "reason": "Scheduler del loop (discover→triage→handoff)."
+    },
+    {
+      "node": "macmini-cognitive",
+      "role": "COGNITIVE",
+      "route": "LOCAL_ALT",
+      "host": "mac-mini",
+      "model": "gpt-oss:20b",
+      "status": "DOWN",
+      "reason": "Nodo cognitivo para juicio/investigación profunda. Se ejecuta como proceso OS separado (stand-in local con heartbeat+PID): el host físico Mac mini no es alcanzable desde el worktree."
+    },
+    {
+      "node": "remote-deepseek",
+      "role": "RESEARCH",
+      "route": "REMOTE_ESCALATION",
+      "host": "remote",
+      "model": "deepseek-v4-flash",
+      "status": "UP",
+      "reason": "Escalado remoto opcional; sólo si está disponible y justificado."
+    }
+  ],
+  "degradedRuns": [
+    "m6-proc-a-run-1"
+  ],
+  "examples": [
+    "Nodos no disponibles: macmini-cognitive; el loop degradó a las rutas restantes sin detener la operación."
+  ],
+  "fallbackRoutes": 5,
+  "remoteEscalations": 3,
+  "degraded": true,
+  "ubuntuReachable": true,
+  "macminiReachable": false,
+  "documented": [
+    {
+      "host": "athena",
+      "address": "192.168.0.36",
+      "reachable": true,
+      "role": "Nodo Linux real de ejecución (scheduler/ingesta/research/Ollama/SearXNG).",
+      "notes": "Verificado por SSH BatchMode: Linux, 16 cores, 14 GiB. Participa en la operación sostenida M8."
+    },
+    {
+      "host": "mac-mini",
+      "address": "192.168.0.149",
+      "reachable": false,
+      "role": "Nodo cognitivo previsto.",
+      "notes": "NO alcanzable desde el worktree (100% packet loss en ping, timeout de Ollama). Excluido explícitamente: no se simula su participación."
+    }
+  ]
+}

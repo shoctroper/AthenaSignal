@@ -1,0 +1,146 @@
+{
+  "kind": "athenasignal.m8.benchmark.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "entries": [
+    {
+      "id": "SUSTAINED_WINDOW",
+      "description": "El scheduler opera una ventana prolongada con múltiples ticks.",
+      "observed": true,
+      "evidence": "ticks > 1 y duración > 0"
+    },
+    {
+      "id": "NEW_SIGNAL",
+      "description": "La operación descubre señales nuevas sobre el universo ampliado.",
+      "observed": true,
+      "evidence": "radar NEW > 0"
+    },
+    {
+      "id": "KNOWN",
+      "description": "Material conocido reaparece preservando identidad histórica.",
+      "observed": true,
+      "evidence": "radar KNOWN > 0"
+    },
+    {
+      "id": "DUPLICATE",
+      "description": "Fuentes repetidas no se reprocesan ni duplican.",
+      "observed": true,
+      "evidence": "radar DUPLICATE > 0"
+    },
+    {
+      "id": "RELATED",
+      "description": "Fuentes/señales relacionadas se vinculan cross-source.",
+      "observed": true,
+      "evidence": "radar RELATED > 0"
+    },
+    {
+      "id": "SCALE",
+      "description": "M8 observa un universo materialmente mayor que M7 (>= 1000 fuentes).",
+      "observed": true,
+      "evidence": "sources >= 1000"
+    },
+    {
+      "id": "CANDIDATE_RESEARCH",
+      "description": "Durante la operación se investigan Research Candidates.",
+      "observed": true,
+      "evidence": "m8Results > 0"
+    },
+    {
+      "id": "CONFIRMED",
+      "description": "Evidencia sostiene al menos un candidate.",
+      "observed": true,
+      "evidence": "verdict CONFIRMED > 0"
+    },
+    {
+      "id": "REFUTED",
+      "description": "Evidencia refuta al menos un candidate.",
+      "observed": true,
+      "evidence": "verdict REFUTED > 0"
+    },
+    {
+      "id": "CLOSURE",
+      "description": "Un candidate se cierra por confirmación o refutación.",
+      "observed": true,
+      "evidence": "CLOSED_CONFIRMED o CLOSED_REFUTED"
+    },
+    {
+      "id": "REOPENING",
+      "description": "Nueva evidencia reabre un candidate.",
+      "observed": true,
+      "evidence": "transición REOPENED"
+    },
+    {
+      "id": "PROMOTION",
+      "description": "Un candidate se promueve con handoff válido.",
+      "observed": true,
+      "evidence": "estado PROMOTED"
+    },
+    {
+      "id": "DEMOTION",
+      "description": "Un candidate se degrada por nueva evidencia.",
+      "observed": true,
+      "evidence": "estado DEMOTED"
+    },
+    {
+      "id": "CONTRADICTION",
+      "description": "Evidencia contradictoria se representa y resuelve o conserva.",
+      "observed": true,
+      "evidence": "contradiction artifact > 0"
+    },
+    {
+      "id": "FEEDBACK_UPDATE",
+      "description": "El resultado muta el radar conservando las capas separadas.",
+      "observed": true,
+      "evidence": "feedbackUpdates > 0"
+    },
+    {
+      "id": "REAL_ENGINE",
+      "description": "Se invocan motores reales (AthenaOS/AKP) y se documentan.",
+      "observed": true,
+      "evidence": "invocaciones OK > 0"
+    },
+    {
+      "id": "DISTRIBUTED_HONESTY",
+      "description": "Ubuntu participa; Mac mini se documenta como no disponible.",
+      "observed": true,
+      "evidence": "ubuntu reachable && macmini documentado"
+    },
+    {
+      "id": "NODE_FAILURE",
+      "description": "El loop degrada correctamente ante un nodo caído.",
+      "observed": true,
+      "evidence": "recovery NODE_DOWN"
+    },
+    {
+      "id": "PROCESS_RESTART",
+      "description": "El loop sobrevive a un reinicio de proceso.",
+      "observed": true,
+      "evidence": "recovery PROCESS_RESTART > 0"
+    },
+    {
+      "id": "LLM_FAILURE",
+      "description": "Un fallo de LLM/timeout degrada sin fabricar evidencia.",
+      "observed": true,
+      "evidence": "recovery LLM_FALLBACK/TIMEOUT/INVALID_RESPONSE"
+    },
+    {
+      "id": "IDEMPOTENCY",
+      "description": "Reintentos no corrompen el conocimiento compartido.",
+      "observed": true,
+      "evidence": "idempotency noOps > 0"
+    },
+    {
+      "id": "PROVENANCE",
+      "description": "Provenance completa source → signal → candidate → evidencia → radar.",
+      "observed": true,
+      "evidence": "completeChains > 0"
+    },
+    {
+      "id": "EPISTEMIC_HISTORY",
+      "description": "Cada resolución conserva statusHistory sin sobrescribir.",
+      "observed": true,
+      "evidence": "statusHistory >= 1"
+    }
+  ],
+  "coverage": 1,
+  "falsePositiveObservations": []
+}

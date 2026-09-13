@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-13",
+  "statement": "El entrelazamiento es una cualidad con la que dos cúbits que han sido entrelazados (en una correlación) pueden ser manipulados para hacer exactamente lo mismo, garantizando que se puedan realizar operaciones en paralelo o simultáneamente.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

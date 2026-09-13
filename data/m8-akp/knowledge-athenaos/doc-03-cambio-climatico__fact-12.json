@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-12",
+  "statement": "El término a veces se usa para referir específicamente al cambio climático causado por la actividad humana, en lugar de cambios en el clima que pueden haber resultado como parte de los procesos naturales de la Tierra.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

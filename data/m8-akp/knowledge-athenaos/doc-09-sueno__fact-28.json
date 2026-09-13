@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-28",
+  "statement": "Existen trastornos del sueño como la apnea del sueño (la persona deja de respirar durante 10 segundos o más, en forma repetitiva, mientras está dormida), la narcolepsia (no se puede inhibir el sueño REM durante los períodos de vigilia) y el insomnio familiar fatal (enfermedad hereditaria muy poco frecuente).",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

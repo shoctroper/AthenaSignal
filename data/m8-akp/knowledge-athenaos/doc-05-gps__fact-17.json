@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-17",
+  "statement": "Mediante la trilateración se determina la posición del receptor: cada satélite indica que el receptor se encuentra en un punto en la superficie de una esfera con centro en el propio satélite; con información de dos satélites queda determinada una circunferencia; y con un tercer satélite se elimina el inconveniente de la falta de sincronización entre relojes, permitiendo una posición 3D exacta (latitud, longitud y altitud).",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

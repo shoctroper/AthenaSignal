@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-07",
+  "statement": "Navy desarrolló el satélite Timation, que demostró la viabilidad de colocar relojes precisos al espacio.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-14",
+  "statement": "En las publicaciones científicas, calentamiento global se refiere al aumento de las temperaturas superficiales, mientras que cambio climático incluye al calentamiento global y todos los demás efectos que produce el aumento de los niveles de gases de efecto invernadero.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

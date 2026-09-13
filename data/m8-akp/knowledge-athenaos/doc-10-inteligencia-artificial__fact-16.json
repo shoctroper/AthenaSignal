@@ -1,0 +1,21 @@
+{
+  "id": "doc-10-inteligencia-artificial::fact-16",
+  "statement": "El desarrollo y aplicación de la inteligencia artificial en muchos aspectos de la vida cotidiana también ha propiciado la creación de nuevos campos de estudio como la roboética y la ética de las máquinas, que abordan aspectos relacionados con la ética en la inteligencia artificial y que se encargan de analizar cómo los avances en este tipo de tecnologías impactarían en diversos ámbitos de la vida.",
+  "provenance": {
+    "sourceIds": [
+      "doc-10-inteligencia-artificial"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

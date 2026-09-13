@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-06",
+  "statement": "Así surgió el sistema TRANSIT, que quedó operativo en 1964, constituido por una constelación de seis satélites en órbita polar baja, a una altitud de 1074 km.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

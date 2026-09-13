@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-12",
+  "statement": "En enero de 2015, el tamaño había crecido a casi 30 GB, y de enero de 2016 a enero de 2017, el blockchain de bitcoin creció de 50 GB a 100 GB de tamaño.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

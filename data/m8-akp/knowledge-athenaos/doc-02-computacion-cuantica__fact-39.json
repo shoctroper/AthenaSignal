@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-39",
+  "statement": "La computación cuántica requiere una gran cantidad de recursos, incluida energía, para su funcionamiento, ya que los sistemas necesitan enfriarse a temperaturas extremadamente bajas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

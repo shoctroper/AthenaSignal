@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-27",
+  "statement": "Otro de los primeros buscadores, Lycos, fue creado en 1993 como un proyecto universitario, y fue el primero en conseguir éxito comercial.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

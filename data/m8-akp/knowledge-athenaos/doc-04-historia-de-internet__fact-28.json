@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-28",
+  "statement": "(fundado en 1995) y AltaVista (fundado en 1995) fueron los respectivos líderes de la industria de directorios y buscadores web.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

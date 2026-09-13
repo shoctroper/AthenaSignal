@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-20",
+  "statement": "El IETF empezó en enero de 1986 como una reunión trimestral de los muchos investigadores del gobierno de los Estados Unidos.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

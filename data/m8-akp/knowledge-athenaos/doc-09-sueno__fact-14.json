@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-14",
+  "statement": "Durante el estado de sueño, el sistema glinfático (equivalente al sistema linfático del resto del cuerpo), se activa 10 veces más en comparación al estado de vigilia, permitiendo que los residuos de las células cerebrales se eliminen con mayor eficacia.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

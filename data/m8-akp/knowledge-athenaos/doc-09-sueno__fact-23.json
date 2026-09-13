@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-23",
+  "statement": "Algunos animales también pasan por la fase MOR del sueño, pero su experiencia subjetiva es difícil de determinar.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

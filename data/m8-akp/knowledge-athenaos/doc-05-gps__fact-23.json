@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-23",
+  "statement": "Al combinar la dilatación del tiempo y desplazamiento de frecuencia gravitacional, la discrepancia es de aproximadamente 38 microsegundos por día.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

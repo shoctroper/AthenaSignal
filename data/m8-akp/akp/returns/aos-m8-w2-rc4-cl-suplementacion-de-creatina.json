@@ -1,0 +1,317 @@
+{
+  "kind": "athenasignal.m6.athenaos_result.v1",
+  "resultId": "aos-m8-w2-rc4-cl-suplementacion-de-creatina",
+  "candidateId": "rc4-cl-suplementacion-de-creatina",
+  "clusterId": "cl-suplementacion-de-creatina",
+  "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+  "handoffContentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+  "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+  "worker": "athenaos-research-stand-in-m8",
+  "executionMode": "replay",
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "deterministic": false,
+  "status": "RESEARCHED_INCONCLUSIVE",
+  "steps": [
+    {
+      "id": "plan",
+      "step": "Decomposición del problema de investigación",
+      "detail": "Sub-preguntas derivadas: 4"
+    },
+    {
+      "id": "gather",
+      "step": "Recuperación y provenance de evidencia",
+      "detail": "16 referencias (6 del handoff, 10 de búsqueda)."
+    },
+    {
+      "id": "interpret",
+      "step": "Interpretación y evaluación de claims",
+      "detail": "3 hallazgos, 1 claims evaluados."
+    },
+    {
+      "id": "synthesize",
+      "step": "Síntesis estructurada y evaluación final",
+      "detail": "Evaluación final AMBIGUOUS (confianza 0.5)."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "EVIDENCE",
+      "text": "La creatina es un compuesto naturalmente presente en el cuerpo y se utiliza como suplemento para mejorar la función muscular y la energía celular.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "No hay estudios directos que demuestren que la suplementación de creatina mejore la metabolización celular en personas con diabetes.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno.",
+      "refs": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "cl-1",
+      "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+      "verdict": "UNCERTAIN",
+      "confidence": 0.3,
+      "evidenceRefs": [
+        "https://k-state.com/plketobig",
+        "https://k-state.com/plketobig?m7channel=resolution",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://k-state.com/plketobig",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://k-state.com/plketobig?m7channel=resolution",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://k-state.com/plketobig",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://k-state.com/plketobig?m7channel=resolution",
+      "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+      "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+      "title": "Creatine in Health and Disease — PMC7910963",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+      "title": "What is creatine? Potential benefits and risks — Harvard Health",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    },
+    {
+      "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+      "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:01:30.000Z"
+    }
+  ],
+  "uncertainties": [
+    "Falta de estudios que muestren una mejora en la metabolización celular con la suplementación de creatina en personas con diabetes.",
+    "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno."
+  ],
+  "finalAssessment": "AMBIGUOUS",
+  "confidence": 0.5,
+  "layers": {
+    "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+    "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+    "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada.",
+    "newEvidence": [
+      "https://k-state.com/plketobig",
+      "https://k-state.com/plketobig?m7channel=resolution",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+      "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+      "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+      "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution"
+    ],
+    "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada."
+  },
+  "createdAt": "2026-09-22T06:01:30.000Z",
+  "runId": "m8-scheduler-2-run",
+  "limitations": [
+    "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+  ],
+  "wave": 2,
+  "evidenceBalance": {
+    "supporting": 0,
+    "contradicting": 0,
+    "uncertain": 1,
+    "authoritative": 20
+  },
+  "returnPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/returns/aos-m8-w2-rc4-cl-suplementacion-de-creatina.json"
+}

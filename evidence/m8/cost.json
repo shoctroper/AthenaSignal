@@ -1,0 +1,35 @@
+{
+  "kind": "athenasignal.m8.cost.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "llmCalls": 8,
+  "byProvider": {
+    "deterministic": 3,
+    "ollama": 5
+  },
+  "byRoute": {
+    "LOCAL": 1,
+    "LOCAL_ALT": 4,
+    "REMOTE_ESCALATION": 3
+  },
+  "byStage": {
+    "deep_research": {
+      "LOCAL_ALT": 3,
+      "REMOTE_ESCALATION": 2
+    },
+    "claim_assessment": {
+      "REMOTE_ESCALATION": 1,
+      "LOCAL": 1
+    },
+    "signal_discovery": {
+      "LOCAL_ALT": 1
+    }
+  },
+  "localCalls": 5,
+  "remoteCalls": 3,
+  "deterministicCalls": 0,
+  "replayHits": 3,
+  "replayMisses": 0,
+  "estimatedCostUnits": 17,
+  "costModel": "proxy determinista: 1 unidad local, 4 remotas, 0 deterministas (no factura real).",
+  "limitation": "No hay facturación real expuesta por el endpoint local; el coste es un proxy de routing documentado (27 feedbacks aplicados)."
+}

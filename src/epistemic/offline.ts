@@ -313,7 +313,15 @@ export async function runM7Offline(options: M7RunOptions = {}): Promise<M7RunSum
     options.onWorkerRecording?.(recorder.toRecording());
   }
 
-  return { artifacts, state, missingRecordings, outputPaths };
+  return {
+    artifacts,
+    state,
+    missingRecordings,
+    outputPaths,
+    ledger,
+    observations: m6.observations,
+    m6,
+  };
 }
 
 interface WaveInput {

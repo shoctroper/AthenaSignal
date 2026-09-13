@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-09",
+  "statement": "El primer blockchain fue conceptualizado por una persona (o grupo de personas) conocida como Satoshi Nakamoto en 2008.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

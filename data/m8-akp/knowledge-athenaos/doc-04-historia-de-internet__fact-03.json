@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-03",
+  "statement": "En octubre de 1962, Licklider fue nombrado jefe de la oficina de procesado de información ARPA, y empezó a formar un grupo informal dentro del DARPA del Departamento de Defensa de los Estados Unidos para investigaciones sobre ordenadores más avanzadas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

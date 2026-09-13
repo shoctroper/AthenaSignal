@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-13",
+  "statement": "La propiedad de los activos digitales suele representarse en forma de tokens no fungibles (NFT).",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

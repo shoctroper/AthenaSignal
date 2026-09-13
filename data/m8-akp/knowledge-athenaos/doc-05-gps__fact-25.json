@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-25",
+  "statement": "Para compensar esta discrepancia, al patrón de frecuencia a bordo de cada satélite se le da una tasa de compensación antes del lanzamiento, por lo que marcha un poco más lento que la frecuencia de trabajo en la Tierra: trabaja a 10.22999999543 MHz en lugar de 10,23 MHz.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

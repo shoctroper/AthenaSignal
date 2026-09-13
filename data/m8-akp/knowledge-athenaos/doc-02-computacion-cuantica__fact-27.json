@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-27",
+  "statement": "En 1999, en los laboratorios de IBM-Almaden, se creó la primera máquina de 3 cúbits, capaz de ejecutar el algoritmo de búsqueda de Grover.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

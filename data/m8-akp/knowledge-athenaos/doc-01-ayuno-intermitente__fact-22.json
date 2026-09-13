@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-22",
+  "statement": "Ninguna de las que ayunó en el estudio tuvo efecto detrimental alguno en el crecimiento.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

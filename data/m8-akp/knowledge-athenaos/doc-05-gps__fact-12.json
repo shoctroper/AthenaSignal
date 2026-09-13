@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-12",
+  "statement": "La disponibilidad selectiva (S/A), que introducía un error aleatorio de 15 a 100 m, fue eliminada el 2 de mayo de 2000.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

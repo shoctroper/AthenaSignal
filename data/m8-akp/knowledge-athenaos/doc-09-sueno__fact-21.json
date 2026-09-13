@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-21",
+  "statement": "Nuevos estudios han puesto de manifiesto que existe una clara correlación genética entre la corta duración del sueño y el índice de masa corporal (IMC), pero no con diabetes tipo 2; sin embargo, existe una clara correlación genética entre una duración larga del sueño, IMC y diabetes tipo 2.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-19",
+  "statement": "El Sol presenta ciclos de actividad de once años reflejados en su superficie por el número de manchas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "kind": "athenasignal.m8.contradictions.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "contradictions": [
+    {
+      "contradictionId": "ct-m8-rc4-cl-ayuno-intermitente",
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "kind": "CONSERVED",
+      "statements": [
+        "Contradicción entre sig-src-if-cochrane-1 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+        "Contradicción entre sig-src-if-cochrane-2 (src-if-cochrane) y sig-src-if-mayo-1 (src-if-mayo).",
+        "Contradicción entre sig-src-if-mayo-1 (src-if-mayo) y sig-src-mirror-if-cochrane-1 (src-mirror-if-cochrane).",
+        "Contradicción entre sig-src-if-mayo-1 (src-if-mayo) y sig-src-mirror-if-cochrane-2 (src-mirror-if-cochrane)."
+      ],
+      "supportingRefs": [
+        "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+        "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+        "https://secardiologia.es/blog/11239-potenciales-beneficios-del-ayuno-intermitente-mas-alla-de-la-perdida-de-peso",
+        "https://www.arsys.es/blog/kafka-vs-rabbitmq-principales-diferencias",
+        "https://www.bbc.com/mundo/articles/c70gde8p6k8o",
+        "https://www.datacamp.com/es/blog/kafka-vs-rabbitmq",
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales"
+      ],
+      "contradictingRefs": [
+        "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+        "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+        "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+        "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+        "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+        "https://scielo.isciii.es/scielo.php?pid=S0212-16112024000100026&script=sci_arttext",
+        "https://secardiologia.es/blog/11239-potenciales-beneficios-del-ayuno-intermitente-mas-alla-de-la-perdida-de-peso",
+        "https://www.arsys.es/blog/kafka-vs-rabbitmq-principales-diferencias",
+        "https://www.bbc.com/mundo/articles/c70gde8p6k8o",
+        "https://www.datacamp.com/es/blog/kafka-vs-rabbitmq",
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+        "https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S1852-73372022000100075"
+      ],
+      "resolution": "Conservada explícitamente: la tensión editorial permanece y bloquea promociones.",
+      "detectedAtWave": 1
+    },
+    {
+      "contradictionId": "ct-m8-rc4-cl-ketobig",
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "kind": "RESOLVED",
+      "statements": [
+        "AthenaOS refuta: KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio",
+        "AthenaOS refuta: KetoBig es el suplemento que te hace bajar 10 kilos en una semana sin dieta ni ejercicio"
+      ],
+      "supportingRefs": [],
+      "contradictingRefs": [
+        "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+        "https://k-state.com/plketobig",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+        "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+        "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+        "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/"
+      ],
+      "resolution": "Resuelta por refutación basada en evidencia: la afirmación no se sostiene.",
+      "detectedAtWave": 2
+    }
+  ],
+  "resolved": 1,
+  "conserved": 1
+}

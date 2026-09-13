@@ -56,3 +56,10 @@
 2026-09-12 · Verificador · VEREDICTO · M7 PASS: 500 fuentes únicas, closed loop 19 traces, CLOSED_CONFIRMED (ayuno) + CLOSED_REFUTED (ketobig), 13/14 transiciones evidence-driven, provenance 0 cadenas incompletas
 2026-09-12 · Arquitecto · REVISION-PRODUCTO · docs/M7-PRODUCT-REVIEW.md → APPROVE con deuda D-M7-R1..R4
 2026-09-12 · Arquitecto · CIERRE · M7 CERRADO (rt-5476e72bd56c, CLOSE_MILESTONE, audit valid). Post-M7: no iniciar trabajo automático
+2026-09-12 · Arquitecto · CHECKPOINT · M1–M7 publicado en origin/main (15c417b) + tag m7-checkpoint (66a1d43)
+2026-09-12 · Arquitecto · EMISION · ORDEN-012 (Milestone M8 "Sustained Autonomous Editorial Operation") — operación sostenida con motores reales
+2026-09-12 · Governance · EJECUCION · rt-3f4235ea37a5 · worker ciclo 1 (build) → strict verify PASS (130/130)
+2026-09-12 · Arquitecto · REVISION-PRODUCTO · RETURN: ventana de reloj real, AthenaOS/AKP reales, más resoluciones
+2026-09-12 · Governance · EJECUCION · worker ciclo 2 (refuerzo): ventana real 22 min, athena.dll run/show/export, AKP build+ingest, Ubuntu real → strict verify PASS (132/132)
+2026-09-12 · Arquitecto · REVISION-PRODUCTO · docs/M8-PRODUCT-REVIEW.md → APPROVE con deuda D-M8-R1..R5
+2026-09-12 · Arquitecto · CIERRE · M8 CERRADO (rt-3f4235ea37a5, CLOSE_MILESTONE, audit valid). Pendiente: decidir checkpoint M8

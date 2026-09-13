@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-25",
+  "statement": "En 1997 se iniciaron los primeros experimentos prácticos: el primer experimento de comunicación segura usando criptografía cuántica se realizó con éxito a una distancia de 23 km, y se realizó el primer teletransporte cuántico de un fotón.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

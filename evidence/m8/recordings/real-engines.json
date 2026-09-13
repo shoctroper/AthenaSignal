@@ -1,0 +1,130 @@
+{
+  "kind": "athenasignal.m8.real_engines.v1",
+  "recordedAt": "2026-09-12T21:35:47.418Z",
+  "invocations": [
+    {
+      "engine": "ubuntu-node",
+      "host": "athena",
+      "command": "ssh -o BatchMode=yes -o ConnectTimeout=8 athena 'hostname; nproc; free -g | head -2'",
+      "exitCode": 0,
+      "durationMs": 750,
+      "stdoutSha256": "26484e24c1fc02e4ed51ec91d0f626fa5963c2d6d8899df10e66582af6e15799",
+      "outputExcerpt": "mc-server 16 total used free shared buff/cache available Mem: 14 4 5 0 4 9",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Nodo Ubuntu real (athena, 192.168.0.36) alcanzable por SSH BatchMode."
+    },
+    {
+      "engine": "ubuntu-node",
+      "host": "athena",
+      "command": "ssh -o BatchMode=yes -o ConnectTimeout=8 athena 'curl -s --max-time 5 http://127.0.0.1:11434/api/tags | head -c 400'",
+      "exitCode": 0,
+      "durationMs": 224,
+      "stdoutSha256": "e44f1292666dd07835fb3c551fac45686e832398bd75588da7b0dd081cef40f5",
+      "outputExcerpt": "{\"models\":[{\"name\":\"qwen2.5:7b-instruct\",\"model\":\"qwen2.5:7b-instruct\",\"modified_at\":\"2026-09-06T16:52:12.047586717Z\",\"size\":4683087332,\"digest\":\"845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e\",\"details\":{\"parent_model\":\"\",\"format\":\"gguf\",\"family\":\"qwen2\",\"families\":[\"qwen2\"],\"parameter_size\":\"7.6B\",\"quantization_level\":\"Q4_K_M\",\"context_length\":32768,\"embedding_length\":3584},\"ca",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Ollama real en Ubuntu disponible (modelos locales)."
+    },
+    {
+      "engine": "athenaknowledge",
+      "host": "athena",
+      "command": "dotnet build --nologo -v q -c Release",
+      "exitCode": 0,
+      "durationMs": 863,
+      "stdoutSha256": "7eff8a5e1a18fbceea37e0ba2ff708fd4fd6400efd615fe4289da7bcbb634759",
+      "outputExcerpt": "Build succeeded. 0 Warning(s) 0 Error(s) Time Elapsed 00:00:00.58",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Build real de AthenaKnowledge/AKP."
+    },
+    {
+      "engine": "athenaknowledge",
+      "host": "athena",
+      "command": "dotnet run --project src/AthenaKnowledge.Ingestion.Cli -c Release --no-launch-profile",
+      "exitCode": 0,
+      "durationMs": 1247,
+      "stdoutSha256": "8e43152ff91ae2fde3a258e37b9c9e870df63f803c003fab4529bd64eea1fac7",
+      "outputExcerpt": "Importando documentos desde: /Volumes/Medios/Repos/AthenaKnowledge/athena-knowledge-ingestion/data/source-documents { \"DocumentsImported\": 10, \"FragmentsCreated\": 172, \"AssertionsExtracted\": 291, \"AssertionsByType\": { \"Hecho\": 273, \"Cita\": 12, \"Contexto\": 2, \"Desconocido\": 4 }, \"CandidateFactsCreated\": 273, \"DuplicatesDetected\": 1, \"ConflictsDetected\": 7, \"CandidateFactsRejectedByValidator\": 6, \"K",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Ingesta real: data/source-documents → KnowledgeRepository + runs/ingestion-run-report.json."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" doctor",
+      "exitCode": 0,
+      "durationMs": 33,
+      "stdoutSha256": "3fcf46269aed03da7682bc659ec20d5efb9309021e3c0e1042d4c48742c57884",
+      "outputExcerpt": "Athena — diagnóstico Proveedor: template Modelo: gemini-3.1-flash-lite Credencial: configurada Casos en: /Volumes/Medios/Repos/AthenaSignal/.m8tmp/m8-real-engines/athena-home/cases Configuración: OK — Proveedor de plantilla. NO produce calidad editorial real — solo validación técnica. No se verifica en vivo un proveedor no real.",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "AthenaOS doctor con proveedor template (gemini documentado como agotado)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" run --topic \"El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares\" --knowledge \"/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos\"",
+      "exitCode": 0,
+      "durationMs": 272,
+      "stdoutSha256": "6e764a3dc91ef392055e9a4dc2ccb34c3edd0945a486d9afca78dd57dc406cb0",
+      "outputExcerpt": "AVISO: proveedor 'template'. Proveedor de plantilla. NO produce calidad editorial real — solo validación técnica. 272 hechos cargados desde /Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos (272 Provisional, 0 Verified, 0 Deprecated) Ejecutando: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Caso: 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Estado: AwaitingHu",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "AthenaOS run end-to-end sobre el knowledge de AKP (proveedor template; gemini agotado 429)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" show 4ae47f3a-e7ff-4d85-8403-0986a2b8a799",
+      "exitCode": 0,
+      "durationMs": 148,
+      "stdoutSha256": "453100bdc6724575547049d0e84f00c09d639807ed55e282c229669b7de43f1c",
+      "outputExcerpt": "Caso 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Tema: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Estado: AwaitingHumanApproval Blueprint: blueprint.default Ángulo: Perspectiva analítica sobre El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares ══ DRAFT ══════════════════════════════════════════════════════════ Existe una disputa activa sobre est",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Recuperación del caso real producido por AthenaOS (list/show)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" export 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 --out \"/Volumes/Medios/Repos/AthenaSignal/evidence/m8/recordings/athena-case-export.json\"",
+      "exitCode": 0,
+      "durationMs": 153,
+      "stdoutSha256": "9d810c5941fd811952a4991b42b1b589e13666c2de9259d6e6bf7c6b535d0896",
+      "outputExcerpt": "Exportado a /Volumes/Medios/Repos/AthenaSignal/evidence/m8/recordings/athena-case-export.json",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Export del caso real para auditoría."
+    },
+    {
+      "engine": "macmini-node",
+      "host": "mac-mini",
+      "command": "ping -c 2 192.168.0.149",
+      "exitCode": 2,
+      "durationMs": 12020,
+      "stdoutSha256": "c757afefa19cfcf5176cbe6ba785dbde40d1625dc85332afafd6f3a03d75d89c",
+      "outputExcerpt": "PING 192.168.0.149 (192.168.0.149): 56 data bytes Request timeout for icmp_seq 0 --- 192.168.0.149 ping statistics --- 2 packets transmitted, 0 packets received, 100.0% packet loss",
+      "status": "UNREACHABLE",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Mac mini (192.168.0.149) no alcanzable: excluido sin simulación. (Command failed: ping -c 2 192.168.0.149)"
+    }
+  ],
+  "distributed": {
+    "ubuntu": {
+      "host": "athena",
+      "address": "192.168.0.36",
+      "reachable": true,
+      "role": "Nodo Linux real de ejecución (scheduler/ingesta/research/Ollama/SearXNG).",
+      "notes": "Verificado por SSH BatchMode: Linux, 16 cores, 14 GiB. Participa en la operación sostenida M8."
+    },
+    "macmini": {
+      "host": "mac-mini",
+      "address": "192.168.0.149",
+      "reachable": false,
+      "role": "Nodo cognitivo previsto.",
+      "notes": "NO alcanzable desde el worktree (100% packet loss en ping, timeout de Ollama). Excluido explícitamente: no se simula su participación."
+    }
+  }
+}

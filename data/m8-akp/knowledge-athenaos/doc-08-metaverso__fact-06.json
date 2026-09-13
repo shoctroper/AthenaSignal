@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-06",
+  "statement": "En 2003 la empresa desarrolladora de software Linden Lab presentó oficialmente su mundo de realidad virtual 3D, denominado Second Life, un soporte lógico con experiencias inmersivas inspiradas en el concepto de metaverso.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

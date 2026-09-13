@@ -1,0 +1,680 @@
+{
+  "kind": "athenasignal.m8.human_review_packet.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "windowId": "m8-window-001",
+  "durationMs": 1320583,
+  "rubric": [
+    {
+      "id": "Q1",
+      "question": "¿El circuito AthenaSignal→AKP→AthenaOS→AKP→AthenaSignal se sostiene en el tiempo?"
+    },
+    {
+      "id": "Q2",
+      "question": "¿Se usaron motores reales (AthenaOS/AKP) y nodo Ubuntu cuando fue posible?"
+    },
+    {
+      "id": "Q3",
+      "question": "¿La ventana sostenida es verificable (ticks/procesos/duración)?"
+    },
+    {
+      "id": "Q4",
+      "question": "¿El corpus supera materialmente a M7 sin fabricar cognición?"
+    },
+    {
+      "id": "Q5",
+      "question": "¿Se generan, investigan, resuelven y actualizan candidates durante la operación?"
+    },
+    {
+      "id": "Q6",
+      "question": "¿Los resultados producen cambios observables en estado/prioridad/radar?"
+    },
+    {
+      "id": "Q7",
+      "question": "¿Cada transición epistémica conserva evidencia y provenance?"
+    },
+    {
+      "id": "Q8",
+      "question": "¿El sistema es recuperable e idempotente sin corromper memoria?"
+    },
+    {
+      "id": "Q9",
+      "question": "¿La infraestructura no disponible se documenta sin simular participación?"
+    },
+    {
+      "id": "Q10",
+      "question": "¿Un editor humano confirmaría que el radar quedó mejor informado?"
+    }
+  ],
+  "timeline": [
+    "[tick 13] m8-cycle-141+m8-cycle-142+m8-cycle-143 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 14] m8-cycle-144+m8-cycle-145+m8-cycle-146 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 15] m8-cycle-147+m8-cycle-148+m8-cycle-149 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 16] m8-cycle-150+m8-cycle-151+m8-cycle-152 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 17] m8-cycle-153+m8-cycle-154+m8-cycle-155 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 18] m8-cycle-156+m8-cycle-157+m8-cycle-158 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 19] m8-cycle-159+m8-cycle-160+m8-cycle-161 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 20] m8-cycle-162+m8-cycle-163+m8-cycle-164 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 21] m8-cycle-165+m8-cycle-166+m8-cycle-167 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 22] m8-cycle-168+m8-cycle-169+m8-cycle-170 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 23] m8-cycle-171+m8-cycle-172+m8-cycle-173 COMPLETED (72 fuentes, 0 candidates, 0 recovery)",
+    "[tick 24] m8-cycle-174+m8-cycle-175+m8-cycle-176 COMPLETED (72 fuentes, 0 candidates, 0 recovery)"
+  ],
+  "bestStory": "rc4-cl-ayuno-intermitente: sostenido a lo largo del ciclo completo; estado CONFIRMED → CLOSED_CONFIRMED y veredicto CONFIRMED.",
+  "worstStory": "rc4-cl-ketobig: la investigación refutó la afirmación (CLOSED_REFUTED); la evidencia contradictoria quedó registrada y bloqueó la promoción.",
+  "confirmedCase": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación.",
+    "evidenceRefs": [
+      "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "https://blogs.medicinatelevision.tv/endocrinamyriambelmar/evidencias-cientificas-ayuno-intermitente/",
+      "https://cuidateplus.marca.com/alimentacion/dietas/2026/02/16/ayuno-intermitente-sirve-adelgazar-dice-ciencia-184687.html",
+      "https://elpais.com/salud-y-bienestar/2026-02-16/el-ayuno-intermitente-no-es-mejor-que-una-dieta-clasica-para-perder-peso-segun-la-mayor-revision-de-la-evidencia-disponible.html",
+      "https://es.cochrane.org/en/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://medium.com/naranja-tech/eligiendo-un-broker-de-mensajer%C3%ADa-kafka-vs-rabbitmq-963326465e4f",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "https://scielo.isciii.es/scielo.php?pid=S0212-16112024000100026&script=sci_arttext"
+    ]
+  },
+  "refutedCase": {
+    "candidateId": "rc4-cl-ketobig",
+    "why": "AthenaOS aos-w2-rc4-cl-ketobig (UNSUPPORTED, postura REFUTE): evidencia autoritativa (4 refs) contradice la afirmación; cierre por refutación.",
+    "evidenceRefs": [
+      "http://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S0212-16112024000100026",
+      "https://k-state.com/plketobig",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+      "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+      "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+      "https://www.unilabs.es/blog/habitos-saludables/ayuno-intermitente-ventajas-desventajas/"
+    ]
+  },
+  "uncertainCase": {
+    "candidateId": "rc4-cl-airllm",
+    "why": "La evidencia acumulada no basta para confirmar ni refutar; se conserva la incertidumbre."
+  },
+  "closedCases": [
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "status": "CLOSED_CONFIRMED",
+      "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación."
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "status": "CLOSED_REFUTED",
+      "why": "AthenaOS aos-w2-rc4-cl-ketobig (UNSUPPORTED, postura REFUTE): evidencia autoritativa (4 refs) contradice la afirmación; cierre por refutación."
+    }
+  ],
+  "radarMutations": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "changes": [
+        "EVIDENCE_ADDED",
+        "INTERPRETATION_UPDATED"
+      ],
+      "why": "AthenaOS (RESEARCHED_INCONCLUSIVE, AMBIGUOUS) informó la decisión editorial: evidence added, interpretation updated"
+    }
+  ],
+  "promotion": {
+    "candidateId": "rc4-cl-cofepris",
+    "why": "AthenaOS aos-w3-rc4-cl-cofepris (SUPPORTED, postura SUPPORT): confirmación reiterada con corroboración suficiente para promoción editorial."
+  },
+  "demotion": {
+    "candidateId": "rc4-cl-airllm",
+    "why": "AthenaOS aos-w3-rc4-cl-airllm (AMBIGUOUS, postura UNCERTAIN): nueva evidencia introduce incertidumbre sobre un candidate confirmado; se degrada."
+  },
+  "reopening": {
+    "candidateId": "rc4-cl-ketobig",
+    "why": "Nueva evidencia (aos-w2-rc4-cl-ketobig) reabre el candidate descartado: la decisión previa se revisa a la luz de la investigación."
+  },
+  "closure": {
+    "candidateId": "rc4-cl-ayuno-intermitente",
+    "status": "CLOSED_CONFIRMED",
+    "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación."
+  },
+  "ubuntuExecution": [
+    {
+      "engine": "ubuntu-node",
+      "host": "athena",
+      "command": "ssh -o BatchMode=yes -o ConnectTimeout=8 athena 'hostname; nproc; free -g | head -2'",
+      "exitCode": 0,
+      "durationMs": 750,
+      "stdoutSha256": "26484e24c1fc02e4ed51ec91d0f626fa5963c2d6d8899df10e66582af6e15799",
+      "outputExcerpt": "mc-server 16 total used free shared buff/cache available Mem: 14 4 5 0 4 9",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Nodo Ubuntu real (athena, 192.168.0.36) alcanzable por SSH BatchMode."
+    },
+    {
+      "engine": "ubuntu-node",
+      "host": "athena",
+      "command": "ssh -o BatchMode=yes -o ConnectTimeout=8 athena 'curl -s --max-time 5 http://127.0.0.1:11434/api/tags | head -c 400'",
+      "exitCode": 0,
+      "durationMs": 224,
+      "stdoutSha256": "e44f1292666dd07835fb3c551fac45686e832398bd75588da7b0dd081cef40f5",
+      "outputExcerpt": "{\"models\":[{\"name\":\"qwen2.5:7b-instruct\",\"model\":\"qwen2.5:7b-instruct\",\"modified_at\":\"2026-09-06T16:52:12.047586717Z\",\"size\":4683087332,\"digest\":\"845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e\",\"details\":{\"parent_model\":\"\",\"format\":\"gguf\",\"family\":\"qwen2\",\"families\":[\"qwen2\"],\"parameter_size\":\"7.6B\",\"quantization_level\":\"Q4_K_M\",\"context_length\":32768,\"embedding_length\":3584},\"ca",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Ollama real en Ubuntu disponible (modelos locales)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" doctor",
+      "exitCode": 0,
+      "durationMs": 33,
+      "stdoutSha256": "3fcf46269aed03da7682bc659ec20d5efb9309021e3c0e1042d4c48742c57884",
+      "outputExcerpt": "Athena — diagnóstico Proveedor: template Modelo: gemini-3.1-flash-lite Credencial: configurada Casos en: /Volumes/Medios/Repos/AthenaSignal/.m8tmp/m8-real-engines/athena-home/cases Configuración: OK — Proveedor de plantilla. NO produce calidad editorial real — solo validación técnica. No se verifica en vivo un proveedor no real.",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "AthenaOS doctor con proveedor template (gemini documentado como agotado)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" run --topic \"El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares\" --knowledge \"/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos\"",
+      "exitCode": 0,
+      "durationMs": 272,
+      "stdoutSha256": "6e764a3dc91ef392055e9a4dc2ccb34c3edd0945a486d9afca78dd57dc406cb0",
+      "outputExcerpt": "AVISO: proveedor 'template'. Proveedor de plantilla. NO produce calidad editorial real — solo validación técnica. 272 hechos cargados desde /Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos (272 Provisional, 0 Verified, 0 Deprecated) Ejecutando: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Caso: 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Estado: AwaitingHu",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "AthenaOS run end-to-end sobre el knowledge de AKP (proveedor template; gemini agotado 429)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" show 4ae47f3a-e7ff-4d85-8403-0986a2b8a799",
+      "exitCode": 0,
+      "durationMs": 148,
+      "stdoutSha256": "453100bdc6724575547049d0e84f00c09d639807ed55e282c229669b7de43f1c",
+      "outputExcerpt": "Caso 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Tema: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Estado: AwaitingHumanApproval Blueprint: blueprint.default Ángulo: Perspectiva analítica sobre El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares ══ DRAFT ══════════════════════════════════════════════════════════ Existe una disputa activa sobre est",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Recuperación del caso real producido por AthenaOS (list/show)."
+    },
+    {
+      "engine": "athenaos",
+      "host": "athena",
+      "command": "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" export 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 --out \"/Volumes/Medios/Repos/AthenaSignal/evidence/m8/recordings/athena-case-export.json\"",
+      "exitCode": 0,
+      "durationMs": 153,
+      "stdoutSha256": "9d810c5941fd811952a4991b42b1b589e13666c2de9259d6e6bf7c6b535d0896",
+      "outputExcerpt": "Exportado a /Volumes/Medios/Repos/AthenaSignal/evidence/m8/recordings/athena-case-export.json",
+      "status": "OK",
+      "recordedAt": "2026-09-12T21:35:47.418Z",
+      "notes": "Export del caso real para auditoría."
+    }
+  ],
+  "realResearch": {
+    "kind": "athenasignal.m8.real_research.v1",
+    "recordedAt": "2026-09-12T21:35:47.418Z",
+    "provider": "template",
+    "knowledgeDir": "data/m8-akp/knowledge-athenaos",
+    "knowledgeFacts": 272,
+    "topic": "El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares",
+    "caseId": "4ae47f3a-e7ff-4d85-8403-0986a2b8a799",
+    "state": "AwaitingHumanApproval",
+    "claims": 270,
+    "disputed": 6,
+    "fidelity": 1,
+    "showExcerpt": "Caso 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Tema: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Estado: AwaitingHumanApproval Blueprint: blueprint.default Ángulo: Perspectiva analítica sobre El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares ══ DRAFT ══════════════════════════════════════════════════════════ Existe una disputa activa sobre este tema; los hechos en conflicto se presentan a continuación sin resolverla: Este ayuno puede funcionar como una forma de hormesis. En agosto de 2014, el tamaño del archivo del blockchain de bitcoin al",
+    "exportPath": "evidence/m8/recordings/athena-case-export.json",
+    "invocationIds": [
+      "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" doctor",
+      "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" run --topic \"El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares\" --knowledge \"/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos\"",
+      "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" show 4ae47f3a-e7ff-4d85-8403-0986a2b8a799"
+    ],
+    "limitation": "El proveedor gemini está agotado (429); se ejecutó el motor real de AthenaOS con el proveedor template sobre el knowledge de AKP. La investigación es real (loader, claims, conflictos y export reales), pero la redacción no es editorialmente definitiva."
+  },
+  "akpIngestion": {
+    "kind": "athenasignal.m8.akp_ingestion.v1",
+    "recordedAt": "2026-09-12T21:35:47.418Z",
+    "sourceDocuments": 10,
+    "documentsImported": 10,
+    "fragmentsCreated": 172,
+    "assertionsExtracted": 291,
+    "candidateFactsCreated": 273,
+    "knownFactsWritten": 267,
+    "conflictsDetected": 7,
+    "duplicatesDetected": 1,
+    "reportPath": "evidence/m8/recordings/akp-ingestion-report.json",
+    "knowledgeRepository": "data/m8-akp/knowledge-flat",
+    "bridgedKnowledgeDir": "data/m8-akp/knowledge-athenaos",
+    "bridgedFacts": 272,
+    "athenaosAcceptedFacts": 272,
+    "invocationIds": [
+      "dotnet build --nologo -v q -c Release",
+      "dotnet run --project src/AthenaKnowledge.Ingestion.Cli -c Release --no-launch-profile"
+    ]
+  },
+  "failoverRecovery": {
+    "recoveryId": "rec-m6-proc-b-run-2-002",
+    "kind": "PROCESS_RESTART",
+    "why": "El proceso m6-proc-b (mac-mini) reanudó desde m6-proc-a-run-1 usando el radar persistido; no reinicia el universo ni duplica señales."
+  },
+  "akpToAthenaOsToAkpTrace": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-airllm",
+      "contentHash": "bc4f02d9767a772f4e059f063d76055ddf936efdaf0a985360fc219bc7dc4e38",
+      "deliveredAt": "2026-09-12T02:11:00.000Z",
+      "consumedAt": "2026-09-12T02:11:00.000Z",
+      "researchResultId": "aos-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-ayuno-intermitente",
+      "contentHash": "20d5d241d06353a923eccb9bb69573c8be25470fbb9c540ffe4374a90723b637",
+      "deliveredAt": "2026-09-12T02:15:00.000Z",
+      "consumedAt": "2026-09-12T02:15:00.000Z",
+      "researchResultId": "aos-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-cofepris",
+      "contentHash": "8d442b12b14cb586aa0e31c61728ddc860119b7ab1c3a0591a0a099f96b97294",
+      "deliveredAt": "2026-09-12T02:19:00.000Z",
+      "consumedAt": "2026-09-12T02:19:00.000Z",
+      "researchResultId": "aos-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-python-3-13",
+      "contentHash": "031a0133a2a197fa21d8a23f35435eeebfa095ba4a3cb1b3a2f91e280d149bae",
+      "deliveredAt": "2026-09-12T02:55:00.000Z",
+      "consumedAt": "2026-09-12T02:55:00.000Z",
+      "researchResultId": "aos-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-rabbitmq-3-11",
+      "contentHash": "d448cb424996239441f05b1c410be7ab083fd9e022702db504cee50d9c72cfea",
+      "deliveredAt": "2026-09-12T02:59:00.000Z",
+      "consumedAt": "2026-09-12T02:59:00.000Z",
+      "researchResultId": "aos-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 1,
+      "handoffId": "m6-akp-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "9bff97037b61e60333dac01062b47a851449e8283e8887e5f13c4a4f21e7037e",
+      "deliveredAt": "2026-09-12T03:03:00.000Z",
+      "consumedAt": "2026-09-12T03:03:00.000Z",
+      "researchResultId": "aos-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-airllm",
+      "contentHash": "74605b5c7d2ef4a039070be0113a4cd3d59227bbe204be1a6bace555b90651b9",
+      "deliveredAt": "2026-09-21T03:00:00.000Z",
+      "consumedAt": "2026-09-21T03:00:00.000Z",
+      "researchResultId": "aos-w2-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-ayuno-intermitente",
+      "contentHash": "6e85bee2563f79d075b3c0a3e9c9305ace7cb364270d42cdbcdaef8c348363d1",
+      "deliveredAt": "2026-09-21T03:00:45.000Z",
+      "consumedAt": "2026-09-21T03:00:45.000Z",
+      "researchResultId": "aos-w2-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-cofepris",
+      "contentHash": "7a93098580678f9ef5a0345d0c993cff5e05358fc86072d133cd0ed3ae332c48",
+      "deliveredAt": "2026-09-21T03:01:30.000Z",
+      "consumedAt": "2026-09-21T03:01:30.000Z",
+      "researchResultId": "aos-w2-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "clusterId": "cl-ketobig",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-ketobig",
+      "contentHash": "526503d65aa1eaa4cf2936b7f7ac0d5cffa968a6c8f147e5b84584a994a28bee",
+      "deliveredAt": "2026-09-21T03:02:15.000Z",
+      "consumedAt": "2026-09-21T03:02:15.000Z",
+      "researchResultId": "aos-w2-rc4-cl-ketobig",
+      "researchStatus": "RESEARCHED_REFUTED",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-ketobig",
+      "epistemicStatus": "CLOSED_REFUTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-python-3-13",
+      "contentHash": "b34fcac7b0ba7803bb729c86757ad0f455033df9e0bcb67c9f841a8ec6e828e5",
+      "deliveredAt": "2026-09-21T03:03:00.000Z",
+      "consumedAt": "2026-09-21T03:03:00.000Z",
+      "researchResultId": "aos-w2-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-rabbitmq-3-11",
+      "contentHash": "aea020f862c8f75de469b758020282cfaee7769c1ba438e8296e8beaaff277ac",
+      "deliveredAt": "2026-09-21T03:03:45.000Z",
+      "consumedAt": "2026-09-21T03:03:45.000Z",
+      "researchResultId": "aos-w2-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 2,
+      "handoffId": "m7-akp-w2-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "3b1772b3c06405674d06514b4a59c2618aecf6df23e7ef58bfe9846e1cd56e1b",
+      "deliveredAt": "2026-09-21T03:04:30.000Z",
+      "consumedAt": "2026-09-21T03:04:30.000Z",
+      "researchResultId": "aos-w2-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w2-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-airllm",
+      "contentHash": "e7e0baa8ae8f78c0c892e3a07d00d377fd8ccd70a7e19a30f617b64e866976b5",
+      "deliveredAt": "2026-09-21T04:00:00.000Z",
+      "consumedAt": "2026-09-21T04:00:00.000Z",
+      "researchResultId": "aos-w3-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "clusterId": "cl-ayuno-intermitente",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-ayuno-intermitente",
+      "contentHash": "ceb957fa545e70e3b3ce6568e65f758fa344a3f41108c0525f77efcb29ff74a7",
+      "deliveredAt": "2026-09-21T04:00:45.000Z",
+      "consumedAt": "2026-09-21T04:00:45.000Z",
+      "researchResultId": "aos-w3-rc4-cl-ayuno-intermitente",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-ayuno-intermitente",
+      "epistemicStatus": "CLOSED_CONFIRMED"
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "clusterId": "cl-cofepris",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-cofepris",
+      "contentHash": "f9d63e7f803edd79a5e1a8c34b961df161b4492f6ce0deba1b93b30e13cd1e9d",
+      "deliveredAt": "2026-09-21T04:01:30.000Z",
+      "consumedAt": "2026-09-21T04:01:30.000Z",
+      "researchResultId": "aos-w3-rc4-cl-cofepris",
+      "researchStatus": "RESEARCHED_CONFIRMED",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-cofepris",
+      "epistemicStatus": "PROMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-python-3-13",
+      "contentHash": "114baf7a43fc04b88cd1e0a26e2fef0ef5861bad10da1b553eaa27823d3f4b39",
+      "deliveredAt": "2026-09-21T04:02:15.000Z",
+      "consumedAt": "2026-09-21T04:02:15.000Z",
+      "researchResultId": "aos-w3-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-rabbitmq-3-11",
+      "contentHash": "4d7b917396b515bf55c01e7f40f799543d339990bfe455ebeef46c7d7e1fb41f",
+      "deliveredAt": "2026-09-21T04:03:00.000Z",
+      "consumedAt": "2026-09-21T04:03:00.000Z",
+      "researchResultId": "aos-w3-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 3,
+      "handoffId": "m7-akp-w3-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "25cc661e39bb5ddf1c5b57a53320ec423fa9ae7d3007fcdf36e21ca0673a9e41",
+      "deliveredAt": "2026-09-21T04:03:45.000Z",
+      "consumedAt": "2026-09-21T04:03:45.000Z",
+      "researchResultId": "aos-w3-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-w3-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 1,
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "contentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "deliveredAt": "2026-09-22T03:00:00.000Z",
+      "consumedAt": "2026-09-22T03:00:00.000Z",
+      "researchResultId": "aos-m8-w1-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w1-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 1,
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "contentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "deliveredAt": "2026-09-22T03:00:30.000Z",
+      "consumedAt": "2026-09-22T03:00:30.000Z",
+      "researchResultId": "aos-m8-w1-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w1-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 1,
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "deliveredAt": "2026-09-22T03:01:00.000Z",
+      "consumedAt": "2026-09-22T03:01:00.000Z",
+      "researchResultId": "aos-m8-w1-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w1-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 1,
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "deliveredAt": "2026-09-22T03:01:30.000Z",
+      "consumedAt": "2026-09-22T03:01:30.000Z",
+      "researchResultId": "aos-m8-w1-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w1-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "wave": 2,
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "contentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "deliveredAt": "2026-09-22T06:00:00.000Z",
+      "consumedAt": "2026-09-22T06:00:00.000Z",
+      "researchResultId": "aos-m8-w2-rc4-cl-airllm",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w2-rc4-cl-airllm",
+      "epistemicStatus": "DEMOTED"
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "wave": 2,
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "contentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "deliveredAt": "2026-09-22T06:00:30.000Z",
+      "consumedAt": "2026-09-22T06:00:30.000Z",
+      "researchResultId": "aos-m8-w2-rc4-cl-python-3-13",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w2-rc4-cl-python-3-13",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "wave": 2,
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "deliveredAt": "2026-09-22T06:01:00.000Z",
+      "consumedAt": "2026-09-22T06:01:00.000Z",
+      "researchResultId": "aos-m8-w2-rc4-cl-rabbitmq-3-11",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w2-rc4-cl-rabbitmq-3-11",
+      "epistemicStatus": "INCONCLUSIVE"
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "wave": 2,
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "contentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "deliveredAt": "2026-09-22T06:01:30.000Z",
+      "consumedAt": "2026-09-22T06:01:30.000Z",
+      "researchResultId": "aos-m8-w2-rc4-cl-suplementacion-de-creatina",
+      "researchStatus": "RESEARCHED_INCONCLUSIVE",
+      "feedbackUpdateId": "fb-aos-m8-w2-rc4-cl-suplementacion-de-creatina",
+      "epistemicStatus": "INCONCLUSIVE"
+    }
+  ],
+  "metrics": {
+    "quality": 0.929,
+    "avgTickMs": 55024.292,
+    "costUnits": 0,
+    "llmCalls": 8,
+    "sources": 1500,
+    "candidates": 7
+  },
+  "limitations": [
+    "La operación sostenida es determinista y offline en la aceptación: las invocaciones reales a AthenaOS/AKP/Ubuntu se graban una vez y se reproducen.",
+    "Mac mini 192.168.0.149 no alcanzable: documentado, no simulado.",
+    "El coste es un proxy de routing; no hay facturación real del endpoint local.",
+    "Resultados M8 totales: 27."
+  ]
+}

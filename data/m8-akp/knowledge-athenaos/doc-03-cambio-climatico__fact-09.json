@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-09",
+  "statement": "Los climatólogos que estudian el cambio climático actual suelen denominarlos forzamientos radiativos y consideran básicamente cuatro de ellos: la cantidad de la radiación solar en lo alto de la atmósfera (constante solar), el albedo terrestre, la concentración de gases de efecto invernadero y la concentración de aerosoles tanto de procedencia natural como antropogénica.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-11",
+  "statement": "Los adultos mayores (65 años y más) necesitan 7 u 8 horas de sueño por la noche; a medida que se envejece, se producen cambios en los patrones de su sueño, que causan insomnio o problemas para dormir.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

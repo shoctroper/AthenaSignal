@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-20",
+  "statement": "Los relojes en los satélites GPS requieren una sincronización con los situados en tierra para lo que hay que tener en cuenta la teoría general de la relatividad y la teoría especial de la relatividad.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

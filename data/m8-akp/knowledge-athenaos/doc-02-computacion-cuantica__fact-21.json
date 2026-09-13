@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-21",
+  "statement": "Cronología: en 1993, Dan Simon (Microsoft Research) demostró la ventaja práctica que tendría un computador cuántico frente a uno tradicional.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

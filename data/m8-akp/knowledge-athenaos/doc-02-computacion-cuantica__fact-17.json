@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-17",
+  "statement": "Otro de los problemas principales es la escalabilidad, especialmente teniendo en cuenta el considerable incremento en cúbits necesarios para cualquier cálculo que implica la corrección de errores.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

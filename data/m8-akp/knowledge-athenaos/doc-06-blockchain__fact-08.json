@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-08",
+  "statement": "En 1992, Haber, Stornetta y Dave Bayer incorporaron árboles de Merkle al diseño.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

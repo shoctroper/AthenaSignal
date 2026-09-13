@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-17",
+  "statement": "Morgan estimó en octubre de 2022 que el metaverso se convertiría en una oportunidad de 1 billón de dólares, McKinsey anticipó una valoración de 5 billones de dólares en junio de 2022, y Citigroup proyectó una oportunidad de entre 8 y 13 billones de dólares.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

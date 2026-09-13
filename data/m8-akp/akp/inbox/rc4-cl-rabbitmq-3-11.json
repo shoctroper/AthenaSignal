@@ -1,0 +1,235 @@
+{
+  "kind": "athenasignal.m6.akp_handoff_entry.v1",
+  "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+  "candidateId": "rc4-cl-rabbitmq-3-11",
+  "clusterId": "cl-rabbitmq-3-11",
+  "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+  "publishedAt": "2026-09-12T00:00:00.000Z",
+  "recommendedAthenaOsInput": {
+    "kind": "athenasignal.research_candidate.handoff.v1",
+    "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+    "outputLanguage": "es",
+    "viableBase": {
+      "format": "article",
+      "factsRequired": 3,
+      "sourcesMinimum": 5
+    },
+    "proposedSources": [
+      {
+        "url": "https://www.rabbitmq.com/docs/compare/kafka",
+        "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "primary_source",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+        "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "primary_source",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+        "title": "Kafka Queues: Share Groups Explained | Conduktor",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "secondary_press",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+        "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "secondary_press",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+        "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "primary_source",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://arxiv.org/abs/1709.00333",
+        "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+        "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+        "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+        "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "high_trust_primary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+        "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      },
+      {
+        "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+        "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+        "language": "en",
+        "role": "EVIDENCE",
+        "eligibility": {
+          "hasIdentifiableOrigin": true,
+          "hasTraceableLocation": true,
+          "hasTemporalContext": true,
+          "hasRecoverableEvidence": true
+        },
+        "proposedTrustTier": "medium_trust_secondary",
+        "accessedAt": "2026-09-12T00:00:00.000Z"
+      }
+    ],
+    "proposedCandidateFacts": [
+      {
+        "statement": "Kafka introdujo share groups",
+        "provenanceUrls": [
+          "https://www.rabbitmq.com/docs/compare/kafka",
+          "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "https://www.conduktor.io/glossary/kafka-share-groups",
+          "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+        ],
+        "statusHint": "UNVERIFIED"
+      }
+    ],
+    "knownUncertainties": [
+      "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+      "¿La versión 4.2 de Kafka se lanzará en 2026?",
+      "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+      "Fecha exacta de lanzamiento de Kafka 4.2."
+    ],
+    "initialFindings": [
+      {
+        "kind": "EVIDENCE",
+        "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+        "refs": [
+          "https://www.conduktor.io/glossary/kafka-share-groups"
+        ]
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+        "refs": [
+          "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+        ]
+      },
+      {
+        "kind": "EVIDENCE",
+        "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+        "refs": [
+          "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+        ]
+      },
+      {
+        "kind": "EDITORIAL_REFRAMING",
+        "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "refs": []
+      },
+      {
+        "kind": "MODEL_INTERPRETATION",
+        "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+        "refs": []
+      }
+    ],
+    "origin": {
+      "signalId": "sig-src-kafka-vs-rabbitmq-2",
+      "originalClaims": [
+        "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+      ],
+      "assessment": "REFRAMED",
+      "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+    }
+  },
+  "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/inbox/rc4-cl-rabbitmq-3-11.json"
+}

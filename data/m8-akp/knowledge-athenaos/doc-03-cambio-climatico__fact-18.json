@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-18",
+  "statement": "La emisión se ajusta excelentemente a la de un cuerpo negro a 5770 K. A la distancia de la Tierra (1 UA), la parte alta de la atmósfera recibe una irradiancia de 1361 W/m² que, debido a su escasa variación a corto plazo, se conoce históricamente como constante solar.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

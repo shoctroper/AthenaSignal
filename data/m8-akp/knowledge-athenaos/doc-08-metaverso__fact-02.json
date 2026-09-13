@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-02",
+  "statement": "Se basa en la convergencia de tecnologías, como la realidad virtual (RV) y la realidad aumentada (RA), que permiten interacciones multisensoriales con entornos virtuales, objetos digitales y personas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

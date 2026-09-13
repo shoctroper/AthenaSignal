@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-07",
+  "statement": "El registro instrumental provee datos más recientes, como los registros instrumentales de temperatura atmosférica y las mediciones de la concentración de CO2 atmosférico (curva de Keeling).",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

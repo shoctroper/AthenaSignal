@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-16",
+  "statement": "En un estudio realizado por Turner, Drummond, Salamat y Brown en personas y animales durante el sueño se demostró que la memoria de trabajo se ve afectada por la falta de sueño.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

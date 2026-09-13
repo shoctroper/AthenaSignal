@@ -1,0 +1,21 @@
+{
+  "id": "doc-10-inteligencia-artificial::fact-13",
+  "statement": "La inteligencia artificial explicable se refiere a métodos y técnicas en la aplicación de tecnología de inteligencia artificial por los que el ser humano es capaz de comprender las decisiones y predicciones realizadas por la inteligencia artificial.",
+  "provenance": {
+    "sourceIds": [
+      "doc-10-inteligencia-artificial"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

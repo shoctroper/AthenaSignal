@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-08",
+  "statement": "En 1973 se combinaron los programas de la Armada y de la Fuerza Aérea de los Estados Unidos en lo que se conoció como Navigation Technology Program, posteriormente renombrado NAVSTAR GPS.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

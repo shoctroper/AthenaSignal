@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-21",
+  "statement": "La relatividad especial predice que la frecuencia de los relojes atómicos moviéndose a velocidades orbitales del GPS marca más lentamente que los relojes terrestres fijos, resultando un retraso de unos 7 μs/día.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

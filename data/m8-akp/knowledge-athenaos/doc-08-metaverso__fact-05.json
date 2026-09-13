@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-05",
+  "statement": "Se han identificado usos aplicados de metaverso en el terreno del entretenimiento, la teleeducación, la telesalud, la telemedicina y especialmente en el campo de la economía digital, en donde comienzan a emerger nuevas formas de valor como los token no fungibles (NFT).",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

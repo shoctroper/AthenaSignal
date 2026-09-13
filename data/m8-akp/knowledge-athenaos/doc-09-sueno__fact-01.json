@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-01",
+  "statement": "La palabra sueño (del latín somnus, que se conserva en los cultismos somnífero, somnoliento y sonámbulo; antiguamente dormición) designa tanto el acto de dormir como la actividad de la mente durante ese periodo de descanso.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-06",
+  "statement": "Para ello recopilan un registro climático del pasado remoto de la Tierra basado en la evidencia geológica a partir de sondeos geotécnicos de perfiles térmicos, testigos de hielo, registros de la flora y fauna como crecimiento de anillos de árboles y de corales, procesos glaciares y periglaciares, análisis isotópico y otros análisis de las capas de sedimento y registros de los niveles del mar del pasado.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

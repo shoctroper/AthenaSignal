@@ -2,44 +2,47 @@
 
 - **Proyecto:** AthenaSignal
 - **Última actualización:** 2026-09-12
-- **Orden activa:** Ninguna. **M7 "Epistemically Resolutive Closed Loop" (ORDEN-011) COMPLETADO y CERRADO.**
+- **Orden activa:** Ninguna. **M8 "Sustained Autonomous Editorial Operation" (ORDEN-012) COMPLETADO y CERRADO.**
 
-## Milestone M7 — CERRADO
+## Milestone M8 — CERRADO (aprobado tras refuerzo)
 
-- **Workspace:** `MFunctionalSB/GovernanceOs/milestones/athenasignal-m7-epistemically-resolutive-closed-loop` (runtime `COMPLETED`, `CLOSE_MILESTONE`, **audit valid**, 26 eventos).
-- **Runtime:** `rt-5476e72bd56c` (1 ciclo de worker).
-- **Verificación estricta** (`athenasignal-m7-verify.spec.yaml`): **PASS (5/5 gates)**.
-- **Pruebas:** `118/118` (11 suites); suite M1..M6 intacta.
-- **Closed loop real:** 19 handoff traces `AthenaSignal→AKP→AthenaOS→AKP→AthenaSignal` (`handoff-trace.json`).
-- **Resoluciones epistémicas:** `CLOSED_CONFIRMED` = ayuno intermitente · `CLOSED_REFUTED` = ketobig · `DEMOTED` = airllm · `PROMOTED` = cofepris · `INCONCLUSIVE` = python/rabbitmq/creatina.
-- **Research:** 6 CONFIRMED · 1 REFUTED · 12 INCONCLUSIVE (19 resultados) · 206 evidence refs · 35 evidencia nueva.
-- **Transiciones:** 14 (13 evidence-driven, `evidenceDrivenRate 0.929`) · `statusHistory` preservado.
-- **Contradicciones:** 2 (1 resuelta, 1 conservada).
-- **Escala:** **500 fuentes únicas** (M6: 250) · 104 ciclos · 800 inputs.
-- **Provenance:** 113 edges · 7 cadenas completas · **0 incompletas**.
-- **Distribución:** `realNodeParticipation: true` · 3 nodos UP / 1 DOWN (remoto) · degradación documentada.
-- **Recovery:** 11 eventos · **Idempotencia:** 37 no-ops/43 · `replayMisses: 0`.
-- **Cross-repo:** `opencode.json` habilita lectura/ejecución de AthenaFramework/AthenaKnowledge (autorización humana); escritura solo en AthenaSignal.
-- **Revisión de producto:** `docs/M7-PRODUCT-REVIEW.md` → **APPROVE** con deuda D-M7-R1..R4.
+- **Workspace:** `MFunctionalSB/GovernanceOs/milestones/athenasignal-m8-sustained-autonomous-operation` (runtime `COMPLETED`, `CLOSE_MILESTONE`, **audit valid**, 40 eventos).
+- **Runtime:** `rt-3f4235ea37a5` (2 ciclos de worker: build + refuerzo).
+- **Verificación estricta** (`athenasignal-m8-verify.spec.yaml`): **PASS (5/5 gates)**.
+- **Pruebas:** `132/132` (12 suites); suite M1..M7 intacta.
+- **Ventana de operación real:** 2026-09-12 21:31:46 → 21:53:47 (≈22 min reales), 24 ticks (23 completados, 1 restart, 2 resumes).
+- **Motores reales (8 invocaciones):** Ubuntu `athena` (SSH + Ollama) · AthenaOS `athena.dll run/show/export` · AKP `dotnet build` + `Ingestion.Cli` · Mac mini DOWN (documentado).
+- **Escala:** 1500 fuentes únicas (M7: 500) · 176 ciclos.
+- **Resoluciones:** CLOSED_CONFIRMED (ayuno) + CLOSED_REFUTED (ketobig), reforzadas por 2ª ola AthenaOS; DEMOTED (airllm), PROMOTED (cofepris), INCONCLUSIVE 3.
+- **Recovery:** 17 eventos · **Idempotencia:** 51 no-ops/57 · **Provenance:** 0 cadenas incompletas.
+- **Revisión de producto:** `docs/M8-PRODUCT-REVIEW.md` → **APPROVE** con deuda D-M8-R1..R5.
 
-### Deuda residual de M7
+### Deuda residual de M8
 
-- **D-M7-R1** nodos remotos (Ubuntu/Mac mini) modelados, no hardware real.
-- **D-M7-R2** integración viva .NET (`athena.dll`, AKP CLI) no ejecutada end-to-end.
-- **D-M7-R3** ampliar cobertura de casos REFUTED.
-- **D-M7-R4** una contradicción conservada sin resolución final.
+- **D-M8-R1** AthenaOS sin proveedor LLM real (gemini agotado).
+- **D-M8-R2** Mac mini M4 no alcanzable.
+- **D-M8-R3** sin candidates nuevos CONFIRMED/REFUTED (corpus de 7).
+- **D-M8-R4** aceptación determinista/offline; ventana acotada al presupuesto del worker.
+- **D-M8-R5** worker backgrounded kill-eado por governor externo; ejecutado en foreground.
 
 ## Milestones previos
 
-- **M6** Closed-Loop Editorial Intelligence: CERRADO (`rt-f910864bbb4a`; verify PASS; 105/105).
-- **M5** Autonomous Editorial Intelligence Platform: CERRADO (`rt-1f5283e9a495`; verify PASS; 89/89).
-- **M4** Continuous Editorial Radar: CERRADO (`rt-54e73e1fef96`; verify PASS; 71/71).
-- **M3** Autonomous Signal Intelligence: CERRADO (`rt-7101b94aabce`; verify PASS; 54/54).
-- **M2** Signal-to-Research-Candidate: CERRADO (`rt-51bdbf3f2d4a`; verify PASS; 39/39).
-- **M1** Deep Search Vertical Slice: CERRADO (`rt-388c7fddbd26`; verify PASS; 28/28).
+- **M7** Epistemically Resolutive Closed Loop: CERRADO (`rt-5476e72bd56c`; verify PASS; 118/118). Checkpoint publicado: tag `m7-checkpoint` → `66a1d43`.
+- **M6** Closed-Loop Editorial Intelligence: CERRADO (`rt-f910864bbb4a`; 105/105).
+- **M5** Autonomous Editorial Intelligence Platform: CERRADO (`rt-1f5283e9a495`; 89/89).
+- **M4** Continuous Editorial Radar: CERRADO (`rt-54e73e1fef96`; 71/71).
+- **M3** Autonomous Signal Intelligence: CERRADO (`rt-7101b94aabce`; 54/54).
+- **M2** Signal-to-Research-Candidate: CERRADO (`rt-51bdbf3f2d4a`; 39/39).
+- **M1** Deep Search Vertical Slice: CERRADO (`rt-388c7fddbd26`; 28/28).
+
+## Repositorio
+
+- Checkpoint M1–M7 publicado en `origin/main` (`15c417b`) con tag `m7-checkpoint` (`66a1d43`).
+- **M8 está en el working tree sin commitear** (pendiente de checkpoint si se autoriza).
 
 ## Bloqueos actuales
 - Ninguno.
 
 ## Pendientes para revisión humana
-- Definir el siguiente milestone a partir de la capacidad alcanzada (post-M7). No iniciar trabajo técnico automático.
+- Definir el siguiente milestone a partir de la capacidad alcanzada (post-M8). No iniciar trabajo técnico automático.
+- Decidir si se publica un checkpoint de M8 en el repositorio.

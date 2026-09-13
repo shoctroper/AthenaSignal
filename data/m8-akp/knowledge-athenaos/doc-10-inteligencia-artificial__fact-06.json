@@ -1,0 +1,21 @@
+{
+  "id": "doc-10-inteligencia-artificial::fact-06",
+  "statement": "Algunas de las inteligencias artificiales más conocidas y utilizadas en la actualidad alrededor del mundo incluyen asistentes virtuales como Alexa, el asistente de Google o Siri, traductores automáticos como el traductor de Google y DeepL, sistemas de recomendación como el de YouTube, motores de ajedrez y otros juegos como Stockfish y AlphaZero, chatbots como ChatGPT, creadores de arte de inteligencia artificial como Midjourney, Dall-e, Leonardo y Stable Diffusion, e incluso la conducción de vehículos autónomos como Tesla Autopilot.",
+  "provenance": {
+    "sourceIds": [
+      "doc-10-inteligencia-artificial"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

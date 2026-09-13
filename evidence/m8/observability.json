@@ -1,0 +1,163 @@
+{
+  "kind": "athenasignal.m8.observability.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "windowId": "m8-window-001",
+  "discovered": {
+    "sources": 1500,
+    "uniqueSources": 1500,
+    "signals": 25,
+    "clusters": 7,
+    "candidates": 7
+  },
+  "epistemicBoard": {
+    "RESEARCHABLE": [],
+    "CONFIRMED": [],
+    "REFUTED": [],
+    "INCONCLUSIVE": [
+      "rc4-cl-python-3-13",
+      "rc4-cl-rabbitmq-3-11",
+      "rc4-cl-suplementacion-de-creatina"
+    ],
+    "CLOSED_CONFIRMED": [
+      "rc4-cl-ayuno-intermitente"
+    ],
+    "CLOSED_REFUTED": [
+      "rc4-cl-ketobig"
+    ],
+    "REOPENED": [],
+    "DEMOTED": [
+      "rc4-cl-airllm"
+    ],
+    "PROMOTED": [
+      "rc4-cl-cofepris"
+    ],
+    "DISCARDED": []
+  },
+  "scheduler": {
+    "ticks": 24,
+    "processes": 4,
+    "restarts": 1,
+    "resumes": 2
+  },
+  "sentToAthenaOs": [
+    "rc4-cl-airllm",
+    "rc4-cl-python-3-13",
+    "rc4-cl-rabbitmq-3-11",
+    "rc4-cl-suplementacion-de-creatina"
+  ],
+  "returned": [
+    "aos-m8-w1-rc4-cl-airllm",
+    "aos-m8-w1-rc4-cl-python-3-13",
+    "aos-m8-w1-rc4-cl-rabbitmq-3-11",
+    "aos-m8-w1-rc4-cl-suplementacion-de-creatina",
+    "aos-m8-w2-rc4-cl-airllm",
+    "aos-m8-w2-rc4-cl-python-3-13",
+    "aos-m8-w2-rc4-cl-rabbitmq-3-11",
+    "aos-m8-w2-rc4-cl-suplementacion-de-creatina"
+  ],
+  "changed": [
+    {
+      "candidateId": "rc4-cl-airllm",
+      "from": "RESEARCHABLE",
+      "to": "INCONCLUSIVE",
+      "why": "AthenaOS aos-rc4-cl-airllm (AMBIGUOUS, postura UNCERTAIN): evidencia mixta/insuficiente; se conserva la incertidumbre (RESEARCHABLE → INCONCLUSIVE)."
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "from": "INCONCLUSIVE",
+      "to": "CONFIRMED",
+      "why": "AthenaOS aos-w2-rc4-cl-airllm (REFRAMED, postura SUPPORT): evidencia suficiente sostiene la afirmación."
+    },
+    {
+      "candidateId": "rc4-cl-airllm",
+      "from": "CONFIRMED",
+      "to": "DEMOTED",
+      "why": "AthenaOS aos-w3-rc4-cl-airllm (AMBIGUOUS, postura UNCERTAIN): nueva evidencia introduce incertidumbre sobre un candidate confirmado; se degrada."
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "from": "RESEARCHABLE",
+      "to": "CONFIRMED",
+      "why": "AthenaOS aos-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): evidencia suficiente sostiene la afirmación."
+    },
+    {
+      "candidateId": "rc4-cl-ayuno-intermitente",
+      "from": "CONFIRMED",
+      "to": "CLOSED_CONFIRMED",
+      "why": "AthenaOS aos-w2-rc4-cl-ayuno-intermitente (SUPPORTED, postura SUPPORT): segunda ola de evidencia confirma de nuevo; cierre por confirmación."
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "from": "RESEARCHABLE",
+      "to": "INCONCLUSIVE",
+      "why": "AthenaOS aos-rc4-cl-cofepris (AMBIGUOUS, postura UNCERTAIN): evidencia mixta/insuficiente; se conserva la incertidumbre (RESEARCHABLE → INCONCLUSIVE)."
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "from": "INCONCLUSIVE",
+      "to": "CONFIRMED",
+      "why": "AthenaOS aos-w2-rc4-cl-cofepris (SUPPORTED, postura SUPPORT): evidencia suficiente sostiene la afirmación."
+    },
+    {
+      "candidateId": "rc4-cl-cofepris",
+      "from": "CONFIRMED",
+      "to": "PROMOTED",
+      "why": "AthenaOS aos-w3-rc4-cl-cofepris (SUPPORTED, postura SUPPORT): confirmación reiterada con corroboración suficiente para promoción editorial."
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "from": "RESEARCHABLE",
+      "to": "DISCARDED",
+      "why": "Estado heredado del radar M6: candidato descartado por ruido/no investigable."
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "from": "DISCARDED",
+      "to": "REOPENED",
+      "why": "Nueva evidencia (aos-w2-rc4-cl-ketobig) reabre el candidate descartado: la decisión previa se revisa a la luz de la investigación."
+    },
+    {
+      "candidateId": "rc4-cl-ketobig",
+      "from": "REOPENED",
+      "to": "CLOSED_REFUTED",
+      "why": "AthenaOS aos-w2-rc4-cl-ketobig (UNSUPPORTED, postura REFUTE): evidencia autoritativa (4 refs) contradice la afirmación; cierre por refutación."
+    },
+    {
+      "candidateId": "rc4-cl-python-3-13",
+      "from": "RESEARCHABLE",
+      "to": "INCONCLUSIVE",
+      "why": "AthenaOS aos-rc4-cl-python-3-13 (AMBIGUOUS, postura UNCERTAIN): evidencia mixta/insuficiente; se conserva la incertidumbre (RESEARCHABLE → INCONCLUSIVE)."
+    },
+    {
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "from": "RESEARCHABLE",
+      "to": "INCONCLUSIVE",
+      "why": "AthenaOS aos-rc4-cl-rabbitmq-3-11 (AMBIGUOUS, postura UNCERTAIN): evidencia mixta/insuficiente; se conserva la incertidumbre (RESEARCHABLE → INCONCLUSIVE)."
+    },
+    {
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "from": "RESEARCHABLE",
+      "to": "INCONCLUSIVE",
+      "why": "AthenaOS aos-rc4-cl-suplementacion-de-creatina (AMBIGUOUS, postura UNCERTAIN): evidencia mixta/insuficiente; se conserva la incertidumbre (RESEARCHABLE → INCONCLUSIVE)."
+    }
+  ],
+  "failures": {
+    "recoveryEvents": 17,
+    "byKind": {
+      "INVALID_RESPONSE": 3,
+      "LLM_FALLBACK": 4,
+      "NODE_DOWN": 4,
+      "PARTIAL_RUN": 2,
+      "PROCESS_RESTART": 2,
+      "TIMEOUT": 2
+    }
+  },
+  "pending": [],
+  "cost": {
+    "llmCalls": 8,
+    "localCalls": 5,
+    "remoteCalls": 3,
+    "deterministicCalls": 0,
+    "estimatedCostUnits": 17
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-16",
+  "statement": "Robert Cailliau, quien cooperó con el proyecto, cuenta que en 1990 deciden ponerle un nombre al sistema y lo llamaron World Wide Web (WWW).",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

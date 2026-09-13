@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-29",
+  "statement": "Por agosto de 2001, el modelo de directorios había comenzado a ceder ante el de buscadores, mostrando el surgimiento de Google (fundado en 1998).",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

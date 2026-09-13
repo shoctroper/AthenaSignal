@@ -1,0 +1,21 @@
+{
+  "id": "doc-07-photosynthesis::fact-31",
+  "statement": "The general equation for photosynthesis as first proposed by Cornelis van Niel involves carbon dioxide and water reacting, using light energy, to produce carbohydrates, oxygen, and water.",
+  "provenance": {
+    "sourceIds": [
+      "doc-07-photosynthesis"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

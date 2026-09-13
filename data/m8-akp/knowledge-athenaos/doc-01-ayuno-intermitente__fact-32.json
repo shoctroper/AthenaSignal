@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-32",
+  "statement": "El ayuno interdiario puede reducir el peso corporal, colesterol LDL, y niveles de triglicérido al mismo grado a toda costa de mantenimiento de grasa baja o dieta alta en el día de alimentación.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

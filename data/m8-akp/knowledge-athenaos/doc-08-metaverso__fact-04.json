@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-04",
+  "statement": "Está compuesto generalmente por múltiples espacios virtuales tridimensionales, compartidos y persistentes, vinculados a un universo virtual percibido.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

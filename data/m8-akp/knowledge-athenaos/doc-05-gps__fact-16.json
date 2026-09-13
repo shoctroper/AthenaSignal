@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-16",
+  "statement": "Cada satélite GPS emite continuamente un mensaje de navegación a 50 bits por segundo en la frecuencia transportadora de microondas de aproximadamente 1600 MHz (1575,42 MHz para la señal L1 y 1227,6 MHz para la señal L2).",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

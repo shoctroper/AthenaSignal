@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-16",
+  "statement": "El concepto de cadena de bloques se utiliza en el campo de las criptomonedas (Bitcoin, Cardano, Ethereum, Dogecoin, Litecoin), en bases de datos de registro de nombres (Namecoin), como notario distribuido en distintos tipos de transacciones (sistemas de pago, transacciones bancarias, envío de remesas), en plataformas de contratos inteligentes (Cardano, Ethereum, Ripple), en contratación pública, y en sistemas de voto electrónico.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

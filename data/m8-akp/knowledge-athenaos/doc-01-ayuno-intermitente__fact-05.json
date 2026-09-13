@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-05",
+  "statement": "También puede ayudar en reducir la obesidad, la resistencia a la insulina, la dislipidemia, la hipertensión y la inflamación.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

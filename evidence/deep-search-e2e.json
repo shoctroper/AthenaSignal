@@ -105,7 +105,7 @@
       "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
       "Análisis comparativo de RabbitMQ vs Kafka vs Apache Kafka"
     ],
-    "createdAt": "2026-09-12T20:25:24.527Z",
+    "createdAt": "2026-09-13T01:24:35.912Z",
     "verification": {
       "signalId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
       "maxIterations": 3,
@@ -425,7 +425,7 @@
         "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
         "Análisis comparativo de RabbitMQ vs Kafka vs Apache Kafka"
       ],
-      "createdAt": "2026-09-12T20:25:24.527Z",
+      "createdAt": "2026-09-13T01:24:35.912Z",
       "verification": {
         "signalId": "fixture-agent-reach-youtube-com-watch-v-athena-m1-rabbitmq-vs-kafka",
         "maxIterations": 3,
@@ -536,6 +536,6 @@
       }
     },
     "narrativeAngle": "Tensión técnica: RabbitMQ vs Kafka: Comparativa de Arquitectura",
-    "createdAt": "2026-09-12T20:25:24.527Z"
+    "createdAt": "2026-09-13T01:24:35.912Z"
   }
 }

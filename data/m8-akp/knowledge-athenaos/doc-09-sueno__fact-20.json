@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-20",
+  "statement": "Desde hace algún tiempo, es conocido que la duración del sueño está asociada con determinadas enfermedades metabólicas, tales como obesidad y diabetes tipo 2.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

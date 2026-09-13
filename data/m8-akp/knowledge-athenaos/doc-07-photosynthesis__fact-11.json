@@ -1,0 +1,21 @@
+{
+  "id": "doc-07-photosynthesis::fact-11",
+  "statement": "The hydrogen freed by the splitting of water is used in the creation of two important molecules: reduced nicotinamide adenine dinucleotide phosphate (NADPH) and ATP.",
+  "provenance": {
+    "sourceIds": [
+      "doc-07-photosynthesis"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

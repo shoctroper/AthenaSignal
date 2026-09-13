@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-23",
+  "statement": "En 1994-1995, Peter Shor (AT&T Bell Laboratories) definió el algoritmo que lleva su nombre, que permite calcular los factores primos de números a una velocidad mucho mayor que en cualquier computador tradicional, y que permitiría romper muchos de los sistemas de criptografía utilizados actualmente.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

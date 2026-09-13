@@ -484,6 +484,14 @@ export interface M7RunSummary {
   state: M7State;
   missingRecordings: string[];
   outputPaths: M7OutputPaths;
+  /**
+   * Ledger epistémico vivo y observaciones cognitivas reales reutilizables por
+   * milestones posteriores (M8 sustained operation). Aditivo: no altera la
+   * semántica M7 ni sus artefactos.
+   */
+  ledger: import('./resolver.ts').EpistemicLedger;
+  observations: Record<string, import('../radar/types.ts').SignalObservation>;
+  m6: import('../closedloop/offline.ts').M6RunSummary;
 }
 
 export interface M7OutputPaths {

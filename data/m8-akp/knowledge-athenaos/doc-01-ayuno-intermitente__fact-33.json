@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-33",
+  "statement": "Aumenta los factores neurotróficos que son importantes para el aprendizaje y la memoria, y la neurogénesis adulta (la producción de nuevas neuronas a partir de células madre); enzimas para la reparación del ADN que impiden la acumulación de mutaciones, y enzimas antioxidantes que permiten a las células eliminar los radicales libres; como respuesta de las neuronas a la disminución energética.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

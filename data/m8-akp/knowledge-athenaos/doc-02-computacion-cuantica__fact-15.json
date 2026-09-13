@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-15",
+  "statement": "Uno de los obstáculos principales para la computación cuántica es el problema de la decoherencia cuántica, que causa la pérdida del carácter unitario de los pasos del algoritmo cuántico.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

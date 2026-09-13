@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-05",
+  "statement": "Su distribución estándar en un adulto sano es aproximadamente la siguiente: Fase I, el 5 %; Fase II, el 50 %; Fase III, el 20 % y Fase MOR, el 25 %.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

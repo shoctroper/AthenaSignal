@@ -1,0 +1,23 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-25",
+  "statement": "Otro estudio en ratones sugiere que los beneficios del ayuno intermitente parecen no estar relacionados con una reducción global en la ingesta calórica.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [
+    "doc-01-ayuno-intermitente::frag-014::assert-01"
+  ],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

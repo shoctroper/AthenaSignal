@@ -1,0 +1,21 @@
+{
+  "kind": "athenasignal.m8.real_research.v1",
+  "recordedAt": "2026-09-12T21:35:47.418Z",
+  "provider": "template",
+  "knowledgeDir": "data/m8-akp/knowledge-athenaos",
+  "knowledgeFacts": 272,
+  "topic": "El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares",
+  "caseId": "4ae47f3a-e7ff-4d85-8403-0986a2b8a799",
+  "state": "AwaitingHumanApproval",
+  "claims": 270,
+  "disputed": 6,
+  "fidelity": 1,
+  "showExcerpt": "Caso 4ae47f3a-e7ff-4d85-8403-0986a2b8a799 Tema: El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares Estado: AwaitingHumanApproval Blueprint: blueprint.default Ángulo: Perspectiva analítica sobre El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares ══ DRAFT ══════════════════════════════════════════════════════════ Existe una disputa activa sobre este tema; los hechos en conflicto se presentan a continuación sin resolverla: Este ayuno puede funcionar como una forma de hormesis. En agosto de 2014, el tamaño del archivo del blockchain de bitcoin al",
+  "exportPath": "evidence/m8/recordings/athena-case-export.json",
+  "invocationIds": [
+    "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" doctor",
+    "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" run --topic \"El ayuno intermitente mejora la longevidad y los marcadores cardiovasculares\" --knowledge \"/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/knowledge-athenaos\"",
+    "dotnet \"/Volumes/Medios/Repos/AthenaFramework/src/Athena.Cli/bin/Release/net9.0/athena.dll\" show 4ae47f3a-e7ff-4d85-8403-0986a2b8a799"
+  ],
+  "limitation": "El proveedor gemini está agotado (429); se ejecutó el motor real de AthenaOS con el proveedor template sobre el knowledge de AKP. La investigación es real (loader, claims, conflictos y export reales), pero la redacción no es editorialmente definitiva."
+}

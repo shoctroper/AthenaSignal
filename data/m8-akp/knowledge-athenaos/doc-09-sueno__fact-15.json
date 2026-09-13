@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-15",
+  "statement": "Dormir de lado (y en posición fetal), en comparación con dormir boca arriba o boca abajo, puede eliminar de manera más efectiva los desechos cerebrales durante el sueño y puede ser una práctica importante para ayudar a reducir las posibilidades de desarrollar Alzheimer, Parkinson y otras enfermedades neurológicas, según investigadores de la Universidad de Stony Brook.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

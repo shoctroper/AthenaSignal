@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-11",
+  "statement": "Por consiguiente, las fluctuaciones durante periodos más cortos que unas cuantas décadas, como por ejemplo El Niño, no representan un cambio climático.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-22",
+  "statement": "Uno de los mayores desafíos éticos es el riesgo de la creación de monopolios: los participantes con mayor poder de cómputo y recursos pueden dominar la validación de transacciones y la creación de bloques, lo que podría limitar la participación y descentralización en la red.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-10",
+  "statement": "Existen muchos tipos de ayuno intermitente, entre ellos destacan estos: el ayuno interdiario implica un ayuno de 24 horas seguido por otro periodo de 24 horas de alimentación.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

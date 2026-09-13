@@ -1,0 +1,21 @@
+{
+  "id": "doc-10-inteligencia-artificial::fact-10",
+  "statement": "Los sistemas de IA generativa notables incluyen ChatGPT (y su variante Microsoft Copilot), un bot conversacional creado por OpenAI usando sus modelos de lenguaje grande fundacionales GPT-3 y GPT-4; Gemini (anteriormente llamado Bard), un bot conversacional creado por Google; y Claude, un bot conversacional creado por Anthropic.",
+  "provenance": {
+    "sourceIds": [
+      "doc-10-inteligencia-artificial"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

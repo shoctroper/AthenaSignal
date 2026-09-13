@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-21",
+  "statement": "Un estudio científico de ayuno intermitente en ratas realizado en 1943 encontró que ayunando un día de dos, tres o cuatro prolongaba la vida de las ratas (por 15-20% en el caso de un día de cada tres), comparado con ratas que podían comer siempre que desearan.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-22",
+  "statement": "En 1998 tanto IANA como InterNIC se reorganizaron bajo el control de ICANN, una corporación de California sin ánimo de lucro, contratada por el Departamento de Comercio de Estados Unidos para manejar ciertas tareas relacionadas con Internet.",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

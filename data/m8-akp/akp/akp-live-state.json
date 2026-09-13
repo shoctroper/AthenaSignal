@@ -1,0 +1,3257 @@
+{
+  "kind": "athenasignal.m6.akp_transport.v1",
+  "updatedAt": "2026-09-12T00:00:00.000Z",
+  "inbox": [
+    {
+      "kind": "athenasignal.m6.akp_handoff_entry.v1",
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "publishedAt": "2026-09-12T00:00:00.000Z",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+            "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "language": "es",
+            "role": "DISCOVERY",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "discovery_only",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+            "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+            "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+            "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+            "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+            "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+            "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+            "provenanceUrls": [
+              "https://www.youtube.com/@legitalgorithmswithpeter",
+              "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+              "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+              "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+              "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+              "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+              "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+          "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+          "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-airllm-claim-1",
+          "originalClaims": [
+            "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Short de divulgación. Afirmación a verificar: confunde VRAM con RAM y atribuye a una versión no documentada (V4) una capacidad medida sobre DeepSeek-V3. Contraste con fuente(s) de autoridad del corpus: lyogavin/airllm — README (https://raw.githubusercontent.com/lyogavin/airllm/main/README.md). Se reformula la afirmación original en una pregunta investigable que puede ser respondida mediante pruebas empíricas o revisión de documentación técnica. Se evita afirmar el hecho sin evidencia y se mantiene la neutralidad. Pregunta investigable reformulada: ¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?"
+        }
+      },
+      "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/inbox/rc4-cl-airllm.json"
+    },
+    {
+      "kind": "athenasignal.m6.akp_handoff_entry.v1",
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "publishedAt": "2026-09-12T00:00:00.000Z",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+            "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+            "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+            "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+            "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained",
+            "title": "Python experimental support for free threading — Python 3.13 docs",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+            "provenanceUrls": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html",
+              "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+              "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+              "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+              "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+              "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+              "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Está claro qué extensiones C necesitan modificaciones?",
+          "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+          "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?",
+          "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada"
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "La documentación experimental de Python 3.13 sugiere soporte para hilos libres, pero no menciona específicamente la necesidad de modificar extensiones C para soportar la GIL deshabilitada.",
+            "refs": [
+              "https://docs.python.org/3.13/howto/free-threading-python.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-python-freethreading-2",
+          "originalClaims": [
+            "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada"
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Las extensiones C deben ser modificadas para soportar la GIL deshabilitada» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Documentación primaria del propio proyecto sobre free-threading. Se plantea la pregunta como una investigación sobre la compatibilidad de extensiones C con la GIL deshabilitada, evitando afirmar directamente que se requieren modificaciones. Pregunta investigable reformulada: ¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?"
+        }
+      },
+      "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/inbox/rc4-cl-python-3-13.json"
+    },
+    {
+      "kind": "athenasignal.m6.akp_handoff_entry.v1",
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "publishedAt": "2026-09-12T00:00:00.000Z",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 5
+        },
+        "proposedSources": [
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+            "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+            "title": "Kafka Queues: Share Groups Explained | Conduktor",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+            "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "secondary_press",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+            "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "primary_source",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://arxiv.org/abs/1709.00333",
+            "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+            "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+            "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+            "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+            "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "medium_trust_secondary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "Kafka introdujo share groups",
+            "provenanceUrls": [
+              "https://www.rabbitmq.com/docs/compare/kafka",
+              "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+              "https://www.conduktor.io/glossary/kafka-share-groups",
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+          "¿La versión 4.2 de Kafka se lanzará en 2026?",
+          "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+          "Fecha exacta de lanzamiento de Kafka 4.2."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "Un consumidor share resuelve cada registro individualmente en lugar de confirmar un offset.",
+            "refs": [
+              "https://www.conduktor.io/glossary/kafka-share-groups"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "Kafka 4.2.0 introdujo share groups y per-message acknowledgment, permitiendo a los consumidores adquirir mensajes de forma secuencial.",
+            "refs": [
+              "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/"
+            ]
+          },
+          {
+            "kind": "EVIDENCE",
+            "text": "La versión 4.0.2 de Kafka incluye la clase KafkaShareConsumer, que permite el uso de share groups.",
+            "refs": [
+              "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-kafka-vs-rabbitmq-2",
+          "originalClaims": [
+            "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Comparación de un vendor (RabbitMQ) frente a Kafka: fuente parcial pero de autoridad sobre su propio producto. Contraste con fuente(s) de autoridad del corpus: RabbitMQ vs. Apache Kafka — RabbitMQ (https://www.rabbitmq.com/docs/compare/kafka?channel=vendor). Se reformula la afirmación original en una pregunta investigable que evita afirmar una fecha específica y permite verificar la introducción de share groups y su funcionamiento. Pregunta investigable reformulada: ¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?"
+        }
+      },
+      "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/inbox/rc4-cl-rabbitmq-3-11.json"
+    },
+    {
+      "kind": "athenasignal.m6.akp_handoff_entry.v1",
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "publishedAt": "2026-09-12T00:00:00.000Z",
+      "recommendedAthenaOsInput": {
+        "kind": "athenasignal.research_candidate.handoff.v1",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "outputLanguage": "es",
+        "viableBase": {
+          "format": "article",
+          "factsRequired": 3,
+          "sourcesMinimum": 1
+        },
+        "proposedSources": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "official_documentation",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+            "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+            "language": "es",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+            "title": "What is creatine? Potential benefits and risks — Harvard Health",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+            "title": "Creatine in Health and Disease — PMC7910963",
+            "language": "en",
+            "role": "EVIDENCE",
+            "eligibility": {
+              "hasIdentifiableOrigin": true,
+              "hasTraceableLocation": true,
+              "hasTemporalContext": true,
+              "hasRecoverableEvidence": true
+            },
+            "proposedTrustTier": "high_trust_primary",
+            "accessedAt": "2026-09-12T00:00:00.000Z"
+          }
+        ],
+        "proposedCandidateFacts": [
+          {
+            "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+            "provenanceUrls": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ],
+            "statusHint": "UNVERIFIED"
+          }
+        ],
+        "knownUncertainties": [
+          "¿Hay evidencia suficiente para afirmar que la suplementación de creatina mejora la metabolización celular en personas con diabetes?",
+          "¿La suplementación de creatina disminuye la severidad de la diabetes en todos los estados de baja disponibilidad de oxígeno?",
+          "¿La suplementación de creatina es efectiva en todos los tipos de diabetes?",
+          "Falta de estudios que muestren una reducción directa de la severidad de la diabetes con creatina.",
+          "No se ha evaluado la eficacia en estados de baja disponibilidad de oxígeno."
+        ],
+        "initialFindings": [
+          {
+            "kind": "EVIDENCE",
+            "text": "El estudio sugiere que la creatina puede mejorar la función celular y la homeostasis del oxígeno en tejidos musculares, lo que podría tener implicaciones para la diabetes, pero no se menciona una disminución directa de la severidad de la enfermedad.",
+            "refs": [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/"
+            ]
+          },
+          {
+            "kind": "EDITORIAL_REFRAMING",
+            "text": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+            "refs": []
+          },
+          {
+            "kind": "MODEL_INTERPRETATION",
+            "text": "La interpretación editorial de esta fuente es una inferencia del modelo, no evidencia.",
+            "refs": []
+          }
+        ],
+        "origin": {
+          "signalId": "sig-src-creatine-pmc-1",
+          "originalClaims": [
+            "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno."
+          ],
+          "assessment": "REFRAMED",
+          "reframingNote": "La afirmación «La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.» NO se acepta como hecho verificable: la evidencia inicial no la sostiene. Revisión real sobre creatina. Fuente de evidencia de alta autoridad. Se reformula la afirmación original en una pregunta de investigación que puede ser evaluada mediante estudios controlados, evitando afirmar causalidad sin evidencia. Pregunta investigable reformulada: ¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?"
+        }
+      },
+      "inboxPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/inbox/rc4-cl-suplementacion-de-creatina.json"
+    }
+  ],
+  "returns": [
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w1-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "handoffContentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "16 referencias (7 del handoff, 9 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "2 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.6)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "Existen limitaciones en la evidencia que respalda la afirmación de que 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "DISCOVERY",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "DISCOVERY",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:00.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+        "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+        "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.6,
+      "layers": {
+        "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "researchResult": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo.",
+        "newEvidence": [
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution"
+        ],
+        "newInterpretation": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo."
+      },
+      "createdAt": "2026-09-22T03:00:00.000Z",
+      "runId": "m8-scheduler-1-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 1,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w1-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "handoffContentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "15 referencias (7 del handoff, 8 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "3 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.6)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La deshabilitación del GIL es una característica experimental en Python 3.13.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:00:30.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿Está claro qué extensiones C necesitan modificaciones?",
+        "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+        "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?"
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.6,
+      "layers": {
+        "originalSignal": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "researchResult": "La deshabilitación del GIL en Python 3.13 introduce una característica experimental que podría afectar el funcionamiento de las extensiones C. Sin embargo, la necesidad de modificar estas extensiones para funcionar correctamente cuando el GIL está deshabilitado no está claramente establecida en la evidencia disponible.",
+        "newEvidence": [
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution"
+        ],
+        "newInterpretation": "La deshabilitación del GIL en Python 3.13 introduce una característica experimental que podría afectar el funcionamiento de las extensiones C. Sin embargo, la necesidad de modificar estas extensiones para funcionar correctamente cuando el GIL está deshabilitado no está claramente establecida en la evidencia disponible."
+      },
+      "createdAt": "2026-09-22T03:00:30.000Z",
+      "runId": "m8-scheduler-1-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 1,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w1-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "handoffContentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "18 referencias (11 del handoff, 7 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "2 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.7)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "Los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La documentación oficial de Kafka 4.0.2 menciona la existencia de la clase KafkaShareConsumer, lo que sugiere que share groups están presentes en esta versión, aunque no se proporcionan detalles específicos sobre su implementación.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "Kafka introdujo share groups",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:00.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+        "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+        "Fecha exacta de lanzamiento de Kafka 4.2."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.7,
+      "layers": {
+        "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proviene de comparaciones con RabbitMQ y de la documentación oficial de Kafka.",
+        "newEvidence": [
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution"
+        ],
+        "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proviene de comparaciones con RabbitMQ y de la documentación oficial de Kafka."
+      },
+      "createdAt": "2026-09-22T03:01:00.000Z",
+      "runId": "m8-scheduler-1-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 1,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w1-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "handoffContentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "16 referencias (6 del handoff, 10 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "3 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.5)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La creatina es un compuesto naturalmente presente en el cuerpo y se utiliza como suplemento para mejorar la función muscular y la energía celular.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No hay estudios directos que demuestren que la suplementación de creatina mejore la metabolización celular en personas con diabetes.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://k-state.com/plketobig",
+            "https://k-state.com/plketobig?m7channel=resolution",
+            "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://k-state.com/plketobig",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://k-state.com/plketobig?m7channel=resolution",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://k-state.com/plketobig",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://k-state.com/plketobig?m7channel=resolution",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T03:01:30.000Z"
+        }
+      ],
+      "uncertainties": [
+        "Falta de estudios que muestren una mejora en la metabolización celular con la suplementación de creatina en personas con diabetes.",
+        "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.5,
+      "layers": {
+        "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada.",
+        "newEvidence": [
+          "https://k-state.com/plketobig",
+          "https://k-state.com/plketobig?m7channel=resolution",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution"
+        ],
+        "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada."
+      },
+      "createdAt": "2026-09-22T03:01:30.000Z",
+      "runId": "m8-scheduler-1-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 1,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 20
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w2-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "handoffContentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "16 referencias (7 del handoff, 9 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "2 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.6)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "Existen limitaciones en la evidencia que respalda la afirmación de que 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+            "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "DISCOVERY",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+          "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "DISCOVERY",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        },
+        {
+          "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+          "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:00.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+        "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+        "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.6,
+      "layers": {
+        "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+        "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+        "researchResult": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo.",
+        "newEvidence": [
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+          "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+          "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+          "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution"
+        ],
+        "newInterpretation": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo."
+      },
+      "createdAt": "2026-09-22T06:00:00.000Z",
+      "runId": "m8-scheduler-2-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 2,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w2-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "handoffContentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "15 referencias (7 del handoff, 8 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "3 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.6)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La deshabilitación del GIL es una característica experimental en Python 3.13.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No se dispone de fuentes primarias que confirmen o refuten la necesidad de modificaciones en extensiones C para la GIL deshabilitada.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+            "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m6channel=continuity&m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://blog.jetbrains.com/pycharm/2025/07/faster-python-unlocking-the-python-global-interpreter-lock/?m7channel=resolution",
+          "title": "Faster Python: Unlocking the Python Global Interpreter Lock",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "title": "State of Python 3.13 Performance: Free-Threading - CodSpeed",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?channel=docs&m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://docs.python.org/3.13/howto/free-threading-python.html?m8channel=1-sustained",
+          "title": "Python experimental support for free threading — Python 3.13 docs",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:00:30.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿Está claro qué extensiones C necesitan modificaciones?",
+        "¿La deshabilitación del GIL es una característica experimental en Python 3.13?",
+        "¿Existen riesgos o beneficios específicos asociados con la deshabilitación del GIL para las extensiones C?"
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.6,
+      "layers": {
+        "originalSignal": "Las extensiones C deben ser modificadas para soportar la GIL deshabilitada",
+        "researchQuestion": "¿Es necesario modificar las extensiones C de Python para que funcionen correctamente cuando la GIL está deshabilitada?",
+        "researchResult": "La deshabilitación del GIL en Python 3.13 introduce una característica experimental que podría afectar el funcionamiento de las extensiones C. Sin embargo, la necesidad de modificar estas extensiones para funcionar correctamente cuando el GIL está deshabilitado no está claramente establecida en la evidencia disponible.",
+        "newEvidence": [
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m6channel=continuity&m7channel=resolution",
+          "https://codspeed.io/blog/state-of-python-3-13-performance-free-threading?m7channel=resolution",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution"
+        ],
+        "newInterpretation": "La deshabilitación del GIL en Python 3.13 introduce una característica experimental que podría afectar el funcionamiento de las extensiones C. Sin embargo, la necesidad de modificar estas extensiones para funcionar correctamente cuando el GIL está deshabilitado no está claramente establecida en la evidencia disponible."
+      },
+      "createdAt": "2026-09-22T06:00:30.000Z",
+      "runId": "m8-scheduler-2-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 2,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w2-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "handoffContentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "18 referencias (11 del handoff, 7 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "2 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.7)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "Los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "La documentación oficial de Kafka 4.0.2 menciona la existencia de la clase KafkaShareConsumer, lo que sugiere que share groups están presentes en esta versión, aunque no se proporcionan detalles específicos sobre su implementación.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "Kafka introdujo share groups",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+            "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "title": "RabbitMQ Streams vs Kafka: Architecture Guide - AceMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m6channel=continuity&m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://arxiv.org/abs/1709.00333?m7channel=resolution",
+          "title": "[1709.00333] Kafka versus RabbitMQ - arXiv",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://kafka.apache.org/40/javadoc/org/apache/kafka/clients/consumer/KafkaShareConsumer.html",
+          "title": "KafkaShareConsumer (kafka 4.0.2 API)",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://kafka.apache.org/blog/2026/02/17/apache-kafka-4.2.0-release-announcement/",
+          "title": "Apache Kafka 4.2.0 Release Announcement | Apache Kafka",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.conduktor.io/glossary/kafka-share-groups",
+          "title": "Kafka Queues: Share Groups Explained | Conduktor",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.confluent.io/blog/kafka-queue-semantics-share-consumer-ga/",
+          "title": "Kafka Queue Semantics Now GA with Share Consumer API",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        },
+        {
+          "url": "https://www.rabbitmq.com/docs/compare/kafka?m8channel=1-sustained",
+          "title": "RabbitMQ vs. Apache Kafka — RabbitMQ",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:00.000Z"
+        }
+      ],
+      "uncertainties": [
+        "¿La información proviene de una fuente oficial de Apache Kafka o es una suposición basada en comparaciones con RabbitMQ?",
+        "¿Los share groups son una característica única de Kafka o se utilizan en otras plataformas de procesamiento de eventos?",
+        "Fecha exacta de lanzamiento de Kafka 4.2."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.7,
+      "layers": {
+        "originalSignal": "Kafka 4.2 (2026) introdujo share groups, permitiendo consumidores individuales adquirir mensajes bajo un bloqueo temporal y reconocerlos uno a la vez.",
+        "researchQuestion": "¿En qué versión de Apache Kafka se introdujeron los share groups y cómo se gestionan los bloqueos temporales y el reconocimiento de mensajes por consumidor?",
+        "researchResult": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proviene de comparaciones con RabbitMQ y de la documentación oficial de Kafka.",
+        "newEvidence": [
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m6channel=continuity&m7channel=resolution",
+          "https://acemq.com/blogs/rabbitmq-streams-vs-apache-kafka-choosing-the-best-streaming-solution-for-enterprise-messaging/?m7channel=resolution",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity",
+          "https://www.rabbitmq.com/docs/compare/kafka?channel=vendor&m6channel=continuity&m7channel=resolution"
+        ],
+        "newInterpretation": "Se ha identificado que los share groups son una característica introducida en Apache Kafka, pero la información sobre la versión específica y el manejo de bloqueos temporales y reconocimiento de mensajes por consumidor es limitada. La evidencia proviene de comparaciones con RabbitMQ y de la documentación oficial de Kafka."
+      },
+      "createdAt": "2026-09-22T06:01:00.000Z",
+      "runId": "m8-scheduler-2-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 2,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 8
+      }
+    },
+    {
+      "kind": "athenasignal.m6.athenaos_result.v1",
+      "resultId": "aos-m8-w2-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "handoffContentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+      "worker": "athenaos-research-stand-in-m8",
+      "executionMode": "replay",
+      "provider": "ollama",
+      "model": "qwen2.5:7b-instruct",
+      "deterministic": false,
+      "status": "RESEARCHED_INCONCLUSIVE",
+      "steps": [
+        {
+          "id": "plan",
+          "step": "Decomposición del problema de investigación",
+          "detail": "Sub-preguntas derivadas: 4"
+        },
+        {
+          "id": "gather",
+          "step": "Recuperación y provenance de evidencia",
+          "detail": "16 referencias (6 del handoff, 10 de búsqueda)."
+        },
+        {
+          "id": "interpret",
+          "step": "Interpretación y evaluación de claims",
+          "detail": "3 hallazgos, 1 claims evaluados."
+        },
+        {
+          "id": "synthesize",
+          "step": "Síntesis estructurada y evaluación final",
+          "detail": "Evaluación final AMBIGUOUS (confianza 0.5)."
+        }
+      ],
+      "findings": [
+        {
+          "kind": "EVIDENCE",
+          "text": "La creatina es un compuesto naturalmente presente en el cuerpo y se utiliza como suplemento para mejorar la función muscular y la energía celular.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No hay estudios directos que demuestren que la suplementación de creatina mejore la metabolización celular en personas con diabetes.",
+          "refs": []
+        },
+        {
+          "kind": "EVIDENCE",
+          "text": "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno.",
+          "refs": []
+        }
+      ],
+      "claims": [
+        {
+          "claimId": "cl-1",
+          "statement": "La creatina es un compuesto que se encuentra naturalmente en el cuerpo y se utiliza como suplemento dietético para mejorar la función muscular y la energía celular.",
+          "verdict": "UNCERTAIN",
+          "confidence": 0.3,
+          "evidenceRefs": [
+            "https://k-state.com/plketobig",
+            "https://k-state.com/plketobig?m7channel=resolution",
+            "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+            "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "url": "https://k-state.com/plketobig",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://k-state.com/plketobig?m7channel=resolution",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health",
+          "role": "EVIDENCE",
+          "origin": "HANDOFF"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "role": "EVIDENCE",
+          "origin": "SEARCH"
+        }
+      ],
+      "provenance": [
+        {
+          "url": "https://k-state.com/plketobig",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://k-state.com/plketobig?m7channel=resolution",
+          "title": "KetoBig: pierde 10 kilos en una semana sin dieta ni ejercicio",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "title": "La evidencia científica sobre el ayuno intermitente — Cochrane",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m7channel=resolution",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7910963/?m8channel=1-sustained",
+          "title": "Creatine in Health and Disease — PMC7910963",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "title": "Alerta por la proliferación de anuncios de productos \"milagro\" — COFEPRIS",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.health.harvard.edu/exercise-and-fitness/what-is-creatine-potential-benefits-and-risks-of-this-popular-supplement?m8channel=1-sustained",
+          "title": "What is creatine? Potential benefits and risks — Harvard Health",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        },
+        {
+          "url": "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution",
+          "title": "¿Qué es el ayuno intermitente? Tipos y beneficios - Sofía",
+          "language": "es",
+          "role": "EVIDENCE",
+          "accessedAt": "2026-09-22T06:01:30.000Z"
+        }
+      ],
+      "uncertainties": [
+        "Falta de estudios que muestren una mejora en la metabolización celular con la suplementación de creatina en personas con diabetes.",
+        "No se ha evaluado la eficacia de la suplementación de creatina en la reducción de la severidad de la diabetes en personas con baja disponibilidad de oxígeno."
+      ],
+      "finalAssessment": "AMBIGUOUS",
+      "confidence": 0.5,
+      "layers": {
+        "originalSignal": "La suplementación de creatina puede mejorar la metabolización celular y, por lo tanto, disminuir la severidad de la diabetes, especialmente en estados de baja disponibilidad de oxígeno.",
+        "researchQuestion": "¿La suplementación con creatina mejora la metabolización celular y reduce la severidad de la diabetes en personas con baja disponibilidad de oxígeno?",
+        "researchResult": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada.",
+        "newEvidence": [
+          "https://k-state.com/plketobig",
+          "https://k-state.com/plketobig?m7channel=resolution",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity",
+          "https://mx.cochrane.org/news/la-evidencia-cientifica-sobre-el-ayuno-intermitente-para-adelgazar-no-esta-la-altura-de-su?channel=cochrane-es&m6channel=continuity&m7channel=resolution",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales",
+          "https://www.gob.mx/cofepris/prensa/alerta-por-la-proliferacion-de-anuncios-de-productos-milagro-para-supuestamente-bajar-de-peso-en-redes-sociales?channel=gob",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m6channel=continuity&m7channel=resolution",
+          "https://www.sofiasalud.com/blog/que-es-el-ayuno-intermitente?m7channel=resolution"
+        ],
+        "newInterpretation": "La suplementación con creatina se ha estudiado principalmente para mejorar la función muscular y la energía celular, pero la evidencia para su efecto en la metabolización celular y la severidad de la diabetes, especialmente en personas con baja disponibilidad de oxígeno, es limitada."
+      },
+      "createdAt": "2026-09-22T06:01:30.000Z",
+      "runId": "m8-scheduler-2-run",
+      "limitations": [
+        "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+      ],
+      "wave": 2,
+      "evidenceBalance": {
+        "supporting": 0,
+        "contradicting": 0,
+        "uncertain": 1,
+        "authoritative": 20
+      }
+    }
+  ],
+  "researched": {
+    "rc4-cl-airllm": "aos-m8-w2-rc4-cl-airllm",
+    "rc4-cl-python-3-13": "aos-m8-w2-rc4-cl-python-3-13",
+    "rc4-cl-rabbitmq-3-11": "aos-m8-w2-rc4-cl-rabbitmq-3-11",
+    "rc4-cl-suplementacion-de-creatina": "aos-m8-w2-rc4-cl-suplementacion-de-creatina"
+  },
+  "published": {
+    "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa": "m8-akp-w1-rc4-cl-airllm",
+    "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432": "m8-akp-w1-rc4-cl-python-3-13",
+    "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+    "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c": "m8-akp-w1-rc4-cl-suplementacion-de-creatina"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-04",
+  "statement": "El ayuno intermitente puede ser similar a una dieta de restricción de calorías, y se lo ha estudiado en el siglo XXI como una práctica que podría reducir el riesgo de enfermedades relacionadas con las dietas, como el síndrome metabólico.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -14,7 +14,12 @@
     "verify:m1": "test -f tests/pipeline-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts",
     "verify:m2": "test -f tests/research-candidate-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts",
     "verify:m6": "test -f tests/closed-loop-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts",
-    "verify:m7": "test -f tests/epistemic-resolution-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts"
+    "verify:m7": "test -f tests/epistemic-resolution-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts",
+    "verify:m8": "test -f tests/sustained-operation-e2e.test.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts tests/sustained-operation-e2e.test.ts",
+    "m8": "node --experimental-strip-types scripts/m8-operation.ts",
+    "m8:record": "node --experimental-strip-types scripts/m8-record.ts",
+    "m8:engines": "node --experimental-strip-types scripts/m8-real-engines.ts",
+    "m8:sustain": "node --experimental-strip-types scripts/m8-sustain.ts"
   },
   "keywords": [
     "athenasignal",

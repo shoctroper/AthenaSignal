@@ -1,0 +1,21 @@
+{
+  "id": "doc-10-inteligencia-artificial::fact-08",
+  "statement": "Stuart J. Russell y Peter Norvig diferencian varios tipos de inteligencia artificial: los sistemas que piensan como humanos (por ejemplo, las redes neuronales artificiales); los sistemas que actúan como humanos (por ejemplo, la robótica); los sistemas que piensan racionalmente (por ejemplo, los sistemas expertos); y los sistemas que actúan racionalmente (por ejemplo, los agentes inteligentes).",
+  "provenance": {
+    "sourceIds": [
+      "doc-10-inteligencia-artificial"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

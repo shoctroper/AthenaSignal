@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-19",
+  "statement": "El uso de una cadena de bloques en la práctica ha permitido resolver dos problemas relacionados con el intercambio de activos sin una entidad certificadora de confianza: evitar el problema del doble gasto, y conseguir la descentralización de los pagos electrónicos.",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

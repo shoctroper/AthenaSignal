@@ -1,0 +1,109 @@
+{
+  "kind": "athenasignal.m8.akp_live.v1",
+  "generatedAt": "2026-09-12T00:00:00.000Z",
+  "inboxDir": "data/m8-akp/akp/inbox",
+  "returnDir": "data/m8-akp/akp/returns",
+  "transport": "durable-file-queue",
+  "consumer": "akp-live-ingestor-m8",
+  "worker": "athenaos-research-stand-in-m8",
+  "handoffs": [
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "wave": 1,
+      "consumedAt": "2026-09-22T03:00:00.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "wave": 1,
+      "consumedAt": "2026-09-22T03:00:30.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "wave": 1,
+      "consumedAt": "2026-09-22T03:01:00.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "wave": 1,
+      "consumedAt": "2026-09-22T03:01:30.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-airllm",
+      "candidateId": "rc4-cl-airllm",
+      "clusterId": "cl-airllm",
+      "contentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+      "wave": 2,
+      "consumedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-python-3-13",
+      "candidateId": "rc4-cl-python-3-13",
+      "clusterId": "cl-python-3-13",
+      "contentHash": "b047825d04c58b675cffc8fe3bca6677dcc56bb712cd64cdd39599852a33c432",
+      "wave": 2,
+      "consumedAt": "2026-09-22T06:00:30.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-rabbitmq-3-11",
+      "candidateId": "rc4-cl-rabbitmq-3-11",
+      "clusterId": "cl-rabbitmq-3-11",
+      "contentHash": "a97f86c756bc96986c7494af1fa8ad8eb7b470360a59a3c5f5895d56db974e30",
+      "wave": 2,
+      "consumedAt": "2026-09-22T06:01:00.000Z"
+    },
+    {
+      "handoffId": "m8-akp-w1-rc4-cl-suplementacion-de-creatina",
+      "candidateId": "rc4-cl-suplementacion-de-creatina",
+      "clusterId": "cl-suplementacion-de-creatina",
+      "contentHash": "b92cc87ddaa16349a1f613efbf5da8a2c3aa9e8d56ecf2689a946eef12a2ad9c",
+      "wave": 2,
+      "consumedAt": "2026-09-22T06:01:30.000Z"
+    }
+  ],
+  "consumed": 8,
+  "resultsReturned": 8,
+  "returnedResultIds": [
+    "aos-m8-w1-rc4-cl-airllm",
+    "aos-m8-w1-rc4-cl-python-3-13",
+    "aos-m8-w1-rc4-cl-rabbitmq-3-11",
+    "aos-m8-w1-rc4-cl-suplementacion-de-creatina",
+    "aos-m8-w2-rc4-cl-airllm",
+    "aos-m8-w2-rc4-cl-python-3-13",
+    "aos-m8-w2-rc4-cl-rabbitmq-3-11",
+    "aos-m8-w2-rc4-cl-suplementacion-de-creatina"
+  ],
+  "ingestion": {
+    "kind": "athenasignal.m8.akp_ingestion.v1",
+    "recordedAt": "2026-09-12T21:35:47.418Z",
+    "sourceDocuments": 10,
+    "documentsImported": 10,
+    "fragmentsCreated": 172,
+    "assertionsExtracted": 291,
+    "candidateFactsCreated": 273,
+    "knownFactsWritten": 267,
+    "conflictsDetected": 7,
+    "duplicatesDetected": 1,
+    "reportPath": "evidence/m8/recordings/akp-ingestion-report.json",
+    "knowledgeRepository": "data/m8-akp/knowledge-flat",
+    "bridgedKnowledgeDir": "data/m8-akp/knowledge-athenaos",
+    "bridgedFacts": 272,
+    "athenaosAcceptedFacts": 272,
+    "invocationIds": [
+      "dotnet build --nologo -v q -c Release",
+      "dotnet run --project src/AthenaKnowledge.Ingestion.Cli -c Release --no-launch-profile"
+    ]
+  },
+  "limitation": "AKP/AthenaOS externo no expone endpoint de red: transporte durable en disco + worker documentado. Las invocaciones reales a AthenaOS/AKP/Ubuntu quedan en engines.invocations."
+}

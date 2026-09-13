@@ -1,0 +1,21 @@
+{
+  "id": "doc-01-ayuno-intermitente::fact-20",
+  "statement": "En roedores, el ayuno intermitente demostró proteger contra la diabetes, cánceres, enfermedades de corazón y neurodegeneración, mientras en humanos ayuda a reducir la obesidad, hipertensión, asma y artritis reumatoide.",
+  "provenance": {
+    "sourceIds": [
+      "doc-01-ayuno-intermitente"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-28",
+  "statement": "En 2001, IBM y la Universidad de Stanford consiguieron ejecutar por primera vez el algoritmo de Shor en un computador cuántico de 7 cúbits desarrollado en Los Álamos, calculando los factores primos de 15 (3 y 5).",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

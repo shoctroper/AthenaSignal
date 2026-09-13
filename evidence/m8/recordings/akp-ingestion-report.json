@@ -1,0 +1,128 @@
+{
+  "DocumentsImported": 10,
+  "FragmentsCreated": 172,
+  "AssertionsExtracted": 291,
+  "AssertionsByType": {
+    "Hecho": 273,
+    "Cita": 12,
+    "Contexto": 2,
+    "Desconocido": 4
+  },
+  "CandidateFactsCreated": 273,
+  "DuplicatesDetected": 1,
+  "ConflictsDetected": 7,
+  "CandidateFactsRejectedByValidator": 6,
+  "KnownFactsWritten": 267,
+  "DocumentIds": [
+    "doc-01-ayuno-intermitente",
+    "doc-02-computacion-cuantica",
+    "doc-03-cambio-climatico",
+    "doc-04-historia-de-internet",
+    "doc-05-gps",
+    "doc-06-blockchain",
+    "doc-07-photosynthesis",
+    "doc-08-metaverso",
+    "doc-09-sueno",
+    "doc-10-inteligencia-artificial"
+  ],
+  "DiscardedFragments": [
+    {
+      "DocumentId": "doc-04-historia-de-internet",
+      "FragmentId": "doc-04-historia-de-internet::frag-015",
+      "Text": "Yahoo!",
+      "Reason": "LessThanTwoWords"
+    }
+  ],
+  "RejectedCandidateFacts": [
+    {
+      "Id": "doc-01-ayuno-intermitente::frag-007::assert-01::candidate",
+      "Statement": "ej., 20% de lo normal) en d\u00EDas de ayuno, m\u00E1s que no comer nada en absoluto.",
+      "DocumentId": "doc-01-ayuno-intermitente",
+      "FragmentId": "doc-01-ayuno-intermitente::frag-007",
+      "AssertionId": "doc-01-ayuno-intermitente::frag-007::assert-01",
+      "PositionInFragment": 1,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": null,
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "SospechaDeFragmentacion: empieza en minuscula (FRAG-001, verificar contra la fuente antes de promover)"
+    },
+    {
+      "Id": "doc-01-ayuno-intermitente::frag-015::assert-00::candidate",
+      "Statement": "Espec\u00EDficamente, ha sido propuesto que el ayuno intermitente mejora los sistemas cardiovascular y neurol\u00F3gico.",
+      "DocumentId": "doc-01-ayuno-intermitente",
+      "FragmentId": "doc-01-ayuno-intermitente::frag-015",
+      "AssertionId": "doc-01-ayuno-intermitente::frag-015::assert-00",
+      "PositionInFragment": 0,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": null,
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "SospechaDeFragmentacion: empieza con aposicion (FRAG-001, verificar contra la fuente antes de promover)"
+    },
+    {
+      "Id": "doc-03-cambio-climatico::frag-009::assert-00::candidate",
+      "Statement": "El cambio clim\u00E1tico actual es, de manera muy probable, totalmente antropog\u00E9nico y se relaciona principalmente con la intensificaci\u00F3n del efecto invernadero debido a las emisiones industriales procedentes de la quema de combustibles f\u00F3siles.",
+      "DocumentId": "doc-03-cambio-climatico",
+      "FragmentId": "doc-03-cambio-climatico::frag-009",
+      "AssertionId": "doc-03-cambio-climatico::frag-009::assert-00",
+      "PositionInFragment": 0,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": "doc-03-cambio-climatico::frag-001::assert-01::candidate",
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "Duplicado de doc-03-cambio-climatico::frag-001::assert-01::candidate"
+    },
+    {
+      "Id": "doc-07-photosynthesis::frag-003::assert-00::candidate",
+      "Statement": "purple bacteria) use bacteriochlorophyll to split hydrogen sulfide as a reductant instead of water, releasing sulfur instead of oxygen.",
+      "DocumentId": "doc-07-photosynthesis",
+      "FragmentId": "doc-07-photosynthesis::frag-003",
+      "AssertionId": "doc-07-photosynthesis::frag-003::assert-00",
+      "PositionInFragment": 0,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": null,
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "SospechaDeFragmentacion: empieza en minuscula (FRAG-001, verificar contra la fuente antes de promover)"
+    },
+    {
+      "Id": "doc-07-photosynthesis::frag-012::assert-01::candidate",
+      "Statement": "However, not all organisms use carbon dioxide as a source of carbon atoms to carry out photosynthesis; photoheterotrophs use organic compounds, rather than carbon dioxide, as a source of carbon.",
+      "DocumentId": "doc-07-photosynthesis",
+      "FragmentId": "doc-07-photosynthesis::frag-012",
+      "AssertionId": "doc-07-photosynthesis::frag-012::assert-01",
+      "PositionInFragment": 1,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": null,
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "SospechaDeFragmentacion: empieza con aposicion (FRAG-001, verificar contra la fuente antes de promover)"
+    },
+    {
+      "Id": "doc-08-metaverso::frag-011::assert-01::candidate",
+      "Statement": "Anteriormente, las proyecciones financieras variaban ampliamente: J.P.",
+      "DocumentId": "doc-08-metaverso",
+      "FragmentId": "doc-08-metaverso::frag-011",
+      "AssertionId": "doc-08-metaverso::frag-011::assert-01",
+      "PositionInFragment": 1,
+      "TrustTier": "Provisional",
+      "Volatility": "Medium",
+      "ExtractedYearMentions": [],
+      "DuplicateOfCandidateId": null,
+      "ConflictingCandidateIds": [],
+      "IsValid": false,
+      "RejectionReason": "SospechaDeFragmentacion: empieza con aposicion (FRAG-001, verificar contra la fuente antes de promover)"
+    }
+  ]
+}

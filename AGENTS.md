@@ -2,12 +2,12 @@
 
 ## Milestone activo (AUTORITATIVO)
 
-El trabajo autorizado vigente es **M7 — Epistemically Resolutive Closed Loop**.
+El trabajo autorizado vigente es **M8 — Sustained Autonomous Editorial Operation**.
 
 Antes de tocar cualquier archivo, lee y obedece:
 
-- `./ciclo/ORDEN-011.md` — misión, estados epistémicos, acceptance y límites del milestone.
-- `./ciclo/ORDEN-010.md` (M6) — closed loop previo (histórico).
+- `./ciclo/ORDEN-012.md` — misión, operación sostenida, motores reales e infraestructura, acceptance.
+- `./ciclo/ORDEN-011.md` (M7) — loop epistémicamente resolutivo (histórico).
 - `./docs/llm-provider-env.md` — proveedores LLM/búsqueda reales (Ollama, SearXNG, DeepSeek opcional).
 - `./docs/athenaos-handoff-contract.md` — contrato de handoff a AKP.
 - `./docs/M5-PRODUCT-REVIEW.md`, `./docs/M4-PRODUCT-REVIEW.md`, `./docs/M3-PRODUCT-REVIEW.md` — deuda previa (corregir solo si bloquea M6).

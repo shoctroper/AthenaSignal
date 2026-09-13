@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-21",
+  "statement": "Sin embargo, debido a que ese aporte de energía apenas varía en el tiempo, no se considera que sea una contribución importante para la variabilidad climática a corto plazo en comparación con el efecto de los gases de efecto invernadero.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "doc-09-sueno::fact-07",
+  "statement": "Adolescentes (12-17 años): entre 8 y 10 horas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [
+    "doc-09-sueno::frag-006::assert-01"
+  ],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-04-historia-de-internet::fact-02",
+  "statement": "La primera descripción documentada acerca de las interacciones sociales que podrían ser propiciadas a través del networking está contenida en una serie de memorandos escritos por J. C. R. Licklider, del Instituto Tecnológico de Massachusetts, en agosto de 1962, en los cuales Licklider discute sobre su concepto de Galactic Network (Red Galáctica).",
+  "provenance": {
+    "sourceIds": [
+      "doc-04-historia-de-internet"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

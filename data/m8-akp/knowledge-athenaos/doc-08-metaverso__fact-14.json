@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-14",
+  "statement": "En diciembre de 2021, un inversor pagó 450.000 dólares por una parcela de bienes raíces digitales junto a la mansión virtual de Snoop Dogg en Sandbox.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

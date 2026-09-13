@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-10",
+  "statement": "La necesidad de sueño en un adulto puede oscilar entre 7 y 9 horas, pero según un estudio de los hábitos de sueño de 2021 de más de 3000 españoles un 74% duermen menos de 7 horas cada día.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

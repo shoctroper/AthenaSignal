@@ -1,0 +1,21 @@
+{
+  "id": "doc-05-gps::fact-10",
+  "statement": "Debido al desafortunado derribo del Vuelo 007 de Korean Air por la Unión Soviética en 1983, con 269 víctimas mortales, el presidente estadounidense Ronald Reagan anunció que el sistema GPS estaría disponible para propósitos civiles una vez quedara finalizado.",
+  "provenance": {
+    "sourceIds": [
+      "doc-05-gps"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

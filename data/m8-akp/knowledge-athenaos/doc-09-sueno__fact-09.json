@@ -1,0 +1,24 @@
+{
+  "id": "doc-09-sueno::fact-09",
+  "statement": "Adultos mayores (de 65 años): entre 7 y 8 horas.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [
+    "doc-09-sueno::frag-005::assert-00",
+    "doc-09-sueno::frag-005::assert-01"
+  ],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

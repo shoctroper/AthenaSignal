@@ -1,0 +1,23 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-30",
+  "statement": "En mayo de 2017, IBM presentó un procesador cuántico comercial de 17 cúbits.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [
+    "doc-02-computacion-cuantica::frag-019::assert-01"
+  ],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

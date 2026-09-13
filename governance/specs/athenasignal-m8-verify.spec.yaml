@@ -1,0 +1,115 @@
+# AthenaSignal M8 — Sustained Autonomous Editorial Operation (STRICT verify).
+# Fails today (M8 test, operation script and evidence/m8/*.json do not exist yet).
+id: athenasignal-m8-sustained-autonomous-operation-verify
+version: 1
+
+root: ../..
+
+gate_policy:
+  scope:
+    required: true
+  tests:
+    required: true
+  artifacts:
+    required: true
+  regressions:
+    required: true
+  reproducibility:
+    required: true
+
+review:
+  enabled: false
+  required: false
+
+scope:
+  baseline: governance/specs/athenasignal-m8.baseline.json
+  allow:
+    - src/
+    - tests/
+    - scripts/
+    - ciclo/
+    - docs/
+    - evidence/
+    - data/
+    - governance/
+    - package.json
+    - package-lock.json
+    - tsconfig.json
+    - opencode.json
+    - AGENTS.md
+    - README.md
+  deny:
+    - decisiones/
+    - .env
+    - perfil_navegador_llm/
+  ignore:
+    - governance
+    - node_modules
+    - perfil_navegador_llm
+    - .m8tmp
+    - .m7tmp
+    - .m6tmp
+    - .m5tmp
+    - .m4tmp
+    - .m3tmp
+
+acceptance:
+  tests:
+    command: 'test -f tests/sustained-operation-e2e.test.ts && test -f scripts/m8-operation.ts && node --test --experimental-strip-types tests/domain.test.ts tests/adapters.test.ts tests/signal-extractor.test.ts tests/editorial-scorer.test.ts tests/pipeline-e2e.test.ts tests/research-candidate-e2e.test.ts tests/autonomous-intelligence-e2e.test.ts tests/editorial-radar-e2e.test.ts tests/platform-e2e.test.ts tests/closed-loop-e2e.test.ts tests/epistemic-resolution-e2e.test.ts tests/sustained-operation-e2e.test.ts'
+    required: true
+    junit: false
+    timeout: 900.0
+
+  regressions:
+    max: 0
+    baseline: governance/specs/athenasignal-m8.regressions.json
+
+  artifacts:
+    required:
+      - path: evidence/m8/operation-timeline.json
+        kind: json_object
+      - path: evidence/m8/scheduler.json
+        kind: json_object
+      - path: evidence/m8/corpus.json
+        kind: json_object
+      - path: evidence/m8/benchmark.json
+        kind: json_object
+      - path: evidence/m8/radar-state.json
+        kind: json_object
+      - path: evidence/m8/akp-live.json
+        kind: json_object
+      - path: evidence/m8/athenaos-real.json
+        kind: json_object
+      - path: evidence/m8/feedback-updates.json
+        kind: json_object
+      - path: evidence/m8/epistemic-resolutions.json
+        kind: json_object
+      - path: evidence/m8/contradictions.json
+        kind: json_object
+      - path: evidence/m8/distributed.json
+        kind: json_object
+      - path: evidence/m8/recovery-events.json
+        kind: json_object
+      - path: evidence/m8/idempotency.json
+        kind: json_object
+      - path: evidence/m8/provenance.json
+        kind: json_object
+      - path: evidence/m8/handoff-trace.json
+        kind: json_object
+      - path: evidence/m8/metrics.json
+        kind: json_object
+      - path: evidence/m8/observability.json
+        kind: json_object
+      - path: evidence/m8/cost.json
+        kind: json_object
+      - path: evidence/m8/human-review-packet.json
+        kind: json_object
+
+verification:
+  reproducible_runs: 2
+  reproducible_command: >-
+    node --experimental-strip-types scripts/m8-operation.ts
+  reproducible_timeout: 600.0
+
+escalate_when:
+  - required_data_missing

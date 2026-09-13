@@ -1,0 +1,312 @@
+{
+  "kind": "athenasignal.m6.athenaos_result.v1",
+  "resultId": "aos-m8-w2-rc4-cl-airllm",
+  "candidateId": "rc4-cl-airllm",
+  "clusterId": "cl-airllm",
+  "handoffId": "m8-akp-w1-rc4-cl-airllm",
+  "handoffContentHash": "e3b7aa9ec281d1137d1736960ea358edef6b4237e1c3cfc93ff1423c93039cfa",
+  "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+  "worker": "athenaos-research-stand-in-m8",
+  "executionMode": "replay",
+  "provider": "ollama",
+  "model": "qwen2.5:7b-instruct",
+  "deterministic": false,
+  "status": "RESEARCHED_INCONCLUSIVE",
+  "steps": [
+    {
+      "id": "plan",
+      "step": "Decomposición del problema de investigación",
+      "detail": "Sub-preguntas derivadas: 4"
+    },
+    {
+      "id": "gather",
+      "step": "Recuperación y provenance de evidencia",
+      "detail": "16 referencias (7 del handoff, 9 de búsqueda)."
+    },
+    {
+      "id": "interpret",
+      "step": "Interpretación y evaluación de claims",
+      "detail": "2 hallazgos, 1 claims evaluados."
+    },
+    {
+      "id": "synthesize",
+      "step": "Síntesis estructurada y evaluación final",
+      "detail": "Evaluación final AMBIGUOUS (confianza 0.6)."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "EVIDENCE",
+      "text": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM.",
+      "refs": []
+    },
+    {
+      "kind": "EVIDENCE",
+      "text": "Existen limitaciones en la evidencia que respalda la afirmación de que 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM.",
+      "refs": []
+    }
+  ],
+  "claims": [
+    {
+      "claimId": "cl-1",
+      "statement": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "verdict": "UNCERTAIN",
+      "confidence": 0.3,
+      "evidenceRefs": [
+        "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+        "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+        "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+        "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "DISCOVERY",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "EVIDENCE",
+      "origin": "SEARCH"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "role": "EVIDENCE",
+      "origin": "HANDOFF"
+    }
+  ],
+  "provenance": [
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+      "title": "AirLLM Review: The Truth Behind Running 70B LLMs Locally",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m6channel=continuity&m7channel=resolution",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://salud.nih.gov/recursos-de-salud/nih-noticias-de-salud/ayunar-o-no-ayunar?m7channel=resolution",
+      "title": "Ayunar o no ayunar - Los Institutos Nacionales de Salud | - NIH",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+      "title": "FreeToken AI: ¿modelos MoE frontier en hardware doméstico?",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "language": "es",
+      "role": "DISCOVERY",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=1-sustained",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    },
+    {
+      "url": "https://www.youtube.com/@legitalgorithmswithpeter?m8channel=2-sustained",
+      "title": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+      "language": "es",
+      "role": "EVIDENCE",
+      "accessedAt": "2026-09-22T06:00:00.000Z"
+    }
+  ],
+  "uncertainties": [
+    "¿Se refiere a 12 GB de RAM como suficiente para ejecutar DeepSeek V4 con AirLLM?",
+    "¿Existen otros factores que podrían afectar la ejecución de DeepSeek V4 con AirLLM en 12 GB de RAM?",
+    "Falta de fuentes de autoridad (primarias o secundarias) que respalden la afirmación."
+  ],
+  "finalAssessment": "AMBIGUOUS",
+  "confidence": 0.6,
+  "layers": {
+    "originalSignal": "AirLLM permite ejecutar DeepSeek V4 localmente con 12 GB de RAM",
+    "researchQuestion": "¿Qué puede lograr realmente AirLLM en hardware de consumo 12 GB, y con qué modelo?",
+    "researchResult": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo.",
+    "newEvidence": [
+      "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/",
+      "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity",
+      "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m6channel=continuity&m7channel=resolution",
+      "https://abrarqasim.com/blog/airllm-the-hype-vs-the-reality/?m7channel=resolution",
+      "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/",
+      "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity",
+      "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m6channel=continuity&m7channel=resolution",
+      "https://wavect.io/es/blog/freetoken-ai-inference-engine-review/?m7channel=resolution",
+      "https://www.youtube.com/@legitalgorithmswithpeter?m7channel=resolution"
+    ],
+    "newInterpretation": "La afirmación sugiere que AirLLM puede ejecutar el modelo DeepSeek V4 con 12 GB de RAM. Sin embargo, la evidencia proporcionada es limitada y no es clara sobre si 12 GB de RAM son suficientes para ejecutar DeepSeek V4 con AirLLM. Además, existen incertidumbres sobre otros factores que podrían afectar la ejecución del modelo."
+  },
+  "createdAt": "2026-09-22T06:00:00.000Z",
+  "runId": "m8-scheduler-2-run",
+  "limitations": [
+    "AKP/AthenaOS externo no invocable: este resultado proviene del worker stand-in documentado."
+  ],
+  "wave": 2,
+  "evidenceBalance": {
+    "supporting": 0,
+    "contradicting": 0,
+    "uncertain": 1,
+    "authoritative": 8
+  },
+  "returnPath": "/Volumes/Medios/Repos/AthenaSignal/data/m8-akp/akp/returns/aos-m8-w2-rc4-cl-airllm.json"
+}

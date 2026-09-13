@@ -1,0 +1,21 @@
+{
+  "id": "doc-03-cambio-climatico::fact-10",
+  "statement": "La definición más general de cambio climático es un cambio en las propiedades estadísticas (principalmente su promedio y dispersión) del sistema climático considerado durante periodos largos de tiempo, independiente de la causa.",
+  "provenance": {
+    "sourceIds": [
+      "doc-03-cambio-climatico"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

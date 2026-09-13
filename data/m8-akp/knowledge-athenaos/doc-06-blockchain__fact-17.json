@@ -1,0 +1,21 @@
+{
+  "id": "doc-06-blockchain::fact-17",
+  "statement": "Las cadenas de bloques se pueden clasificar en públicas (sin restricciones para leer los datos ni enviar transacciones) y privadas (accesos y envío de transacciones limitados a una lista predefinida de entidades).",
+  "provenance": {
+    "sourceIds": [
+      "doc-06-blockchain"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-16",
+  "statement": "Se cita con frecuencia una tasa de error límite de 10-4, por debajo de la cual se supone que sería posible la aplicación eficaz de la corrección de errores cuánticos.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

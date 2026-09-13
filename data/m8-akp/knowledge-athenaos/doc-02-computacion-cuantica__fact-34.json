@@ -1,0 +1,23 @@
+{
+  "id": "doc-02-computacion-cuantica::fact-34",
+  "statement": "El 9 de noviembre de 2022, IBM presentó Osprey, su procesador cuántico de 433 cúbits.",
+  "provenance": {
+    "sourceIds": [
+      "doc-02-computacion-cuantica"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [
+    "doc-02-computacion-cuantica::frag-017::assert-01"
+  ],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "doc-09-sueno::fact-19",
+  "statement": "Recientes estudios han puesto de manifiesto que existen tres variantes genéticas relacionadas con la duración del sueño: una variante genética cercana al gen PAX 8, que produce cambios con un promedio de 2,6 minutos por alelo en la duración del sueño; una variante aguas abajo del gen VRK2, que produce cambios con un promedio de 2 minutos por alelo; y una variante agua arriba del gen VRK2, que produce cambios con un promedio de 1,6 minutos.",
+  "provenance": {
+    "sourceIds": [
+      "doc-09-sueno"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Medium"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

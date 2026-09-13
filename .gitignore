@@ -32,6 +32,7 @@ perfil_navegador_llm/
 .m5tmp/
 .m6tmp/
 .m7tmp/
+.m8tmp/
 
 # External research clone (not vendored; see docs/research/ANALISIS-HERRAMIENTAS-DEEP-SEARCH.md)
 docs/research/agent-reach/

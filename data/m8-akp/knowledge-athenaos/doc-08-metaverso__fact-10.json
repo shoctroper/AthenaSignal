@@ -1,0 +1,21 @@
+{
+  "id": "doc-08-metaverso::fact-10",
+  "statement": "Second Life (abreviado SL) es una comunidad virtual lanzada en junio de 2003, desarrollada por Linden Lab, disponible para los usuarios de forma gratuita en Internet.",
+  "provenance": {
+    "sourceIds": [
+      "doc-08-metaverso"
+    ],
+    "addedAt": "2026-07-19T00:00:00+00:00",
+    "lastReviewedAt": "2026-07-19T00:00:00+00:00",
+    "addedBy": "AutomatedIngestion"
+  },
+  "trustTier": "Provisional",
+  "temporalValidity": {
+    "observedAt": "2026-07-19T00:00:00+00:00",
+    "volatility": "Low"
+  },
+  "knownConflictIds": [],
+  "eventDate": {
+    "$type": "Unknown"
+  }
+}

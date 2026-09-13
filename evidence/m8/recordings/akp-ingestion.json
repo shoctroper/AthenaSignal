@@ -1,0 +1,21 @@
+{
+  "kind": "athenasignal.m8.akp_ingestion.v1",
+  "recordedAt": "2026-09-12T21:35:47.418Z",
+  "sourceDocuments": 10,
+  "documentsImported": 10,
+  "fragmentsCreated": 172,
+  "assertionsExtracted": 291,
+  "candidateFactsCreated": 273,
+  "knownFactsWritten": 267,
+  "conflictsDetected": 7,
+  "duplicatesDetected": 1,
+  "reportPath": "evidence/m8/recordings/akp-ingestion-report.json",
+  "knowledgeRepository": "data/m8-akp/knowledge-flat",
+  "bridgedKnowledgeDir": "data/m8-akp/knowledge-athenaos",
+  "bridgedFacts": 272,
+  "athenaosAcceptedFacts": 272,
+  "invocationIds": [
+    "dotnet build --nologo -v q -c Release",
+    "dotnet run --project src/AthenaKnowledge.Ingestion.Cli -c Release --no-launch-profile"
+  ]
+}
