@@ -37,3 +37,22 @@ ATHENA_LLM_PROVIDER=deepseek ATHENA_LLM_MODEL=deepseek-v4-flash \
 ATHENA_LLM_BASE_URL=https://opencode.ai/zen/go/v1 ATHENA_LLM_API_KEY=<opencode-go> \
 dotnet athena.dll run --topic "<topic>" --knowledge <bank>/known-facts
 ```
+
+## Updated after discriminative evaluation (MGV-FLEET-6 continuation)
+
+The 12/12 was **inflated by the fidelity-only evaluator**. A discriminative
+adversarial evaluator (`tools/editorial_eval/evaluator.py`, 7/7 adversarial
+tests) was built; it detects fact dumping, lack of structure, missing narrative
+connectives, sentence monotony and repetition.
+
+Strict re-evaluation of the real drafts (24 candidates across 12 topics):
+
+- Topics with >=1 strictly-passing script: **6/12**
+- Passing candidates: **7** (contenedor-carga, hambruna-irlandesa,
+  imprenta-rich, muro-berlin, peste-rich, juicio-nuremberg + 1 repeat)
+- Dominant failure mode: `anti_fact_dump` (drafts are fact-order concatenations)
+- Root cause: the engine's generation prompt yields approved-but-unstructured
+  prose; the deterministic fidelity score does not measure narrative structure.
+
+This is the honest baseline. Reaching a credible 10/10 requires a generation
+change (narrative prompt/structure enforcement in the engine), not a lower bar.
