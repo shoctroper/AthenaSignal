@@ -2,9 +2,11 @@
 """pytest tests for tools/gov_athena (no real Athena, no real LLM).
 
 A fake ``dotnet`` executable (a temporary Python script) simulates ``run`` and
-``show``; a disposable ``ATHENA_HOME`` provides ``banco/<slug>/known-facts``.
-The producer and evaluator are exercised as subprocesses with the cwd of the
-"clone root" pointing at a temporary directory, so nothing touches the repo.
+``show`` and dumps the environment it received to a test file (without printing
+it); a disposable ``GOV_ATHENA_HOME`` provides
+``.athena/banco/<slug>/known-facts``. The producer and evaluator are exercised
+as subprocesses with the cwd of the "clone root" pointing at a temporary
+directory, so nothing touches the repo.
 """
 import hashlib
 import json
@@ -18,6 +20,9 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parents[3]
 GOV = REPO_ROOT / "tools" / "gov_athena"
 PRODUCER = GOV / "producer_topic.py"
 EVALUATOR = GOV / "evaluate_drafts.py"
+
+FAKE_KEY = "sk-test-athena-4f8c-2a1d"
+FAKE_KEY_OTHER = "otra"
 
 FACTS = [
     "La Biblioteca de Alejandría fue fundada bajo la dinastía ptolemaica en el siglo III a.C.",
@@ -44,11 +49,17 @@ FAKE_NARRATIVE = (
 FAKE_SHOW = "Revisión: Aprobada por el motor de revisión.\nDRAFT\n%s\n" % FAKE_NARRATIVE
 
 FAKE_DOTNET_SRC = """#!/usr/bin/env python3
+import json
 import os
 import sys
 import uuid
 
 FAKE_SHOW = {fake_show}
+
+env_out = os.environ.get("GOV_FAKE_DOTNET_ENV_OUT")
+if env_out:
+    with open(env_out, "w", encoding="utf-8") as fh:
+        json.dump(dict(os.environ), fh)
 
 if os.environ.get("GOV_FAKE_DOTNET_FAIL") == "1":
     sys.stderr.write("fake dotnet failed on purpose\\n")
@@ -81,27 +92,40 @@ def make_dummy_dll(tmp_path):
     return dll
 
 
-def make_athena_home(tmp_path, slug="alejandria", facts=None):
+def make_gov_home(tmp_path, slug="alejandria", facts=None):
     facts = list(facts if facts is not None else FACTS)
-    kdir = tmp_path / "athena_home" / "banco" / slug / "known-facts"
+    gov_home = tmp_path / "gov_home"
+    kdir = gov_home / ".athena" / "banco" / slug / "known-facts"
     kdir.mkdir(parents=True, exist_ok=True)
     for i, statement in enumerate(facts):
         (kdir / ("fact_%02d.json" % i)).write_text(
             json.dumps({"statement": statement}, ensure_ascii=False), encoding="utf-8")
-    return tmp_path / "athena_home"
+    return gov_home
 
 
-def producer_env(tmp_path, athena_home, slug, fake_dotnet, dll_path):
-    home = tmp_path / "home"
-    home.mkdir(exist_ok=True)
+def make_key_file(tmp_path, key=FAKE_KEY, mode=0o600, name="llm.key"):
+    key_file = tmp_path / "keyfile" / name
+    key_file.parent.mkdir(parents=True, exist_ok=True)
+    key_file.write_text(key, encoding="utf-8")
+    key_file.chmod(mode)
+    return key_file
+
+
+def producer_env(tmp_path, gov_home, slug, fake_dotnet, dll_path, key_file=None,
+                 env_out=None, extra=None):
     env = dict(os.environ)
     env.update({
-        "HOME": str(home),
-        "ATHENA_HOME": str(athena_home),
+        "GOV_ATHENA_HOME": str(gov_home),
         "GOV_INPUT_SLUG": slug,
         "GOV_DOTNET": str(fake_dotnet),
         "GOV_ATHENA_DLL": str(dll_path),
     })
+    if key_file is not None:
+        env["GOV_ATHENA_LLM_KEY_FILE"] = str(key_file)
+    if env_out is not None:
+        env["GOV_FAKE_DOTNET_ENV_OUT"] = str(env_out)
+    if extra:
+        env.update(extra)
     return env
 
 
@@ -134,15 +158,32 @@ def tree(cwd):
     return sorted(files), sorted(dirs)
 
 
+def read_received_env(env_out):
+    assert env_out.exists(), env_out
+    return json.loads(env_out.read_text(encoding="utf-8"))
+
+
+def make_cwd(tmp_path):
+    cwd = tmp_path / "cwd"
+    cwd.mkdir()
+    return cwd
+
+
+def base_producer_fixture(tmp_path, slug="alejandria"):
+    gov_home = make_gov_home(tmp_path, slug=slug)
+    fake = make_fake_dotnet(tmp_path)
+    dll = make_dummy_dll(tmp_path)
+    key_file = make_key_file(tmp_path)
+    cwd = make_cwd(tmp_path)
+    env_out = tmp_path / "dotnet_env.json"
+    return gov_home, fake, dll, key_file, cwd, env_out
+
+
 # --- producer --------------------------------------------------------------
 
 def test_producer_valid_slug_writes_pair_approved(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    fake = make_fake_dotnet(tmp_path)
-    dll = make_dummy_dll(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
-    env = producer_env(tmp_path, athena_home, "alejandria", fake, dll)
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file)
     proc = run_producer(cwd, env)
     assert proc.returncode == 0, proc.stderr
 
@@ -161,13 +202,57 @@ def test_producer_valid_slug_writes_pair_approved(tmp_path):
     assert leftovers == []
 
 
+def test_producer_isolates_subprocess_env_and_injects_key(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       env_out=env_out, extra={
+                           "ATHENA_LLM_API_KEY": FAKE_KEY_OTHER,
+                           "ATHENA_LLM_PROVIDER": "openai",
+                           "ATHENA_LLM_MODEL": "parent-model",
+                           "GOV_ATHENA_LLM_MODEL": "gov-model",
+                       })
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+
+    received = read_received_env(env_out)
+    assert received["HOME"] == str(gov_home)
+    assert received["ATHENA_HOME"] == str(gov_home / ".athena")
+    assert received["USERPROFILE"] == str(gov_home)
+    assert received["ATHENA_LLM_API_KEY"] == FAKE_KEY
+    assert received["ATHENA_LLM_API_KEY"] != FAKE_KEY_OTHER
+    assert "GOV_ATHENA_LLM_KEY_FILE" not in received
+    assert received["ATHENA_LLM_MODEL"] == "gov-model"
+    assert received["ATHENA_LLM_PROVIDER"] == "openai"
+    assert "GOV_ATHENA_HOME" in received
+    assert received["GOV_ATHENA_HOME"] == str(gov_home)
+
+
+def test_producer_key_file_wins_over_inherited_key(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       env_out=env_out, extra={"ATHENA_LLM_API_KEY": FAKE_KEY_OTHER})
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    received = read_received_env(env_out)
+    assert received["ATHENA_LLM_API_KEY"] == FAKE_KEY
+
+
+def test_producer_key_not_leaked_in_files_or_stdout(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file)
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    assert FAKE_KEY not in proc.stdout and FAKE_KEY not in proc.stderr
+    files, _ = tree(cwd / "drafts")
+    assert files, "expected drafts to be produced"
+    for rel in files:
+        content = (cwd / "drafts" / rel).read_text(encoding="utf-8")
+        assert FAKE_KEY not in content, rel
+
+
 def test_producer_unknown_slug_exit_2_no_files(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    fake = make_fake_dotnet(tmp_path)
-    dll = make_dummy_dll(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
-    env = producer_env(tmp_path, athena_home, "slug-inexistente", fake, dll)
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "slug-inexistente", fake, dll, key_file)
     proc = run_producer(cwd, env)
     assert proc.returncode == 2
     assert "unknown slug" in proc.stderr
@@ -178,35 +263,58 @@ def test_producer_refuses_real_athena_home_exit_3(tmp_path):
     real_home = pwd.getpwuid(os.getuid()).pw_dir
     fake = make_fake_dotnet(tmp_path)
     dll = make_dummy_dll(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
-    env = producer_env(tmp_path, pathlib.Path(real_home) / ".athena", "alejandria", fake, dll)
+    key_file = make_key_file(tmp_path)
+    cwd = make_cwd(tmp_path)
+    env = producer_env(tmp_path, pathlib.Path(real_home) / ".athena", "alejandria",
+                       fake, dll, key_file)
     proc = run_producer(cwd, env)
     assert proc.returncode == 3
     assert "refusing real athena home" in proc.stderr
     assert not (cwd / "drafts").exists()
 
 
-def test_producer_refuses_athena_home_inside_clone_exit_3(tmp_path):
+def test_producer_refuses_gov_home_inside_clone_exit_3(tmp_path):
     fake = make_fake_dotnet(tmp_path)
     dll = make_dummy_dll(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
-    env = producer_env(tmp_path, REPO_ROOT / "tools", "alejandria", fake, dll)
+    key_file = make_key_file(tmp_path)
+    cwd = make_cwd(tmp_path)
+    env = producer_env(tmp_path, REPO_ROOT / "tools", "alejandria", fake, dll, key_file)
     proc = run_producer(cwd, env)
     assert proc.returncode == 3
     assert "inside the clone" in proc.stderr
     assert not (cwd / "drafts").exists()
 
 
+def test_producer_key_file_too_open_exit_3(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    key_file.chmod(0o644)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file)
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 3
+    assert "at most 600" in proc.stderr
+    assert not (cwd / "drafts").exists()
+
+
+def test_producer_key_file_inside_clone_exit_3(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    clone_key = REPO_ROOT / "tools" / "gov_athena" / ".llm.key"
+    try:
+        clone_key.write_text(FAKE_KEY, encoding="utf-8")
+        clone_key.chmod(0o600)
+        env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, clone_key)
+        proc = run_producer(cwd, env)
+        assert proc.returncode == 3
+        assert "inside the clone" in proc.stderr
+        assert not (cwd / "drafts").exists()
+    finally:
+        if clone_key.exists():
+            clone_key.unlink()
+
+
 def test_producer_dotnet_failure_writes_nothing(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    fake = make_fake_dotnet(tmp_path)
-    dll = make_dummy_dll(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
-    env = producer_env(tmp_path, athena_home, "alejandria", fake, dll)
-    env["GOV_FAKE_DOTNET_FAIL"] = "1"
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       extra={"GOV_FAKE_DOTNET_FAIL": "1"})
     proc = run_producer(cwd, env)
     assert proc.returncode != 0
     assert not (cwd / "drafts").exists()
@@ -215,10 +323,9 @@ def test_producer_dotnet_failure_writes_nothing(tmp_path):
 # --- evaluator -------------------------------------------------------------
 
 def test_evaluator_no_drafts_zero_passing(tmp_path):
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
+    cwd = make_cwd(tmp_path)
     env = dict(os.environ)
-    env.pop("ATHENA_HOME", None)
+    env.pop("GOV_ATHENA_HOME", None)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
     out = json.loads(proc.stdout)
@@ -231,13 +338,12 @@ def test_evaluator_no_drafts_zero_passing(tmp_path):
 
 
 def test_evaluator_valid_narrative_passes(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
                                                     "engine_review": "Approved"})
     env = dict(os.environ)
-    env["ATHENA_HOME"] = str(athena_home)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
     out = json.loads(proc.stdout)
@@ -250,13 +356,12 @@ def test_evaluator_valid_narrative_passes(tmp_path):
 
 
 def test_evaluator_fact_dump_fails(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", " ".join(FACTS), {"slug": "alejandria",
                                                      "engine_review": "Approved"})
     env = dict(os.environ)
-    env["ATHENA_HOME"] = str(athena_home)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
     out = json.loads(proc.stdout)
@@ -267,13 +372,12 @@ def test_evaluator_fact_dump_fails(tmp_path):
 
 
 def test_evaluator_writes_nothing(tmp_path):
-    athena_home = make_athena_home(tmp_path)
-    cwd = tmp_path / "cwd"
-    cwd.mkdir()
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
                                                     "engine_review": "Approved"})
     env = dict(os.environ)
-    env["ATHENA_HOME"] = str(athena_home)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
     before = tree(cwd)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr

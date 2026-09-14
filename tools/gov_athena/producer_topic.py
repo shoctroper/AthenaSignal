@@ -4,25 +4,34 @@
 
 Invoked by the GOV ProducerExecutor with cwd = root of the clone. Reads one
 topic slug from ``GOV_INPUT_SLUG`` (must exist in ``topics.json``), runs the
-real Athena CLI in an isolated disposable home (``ATHENA_HOME`` / ``HOME``) and
+real Athena CLI in an isolated disposable home (``GOV_ATHENA_HOME``) and
 persists the resulting draft atomically as ``drafts/<slug>.md`` plus
 ``drafts/<slug>.meta.json`` in the cwd.
+
+The isolation applies **only to the Athena subprocess**: its environment is a
+copy of the process environment with ``HOME`` / ``USERPROFILE`` set to
+``GOV_ATHENA_HOME`` and ``ATHENA_HOME`` to ``GOV_ATHENA_HOME/.athena``. The
+``gov`` process that launches this script keeps its own ``HOME`` untouched, so
+the planner/implementer do not lose ``~/.config/opencode`` and its
+credentials.
 
 Exit codes:
   0  both files were written
   2  invalid/unknown slug, missing knowledge dir, missing GOV_ATHENA_DLL,
      or the engine produced no case / draft
-  3  invalid home: ATHENA_HOME or HOME missing, inside the clone, equal to the
-     real user home, or pointing at the real ``~/.athena``
+  3  invalid GOV_ATHENA_HOME or GOV_ATHENA_LLM_KEY_FILE, or the key file
+     could not be read
 
-Credentials arrive via ``ATHENA_LLM_*`` environment variables; this script
-never writes, prints or logs them.
+The LLM key arrives via ``GOV_ATHENA_LLM_KEY_FILE`` (a 600 file outside the
+clone) and is injected **only** into the subprocess environment as
+``ATHENA_LLM_API_KEY``. This script never writes, prints or logs the key.
 """
 import hashlib
 import json
 import os
 import pwd
 import re
+import stat
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -35,6 +44,13 @@ if EDITORIAL_EVAL not in sys.path:
 from producer_athena import draft_of  # noqa: E402
 
 TOPICS_PATH = os.path.join(REPO_ROOT, "tools", "gov_athena", "topics.json")
+
+# GOV_* variable wins over the plain ATHENA_LLM_* inherited from the parent.
+LLM_OVERRIDES = (
+    ("GOV_ATHENA_LLM_PROVIDER", "ATHENA_LLM_PROVIDER"),
+    ("GOV_ATHENA_LLM_BASE_URL", "ATHENA_LLM_BASE_URL"),
+    ("GOV_ATHENA_LLM_MODEL", "ATHENA_LLM_MODEL"),
+)
 
 
 def load_topics():
@@ -52,33 +68,84 @@ def _inside_clone(path: str) -> bool:
     return real == root or real.startswith(root + os.sep)
 
 
-def check_home() -> int:
-    """Validate HOME / ATHENA_HOME isolation. Returns 0 on success."""
-    home_var = os.environ.get("HOME")
-    athena_home = os.environ.get("ATHENA_HOME")
-    if not home_var or not athena_home:
-        print("missing HOME / ATHENA_HOME", file=sys.stderr)
-        return 3
+def check_gov_home():
+    """Validate GOV_ATHENA_HOME isolation. Returns the path or None (exit 3)."""
+    gov_home = os.environ.get("GOV_ATHENA_HOME")
+    if not gov_home:
+        print("missing GOV_ATHENA_HOME", file=sys.stderr)
+        return None
+    if not os.path.isabs(gov_home):
+        print("GOV_ATHENA_HOME must be absolute", file=sys.stderr)
+        return None
+    if not os.path.isdir(gov_home):
+        print("GOV_ATHENA_HOME does not exist", file=sys.stderr)
+        return None
+    real = os.path.realpath(gov_home)
     real_home = real_user_home()
-    for name, val in (("HOME", home_var), ("ATHENA_HOME", athena_home)):
-        if os.path.realpath(val) == real_home:
-            print("refusing real user home for %s" % name, file=sys.stderr)
-            return 3
-        if _inside_clone(val):
-            print("%s is inside the clone" % name, file=sys.stderr)
-            return 3
-    real_athena = os.path.realpath(athena_home)
-    refused = os.path.join(real_home, ".athena")
-    if real_athena == refused or real_athena.startswith(refused + os.sep):
+    if real == real_home:
+        print("refusing real user home", file=sys.stderr)
+        return None
+    if _inside_clone(gov_home):
+        print("GOV_ATHENA_HOME is inside the clone", file=sys.stderr)
+        return None
+    real_athena = os.path.join(real_home, ".athena")
+    if real == real_athena or real.startswith(real_athena + os.sep):
         print("refusing real athena home", file=sys.stderr)
-        return 3
-    if not os.path.isabs(athena_home):
-        print("ATHENA_HOME must be absolute", file=sys.stderr)
-        return 3
-    if not os.path.isdir(athena_home):
-        print("ATHENA_HOME does not exist", file=sys.stderr)
-        return 3
-    return 0
+        return None
+    return gov_home
+
+
+def check_key_file():
+    """Validate GOV_ATHENA_LLM_KEY_FILE. Returns the path or None (exit 3)."""
+    key_file = os.environ.get("GOV_ATHENA_LLM_KEY_FILE")
+    if not key_file:
+        print("missing GOV_ATHENA_LLM_KEY_FILE", file=sys.stderr)
+        return None
+    if not os.path.isabs(key_file):
+        print("GOV_ATHENA_LLM_KEY_FILE must be absolute", file=sys.stderr)
+        return None
+    if _inside_clone(key_file):
+        print("GOV_ATHENA_LLM_KEY_FILE is inside the clone", file=sys.stderr)
+        return None
+    if not os.path.isfile(key_file):
+        print("GOV_ATHENA_LLM_KEY_FILE does not exist", file=sys.stderr)
+        return None
+    mode = stat.S_IMODE(os.stat(key_file).st_mode)
+    if mode & 0o077:
+        print("GOV_ATHENA_LLM_KEY_FILE must be at most 600", file=sys.stderr)
+        return None
+    return key_file
+
+
+def build_dotnet_env(gov_home: str, key_file: str):
+    """Build the isolated environment for the Athena subprocess.
+
+    Starts from the inherited environment, redirects HOME / ATHENA_HOME /
+    USERPROFILE to the disposable home, lets GOV_ATHENA_LLM_* override the
+    plain ATHENA_LLM_* provider/base_url/model, and injects the key read from
+    ``key_file`` as ``ATHENA_LLM_API_KEY``. Returns None on read failure
+    (exit 3). The key is never printed or written anywhere.
+    """
+    env = dict(os.environ)
+    env["HOME"] = gov_home
+    env["ATHENA_HOME"] = os.path.join(gov_home, ".athena")
+    env["USERPROFILE"] = gov_home
+    for gov_var, target in LLM_OVERRIDES:
+        val = os.environ.get(gov_var)
+        if val:
+            env[target] = val
+    try:
+        with open(key_file, "r", encoding="utf-8") as f:
+            key = f.read().rstrip("\n")
+    except OSError as e:
+        print("cannot read key file: %s" % e, file=sys.stderr)
+        return None
+    # The file always wins over any ATHENA_LLM_API_KEY inherited from the
+    # parent; the GOV_ATHENA_LLM_KEY_FILE path itself is stripped so the
+    # subprocess never sees where the key lives.
+    env["ATHENA_LLM_API_KEY"] = key
+    env.pop("GOV_ATHENA_LLM_KEY_FILE", None)
+    return env
 
 
 def sha256_file(path: str) -> str:
@@ -135,12 +202,15 @@ def main() -> int:
         print("unknown slug: %s" % slug, file=sys.stderr)
         return 2
 
-    rc = check_home()
-    if rc != 0:
-        return rc
+    gov_home = check_gov_home()
+    if gov_home is None:
+        return 3
 
-    athena_home = os.environ["ATHENA_HOME"]
-    knowledge = os.path.join(athena_home, "banco", slug, "known-facts")
+    key_file = check_key_file()
+    if key_file is None:
+        return 3
+
+    knowledge = os.path.join(gov_home, ".athena", "banco", slug, "known-facts")
     if not os.path.isdir(knowledge):
         print("missing knowledge dir: %s" % knowledge, file=sys.stderr)
         return 2
@@ -151,7 +221,10 @@ def main() -> int:
         print("missing GOV_ATHENA_DLL", file=sys.stderr)
         return 2
 
-    env = dict(os.environ)
+    env = build_dotnet_env(gov_home, key_file)
+    if env is None:
+        return 3
+
     try:
         run = subprocess.run(
             [dotnet, dll, "run", "--topic", topic["topic"], "--knowledge", knowledge],

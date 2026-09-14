@@ -4,8 +4,9 @@
 
 No arguments; cwd = root of the clone. Reads the persisted producer state from
 ``drafts/<slug>.md`` / ``drafts/<slug>.meta.json`` (relative to the cwd), loads
-the knowledge facts from ``$ATHENA_HOME/banco/<slug>/known-facts/*.json`` and
-applies the pinned editorial evaluator. It never writes anything.
+the knowledge facts from
+``$GOV_ATHENA_HOME/.athena/banco/<slug>/known-facts/*.json`` and applies the
+pinned editorial evaluator. It never writes anything.
 
 Output: a JSON document on stdout. Exit 0 as long as the JSON was produced;
 whether a topic "passes" is decided by the GOV predicate, not by this exit code.
@@ -32,12 +33,12 @@ def load_topics():
 
 
 def load_facts(slug: str) -> "tuple[List[str], bool]":
-    """Return (facts, facts_available). Without ATHENA_HOME, facts are empty."""
-    athena_home = os.environ.get("ATHENA_HOME")
-    if not athena_home:
+    """Return (facts, facts_available). Without GOV_ATHENA_HOME, facts are empty."""
+    gov_home = os.environ.get("GOV_ATHENA_HOME")
+    if not gov_home:
         return [], False
     facts: List[str] = []
-    kdir = os.path.join(athena_home, "banco", slug, "known-facts")
+    kdir = os.path.join(gov_home, ".athena", "banco", slug, "known-facts")
     if os.path.isdir(kdir):
         for f in sorted(os.listdir(kdir)):
             if not f.endswith(".json"):
@@ -65,15 +66,16 @@ def evaluate_slug(slug: str) -> dict:
     drafts_dir = os.path.join(os.getcwd(), "drafts")
     md = os.path.join(drafts_dir, "%s.md" % slug)
     meta = load_meta(slug)
+    facts_available = os.environ.get("GOV_ATHENA_HOME") is not None
     if not os.path.isfile(md) or meta is None:
         return {"present": False, "pass": False, "failed": [],
-                "metrics": {}, "facts_available": os.environ.get("ATHENA_HOME") is not None}
+                "metrics": {}, "facts_available": facts_available}
     try:
         with open(md, encoding="utf-8") as f:
             body = f.read()
     except OSError:
         return {"present": False, "pass": False, "failed": [],
-                "metrics": {}, "facts_available": os.environ.get("ATHENA_HOME") is not None}
+                "metrics": {}, "facts_available": facts_available}
     facts, facts_available = load_facts(slug)
     result = evaluate(body, facts=facts, engine_review=meta.get("engine_review"))
     return {
