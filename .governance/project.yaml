@@ -19,14 +19,17 @@ scope:
   - package-lock.json
   - tsconfig.json
   - opencode.json
+  - drafts
   deny: []
   ignore: []
 acceptance:
   tests:
-    command: npm test
+    command: npm test && python3 -m pytest -q tools/gov_athena/tests tools/editorial_eval/test_evaluator.py
     timeout: 300.0
     junit: false
-  artifacts: []
+  artifacts:
+  - path: tools/gov_athena/topics.json
+    kind: file
 providers: {}
 repository:
   id: athenasignal
