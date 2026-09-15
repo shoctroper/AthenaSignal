@@ -10,15 +10,20 @@ amplificar afirmaciones.
 - **M1 — Deep Search Vertical Slice**: cerrado. Ver `docs/M1-DEEP-SEARCH.md`.
 - **M2 — Signal-to-Research-Candidate Vertical Slice**: `docs/M2-RESEARCH-CANDIDATE.md`.
 - **M3–M6 — búsqueda profunda, radar continuo, plataforma autónoma y closed loop editorial**: cerrados; ver `docs/M3..M6-PRODUCT-REVIEW.md`.
-- **M7 — Epistemically Resolutive Closed Loop**: vigente. `ciclo/ORDEN-011.md`.
+- **M7 — Epistemically Resolutive Closed Loop**: cerrado. `ciclo/ORDEN-011.md`, `docs/M7-PRODUCT-REVIEW.md`.
   Formaliza estados epistémicos (`RESEARCHABLE · CONFIRMED · REFUTED · INCONCLUSIVE ·
   CLOSED_CONFIRMED · CLOSED_REFUTED · REOPENED · DEMOTED · PROMOTED · DISCARDED`),
   resuelve candidates por evidencia con provenance y conserva el historial completo.
+- **M8 — Sustained Autonomous Editorial Operation**: cerrado (2026-09-12). `ciclo/ORDEN-012.md`,
+  `docs/M8-REPORT.md`, `evidence/m8/`; ventana real de 22 min con reinicio de proceso.
+- **GOV-ATHENA** (2026-09-14/15): `tools/gov_athena/` — producer por tema y evaluador fijado
+  para Goals gobernados por MarioGovernance; un Goal real de 3 temas terminó `GOAL_COMPLETE`.
+  Pruebas: `python3 -m pytest -q tools/gov_athena/tests tools/editorial_eval/test_evaluator.py`.
 
 ## Comandos
 
 ```bash
-npm test            # suite completa (M1..M7), offline y determinista
+npm test            # suite completa (M1..M8), offline y determinista
 npm run e2e         # pipeline offline M1
 npm run e2e:m2      # pipeline offline M2 + evidencia de aceptación
 npm run m6          # closed loop editorial M6 (determinista)
@@ -27,6 +32,7 @@ npm run verify:m1   # aceptación oficial M1
 npm run verify:m2   # aceptación oficial M2
 npm run verify:m6   # aceptación oficial M6
 npm run verify:m7   # aceptación oficial M7
+npm run verify:m8   # aceptación oficial M8
 ```
 
 ## Cómo empezar a trabajar en este proyecto
