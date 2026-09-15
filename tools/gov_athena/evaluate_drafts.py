@@ -77,13 +77,18 @@ def evaluate_slug(slug: str) -> dict:
         return {"present": False, "pass": False, "failed": [],
                 "metrics": {}, "facts_available": facts_available}
     facts, facts_available = load_facts(slug)
-    result = evaluate(body, facts=facts, engine_review=meta.get("engine_review"))
+    # A meta without an engine verdict (or with a null one) must never count as
+    # approved: map it to "missing" instead of passing None through (the pinned
+    # evaluator would treat None as approved).
+    result = evaluate(body, facts=facts,
+                      engine_review=meta.get("engine_review") or "missing")
     return {
         "present": True,
         "pass": result["pass"],
         "failed": result["failed"],
         "metrics": result["metrics"],
         "facts_available": facts_available,
+        "engine_review": meta.get("engine_review"),
     }
 
 

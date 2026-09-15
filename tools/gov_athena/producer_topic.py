@@ -21,6 +21,8 @@ Exit codes:
      or the engine produced no case / draft
   3  invalid GOV_ATHENA_HOME or GOV_ATHENA_LLM_KEY_FILE, or the key file
      could not be read
+  4  the engine did not approve the draft (Estado ``Aborted``/missing or
+     Decisión not exactly ``Approved``); no files are written
 
 The LLM key arrives via ``GOV_ATHENA_LLM_KEY_FILE`` (a 600 file outside the
 clone) and is injected **only** into the subprocess environment as
@@ -50,7 +52,12 @@ LLM_OVERRIDES = (
     ("GOV_ATHENA_LLM_PROVIDER", "ATHENA_LLM_PROVIDER"),
     ("GOV_ATHENA_LLM_BASE_URL", "ATHENA_LLM_BASE_URL"),
     ("GOV_ATHENA_LLM_MODEL", "ATHENA_LLM_MODEL"),
+    ("GOV_ATHENA_LLM_TIMEOUT", "ATHENA_LLM_TIMEOUT"),
 )
+
+# When neither the GOV_ nor the plain ATHENA_LLM_TIMEOUT is defined, the
+# subprocess gets a safe default (the engine can take ~245 s to generate).
+DEFAULT_LLM_TIMEOUT = "600"
 
 
 def load_topics():
@@ -122,8 +129,9 @@ def build_dotnet_env(gov_home: str, key_file: str):
 
     Starts from the inherited environment, redirects HOME / ATHENA_HOME /
     USERPROFILE to the disposable home, lets GOV_ATHENA_LLM_* override the
-    plain ATHENA_LLM_* provider/base_url/model, and injects the key read from
-    ``key_file`` as ``ATHENA_LLM_API_KEY``. Returns None on read failure
+    plain ATHENA_LLM_* provider/base_url/model/timeout (defaulting
+    ATHENA_LLM_TIMEOUT to 600 when neither is set), and injects the key read
+    from ``key_file`` as ``ATHENA_LLM_API_KEY``. Returns None on read failure
     (exit 3). The key is never printed or written anywhere.
     """
     env = dict(os.environ)
@@ -134,6 +142,9 @@ def build_dotnet_env(gov_home: str, key_file: str):
         val = os.environ.get(gov_var)
         if val:
             env[target] = val
+    if os.environ.get("GOV_ATHENA_LLM_TIMEOUT") is None and \
+            os.environ.get("ATHENA_LLM_TIMEOUT") is None:
+        env["ATHENA_LLM_TIMEOUT"] = DEFAULT_LLM_TIMEOUT
     try:
         with open(key_file, "r", encoding="utf-8") as f:
             key = f.read().rstrip("\n")
@@ -184,6 +195,36 @@ def write_pair(slug: str, draft: str, meta: dict) -> None:
             except OSError:
                 pass
         raise
+
+
+def parse_show(stdout: str):
+    """Parse the real ``athena.dll show`` output.
+
+    Returns ``(estado, decision, generation_seconds)``. ``estado`` is the first
+    token after ``Estado:``; ``decision`` is the first token after ``Decisión:``
+    inside the section that follows a line starting with ``══ REVISIÓN`` (None
+    if that section is absent); ``generation_seconds`` is the float of the
+    ``Generation <n>s`` field of the ``Tiempos:`` line (None if absent).
+    """
+    estado = None
+    decision = None
+    generation_seconds = None
+    in_revision = False
+    for raw in stdout.splitlines():
+        line = raw.strip()
+        if line.startswith("Estado:"):
+            tokens = line[len("Estado:"):].strip().split()
+            estado = tokens[0] if tokens else None
+        elif line.startswith("══ REVISIÓN"):
+            in_revision = True
+        elif in_revision and line.startswith("Decisión:"):
+            tokens = line[len("Decisión:"):].strip().split()
+            decision = tokens[0] if tokens else None
+        elif line.startswith("Tiempos:"):
+            m = re.search(r"Generation\s+([0-9]+(?:\.[0-9]+)?)s", line)
+            if m:
+                generation_seconds = float(m.group(1))
+    return estado, decision, generation_seconds
 
 
 def main() -> int:
@@ -247,7 +288,11 @@ def main() -> int:
     if show.returncode != 0:
         sys.stderr.write(show.stderr[-1000:])
         return 3
-    engine_review = "Approved" if "Revisión:" in show.stdout else None
+    estado, decision, generation_seconds = parse_show(show.stdout)
+    if estado is None or estado == "Aborted" or decision != "Approved":
+        print("engine did not approve: estado=%s decision=%s" % (estado, decision),
+              file=sys.stderr)
+        return 4
     draft = draft_of(show.stdout)
 
     try:
@@ -259,7 +304,9 @@ def main() -> int:
         "slug": slug,
         "topic": topic["topic"],
         "case_id": case,
-        "engine_review": engine_review,
+        "engine_review": "Approved",
+        "engine_state": estado,
+        "generation_seconds": generation_seconds,
         "produced_at": datetime.now(timezone.utc).isoformat(),
         "dll_sha256": dll_sha256,
     }

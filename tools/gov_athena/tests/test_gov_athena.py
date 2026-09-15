@@ -2,8 +2,9 @@
 """pytest tests for tools/gov_athena (no real Athena, no real LLM).
 
 A fake ``dotnet`` executable (a temporary Python script) simulates ``run`` and
-``show`` and dumps the environment it received to a test file (without printing
-it); a disposable ``GOV_ATHENA_HOME`` provides
+``show`` emitting the **real** ``athena.dll show`` format (Estado: /
+══ REVISIÓN ══ / Decisión: / Tiempos:) and dumps the environment it received
+to a test file (without printing it); a disposable ``GOV_ATHENA_HOME`` provides
 ``.athena/banco/<slug>/known-facts``. The producer and evaluator are exercised
 as subprocesses with the cwd of the "clone root" pointing at a temporary
 directory, so nothing touches the repo.
@@ -46,7 +47,54 @@ FAKE_NARRATIVE = (
     "qué omitir y cómo ordenar los testimonios, y esa decisión es también parte del relato."
 )
 
-FAKE_SHOW = "Revisión: Aprobada por el motor de revisión.\nDRAFT\n%s\n" % FAKE_NARRATIVE
+# Real ``athena.dll show <caso>`` layout (CommandRouter.cs:355-377).
+DRAFT_HEADER = "══ DRAFT " + "═" * 50
+REVIEW_HEADER = "══ REVISIÓN " + "═" * 50
+
+APPROVED_SHOW = "\n".join([
+    "Caso a60cffef-f92a-4293-a4de-236d451f73bb",
+    "Tema:      La Biblioteca de Alejandría: qué destruyó realmente su legado",
+    "Estado:    AwaitingHumanApproval",
+    "Blueprint: blueprint.default",
+    "Ángulo:    Perspectiva analítica sobre la pérdida documental",
+    DRAFT_HEADER,
+    FAKE_NARRATIVE,
+    "Claims referenciados: claim:alejandria::fact-24-471afb0c, claim:alejandria::fact-25-8f2c1a",
+    REVIEW_HEADER,
+    "Decisión: Approved   Fidelidad: 1.00",
+    "  Sin findings.",
+    "Tiempos: Knowledge 0.00s  Thinking 0.01s  Generation 244.46s  QualityReview 0.00s  | total 244.49s",
+]) + "\n"
+
+ABORTED_SHOW = "\n".join([
+    "Caso a60cffef-f92a-4293-a4de-236d451f73bb",
+    "Tema:      La Biblioteca de Alejandría: qué destruyó realmente su legado",
+    "Estado:    Aborted — Generation.ProviderError: modelo no disponible para el proveedor",
+    "Blueprint: blueprint.default",
+    DRAFT_HEADER,
+    FAKE_NARRATIVE,
+    "Claims referenciados: claim:alejandria::fact-24-471afb0c",
+]) + "\n"
+
+REJECTED_SHOW = "\n".join([
+    "Caso a60cffef-f92a-4293-a4de-236d451f73bb",
+    "Tema:      La Biblioteca de Alejandría: qué destruyó realmente su legado",
+    "Estado:    AwaitingHumanApproval",
+    "Blueprint: blueprint.default",
+    DRAFT_HEADER,
+    FAKE_NARRATIVE,
+    "Claims referenciados: claim:alejandria::fact-24-471afb0c",
+    REVIEW_HEADER,
+    "Decisión: Rejected   Fidelidad: 0.85",
+    "  Finding: fidelidad por debajo del umbral.",
+    "Tiempos: Knowledge 0.00s  Thinking 0.01s  Generation 188.10s  QualityReview 0.00s  | total 188.20s",
+]) + "\n"
+
+SHOWS = {
+    "approved": APPROVED_SHOW,
+    "aborted": ABORTED_SHOW,
+    "rejected": REJECTED_SHOW,
+}
 
 FAKE_DOTNET_SRC = """#!/usr/bin/env python3
 import json
@@ -54,7 +102,7 @@ import os
 import sys
 import uuid
 
-FAKE_SHOW = {fake_show}
+SHOWS = {shows}
 
 env_out = os.environ.get("GOV_FAKE_DOTNET_ENV_OUT")
 if env_out:
@@ -70,7 +118,11 @@ if cmd == "run":
     print("Caso: %s" % uuid.uuid4())
     sys.exit(0)
 if cmd == "show":
-    sys.stdout.write(FAKE_SHOW)
+    mode = os.environ.get("GOV_FAKE_DOTNET_SHOW_MODE", "approved")
+    if mode not in SHOWS:
+        sys.stderr.write("unknown show mode: %s\\n" % mode)
+        sys.exit(2)
+    sys.stdout.write(SHOWS[mode])
     sys.exit(0)
 sys.stderr.write("unknown fake dotnet command: %s\\n" % cmd)
 sys.exit(2)
@@ -80,7 +132,7 @@ sys.exit(2)
 def make_fake_dotnet(tmp_path):
     fake = tmp_path / "bin" / "dotnet"
     fake.parent.mkdir(parents=True, exist_ok=True)
-    fake.write_text(FAKE_DOTNET_SRC.format(fake_show=repr(FAKE_SHOW)), encoding="utf-8")
+    fake.write_text(FAKE_DOTNET_SRC.format(shows=repr(SHOWS)), encoding="utf-8")
     fake.chmod(0o755)
     return fake
 
@@ -112,7 +164,7 @@ def make_key_file(tmp_path, key=FAKE_KEY, mode=0o600, name="llm.key"):
 
 
 def producer_env(tmp_path, gov_home, slug, fake_dotnet, dll_path, key_file=None,
-                 env_out=None, extra=None):
+                 env_out=None, extra=None, show_mode=None):
     env = dict(os.environ)
     env.update({
         "GOV_ATHENA_HOME": str(gov_home),
@@ -124,6 +176,8 @@ def producer_env(tmp_path, gov_home, slug, fake_dotnet, dll_path, key_file=None,
         env["GOV_ATHENA_LLM_KEY_FILE"] = str(key_file)
     if env_out is not None:
         env["GOV_FAKE_DOTNET_ENV_OUT"] = str(env_out)
+    if show_mode is not None:
+        env["GOV_FAKE_DOTNET_SHOW_MODE"] = show_mode
     if extra:
         env.update(extra)
     return env
@@ -196,10 +250,52 @@ def test_producer_valid_slug_writes_pair_approved(tmp_path):
     assert meta["topic"] == "La Biblioteca de Alejandría: qué destruyó realmente su legado"
     assert len(meta["case_id"]) == 36
     assert meta["engine_review"] == "Approved"
+    assert meta["engine_state"] == "AwaitingHumanApproval"
+    assert meta["generation_seconds"] == 244.46
+    assert isinstance(meta["generation_seconds"], float)
     assert meta["produced_at"]
     assert meta["dll_sha256"] == hashlib.sha256(dll.read_bytes()).hexdigest()
     leftovers = [p.name for p in (cwd / "drafts").iterdir() if p.name.startswith(".alejandria")]
     assert leftovers == []
+
+
+def test_producer_aborted_exit_4_no_files(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       show_mode="aborted")
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 4
+    assert "engine did not approve: estado=Aborted decision=None" in proc.stderr
+    assert not (cwd / "drafts").exists()
+
+
+def test_producer_aborted_keeps_previous_files_byte_identical(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    md_path = cwd / "drafts" / "alejandria.md"
+    meta_path = cwd / "drafts" / "alejandria.meta.json"
+    md_path.parent.mkdir(parents=True, exist_ok=True)
+    prev_md = ("Borrador previo aprobado que no debe tocarse. " * 5).encode("utf-8")
+    prev_meta = json.dumps({"slug": "alejandria", "engine_review": "Approved"},
+                           ensure_ascii=False).encode("utf-8")
+    md_path.write_bytes(prev_md)
+    meta_path.write_bytes(prev_meta)
+
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       show_mode="aborted")
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 4
+    assert md_path.read_bytes() == prev_md
+    assert meta_path.read_bytes() == prev_meta
+
+
+def test_producer_rejected_exit_4_no_files(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       show_mode="rejected")
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 4
+    assert "engine did not approve: estado=AwaitingHumanApproval decision=Rejected" in proc.stderr
+    assert not (cwd / "drafts").exists()
 
 
 def test_producer_isolates_subprocess_env_and_injects_key(tmp_path):
@@ -223,8 +319,39 @@ def test_producer_isolates_subprocess_env_and_injects_key(tmp_path):
     assert "GOV_ATHENA_LLM_KEY_FILE" not in received
     assert received["ATHENA_LLM_MODEL"] == "gov-model"
     assert received["ATHENA_LLM_PROVIDER"] == "openai"
+    assert received["ATHENA_LLM_TIMEOUT"] == "600"
     assert "GOV_ATHENA_HOME" in received
     assert received["GOV_ATHENA_HOME"] == str(gov_home)
+
+
+def test_producer_timeout_default_600_when_unset(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       env_out=env_out)
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    received = read_received_env(env_out)
+    assert received["ATHENA_LLM_TIMEOUT"] == "600"
+
+
+def test_producer_timeout_gov_override_wins(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       env_out=env_out, extra={"GOV_ATHENA_LLM_TIMEOUT": "900"})
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    received = read_received_env(env_out)
+    assert received["ATHENA_LLM_TIMEOUT"] == "900"
+
+
+def test_producer_timeout_inherited_plain_kept(tmp_path):
+    gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
+    env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
+                       env_out=env_out, extra={"ATHENA_LLM_TIMEOUT": "180"})
+    proc = run_producer(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    received = read_received_env(env_out)
+    assert received["ATHENA_LLM_TIMEOUT"] == "180"
 
 
 def test_producer_key_file_wins_over_inherited_key(tmp_path):
@@ -353,6 +480,53 @@ def test_evaluator_valid_narrative_passes(tmp_path):
     assert pt["present"] is True
     assert pt["pass"] is True
     assert pt["facts_available"] is True
+    assert pt["engine_review"] == "Approved"
+
+
+def test_evaluator_missing_engine_review_fails(tmp_path):
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria"})
+    env = dict(os.environ)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is False
+    assert "engine_review_approved" in pt["failed"]
+    assert pt["engine_review"] is None
+
+
+def test_evaluator_null_engine_review_fails(tmp_path):
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE,
+                {"slug": "alejandria", "engine_review": None})
+    env = dict(os.environ)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is False
+    assert "engine_review_approved" in pt["failed"]
+    assert pt["engine_review"] is None
+
+
+def test_evaluator_engine_review_approved_passes(tmp_path):
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE,
+                {"slug": "alejandria", "engine_review": "Approved"})
+    env = dict(os.environ)
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is True
+    assert pt["engine_review"] == "Approved"
 
 
 def test_evaluator_fact_dump_fails(tmp_path):
@@ -369,6 +543,7 @@ def test_evaluator_fact_dump_fails(tmp_path):
     assert pt["present"] is True
     assert pt["pass"] is False
     assert "anti_fact_dump" in pt["failed"]
+    assert pt["engine_review"] == "Approved"
 
 
 def test_evaluator_writes_nothing(tmp_path):
