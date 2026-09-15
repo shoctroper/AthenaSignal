@@ -1,7 +1,8 @@
-import { describe, it } from 'node:test';
+import { after, describe, it } from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join, resolve } from 'node:path';
 
 import { createClaim, type Signal } from '../src/domain/entities.ts';
 import { FirecrawlAdapter } from '../src/adapters/FirecrawlAdapter.ts';
@@ -59,6 +60,12 @@ function buildOrchestrator(provider?: ClaimSearchProvider): PipelineOrchestrator
 }
 
 describe('Pipeline E2E - Deep Search Vertical Slice (offline)', () => {
+  const tempDir = mkdtempSync(join(tmpdir(), 'athenasignal-e2e-'));
+
+  after(() => {
+    rmSync(tempDir, { recursive: true, force: true });
+  });
+
   it('runs the full pipeline end-to-end deterministically without network', async () => {
     const orchestrator = buildOrchestrator();
 
@@ -157,11 +164,11 @@ describe('Pipeline E2E - Deep Search Vertical Slice (offline)', () => {
     assert.deepEqual(firstBlog, secondBlog);
   });
 
-  it('writes evidence/deep-search-e2e.json with source, signal, verification and opportunity', async () => {
-    const { outputPath } = await runOfflinePipeline();
-    const evidencePath = resolve(process.cwd(), DEFAULT_EVIDENCE_PATH);
+  it('writes pipeline evidence to a unique temp dir, never the tracked evidence file', async () => {
+    const evidencePath = join(tempDir, 'deep-search-e2e.json');
+    const { outputPath } = await runOfflinePipeline(evidencePath);
 
-    assert.equal(outputPath, evidencePath);
+    assert.equal(outputPath, resolve(process.cwd(), evidencePath));
     assert.ok(existsSync(evidencePath), 'evidence file must exist');
 
     const evidence = JSON.parse(readFileSync(evidencePath, 'utf8'));
@@ -179,6 +186,10 @@ describe('Pipeline E2E - Deep Search Vertical Slice (offline)', () => {
     for (const claim of evidence.verification.claims) {
       assert.ok(['VERIFIED', 'REFUTED', 'UNVERIFIED_AMBIGUOUS'].includes(claim.verdict));
     }
+  });
+
+  it('keeps DEFAULT_EVIDENCE_PATH as the CLI contract without writing to it', () => {
+    assert.equal(DEFAULT_EVIDENCE_PATH, 'evidence/deep-search-e2e.json');
   });
 
   it('exposes processUrl returning an EditorialOpportunity', async () => {
