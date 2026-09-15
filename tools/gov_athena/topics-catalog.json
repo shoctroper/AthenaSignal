@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "adn-franklin",
+    "topic": "La estructura del ADN y el dato que Rosalind Franklin aportó",
+    "knowledge_bank": "banco/adn-franklin/known-facts"
+  },
+  {
+    "slug": "alejandria",
+    "topic": "La Biblioteca de Alejandría: qué destruyó realmente su legado",
+    "knowledge_bank": "banco/alejandria/known-facts"
+  },
+  {
+    "slug": "apollo-13",
+    "topic": "Apollo 13: ingeniería y decisión bajo crisis",
+    "knowledge_bank": "banco/apollo-13/known-facts"
+  },
+  {
+    "slug": "chernobil",
+    "topic": "Chernóbil: la cadena de decisiones que llevó al desastre",
+    "knowledge_bank": "banco/chernobil/known-facts"
+  },
+  {
+    "slug": "contenedor-carga",
+    "topic": "El contenedor de carga y la globalización del comercio",
+    "knowledge_bank": "banco/contenedor-carga/known-facts"
+  },
+  {
+    "slug": "curie-radio",
+    "topic": "Marie Curie, el radio y el precio del descubrimiento",
+    "knowledge_bank": "banco/curie-radio/known-facts"
+  },
+  {
+    "slug": "enigma-bletchley",
+    "topic": "Enigma y Bletchley Park: cómo se quebró la máquina",
+    "knowledge_bank": "banco/enigma-bletchley/known-facts"
+  },
+  {
+    "slug": "hambruna-irlandesa",
+    "topic": "La Gran Hambruna irlandesa y la política del hambre",
+    "knowledge_bank": "banco/hambruna-irlandesa/known-facts"
+  },
+  {
+    "slug": "imprenta-rich",
+    "topic": "La Revolución de la imprenta de Gutenberg y la difusión del conocimiento",
+    "knowledge_bank": "banco/imprenta-rich/known-facts"
+  },
+  {
+    "slug": "juicio-nuremberg",
+    "topic": "El Juicio de Núremberg y la invención del derecho penal internacional",
+    "knowledge_bank": "banco/juicio-nuremberg/known-facts"
+  },
+  {
+    "slug": "muro-berlin",
+    "topic": "La caída del Muro de Berlín y el fin de la RDA",
+    "knowledge_bank": "banco/muro-berlin/known-facts"
+  },
+  {
+    "slug": "peste-rich",
+    "topic": "La Peste Negra y la transformación de Europa",
+    "knowledge_bank": "banco/peste-rich/known-facts"
+  }
+]
