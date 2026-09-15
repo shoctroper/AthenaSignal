@@ -68,9 +68,16 @@ propio Athena CLI (`athena.dll`) en el paso de producción.
   de `$GOV_ATHENA_HOME/.athena/banco/<slug>/known-facts/*.json` (campo `statement`).
   `engine_review` se pasa como `meta.get("engine_review") or "missing"` (nunca `None`),
   de modo que un meta sin veredicto del motor no aprueba.
-- Sin `GOV_ATHENA_HOME` → facts vacíos y `facts_available: false`.
+- **Falla cerrado sin hechos:** si falta `GOV_ATHENA_HOME`, o el directorio
+  `known-facts` del slug no existe, o no aporta ninguna `statement` legible (JSON
+  inválido o sin campo `statement`), el tema **no pasa**: `pass: false`,
+  `failed: ["facts_unavailable"]`, `facts_available: false` y **no** se llama a
+  `evaluate` como si hubiera hechos (así el control `anti_fact_dump` no se desactiva
+  en silencio).
 - Salida JSON: `{"topics_passing", "progress", "total", "per_topic": {<slug>: {"present", "pass", "failed", "metrics", "facts_available", "engine_review"}}}`;
-  `engine_review` de `per_topic.<slug>` es el valor del meta (`null` si no está).
+  `engine_review` de `per_topic.<slug>` es el valor del meta (`null` si no está). Cuando
+  el tema falla por falta de hechos, `failed` incluye `"facts_unavailable"` y `metrics`
+  queda vacío.
 - Exit 0 siempre que pueda producir el JSON; el predicado del Goal decide el `pass`.
 
 ## Variables de entorno

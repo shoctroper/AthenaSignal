@@ -613,3 +613,74 @@ def test_evaluator_writes_nothing(tmp_path):
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
     assert tree(cwd) == before
+
+
+def test_evaluator_fails_closed_without_gov_home(tmp_path):
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
+                                                    "engine_review": "Approved"})
+    env = _clean_env()
+    env.pop("GOV_ATHENA_HOME", None)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is False
+    assert "facts_unavailable" in pt["failed"]
+    assert pt["facts_available"] is False
+    assert "anti_fact_dump" not in pt["failed"]
+
+
+def test_evaluator_fails_closed_without_known_facts_dir(tmp_path):
+    gov_home = tmp_path / "gov_home_no_facts"
+    gov_home.mkdir()
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
+                                                    "engine_review": "Approved"})
+    env = _clean_env()
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is False
+    assert "facts_unavailable" in pt["failed"]
+    assert pt["facts_available"] is False
+
+
+def test_evaluator_valid_facts_passes_no_regression(tmp_path):
+    gov_home = make_gov_home(tmp_path)
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
+                                                    "engine_review": "Approved"})
+    env = _clean_env()
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is True
+    assert pt["facts_available"] is True
+    assert "facts_unavailable" not in pt["failed"]
+    assert "anti_fact_dump" not in pt["failed"]
+
+
+def test_evaluator_fails_closed_with_unreadable_facts(tmp_path):
+    gov_home = tmp_path / "gov_home_bad_facts"
+    kdir = gov_home / ".athena" / "banco" / "alejandria" / "known-facts"
+    kdir.mkdir(parents=True, exist_ok=True)
+    (kdir / "bad.json").write_text("{no es json", encoding="utf-8")
+    (kdir / "no_statement.json").write_text(
+        json.dumps({"notas": "sin campo statement"}), encoding="utf-8")
+    cwd = make_cwd(tmp_path)
+    write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
+                                                    "engine_review": "Approved"})
+    env = _clean_env()
+    env["GOV_ATHENA_HOME"] = str(gov_home)
+    proc = run_evaluator(cwd, env)
+    assert proc.returncode == 0, proc.stderr
+    pt = json.loads(proc.stdout)["per_topic"]["alejandria"]
+    assert pt["present"] is True
+    assert pt["pass"] is False
+    assert "facts_unavailable" in pt["failed"]
+    assert pt["facts_available"] is False

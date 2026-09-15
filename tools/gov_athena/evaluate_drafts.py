@@ -33,23 +33,33 @@ def load_topics():
 
 
 def load_facts(slug: str) -> "tuple[List[str], bool]":
-    """Return (facts, facts_available). Without GOV_ATHENA_HOME, facts are empty."""
+    """Return (facts, facts_available).
+
+    Facts are "available" only when ``GOV_ATHENA_HOME`` is set **and** the
+    slug's ``known-facts`` directory exists **and** yields at least one
+    readable ``statement``. Every other case (missing home, missing/empty
+    directory, unreadable JSON, missing ``statement``) reports no facts so the
+    evaluator can fail closed.
+    """
     gov_home = os.environ.get("GOV_ATHENA_HOME")
     if not gov_home:
         return [], False
     facts: List[str] = []
     kdir = os.path.join(gov_home, ".athena", "banco", slug, "known-facts")
-    if os.path.isdir(kdir):
-        for f in sorted(os.listdir(kdir)):
-            if not f.endswith(".json"):
-                continue
-            try:
-                with open(os.path.join(kdir, f), encoding="utf-8") as fh:
-                    statement = json.load(fh).get("statement", "")
-                if statement:
-                    facts.append(statement)
-            except (OSError, ValueError):
-                continue
+    if not os.path.isdir(kdir):
+        return [], False
+    for f in sorted(os.listdir(kdir)):
+        if not f.endswith(".json"):
+            continue
+        try:
+            with open(os.path.join(kdir, f), encoding="utf-8") as fh:
+                statement = json.load(fh).get("statement", "")
+        except (OSError, ValueError):
+            continue
+        if isinstance(statement, str) and statement.strip():
+            facts.append(statement)
+    if not facts:
+        return [], False
     return facts, True
 
 
@@ -66,7 +76,7 @@ def evaluate_slug(slug: str) -> dict:
     drafts_dir = os.path.join(os.getcwd(), "drafts")
     md = os.path.join(drafts_dir, "%s.md" % slug)
     meta = load_meta(slug)
-    facts_available = os.environ.get("GOV_ATHENA_HOME") is not None
+    facts, facts_available = load_facts(slug)
     if not os.path.isfile(md) or meta is None:
         return {"present": False, "pass": False, "failed": [],
                 "metrics": {}, "facts_available": facts_available}
@@ -76,19 +86,30 @@ def evaluate_slug(slug: str) -> dict:
     except OSError:
         return {"present": False, "pass": False, "failed": [],
                 "metrics": {}, "facts_available": facts_available}
-    facts, facts_available = load_facts(slug)
+    engine_review = meta.get("engine_review")
+    # Without usable knowledge facts the evaluator cannot judge the draft, so
+    # the topic fails closed instead of silently disabling anti_fact_dump.
+    if not facts_available:
+        return {
+            "present": True,
+            "pass": False,
+            "failed": ["facts_unavailable"],
+            "metrics": {},
+            "facts_available": False,
+            "engine_review": engine_review,
+        }
     # A meta without an engine verdict (or with a null one) must never count as
     # approved: map it to "missing" instead of passing None through (the pinned
     # evaluator would treat None as approved).
     result = evaluate(body, facts=facts,
-                      engine_review=meta.get("engine_review") or "missing")
+                      engine_review=engine_review or "missing")
     return {
         "present": True,
         "pass": result["pass"],
         "failed": result["failed"],
         "metrics": result["metrics"],
         "facts_available": facts_available,
-        "engine_review": meta.get("engine_review"),
+        "engine_review": engine_review,
     }
 
 
