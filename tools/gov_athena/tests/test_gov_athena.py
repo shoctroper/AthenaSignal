@@ -25,6 +25,26 @@ EVALUATOR = GOV / "evaluate_drafts.py"
 FAKE_KEY = "sk-test-athena-4f8c-2a1d"
 FAKE_KEY_OTHER = "otra"
 
+# Variables that the GOV launcher exports (GOV_ATHENA_*, ATHENA_*, GOV_INPUT_*,
+# GOV_DOTNET, GOV_FAKE_DOTNET_*, DEEPSEEK_*, GEMINI_*). The tests build the
+# subprocess environments from _clean_env() so they are hermetic against the
+# parent environment and never inherit those leaks.
+_BLOCKED_ENV_PREFIXES = (
+    "GOV_ATHENA_",
+    "ATHENA_",
+    "GOV_INPUT_",
+    "GOV_DOTNET",
+    "GOV_FAKE_DOTNET_",
+    "DEEPSEEK_",
+    "GEMINI_",
+)
+
+
+def _clean_env():
+    """Return ``dict(os.environ)`` without any GOV/ATHENA/LLM launcher key."""
+    return {k: v for k, v in os.environ.items()
+            if not k.startswith(_BLOCKED_ENV_PREFIXES)}
+
 FACTS = [
     "La Biblioteca de Alejandría fue fundada bajo la dinastía ptolemaica en el siglo III a.C.",
     "El incendio atribuido a Julio César ocurrió en el año 48 a.C. y dañó parte de la colección.",
@@ -165,7 +185,7 @@ def make_key_file(tmp_path, key=FAKE_KEY, mode=0o600, name="llm.key"):
 
 def producer_env(tmp_path, gov_home, slug, fake_dotnet, dll_path, key_file=None,
                  env_out=None, extra=None, show_mode=None):
-    env = dict(os.environ)
+    env = _clean_env()
     env.update({
         "GOV_ATHENA_HOME": str(gov_home),
         "GOV_INPUT_SLUG": slug,
@@ -354,6 +374,42 @@ def test_producer_timeout_inherited_plain_kept(tmp_path):
     assert received["ATHENA_LLM_TIMEOUT"] == "180"
 
 
+def test_clean_env_strips_launcher_leaks(monkeypatch):
+    for k, v in {
+        "GOV_ATHENA_HOME": "/nonexistent",
+        "GOV_ATHENA_LLM_MODEL": "leak-model",
+        "GOV_ATHENA_LLM_TIMEOUT": "7",
+        "GOV_ATHENA_DLL": "/x/athena.dll",
+        "GOV_DOTNET": "/x/dotnet",
+        "GOV_INPUT_SLUG": "leak",
+        "GOV_FAKE_DOTNET_ENV_OUT": "/x/env.json",
+        "ATHENA_LLM_API_KEY": "leak-key",
+        "ATHENA_LLM_PROVIDER": "deepseek",
+        "DEEPSEEK_API_KEY": "leak",
+        "GEMINI_API_KEY": "leak",
+    }.items():
+        monkeypatch.setenv(k, v)
+    monkeypatch.setenv("KEEP_PLAIN_VAR", "keep-me")
+    cleaned = _clean_env()
+    for k in ("GOV_ATHENA_HOME", "GOV_ATHENA_LLM_MODEL", "GOV_ATHENA_LLM_TIMEOUT",
+              "GOV_ATHENA_DLL", "GOV_DOTNET", "GOV_INPUT_SLUG",
+              "GOV_FAKE_DOTNET_ENV_OUT", "ATHENA_LLM_API_KEY",
+              "ATHENA_LLM_PROVIDER", "DEEPSEEK_API_KEY", "GEMINI_API_KEY"):
+        assert k not in cleaned, k
+    assert cleaned["KEEP_PLAIN_VAR"] == "keep-me"
+
+
+def test_hermetic_against_leaked_parent_env(monkeypatch, tmp_path_factory):
+    monkeypatch.setenv("GOV_ATHENA_LLM_MODEL", "leak-model")
+    monkeypatch.setenv("GOV_ATHENA_LLM_TIMEOUT", "7")
+    monkeypatch.setenv("ATHENA_LLM_API_KEY", "leak-key")
+    monkeypatch.setenv("GOV_ATHENA_HOME", "/nonexistent")
+    test_producer_isolates_subprocess_env_and_injects_key(
+        tmp_path_factory.mktemp("leak-iso"))
+    test_producer_timeout_inherited_plain_kept(
+        tmp_path_factory.mktemp("leak-timeout"))
+
+
 def test_producer_key_file_wins_over_inherited_key(tmp_path):
     gov_home, fake, dll, key_file, cwd, env_out = base_producer_fixture(tmp_path)
     env = producer_env(tmp_path, gov_home, "alejandria", fake, dll, key_file,
@@ -451,7 +507,7 @@ def test_producer_dotnet_failure_writes_nothing(tmp_path):
 
 def test_evaluator_no_drafts_zero_passing(tmp_path):
     cwd = make_cwd(tmp_path)
-    env = dict(os.environ)
+    env = _clean_env()
     env.pop("GOV_ATHENA_HOME", None)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -469,7 +525,7 @@ def test_evaluator_valid_narrative_passes(tmp_path):
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
                                                     "engine_review": "Approved"})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -487,7 +543,7 @@ def test_evaluator_missing_engine_review_fails(tmp_path):
     gov_home = make_gov_home(tmp_path)
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria"})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -503,7 +559,7 @@ def test_evaluator_null_engine_review_fails(tmp_path):
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE,
                 {"slug": "alejandria", "engine_review": None})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -519,7 +575,7 @@ def test_evaluator_engine_review_approved_passes(tmp_path):
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE,
                 {"slug": "alejandria", "engine_review": "Approved"})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -534,7 +590,7 @@ def test_evaluator_fact_dump_fails(tmp_path):
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", " ".join(FACTS), {"slug": "alejandria",
                                                      "engine_review": "Approved"})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     proc = run_evaluator(cwd, env)
     assert proc.returncode == 0, proc.stderr
@@ -551,7 +607,7 @@ def test_evaluator_writes_nothing(tmp_path):
     cwd = make_cwd(tmp_path)
     write_draft(cwd, "alejandria", FAKE_NARRATIVE, {"slug": "alejandria",
                                                     "engine_review": "Approved"})
-    env = dict(os.environ)
+    env = _clean_env()
     env["GOV_ATHENA_HOME"] = str(gov_home)
     before = tree(cwd)
     proc = run_evaluator(cwd, env)
