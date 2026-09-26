@@ -1,0 +1,52 @@
+{
+  "goal_id": "f6-3-athena-extractor",
+  "objective": "THIS IS F6.3: implement RFC-007 (decisiones/RFC-007-EXTRACTOR-CON-MODELO.md). The RFC is already written and its section 4 IS the acceptance; it has been converted into the pinned evaluator and DENIED to you.\n\nTHE DEFECT, MEASURED 2026-09-21 against a real internet source: the pipeline acquired 18,430 characters of transcript and heuristicExtract returned concepts=['But','And','The','Unless',...] (words that happen to start with a capital letter) and a single claim 'This is a 3'. The 133 green tests did not catch it because they measure that the pipeline TRANSPORTS, not that it produces anything usable. SignalExtractor already accepts a customEngine hook; that hook is connected to NOTHING in the whole repository.\n\nTHE TENSION YOU MUST RESOLVE: plugging in an LLM naively turns Signal into the opposite of what it exists to be — an amplifier of plausible-sounding claims. The answer is D-EX-1: no claim without a literal quote, and the quote is verified BY CODE against the transcript, after the model, over text the model does not control. A model that hallucinates a quote fails the check.\n\nIMPLEMENT the RFC decisions: D-EX-1 literal-quote filter (rejected claims land in `unquotable` so the hole stays visible); D-EX-2 engine injectable and optional, default path stays offline and byte-identical; D-EX-6 an engine failure DEGRADES to the heuristic marked 'heuristic (fallback)', never throws upward; D-EX-7 transcript capped (default 9000 chars) with metadata.truncated declaring what was left out; D-EX-4 the OpenAI-compatible request carries reasoning_effort: 'none' (without it local models leave `content` empty and Signal would silently see nothing — the worst class of failure); D-EX-8 every accepted unit keeps provenanceSourceId.\n\nQuote matching normalizes whitespace and typographic quotes, and does NOT forgive word differences (minimiza != maximiza).\n\nNO NETWORK AND NO CREDIT NEEDED: the gate injects FAKE engines only. Mario's AthenaSignal has no LLM credit; the real model belongs to batch runs, outside this gate. Do not add a test that calls a live model. The existing 133 tests must stay green and must not touch the network.\n\nAdd tests/model-extractor.test.ts.\n\nSIZE OF ONE ATTEMPT: one capability from the SPINE, written to disk with its test, in one pass. An attempt that changes no file is NO_AUTHORIZED_WORK.\nSPINE: S1 literal-quote verification + unquotable bucket -> S2 degradation to 'heuristic (fallback)' on throw and on non-JSON -> S3 transcript cap + metadata.truncated -> S4 OpenAI-compatible engine with reasoning_effort none + provenanceSourceId -> S5 tests/model-extractor.test.ts.\n\nAcceptance: pinned acceptance/f6/evaluate_f6_3_athena_extractor.py returns 1 (11 checks). Today it is RED at 4/11; the 7 failures are real product defects.",
+  "task_type": "CODE",
+  "outcome_predicate": {
+    "metric": "f6_3_athena_extractor",
+    "op": ">=",
+    "value": 1,
+    "progress_direction": "up",
+    "evaluator": {
+      "command": [
+        "python3",
+        "acceptance/f6/evaluate_f6_3_athena_extractor.py"
+      ],
+      "pinned": [
+        "acceptance/f6/evaluate_f6_3_athena_extractor.py"
+      ],
+      "timeout_seconds": 1800
+    }
+  },
+  "authority_envelope": {
+    "allow": [
+      "src/services",
+      "src/adapters",
+      "tests",
+      "decisiones",
+      "docs"
+    ],
+    "deny": [
+      "acceptance",
+      "evidence",
+      "ciclo",
+      "data",
+      "governance"
+    ],
+    "executors": [
+      "supervisor"
+    ],
+    "producer_commands": [],
+    "task_types": [
+      "CODE"
+    ]
+  },
+  "budget": {
+    "max_attempts": 14,
+    "stall_attempts": 4,
+    "replan_attempts": 4
+  },
+  "planner": {
+    "mode": "agent"
+  }
+}
