@@ -40,7 +40,8 @@ C9  La peticion al endpoint compatible con OpenAI incluye `reasoning_effort: "no
 C10 Ningun claim aceptado carece de `provenanceSourceId`.
 C11 Existe tests/model-extractor.test.ts y pasa; la suite no abre sockets sin motor.
 
-CONTRATO: exit 0 solo con metric=1.
+CONTRATO: SIEMPRE exit 0; el veredicto viaja en la metrica (GOV descarta
+la lectura si el proceso sale != 0).
 """
 import json
 import os
@@ -267,4 +268,8 @@ for nm, fn in [("C1", c1), ("C2", c2), ("C3", c3), ("C4", c4), ("C5", c5), ("C6"
 metric = 1 if PROGRESS == 11 else 0
 print(json.dumps({"f6_3_athena_extractor": metric, "progress": PROGRESS,
                   "of": 11, "failed": FAILED}, ensure_ascii=False))
-sys.exit(0 if metric == 1 else 1)
+# GOV lee la metrica SOLO si el evaluador sale 0 (GovernanceOs/goal/evaluator.py:36:
+# exit_code != 0 -> ok=False, observed=None, reason=EVALUATOR_ERROR). Salir 1 en rojo
+# tira el progreso a la basura y deja al planificador ciego: no sabria que subio de
+# 4/11 a 7/11 ni que checks faltan. El veredicto viaja en la metrica, no en el exit code.
+sys.exit(0)
