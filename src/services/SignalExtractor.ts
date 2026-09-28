@@ -22,25 +22,103 @@ export interface NormalizedContent {
   metadata?: Record<string, unknown>;
 }
 
+export interface SignalExtractionMetadata {
+  extractor?: string;
+  truncated?: number;
+  [key: string]: unknown;
+}
+
+export interface UnquotableClaim {
+  statement: string;
+  quote: string | null;
+  reason: 'cita-inventada' | 'sin-cita';
+  provenanceSourceId: string;
+}
+
+export interface QuotedClaim extends Claim {
+  quote: string;
+  quoteStart: number;
+}
+
+export interface ExtractedSignal extends Signal {
+  unquotable?: UnquotableClaim[];
+  metadata?: SignalExtractionMetadata;
+}
+
 export interface ISignalExtractor {
   extract(content: NormalizedContent): Promise<Signal>;
 }
 
 export type CustomExtractorEngine = (
   content: NormalizedContent
-) => Promise<Partial<Signal>> | Partial<Signal>;
+) => Promise<Partial<ExtractedSignal> | Partial<Signal>> | Partial<ExtractedSignal> | Partial<Signal>;
+
+export function normalizeForQuoteMatch(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/[\u2018\u2019\u0060\u00B4]/g, "'")
+    .replace(/[\u201C\u201D\u00AB\u00BB]/g, '"')
+    .replace(/[\u00A0\u202F]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export const DEFAULT_MAX_TRANSCRIPT_CHARS = 9000;
 
 export class SignalExtractor implements ISignalExtractor {
   private customEngine?: CustomExtractorEngine;
+  private maxTranscriptChars: number;
 
-  constructor(customEngine?: CustomExtractorEngine) {
+  constructor(
+    customEngine?: CustomExtractorEngine,
+    maxTranscriptChars: number | { maxTranscriptChars?: number } = DEFAULT_MAX_TRANSCRIPT_CHARS
+  ) {
     this.customEngine = customEngine;
+    if (typeof maxTranscriptChars === 'number') {
+      this.maxTranscriptChars = maxTranscriptChars;
+    } else if (
+      typeof maxTranscriptChars === 'object' &&
+      maxTranscriptChars !== null &&
+      typeof maxTranscriptChars.maxTranscriptChars === 'number'
+    ) {
+      this.maxTranscriptChars = maxTranscriptChars.maxTranscriptChars;
+    } else {
+      this.maxTranscriptChars = DEFAULT_MAX_TRANSCRIPT_CHARS;
+    }
   }
 
-  async extract(content: NormalizedContent): Promise<Signal> {
+  async extract(content: NormalizedContent): Promise<ExtractedSignal> {
     if (this.customEngine) {
-      const customResult = await this.customEngine(content);
-      return this.normalizeSignal(customResult, content);
+      const transcript = content.transcript || '';
+      const isTruncated = transcript.length > this.maxTranscriptChars;
+      const truncatedChars = isTruncated ? transcript.length - this.maxTranscriptChars : 0;
+      const contentForEngine: NormalizedContent = isTruncated
+        ? { ...content, transcript: transcript.slice(0, this.maxTranscriptChars) }
+        : content;
+
+      try {
+        const customResult = await this.customEngine(contentForEngine);
+        if (customResult && typeof customResult === 'object' && !Array.isArray(customResult)) {
+          const signal = this.normalizeSignal(customResult, content);
+          if (isTruncated) {
+            signal.metadata = {
+              ...(signal.metadata || {}),
+              truncated: truncatedChars,
+            };
+          } else if (signal.metadata && 'truncated' in signal.metadata) {
+            delete signal.metadata.truncated;
+          }
+          return signal;
+        }
+      } catch {
+        // Degrada a heurística si el motor falla
+      }
+
+      const fallback = this.heuristicExtract(content) as ExtractedSignal;
+      fallback.metadata = {
+        extractor: 'heuristic (fallback)',
+      };
+      return fallback;
     }
 
     return this.heuristicExtract(content);
@@ -87,22 +165,92 @@ export class SignalExtractor implements ISignalExtractor {
     };
   }
 
-  private normalizeSignal(partial: Partial<Signal>, content: NormalizedContent): Signal {
-    const claims = (partial.claimsToInvestigate || []).map((c) => {
-      const stmt = typeof c === 'string' ? c : (c as Claim).statement;
-      return createClaim({
+  private verifyQuote(quote: string, haystack: string): number | null {
+    const normQuote = normalizeForQuoteMatch(quote);
+    if (!normQuote) return null;
+    const normHaystack = normalizeForQuoteMatch(haystack);
+    const index = normHaystack.indexOf(normQuote);
+    return index >= 0 ? index : null;
+  }
+
+  private normalizeSignal(
+    partial: Partial<ExtractedSignal> | Partial<Signal>,
+    content: NormalizedContent
+  ): ExtractedSignal {
+    const claims: QuotedClaim[] = [];
+    const unquotable: UnquotableClaim[] = [];
+
+    for (const c of partial.claimsToInvestigate || []) {
+      if (c instanceof Claim && !('quote' in c)) {
+        claims.push(
+          Object.assign(
+            createClaim({
+              statement: c.statement,
+              provenanceSourceId: c.provenanceSourceId || content.source.contentId,
+              id: c.id,
+              status: c.status || 'UNVERIFIED',
+              createdAt: c.createdAt,
+            }),
+            { quote: '', quoteStart: -1 }
+          )
+        );
+        continue;
+      }
+
+      const stmt = typeof c === 'string' ? c : (c as { statement?: string }).statement || '';
+      const rawQuote =
+        typeof c === 'object' && c !== null && 'quote' in c && typeof (c as { quote?: unknown }).quote === 'string'
+          ? (c as { quote: string }).quote
+          : null;
+
+      if (!rawQuote || rawQuote.trim().length === 0) {
+        unquotable.push({
+          statement: stmt,
+          quote: rawQuote,
+          reason: 'sin-cita',
+          provenanceSourceId: content.source.contentId,
+        });
+        continue;
+      }
+
+      const quoteStart = this.verifyQuote(rawQuote, content.transcript || '');
+      if (quoteStart === null) {
+        unquotable.push({
+          statement: stmt,
+          quote: rawQuote,
+          reason: 'cita-inventada',
+          provenanceSourceId: content.source.contentId,
+        });
+        continue;
+      }
+
+      const claimId =
+        typeof c === 'object' && c !== null && 'id' in c && typeof (c as { id?: unknown }).id === 'string'
+          ? (c as { id: string }).id
+          : undefined;
+
+      const created = createClaim({
         statement: stmt,
         provenanceSourceId: content.source.contentId,
+        id: claimId,
         status: 'UNVERIFIED',
       });
-    });
 
-    return {
+      const quotedClaim: QuotedClaim = Object.assign(created, {
+        quote: rawQuote,
+        quoteStart,
+      });
+
+      claims.push(quotedClaim);
+    }
+
+    const result: ExtractedSignal = {
       sourceId: content.source.contentId,
       topic: partial.topic || content.title || 'Unspecified Topic',
       topics: partial.topics || [partial.topic || content.title],
       concepts: partial.concepts || [],
       claimsToInvestigate: claims,
+      unquotable,
       questions: partial.questions || [],
       arguments: partial.arguments || [],
       assumptions: partial.assumptions || [],
@@ -110,6 +258,12 @@ export class SignalExtractor implements ISignalExtractor {
       potentialAngles: partial.potentialAngles || [],
       createdAt: partial.createdAt || new Date().toISOString(),
     };
+
+    if ((partial as ExtractedSignal).metadata !== undefined) {
+      result.metadata = (partial as ExtractedSignal).metadata;
+    }
+
+    return result;
   }
 
   private extractTopics(title: string, description: string): string[] {
